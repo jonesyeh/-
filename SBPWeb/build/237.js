@@ -1,6 +1,6 @@
 webpackJsonp([237],{
 
-/***/ 1582:
+/***/ 1588:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -81,7 +81,7 @@ var ParameterGroupAddEditModalPage = /** @class */ (function () {
     };
     ParameterGroupAddEditModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["Component"])({
-            selector: "page-parameter-group-add-edit-modal",template:/*ion-inline-start:"F:\ionic4\prod\src\pages\parameter-group-add-edit-modal\parameter-group-add-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content  padding>\n    <form #Form="ngForm">\n\n\n        <ion-row>\n          <ion-col>\n            <ion-item>\n              <ion-label stacked >參數群組</ion-label>\n              <ion-input type="text" maxlength="3" [disabled]="CanEditJob==false || mode==\'PUT\'" name="parameter_column_group" #parameter_column_group="ngModel" [(ngModel)]="item.parameter_column_group"\n                required></ion-input>\n                <button ion-button outline item-end *ngIf="CanEditJob==true && mode==\'POST\'"  icon-right (click)="get_max_parameter_column_group()">\n                  <ion-icon name="arrow-dropdown"></ion-icon>\n                </button>\n            </ion-item>\n            <div *ngIf="parameter_column_group.errors && parameter_column_group.touched" class="error-message">\n              參數群組不能為空白\n            </div>\n\n          </ion-col>\n        </ion-row>\n\n        <ion-row>\n          <ion-col>\n            <ion-item>\n                <ion-label stacked >參數群組說明</ion-label>\n              <ion-input type="text" [disabled]="CanEditJob==false" name="parameter_group_desc" #parameter_group_desc="ngModel" [(ngModel)]="item.parameter_group_desc"\n                required maxlength="50"></ion-input>\n            </ion-item>\n            <div *ngIf="parameter_group_desc.errors && parameter_group_desc.touched" class="error-message">\n              參數群組說明不能為空白\n            </div>\n          </ion-col>\n        </ion-row>\n\n\n      </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditJob==false"  ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"F:\ionic4\prod\src\pages\parameter-group-add-edit-modal\parameter-group-add-edit-modal.html"*/
+            selector: "page-parameter-group-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\parameter-group-add-edit-modal\parameter-group-add-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content  padding>\n    <form #Form="ngForm">\n\n\n        <ion-row>\n          <ion-col>\n            <ion-item>\n              <ion-label stacked >參數群組</ion-label>\n              <ion-input type="text" maxlength="3" [disabled]="CanEditJob==false || mode==\'PUT\'" name="parameter_column_group" #parameter_column_group="ngModel" [(ngModel)]="item.parameter_column_group"\n                required></ion-input>\n                <button ion-button outline item-end *ngIf="CanEditJob==true && mode==\'POST\'"  icon-right (click)="get_max_parameter_column_group()">\n                  <ion-icon name="arrow-dropdown"></ion-icon>\n                </button>\n            </ion-item>\n            <div *ngIf="parameter_column_group.errors && parameter_column_group.touched" class="error-message">\n              參數群組不能為空白\n            </div>\n\n          </ion-col>\n        </ion-row>\n\n        <ion-row>\n          <ion-col>\n            <ion-item>\n                <ion-label stacked >參數群組說明</ion-label>\n              <ion-input type="text" [disabled]="CanEditJob==false" name="parameter_group_desc" #parameter_group_desc="ngModel" [(ngModel)]="item.parameter_group_desc"\n                required maxlength="50"></ion-input>\n            </ion-item>\n            <div *ngIf="parameter_group_desc.errors && parameter_group_desc.touched" class="error-message">\n              參數群組說明不能為空白\n            </div>\n          </ion-col>\n        </ion-row>\n\n\n      </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditJob==false"  ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\parameter-group-add-edit-modal\parameter-group-add-edit-modal.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["m" /* NavParams */],
@@ -97,7 +97,7 @@ var ParameterGroupAddEditModalPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 682:
+/***/ 686:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -105,7 +105,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ParameterGroupAddEditModalPageModule", function() { return ParameterGroupAddEditModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__parameter_group_add_edit_modal__ = __webpack_require__(1582);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__parameter_group_add_edit_modal__ = __webpack_require__(1588);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_parameter_group_services_parameter_group_services__ = __webpack_require__(926);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;

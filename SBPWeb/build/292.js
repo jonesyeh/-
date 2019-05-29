@@ -1,6 +1,6 @@
 webpackJsonp([292],{
 
-/***/ 1065:
+/***/ 1066:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21,14 +21,14 @@ var JobStepViewModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1546:
+/***/ 1571:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobStepAddEditModalPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_JobStepViewModel__ = __webpack_require__(1065);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_JobStepViewModel__ = __webpack_require__(1066);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -101,7 +101,7 @@ var JobStepAddEditModalPage = /** @class */ (function () {
     };
     JobStepAddEditModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
-            selector: "page-job-step-add-edit-modal",template:/*ion-inline-start:"F:\ionic4\prod\src\pages\job-step-add-edit-modal\job-step-add-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form #Form="ngForm">\n\n    <ion-row>\n      <ion-col col-12>\n        <ion-item>\n          <ion-label stacked>作業步驟編號</ion-label>\n          <ion-input type="text"  name="job_step_id" [disabled]="CanEditJob==false || mode==\'PUT\'" #job_step_id="ngModel" [(ngModel)]="item.job_step_id" required></ion-input>\n        </ion-item>\n        <div *ngIf="job_step_id.errors && job_step_id.touched" class="error-message">\n          作業步驟編號不能為空白\n        </div>\n      </ion-col>\n\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>步驟</ion-label>\n          <ion-input type="number" required min=1 max=100 [disabled]="CanEditJob==false"  name="step" #step="ngModel" [(ngModel)]="item.step"\n            ></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col >\n        <ion-item>\n          <ion-label stacked>啟用</ion-label>\n          <ion-checkbox name="is_active" required [disabled]="CanEditJob==false" [(ngModel)]="item.is_active"></ion-checkbox>\n        </ion-item>\n\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>執行程式</ion-label>\n          <ion-input type="text" required readonly=true  name="program_func_desc" #program_func_desc="ngModel" [(ngModel)]="item.program_func_desc"\n            ></ion-input>\n\n          <button ion-button outline item-end *ngIf="CanEditJob==true" icon-right (click)="SelectBatchExecProgram()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n\n\n      </ion-col>\n\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>成功後步驟(0:停止、1:下一步、其他)</ion-label>\n          <ion-input type="number" required min=0 max=100 [disabled]="CanEditJob==false"   name="success_step" #success_step="ngModel" [(ngModel)]="item.success_step"\n            ></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>失敗後步驟(0:停止、1:下一步、其他)</ion-label>\n          <ion-input type="number" required min=0 max=100 [disabled]="CanEditJob==false"   name="fail_step" #fail_step="ngModel" [(ngModel)]="item.fail_step"\n            ></ion-input>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n\n\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button [disabled]="CanEditJob==false" small title="確認" ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"F:\ionic4\prod\src\pages\job-step-add-edit-modal\job-step-add-edit-modal.html"*/
+            selector: "page-job-step-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\job-step-add-edit-modal\job-step-add-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form #Form="ngForm">\n\n    <ion-row>\n      <ion-col col-12>\n        <ion-item>\n          <ion-label stacked>作業步驟編號</ion-label>\n          <ion-input type="text"  name="job_step_id" [disabled]="CanEditJob==false || mode==\'PUT\'" #job_step_id="ngModel" [(ngModel)]="item.job_step_id" required></ion-input>\n        </ion-item>\n        <div *ngIf="job_step_id.errors && job_step_id.touched" class="error-message">\n          作業步驟編號不能為空白\n        </div>\n      </ion-col>\n\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>步驟</ion-label>\n          <ion-input type="number" required min=1 max=100 [disabled]="CanEditJob==false"  name="step" #step="ngModel" [(ngModel)]="item.step"\n            ></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col >\n        <ion-item>\n          <ion-label stacked>啟用</ion-label>\n          <ion-checkbox name="is_active" required [disabled]="CanEditJob==false" [(ngModel)]="item.is_active"></ion-checkbox>\n        </ion-item>\n\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>執行程式</ion-label>\n          <ion-input type="text" required readonly=true  name="program_func_desc" #program_func_desc="ngModel" [(ngModel)]="item.program_func_desc"\n            ></ion-input>\n\n          <button ion-button outline item-end *ngIf="CanEditJob==true" icon-right (click)="SelectBatchExecProgram()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n\n\n      </ion-col>\n\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>成功後步驟(0:停止、1:下一步、其他)</ion-label>\n          <ion-input type="number" required min=0 max=100 [disabled]="CanEditJob==false"   name="success_step" #success_step="ngModel" [(ngModel)]="item.success_step"\n            ></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>失敗後步驟(0:停止、1:下一步、其他)</ion-label>\n          <ion-input type="number" required min=0 max=100 [disabled]="CanEditJob==false"   name="fail_step" #fail_step="ngModel" [(ngModel)]="item.fail_step"\n            ></ion-input>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n\n\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button [disabled]="CanEditJob==false" small title="確認" ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\job-step-add-edit-modal\job-step-add-edit-modal.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["m" /* NavParams */],
@@ -116,7 +116,7 @@ var JobStepAddEditModalPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 654:
+/***/ 673:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -124,7 +124,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JobStepAddEditModalPageModule", function() { return JobStepAddEditModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__job_step_add_edit_modal__ = __webpack_require__(1546);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__job_step_add_edit_modal__ = __webpack_require__(1571);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

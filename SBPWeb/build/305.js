@@ -1,6 +1,6 @@
 webpackJsonp([305],{
 
-/***/ 1032:
+/***/ 1031:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15,14 +15,14 @@ var FileFilterItemViewModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1407:
+/***/ 1403:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileFilterItemAddEditModalPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_FileFilterItemViewModel__ = __webpack_require__(1032);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_FileFilterItemViewModel__ = __webpack_require__(1031);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -72,7 +72,7 @@ var FileFilterItemAddEditModalPage = /** @class */ (function () {
     };
     FileFilterItemAddEditModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
-            selector: "page-file-filter-item-add-edit-modal",template:/*ion-inline-start:"F:\ionic4\prod\src\pages\file-filter-item-add-edit-modal\file-filter-item-add-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form #Form="ngForm">\n\n\n\n      <ion-row>\n        <ion-col col-12 >\n            <ion-item>\n              <ion-label stacked>內文搜尋關鍵字</ion-label>\n              <ion-input type="text" [disabled]="CanEditBatch==false" name="search_data" #search_data="ngModel" [(ngModel)]="item.search_data"\n                required maxlength="255"></ion-input>\n            </ion-item>\n            <div *ngIf="search_data.errors && search_data.touched" class="error-message">\n              內文搜尋關鍵字不能為空白\n            </div>\n          </ion-col>\n    </ion-row>\n\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditBatch==false" ion-button color="dark" [disabled]="!Form.form.valid" icon-left\n            (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"F:\ionic4\prod\src\pages\file-filter-item-add-edit-modal\file-filter-item-add-edit-modal.html"*/
+            selector: "page-file-filter-item-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\file-filter-item-add-edit-modal\file-filter-item-add-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form #Form="ngForm">\n\n\n\n      <ion-row>\n        <ion-col col-12 >\n            <ion-item>\n              <ion-label stacked>內文搜尋關鍵字</ion-label>\n              <ion-input type="text" [disabled]="CanEditBatch==false" name="search_data" #search_data="ngModel" [(ngModel)]="item.search_data"\n                required maxlength="255"></ion-input>\n            </ion-item>\n            <div *ngIf="search_data.errors && search_data.touched" class="error-message">\n              內文搜尋關鍵字不能為空白\n            </div>\n          </ion-col>\n    </ion-row>\n\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditBatch==false" ion-button color="dark" [disabled]="!Form.form.valid" icon-left\n            (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\file-filter-item-add-edit-modal\file-filter-item-add-edit-modal.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["m" /* NavParams */],
@@ -87,7 +87,7 @@ var FileFilterItemAddEditModalPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 545:
+/***/ 543:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -95,7 +95,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FileFilterItemAddEditModalPageModule", function() { return FileFilterItemAddEditModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__file_filter_item_add_edit_modal__ = __webpack_require__(1407);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__file_filter_item_add_edit_modal__ = __webpack_require__(1403);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

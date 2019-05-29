@@ -1,6 +1,6 @@
 webpackJsonp([162],{
 
-/***/ 1613:
+/***/ 1614:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11,7 +11,7 @@ webpackJsonp([162],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_services_auth_services__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_sch_services_sch_services__ = __webpack_require__(270);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_conn_services_conn_services__ = __webpack_require__(266);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Model_ViewModel_SchSelectViewModel__ = __webpack_require__(1614);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Model_ViewModel_SchSelectViewModel__ = __webpack_require__(1615);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -155,7 +155,7 @@ var SchByJobSelectModalPage = /** @class */ (function () {
     };
     SchByJobSelectModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: "page-sch-by-job-select-modal",template:/*ion-inline-start:"F:\ionic4\prod\src\pages\sch-by-job-select-modal\sch-by-job-select-modal.html"*/'\n<ion-header>\n    <ion-title>勾選排程加入作業</ion-title>\n  </ion-header>\n\n  <ion-content>\n      <ion-row>\n          <ion-col col-12 col-sm-4 >\n              <ion-item>\n                <ion-label stacked>SBP編號</ion-label>\n                <ion-input type="text"  name="remote_conn_id" #remote_conn_id="ngModel" [(ngModel)]="SchSelect.remote_conn_id"\n                  required maxlength="20"></ion-input>\n\n                <button ion-button outline item-end  icon-right (click)="SelectConn()">\n                  <ion-icon name="arrow-dropdown"></ion-icon>\n                </button>\n              </ion-item>\n\n              <div *ngIf="remote_conn_id.errors && remote_conn_id.touched " class="error-message">\n                連線編號不能為空白\n              </div>\n            </ion-col>\n            <ion-col col-12 col-sm-8>\n                <ion-item>\n                  <ion-label stacked>程式</ion-label>\n                  <ion-input [disabled]=true name="remote_conn_string" #remote_conn_string="ngModel" [(ngModel)]="SchSelect.remote_conn_string" required></ion-input>\n\n                </ion-item>\n\n              </ion-col>\n      </ion-row>\n    <ion-row>\n      <ion-col>\n\n        <ion-searchbar [ngClass]="[\'search\']" (keyup.enter)="LoadData(true)" placeholder="排程名稱(包含)"\n          [(ngModel)]="keyword">\n        </ion-searchbar>\n\n      </ion-col>\n    </ion-row>\n    <div *ngIf="data_list">\n      <ion-row>\n\n        <ion-col col-lg-4 col-md-6 col-sm-6 col-12 *ngFor="let item of data_list">\n\n          <ion-grid [ngClass]="[\'bordered\']">\n\n            <ion-row>\n              <ion-col>\n              <ion-checkbox checked="false" [(ngModel)]="item.checked"></ion-checkbox> {{item.sch_name}}\n              </ion-col>\n\n            </ion-row>\n            <ion-row>\n                <ion-col>\n                {{item.sch_description}}\n                </ion-col>\n\n              </ion-row>\n          </ion-grid>\n        </ion-col>\n\n      </ion-row>\n    </div>\n    <ion-infinite-scroll *ngIf="pageNumber < totalPages" (ionInfinite)="$event.waitFor(doInfinite())">\n      <ion-infinite-scroll-content loadingSpinner="bubbles">\n      </ion-infinite-scroll-content>\n    </ion-infinite-scroll>\n  </ion-content>\n  <ion-footer>\n    <ion-toolbar>\n      <ion-row>\n        <ion-col>\n            <div [ngClass]="[\'command\']">\n              <button small title="重新整理" ion-button color="dark" icon-left (click)="LoadData(true)">\n                <ion-checkbox name="order_type" title="遞增/遞減" color="dark" [(ngModel)]="order_type" (ionChange)="LoadData(true)" ></ion-checkbox>\n                 <ion-icon name="refresh"></ion-icon>\n              </button>\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="加入" ion-button color="dark" icon-left (click)="add()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n          </div>\n          <StatusComponent [pageNumber]="pageNumber" [totalPages]="totalPages" [totalRows]="totalRows"></StatusComponent>\n\n        </ion-col>\n      </ion-row>\n    </ion-toolbar>\n  </ion-footer>\n\n'/*ion-inline-end:"F:\ionic4\prod\src\pages\sch-by-job-select-modal\sch-by-job-select-modal.html"*/
+            selector: "page-sch-by-job-select-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\sch-by-job-select-modal\sch-by-job-select-modal.html"*/'\n<ion-header>\n    <ion-title>勾選排程加入作業</ion-title>\n  </ion-header>\n\n  <ion-content>\n      <ion-row>\n          <ion-col col-12 col-sm-4 >\n              <ion-item>\n                <ion-label stacked>SBP編號</ion-label>\n                <ion-input type="text"  name="remote_conn_id" #remote_conn_id="ngModel" [(ngModel)]="SchSelect.remote_conn_id"\n                  required maxlength="20"></ion-input>\n\n                <button ion-button outline item-end  icon-right (click)="SelectConn()">\n                  <ion-icon name="arrow-dropdown"></ion-icon>\n                </button>\n              </ion-item>\n\n              <div *ngIf="remote_conn_id.errors && remote_conn_id.touched " class="error-message">\n                連線編號不能為空白\n              </div>\n            </ion-col>\n            <ion-col col-12 col-sm-8>\n                <ion-item>\n                  <ion-label stacked>程式</ion-label>\n                  <ion-input [disabled]=true name="remote_conn_string" #remote_conn_string="ngModel" [(ngModel)]="SchSelect.remote_conn_string" required></ion-input>\n\n                </ion-item>\n\n              </ion-col>\n      </ion-row>\n    <ion-row>\n      <ion-col>\n\n        <ion-searchbar [ngClass]="[\'search\']" (keyup.enter)="LoadData(true)" placeholder="排程名稱(包含)"\n          [(ngModel)]="keyword">\n        </ion-searchbar>\n\n      </ion-col>\n    </ion-row>\n    <div *ngIf="data_list">\n      <ion-row>\n\n        <ion-col col-lg-4 col-md-6 col-sm-6 col-12 *ngFor="let item of data_list">\n\n          <ion-grid [ngClass]="[\'bordered\']">\n\n            <ion-row>\n              <ion-col>\n              <ion-checkbox checked="false" [(ngModel)]="item.checked"></ion-checkbox> {{item.sch_name}}\n              </ion-col>\n\n            </ion-row>\n            <ion-row>\n                <ion-col>\n                {{item.sch_description}}\n                </ion-col>\n\n              </ion-row>\n          </ion-grid>\n        </ion-col>\n\n      </ion-row>\n    </div>\n    <ion-infinite-scroll *ngIf="pageNumber < totalPages" (ionInfinite)="$event.waitFor(doInfinite())">\n      <ion-infinite-scroll-content loadingSpinner="bubbles">\n      </ion-infinite-scroll-content>\n    </ion-infinite-scroll>\n  </ion-content>\n  <ion-footer>\n    <ion-toolbar>\n      <ion-row>\n        <ion-col>\n            <div [ngClass]="[\'command\']">\n              <button small title="重新整理" ion-button color="dark" icon-left (click)="LoadData(true)">\n                <ion-checkbox name="order_type" title="遞增/遞減" color="dark" [(ngModel)]="order_type" (ionChange)="LoadData(true)" ></ion-checkbox>\n                 <ion-icon name="refresh"></ion-icon>\n              </button>\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="加入" ion-button color="dark" icon-left (click)="add()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n          </div>\n          <StatusComponent [pageNumber]="pageNumber" [totalPages]="totalPages" [totalRows]="totalRows"></StatusComponent>\n\n        </ion-col>\n      </ion-row>\n    </ion-toolbar>\n  </ion-footer>\n\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\sch-by-job-select-modal\sch-by-job-select-modal.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
@@ -173,7 +173,7 @@ var SchByJobSelectModalPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1614:
+/***/ 1615:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -188,7 +188,7 @@ var SchSelectViewModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 711:
+/***/ 712:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -196,7 +196,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SchByJobSelectModalPageModule", function() { return SchByJobSelectModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sch_by_job_select_modal__ = __webpack_require__(1613);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sch_by_job_select_modal__ = __webpack_require__(1614);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(797);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -10000,7 +10000,7 @@ var HeaderComponent = /** @class */ (function () {
     HeaderComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: "headerComponent",
-            outputs: ['onMobileModeClick'],template:/*ion-inline-start:"F:\ionic4\prod\src\components\header\header.html"*/'\n<ion-navbar (window:resize)="onResize($event)">\n  <ion-title>\n      {{title}}\n  </ion-title>\n\n<button *ngIf="is_modal==false" ion-button menuToggle>\n  <ion-icon name="menu"></ion-icon>\n</button>\n\n\n  <ion-buttons  *ngIf="innerWidth>tableWidth && show_table_select==true" end>\n\n    <button title="並排" ion-button (click)="mobile_click(true)">\n      <ion-icon name="apps"></ion-icon>\n      </button>\n    <button title="表格" ion-button (click)="mobile_click(false)">\n      <ion-icon name="card"></ion-icon>\n      </button>\n  </ion-buttons>\n\n<ion-buttons *ngIf="is_modal==false"  end>\n\n  <button *ngIf="innerWidth>500" style="text-transform: none;" ion-button>\n  {{api_name}}-{{userName}}\n  </button>\n  <button title="登出" ion-button (click)="logout()">\n    <ion-icon name="log-out"></ion-icon>\n    </button>\n</ion-buttons>\n\n</ion-navbar>\n\n\n\n'/*ion-inline-end:"F:\ionic4\prod\src\components\header\header.html"*/,
+            outputs: ['onMobileModeClick'],template:/*ion-inline-start:"C:\jones\ionic\prod\src\components\header\header.html"*/'\n<ion-navbar (window:resize)="onResize($event)">\n  <ion-title>\n      {{title}}\n  </ion-title>\n\n<button *ngIf="is_modal==false" ion-button menuToggle>\n  <ion-icon name="menu"></ion-icon>\n</button>\n\n\n  <ion-buttons  *ngIf="innerWidth>tableWidth && show_table_select==true" end>\n\n    <button title="並排" ion-button (click)="mobile_click(true)">\n      <ion-icon name="apps"></ion-icon>\n      </button>\n    <button title="表格" ion-button (click)="mobile_click(false)">\n      <ion-icon name="card"></ion-icon>\n      </button>\n  </ion-buttons>\n\n<ion-buttons *ngIf="is_modal==false"  end>\n\n  <button *ngIf="innerWidth>500" style="text-transform: none;" ion-button>\n  {{api_name}}-{{userName}}\n  </button>\n  <button title="登出" ion-button (click)="logout()">\n    <ion-icon name="log-out"></ion-icon>\n    </button>\n</ion-buttons>\n\n</ion-navbar>\n\n\n\n'/*ion-inline-end:"C:\jones\ionic\prod\src\components\header\header.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2__providers_auth_services_auth_services__["a" /* AuthServicesProvider */],
@@ -10092,7 +10092,7 @@ var MenuComponent = /** @class */ (function () {
     ], MenuComponent.prototype, "menu_no", void 0);
     MenuComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
-            selector: "menuComponent",template:/*ion-inline-start:"F:\ionic4\prod\src\components\menu\menu.html"*/'<div *ngIf="menu_list" [ngClass]="[\'menu_bordered\']">\n\n  <ion-list  no-lines>\n    <button small ion-item *ngFor="let item of menu_list[0].ProgramPageMenuViewModel" (click)="openPage(item)">\n      <ion-icon name="planet"  color="danger" item-start ></ion-icon>\n     <div [ngClass]="[\'menu_text\']">  {{item.ProgramPageViewModel.page_desc}} </div>\n    </button>\n  </ion-list>\n</div>\n'/*ion-inline-end:"F:\ionic4\prod\src\components\menu\menu.html"*/
+            selector: "menuComponent",template:/*ion-inline-start:"C:\jones\ionic\prod\src\components\menu\menu.html"*/'<div *ngIf="menu_list" [ngClass]="[\'menu_bordered\']">\n\n  <ion-list  no-lines>\n    <button small ion-item *ngFor="let item of menu_list[0].ProgramPageMenuViewModel" (click)="openPage(item)">\n      <ion-icon name="planet"  color="danger" item-start ></ion-icon>\n     <div [ngClass]="[\'menu_text\']">  {{item.ProgramPageViewModel.page_desc}} </div>\n    </button>\n  </ion-list>\n</div>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\components\menu\menu.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* MenuController */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */],
@@ -10137,7 +10137,7 @@ var CopyRightComponent = /** @class */ (function () {
     }
     CopyRightComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'CopyRightComponent',template:/*ion-inline-start:"F:\ionic4\prod\src\components\copy-right\copy-right.html"*/'<div style="text-align:center">版權所有...2018/1/3</div>\n'/*ion-inline-end:"F:\ionic4\prod\src\components\copy-right\copy-right.html"*/
+            selector: 'CopyRightComponent',template:/*ion-inline-start:"C:\jones\ionic\prod\src\components\copy-right\copy-right.html"*/'<div style="text-align:center">版權所有...2018/1/3</div>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\components\copy-right\copy-right.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], CopyRightComponent);
@@ -10227,7 +10227,7 @@ var StatusComponent = /** @class */ (function () {
     ], StatusComponent.prototype, "totalRows", void 0);
     StatusComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'StatusComponent',template:/*ion-inline-start:"F:\ionic4\prod\src\components\status\status.html"*/'<!-- Generated template for the StatusComponent component -->\n<div [ngClass]="[\'status\']">{{totalRows}}筆(第{{pageNumber}}頁/共{{totalPages}}頁)</div>\n'/*ion-inline-end:"F:\ionic4\prod\src\components\status\status.html"*/
+            selector: 'StatusComponent',template:/*ion-inline-start:"C:\jones\ionic\prod\src\components\status\status.html"*/'<!-- Generated template for the StatusComponent component -->\n<div [ngClass]="[\'status\']">{{totalRows}}筆(第{{pageNumber}}頁/共{{totalPages}}頁)</div>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\components\status\status.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], StatusComponent);

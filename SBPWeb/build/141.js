@@ -1,6 +1,6 @@
 webpackJsonp([141],{
 
-/***/ 1205:
+/***/ 1204:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15,7 +15,7 @@ var FileDateFilterViewModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1206:
+/***/ 1205:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24,7 +24,7 @@ var FileDateFilterViewModel = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_FileDateFilterResponse__ = __webpack_require__(1370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_FileDateFilterResponse__ = __webpack_require__(1361);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -121,7 +121,7 @@ var FileDateFilterServicesProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1369:
+/***/ 1360:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -129,10 +129,10 @@ var FileDateFilterServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_String__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_ViewModel_FileDateFilterViewModel__ = __webpack_require__(1205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_ViewModel_FileDateFilterViewModel__ = __webpack_require__(1204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_global_global__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_auth_services_auth_services__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_file_date_filter_services_file_date_filter_services__ = __webpack_require__(1206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_file_date_filter_services_file_date_filter_services__ = __webpack_require__(1205);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -307,7 +307,7 @@ var FileDateFilterAddEditPage = /** @class */ (function () {
     };
     FileDateFilterAddEditPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: "page-file-date-filter-add-edit",template:/*ion-inline-start:"F:\ionic4\prod\src\pages\file-date-filter-add-edit\file-date-filter-add-edit.html"*/'<ion-header>\n  <headerComponent [title]="title" [permission_id]="\'CanBatch\'"></headerComponent>\n</ion-header>\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-12 col-sm-2 col-md-3>\n      </ion-col>\n      <ion-col col-12 col-sm-8 col-md-6>\n\n        <ion-grid [ngClass]="[\'subject\']">\n          <ion-row>\n            <ion-col>\n\n              {{subject}}\n            </ion-col>\n          </ion-row>\n\n        </ion-grid>\n      </ion-col>\n      <ion-col col-12 col-sm-2 col-md-3>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n  <form #Form="ngForm">\n\n    <ion-row>\n      <ion-col >\n        <ion-item>\n          <ion-label stacked>檔案日期類型</ion-label>\n          <ion-input type="text" maxlength=10 readonly=true [disabled]="CanEditBatch==false " name="file_date_type_key" #file_date_type_key="ngModel"\n            [(ngModel)]="item.file_date_type_key" required></ion-input>\n\n          <button ion-button outline item-end *ngIf="CanEditBatch==true" icon-right (click)="SelectFileDateType()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n\n        <div *ngIf="file_date_type_key.errors && file_date_type_key.touched " class="error-message">\n          檔案日期類型不能為空白\n        </div>\n      </ion-col>\n      <ion-col >\n        <ion-item>\n          <ion-label stacked>檔案日期類型</ion-label>\n          <ion-input type="text" [disabled]=true name="file_date_type" #file_date_type="ngModel" [(ngModel)]="item.file_date_type"\n            required></ion-input>\n        </ion-item>\n      </ion-col>\n\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>日期篩選運算子</ion-label>\n          <ion-select [disabled]="CanEditBatch==false" name="file_filter_operator" [(ngModel)]="item.file_filter_operator">\n            <ion-option value=">=">>=</ion-option>\n            <ion-option value="<=">\n              <=</ion-option>\n                <ion-option value="=">=</ion-option>\n\n          </ion-select>\n\n        </ion-item>\n      </ion-col>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>至今日天數</ion-label>\n          <ion-input [disabled]="CanEditBatch==false" type="number" name="before_days" #before_days="ngModel" [(ngModel)]="item.before_days"\n            required></ion-input>\n\n        </ion-item>\n        <div *ngIf="before_days.errors && before_days.touched" class="error-message">\n          至今日天數不能為空白\n        </div>\n      </ion-col>\n    </ion-row>\n\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button *ngIf="CanEditBatch==true && mode==\'PUT\'" small title="刪除" ion-button color="dark" icon-left (click)="Delete(item)">\n            <ion-icon name="trash"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditBatch==false" ion-button color="dark" [disabled]="!Form.form.valid" icon-left\n            (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n    <ion-row *ngIf="CanEditBatch==true && mode==\'PUT\'">\n      <ion-col>\n        <button small title="產生Insert SQL語法" ion-button color="light" icon-left (click)="openNavSqlPage(item,\'insert\')">\n          Ins\n        </button>\n        <button small title="產生Update SQL語法" ion-button color="light" icon-left (click)="openNavSqlPage(item,\'update\')">\n          Upd\n        </button>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"F:\ionic4\prod\src\pages\file-date-filter-add-edit\file-date-filter-add-edit.html"*/
+            selector: "page-file-date-filter-add-edit",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\file-date-filter-add-edit\file-date-filter-add-edit.html"*/'<ion-header>\n  <headerComponent [title]="title" [permission_id]="\'CanBatch\'"></headerComponent>\n</ion-header>\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-12 col-sm-2 col-md-3>\n      </ion-col>\n      <ion-col col-12 col-sm-8 col-md-6>\n\n        <ion-grid [ngClass]="[\'subject\']">\n          <ion-row>\n            <ion-col>\n\n              {{subject}}\n            </ion-col>\n          </ion-row>\n\n        </ion-grid>\n      </ion-col>\n      <ion-col col-12 col-sm-2 col-md-3>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n  <form #Form="ngForm">\n\n    <ion-row>\n      <ion-col >\n        <ion-item>\n          <ion-label stacked>檔案日期類型</ion-label>\n          <ion-input type="text" maxlength=10 readonly=true [disabled]="CanEditBatch==false " name="file_date_type_key" #file_date_type_key="ngModel"\n            [(ngModel)]="item.file_date_type_key" required></ion-input>\n\n          <button ion-button outline item-end *ngIf="CanEditBatch==true" icon-right (click)="SelectFileDateType()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n\n        <div *ngIf="file_date_type_key.errors && file_date_type_key.touched " class="error-message">\n          檔案日期類型不能為空白\n        </div>\n      </ion-col>\n      <ion-col >\n        <ion-item>\n          <ion-label stacked>檔案日期類型</ion-label>\n          <ion-input type="text" [disabled]=true name="file_date_type" #file_date_type="ngModel" [(ngModel)]="item.file_date_type"\n            required></ion-input>\n        </ion-item>\n      </ion-col>\n\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>日期篩選運算子</ion-label>\n          <ion-select [disabled]="CanEditBatch==false" name="file_filter_operator" [(ngModel)]="item.file_filter_operator">\n            <ion-option value=">=">>=</ion-option>\n            <ion-option value="<=">\n              <=</ion-option>\n                <ion-option value="=">=</ion-option>\n\n          </ion-select>\n\n        </ion-item>\n      </ion-col>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>至今日天數</ion-label>\n          <ion-input [disabled]="CanEditBatch==false" type="number" name="before_days" #before_days="ngModel" [(ngModel)]="item.before_days"\n            required></ion-input>\n\n        </ion-item>\n        <div *ngIf="before_days.errors && before_days.touched" class="error-message">\n          至今日天數不能為空白\n        </div>\n      </ion-col>\n    </ion-row>\n\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button *ngIf="CanEditBatch==true && mode==\'PUT\'" small title="刪除" ion-button color="dark" icon-left (click)="Delete(item)">\n            <ion-icon name="trash"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditBatch==false" ion-button color="dark" [disabled]="!Form.form.valid" icon-left\n            (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n    <ion-row *ngIf="CanEditBatch==true && mode==\'PUT\'">\n      <ion-col>\n        <button small title="產生Insert SQL語法" ion-button color="light" icon-left (click)="openNavSqlPage(item,\'insert\')">\n          Ins\n        </button>\n        <button small title="產生Update SQL語法" ion-button color="light" icon-left (click)="openNavSqlPage(item,\'update\')">\n          Upd\n        </button>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\file-date-filter-add-edit\file-date-filter-add-edit.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
@@ -325,13 +325,13 @@ var FileDateFilterAddEditPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1370:
+/***/ 1361:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileDateFilterResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_FileDateFilterViewModel__ = __webpack_require__(1205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_FileDateFilterViewModel__ = __webpack_require__(1204);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -374,7 +374,7 @@ var FileDateFilterResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 516:
+/***/ 509:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -382,9 +382,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FileDateFilterAddEditPageModule", function() { return FileDateFilterAddEditPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__file_date_filter_add_edit__ = __webpack_require__(1369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__file_date_filter_add_edit__ = __webpack_require__(1360);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(797);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_file_date_filter_services_file_date_filter_services__ = __webpack_require__(1206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_file_date_filter_services_file_date_filter_services__ = __webpack_require__(1205);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -10190,7 +10190,7 @@ var HeaderComponent = /** @class */ (function () {
     HeaderComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: "headerComponent",
-            outputs: ['onMobileModeClick'],template:/*ion-inline-start:"F:\ionic4\prod\src\components\header\header.html"*/'\n<ion-navbar (window:resize)="onResize($event)">\n  <ion-title>\n      {{title}}\n  </ion-title>\n\n<button *ngIf="is_modal==false" ion-button menuToggle>\n  <ion-icon name="menu"></ion-icon>\n</button>\n\n\n  <ion-buttons  *ngIf="innerWidth>tableWidth && show_table_select==true" end>\n\n    <button title="並排" ion-button (click)="mobile_click(true)">\n      <ion-icon name="apps"></ion-icon>\n      </button>\n    <button title="表格" ion-button (click)="mobile_click(false)">\n      <ion-icon name="card"></ion-icon>\n      </button>\n  </ion-buttons>\n\n<ion-buttons *ngIf="is_modal==false"  end>\n\n  <button *ngIf="innerWidth>500" style="text-transform: none;" ion-button>\n  {{api_name}}-{{userName}}\n  </button>\n  <button title="登出" ion-button (click)="logout()">\n    <ion-icon name="log-out"></ion-icon>\n    </button>\n</ion-buttons>\n\n</ion-navbar>\n\n\n\n'/*ion-inline-end:"F:\ionic4\prod\src\components\header\header.html"*/,
+            outputs: ['onMobileModeClick'],template:/*ion-inline-start:"C:\jones\ionic\prod\src\components\header\header.html"*/'\n<ion-navbar (window:resize)="onResize($event)">\n  <ion-title>\n      {{title}}\n  </ion-title>\n\n<button *ngIf="is_modal==false" ion-button menuToggle>\n  <ion-icon name="menu"></ion-icon>\n</button>\n\n\n  <ion-buttons  *ngIf="innerWidth>tableWidth && show_table_select==true" end>\n\n    <button title="並排" ion-button (click)="mobile_click(true)">\n      <ion-icon name="apps"></ion-icon>\n      </button>\n    <button title="表格" ion-button (click)="mobile_click(false)">\n      <ion-icon name="card"></ion-icon>\n      </button>\n  </ion-buttons>\n\n<ion-buttons *ngIf="is_modal==false"  end>\n\n  <button *ngIf="innerWidth>500" style="text-transform: none;" ion-button>\n  {{api_name}}-{{userName}}\n  </button>\n  <button title="登出" ion-button (click)="logout()">\n    <ion-icon name="log-out"></ion-icon>\n    </button>\n</ion-buttons>\n\n</ion-navbar>\n\n\n\n'/*ion-inline-end:"C:\jones\ionic\prod\src\components\header\header.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2__providers_auth_services_auth_services__["a" /* AuthServicesProvider */],
@@ -10282,7 +10282,7 @@ var MenuComponent = /** @class */ (function () {
     ], MenuComponent.prototype, "menu_no", void 0);
     MenuComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
-            selector: "menuComponent",template:/*ion-inline-start:"F:\ionic4\prod\src\components\menu\menu.html"*/'<div *ngIf="menu_list" [ngClass]="[\'menu_bordered\']">\n\n  <ion-list  no-lines>\n    <button small ion-item *ngFor="let item of menu_list[0].ProgramPageMenuViewModel" (click)="openPage(item)">\n      <ion-icon name="planet"  color="danger" item-start ></ion-icon>\n     <div [ngClass]="[\'menu_text\']">  {{item.ProgramPageViewModel.page_desc}} </div>\n    </button>\n  </ion-list>\n</div>\n'/*ion-inline-end:"F:\ionic4\prod\src\components\menu\menu.html"*/
+            selector: "menuComponent",template:/*ion-inline-start:"C:\jones\ionic\prod\src\components\menu\menu.html"*/'<div *ngIf="menu_list" [ngClass]="[\'menu_bordered\']">\n\n  <ion-list  no-lines>\n    <button small ion-item *ngFor="let item of menu_list[0].ProgramPageMenuViewModel" (click)="openPage(item)">\n      <ion-icon name="planet"  color="danger" item-start ></ion-icon>\n     <div [ngClass]="[\'menu_text\']">  {{item.ProgramPageViewModel.page_desc}} </div>\n    </button>\n  </ion-list>\n</div>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\components\menu\menu.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* MenuController */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */],
@@ -10327,7 +10327,7 @@ var CopyRightComponent = /** @class */ (function () {
     }
     CopyRightComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'CopyRightComponent',template:/*ion-inline-start:"F:\ionic4\prod\src\components\copy-right\copy-right.html"*/'<div style="text-align:center">版權所有...2018/1/3</div>\n'/*ion-inline-end:"F:\ionic4\prod\src\components\copy-right\copy-right.html"*/
+            selector: 'CopyRightComponent',template:/*ion-inline-start:"C:\jones\ionic\prod\src\components\copy-right\copy-right.html"*/'<div style="text-align:center">版權所有...2018/1/3</div>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\components\copy-right\copy-right.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], CopyRightComponent);
@@ -10417,7 +10417,7 @@ var StatusComponent = /** @class */ (function () {
     ], StatusComponent.prototype, "totalRows", void 0);
     StatusComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'StatusComponent',template:/*ion-inline-start:"F:\ionic4\prod\src\components\status\status.html"*/'<!-- Generated template for the StatusComponent component -->\n<div [ngClass]="[\'status\']">{{totalRows}}筆(第{{pageNumber}}頁/共{{totalPages}}頁)</div>\n'/*ion-inline-end:"F:\ionic4\prod\src\components\status\status.html"*/
+            selector: 'StatusComponent',template:/*ion-inline-start:"C:\jones\ionic\prod\src\components\status\status.html"*/'<!-- Generated template for the StatusComponent component -->\n<div [ngClass]="[\'status\']">{{totalRows}}筆(第{{pageNumber}}頁/共{{totalPages}}頁)</div>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\components\status\status.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], StatusComponent);

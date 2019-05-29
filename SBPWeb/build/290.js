@@ -15,7 +15,7 @@ var ProgramCheckPKViewModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1271:
+/***/ 1276:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85,7 +85,7 @@ var BatchProgramCheckPkEditModalPage = /** @class */ (function () {
     };
     BatchProgramCheckPkEditModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: "page-batch-program-check-pk-edit-modal",template:/*ion-inline-start:"F:\ionic4\prod\src\pages\batch-program-check-pk-edit-modal\batch-program-check-pk-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form #Form="ngForm">\n\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>欄位編號</ion-label>\n          <ion-input type="text" disabled=true name="column_id" #column_id="ngModel" [(ngModel)]="item.column_id" required></ion-input>\n\n        </ion-item>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-12 col-sm-6>\n        <ion-item>\n          <ion-label stacked>比對PK欄位</ion-label>\n          <ion-input type="text" [disabled]=true name="check_pk_column" #check_pk_column="ngModel" [(ngModel)]="item.check_pk_column"\n            required maxlength="50"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col col-12 col-sm-6>\n        <ion-item>\n          <ion-label stacked>來源欄位</ion-label>\n          <ion-input type="text" [disabled]="CanEditBatch==false" name="temp_pk_column" #temp_pk_column="ngModel" [(ngModel)]="item.temp_pk_column"\n            required maxlength="50"></ion-input>\n          <button ion-button outline item-end icon-right *ngIf="CanEditBatch==true " (click)="SelectSrcColumn()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n        <div *ngIf="temp_pk_column.errors && temp_pk_column.touched" class="error-message">\n          來源欄位不能為空白\n        </div>\n\n      </ion-col>\n\n    </ion-row>\n\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditBatch==false" ion-button color="dark" [disabled]="!Form.form.valid" icon-left\n            (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"F:\ionic4\prod\src\pages\batch-program-check-pk-edit-modal\batch-program-check-pk-edit-modal.html"*/
+            selector: "page-batch-program-check-pk-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\batch-program-check-pk-edit-modal\batch-program-check-pk-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form #Form="ngForm">\n\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>欄位編號</ion-label>\n          <ion-input type="text" disabled=true name="column_id" #column_id="ngModel" [(ngModel)]="item.column_id" required></ion-input>\n\n        </ion-item>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-12 col-sm-6>\n        <ion-item>\n          <ion-label stacked>比對PK欄位</ion-label>\n          <ion-input type="text" [disabled]=true name="check_pk_column" #check_pk_column="ngModel" [(ngModel)]="item.check_pk_column"\n            required maxlength="50"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col col-12 col-sm-6>\n        <ion-item>\n          <ion-label stacked>來源欄位</ion-label>\n          <ion-input type="text" [disabled]="CanEditBatch==false" name="temp_pk_column" #temp_pk_column="ngModel" [(ngModel)]="item.temp_pk_column"\n            required maxlength="50"></ion-input>\n          <button ion-button outline item-end icon-right *ngIf="CanEditBatch==true " (click)="SelectSrcColumn()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n        <div *ngIf="temp_pk_column.errors && temp_pk_column.touched" class="error-message">\n          來源欄位不能為空白\n        </div>\n\n      </ion-col>\n\n    </ion-row>\n\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditBatch==false" ion-button color="dark" [disabled]="!Form.form.valid" icon-left\n            (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\batch-program-check-pk-edit-modal\batch-program-check-pk-edit-modal.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
@@ -99,7 +99,7 @@ var BatchProgramCheckPkEditModalPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 436:
+/***/ 441:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -107,7 +107,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BatchProgramCheckPkEditModalPageModule", function() { return BatchProgramCheckPkEditModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__batch_program_check_pk_edit_modal__ = __webpack_require__(1271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__batch_program_check_pk_edit_modal__ = __webpack_require__(1276);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

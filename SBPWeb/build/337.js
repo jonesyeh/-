@@ -1,6 +1,6 @@
 webpackJsonp([337],{
 
-/***/ 1349:
+/***/ 1350:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57,7 +57,7 @@ var FileBrowserCopyEditModalPage = /** @class */ (function () {
     };
     FileBrowserCopyEditModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
-            selector: "page-file-browser-copy-edit-modal",template:/*ion-inline-start:"F:\ionic4\prod\src\pages\file-browser-copy-edit-modal\file-browser-copy-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content  padding>\n    <form #Form="ngForm">\n\n        <ion-row>\n          <ion-col>\n            <ion-item>\n              <ion-label stacked >目前路徑</ion-label>\n              <ion-input type="text" disabled=true name="filepath" #filepath="ngModel" [(ngModel)]="item.filepath"\n                required></ion-input>\n            </ion-item>\n          </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col>\n              <ion-item>\n                <ion-label stacked >目前檔名</ion-label>\n                <ion-input type="text" disabled=true name="filename" #filename="ngModel" [(ngModel)]="item.filename"\n                  required></ion-input>\n              </ion-item>\n            </ion-col>\n          </ion-row>\n        <ion-row>\n          <ion-col>\n            <ion-item>\n              <ion-label stacked >目的檔名</ion-label>\n              <ion-input type="text" [disabled]="CanEditFileBrowser==false" name="rename_filename" #rename_filename="ngModel" [(ngModel)]="item.rename_filename"\n                required ></ion-input>\n            </ion-item>\n            <div *ngIf="rename_filename.errors && rename_filename.touched" class="error-message">\n                目的檔名不能為空白\n            </div>\n\n          </ion-col>\n        </ion-row>\n      </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditFileBrowser==false"  ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"F:\ionic4\prod\src\pages\file-browser-copy-edit-modal\file-browser-copy-edit-modal.html"*/
+            selector: "page-file-browser-copy-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\file-browser-copy-edit-modal\file-browser-copy-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content  padding>\n    <form #Form="ngForm">\n\n        <ion-row>\n          <ion-col>\n            <ion-item>\n              <ion-label stacked >目前路徑</ion-label>\n              <ion-input type="text" disabled=true name="filepath" #filepath="ngModel" [(ngModel)]="item.filepath"\n                required></ion-input>\n            </ion-item>\n          </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col>\n              <ion-item>\n                <ion-label stacked >目前檔名</ion-label>\n                <ion-input type="text" disabled=true name="filename" #filename="ngModel" [(ngModel)]="item.filename"\n                  required></ion-input>\n              </ion-item>\n            </ion-col>\n          </ion-row>\n        <ion-row>\n          <ion-col>\n            <ion-item>\n              <ion-label stacked >目的檔名</ion-label>\n              <ion-input type="text" [disabled]="CanEditFileBrowser==false" name="rename_filename" #rename_filename="ngModel" [(ngModel)]="item.rename_filename"\n                required ></ion-input>\n            </ion-item>\n            <div *ngIf="rename_filename.errors && rename_filename.touched" class="error-message">\n                目的檔名不能為空白\n            </div>\n\n          </ion-col>\n        </ion-row>\n      </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditFileBrowser==false"  ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\file-browser-copy-edit-modal\file-browser-copy-edit-modal.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["m" /* NavParams */],
@@ -71,7 +71,7 @@ var FileBrowserCopyEditModalPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 498:
+/***/ 499:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79,7 +79,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FileBrowserCopyEditModalPageModule", function() { return FileBrowserCopyEditModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__file_browser_copy_edit_modal__ = __webpack_require__(1349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__file_browser_copy_edit_modal__ = __webpack_require__(1350);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

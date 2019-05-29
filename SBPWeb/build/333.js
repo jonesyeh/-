@@ -1,6 +1,6 @@
 webpackJsonp([333],{
 
-/***/ 1696:
+/***/ 1522:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53,7 +53,7 @@ var IonicProgramDetailAddEditModalPage = /** @class */ (function () {
     };
     IonicProgramDetailAddEditModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: "page-ionic-program-detail-add-edit-modal",template:/*ion-inline-start:"F:\ionic4\prod\src\pages\ionic-program-detail-add-edit-modal\ionic-program-detail-add-edit-modal.html"*/'<ion-header>\n\n    <ion-navbar>\n\n      <ion-title>{{title}}</ion-title>\n    </ion-navbar>\n  </ion-header>\n\n  <ion-content  padding>\n      <form #Form="ngForm">\n\n          <ion-row>\n            <ion-col>\n              <ion-item>\n                <ion-label stacked >功能名稱</ion-label>\n                <ion-input type="text" [disabled]="CanEditPermission==false" [disabled]="mode==\'PUT\'" name="page_name" #page_name="ngModel" [(ngModel)]="item.page_name"\n                  required></ion-input>\n              </ion-item>\n              <div *ngIf="page_name.errors?.required && page_name.touched" class="error-message">\n                  功能名稱不能為空白\n              </div>\n            </ion-col>\n          </ion-row>\n\n          <ion-row>\n            <ion-col>\n              <ion-item>\n                  <ion-label stacked >功能說明</ion-label>\n                <ion-input type="text" [disabled]="CanEditPermission==false" name="page_desc" #page_desc="ngModel" [(ngModel)]="item.page_desc"\n                  required></ion-input>\n              </ion-item>\n              <div *ngIf="page_desc.errors?.required && page_desc.touched" class="error-message">\n                  功能說明不能為空白\n              </div>\n            </ion-col>\n          </ion-row>\n        </form>\n\n  </ion-content>\n  <ion-footer>\n    <ion-toolbar>\n      <ion-row>\n        <ion-col>\n          <div [ngClass]="[\'command\']">\n            <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n              <ion-icon name="backspace"></ion-icon>\n            </button>\n            <button small [disabled]="CanEditPermission==false" title="確認" ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n              <ion-icon name="checkmark-circle"></ion-icon>\n            </button>\n          </div>\n        </ion-col>\n      </ion-row>\n    </ion-toolbar>\n  </ion-footer>\n'/*ion-inline-end:"F:\ionic4\prod\src\pages\ionic-program-detail-add-edit-modal\ionic-program-detail-add-edit-modal.html"*/
+            selector: "page-ionic-program-detail-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\ionic-program-detail-add-edit-modal\ionic-program-detail-add-edit-modal.html"*/'<ion-header>\n\n    <ion-navbar>\n\n      <ion-title>{{title}}</ion-title>\n    </ion-navbar>\n  </ion-header>\n\n  <ion-content  padding>\n      <form #Form="ngForm">\n\n          <ion-row>\n            <ion-col>\n              <ion-item>\n                <ion-label stacked >功能名稱</ion-label>\n                <ion-input type="text" [disabled]="CanEditPermission==false" [disabled]="mode==\'PUT\'" name="page_name" #page_name="ngModel" [(ngModel)]="item.page_name"\n                  required></ion-input>\n              </ion-item>\n              <div *ngIf="page_name.errors?.required && page_name.touched" class="error-message">\n                  功能名稱不能為空白\n              </div>\n            </ion-col>\n          </ion-row>\n\n          <ion-row>\n            <ion-col>\n              <ion-item>\n                  <ion-label stacked >功能說明</ion-label>\n                <ion-input type="text" [disabled]="CanEditPermission==false" name="page_desc" #page_desc="ngModel" [(ngModel)]="item.page_desc"\n                  required></ion-input>\n              </ion-item>\n              <div *ngIf="page_desc.errors?.required && page_desc.touched" class="error-message">\n                  功能說明不能為空白\n              </div>\n            </ion-col>\n          </ion-row>\n        </form>\n\n  </ion-content>\n  <ion-footer>\n    <ion-toolbar>\n      <ion-row>\n        <ion-col>\n          <div [ngClass]="[\'command\']">\n            <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n              <ion-icon name="backspace"></ion-icon>\n            </button>\n            <button small [disabled]="CanEditPermission==false" title="確認" ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n              <ion-icon name="checkmark-circle"></ion-icon>\n            </button>\n          </div>\n        </ion-col>\n      </ion-row>\n    </ion-toolbar>\n  </ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\ionic-program-detail-add-edit-modal\ionic-program-detail-add-edit-modal.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
@@ -66,7 +66,7 @@ var IonicProgramDetailAddEditModalPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 770:
+/***/ 635:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74,7 +74,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IonicProgramDetailAddEditModalPageModule", function() { return IonicProgramDetailAddEditModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_program_detail_add_edit_modal__ = __webpack_require__(1696);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_program_detail_add_edit_modal__ = __webpack_require__(1522);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

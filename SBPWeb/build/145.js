@@ -8,7 +8,7 @@ webpackJsonp([145],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_EmailSendLogListResponse__ = __webpack_require__(1330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_EmailSendLogListResponse__ = __webpack_require__(1328);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -65,7 +65,7 @@ var EmailSendLogServicesProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1329:
+/***/ 1327:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -235,7 +235,7 @@ var EmailSendLogPage = /** @class */ (function () {
     };
     EmailSendLogPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: "page-email-send-log",template:/*ion-inline-start:"F:\ionic4\prod\src\pages\email-send-log\email-send-log.html"*/'<ion-header>\n  <headerComponent [title]="title" [permission_id]="\'CanBatch\'" [show_table_select]=true></headerComponent>\n</ion-header>\n\n<ion-content (window:resize)="onResize($event)">\n  <ion-row>\n    <ion-col>\n\n      <ion-searchbar [ngClass]="[\'search\']" (keyup.enter)="LoadData(true)" placeholder="搜尋關鍵字(附件轉檔群組包含)" [(ngModel)]="keyword">\n      </ion-searchbar>\n    </ion-col>\n  </ion-row>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-12 col-sm-2 col-md-3>\n      </ion-col>\n      <ion-col col-12 col-sm-8 col-md-6>\n\n        <ion-grid [ngClass]="[\'subject\']">\n          <ion-row>\n            <ion-col>\n\n              <b>{{email.exec_group}}</b>\n            </ion-col>\n          </ion-row>\n          <ion-row>\n            <ion-col>\n\n              <b>{{email.exec_status}}</b>\n            </ion-col>\n          </ion-row>\n          <ion-row>\n            <ion-col>\n\n              <b>{{email.email_full_desc}}</b>\n            </ion-col>\n          </ion-row>\n\n        </ion-grid>\n      </ion-col>\n      <ion-col col-12 col-sm-2 col-md-3>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ngx-datatable NgxResizeWatcher class="bootstrap" *ngIf="totalRows>0 && conf.mobile_mode==false" [selected]="selected" [selectionType]="\'single\'"\n    (select)=\'onRowSelect($event)\' [rows]="data_list" [columnMode]="\'flex\'" [headerHeight]="40" [rowHeight]="\'auto\'" [footerHeight]="40"\n    [reorderable]=false [limit]="limit" [count]="totalRows" [offset]="offset" (page)=\'setPage($event)\'>\n\n    <ngx-datatable-column prop="email_log_seq" name="寄送紀錄序號" [flexGrow]="1" [frozenLeft]="true">\n    </ngx-datatable-column>\n    <ngx-datatable-column prop="send_status" name="寄發狀態" [flexGrow]="2" *ngIf="innerWidth>=1024">\n      <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>\n        {{row[\'send_status_key\']}}-{{value}}\n      </ng-template>\n    </ngx-datatable-column>\n    <ngx-datatable-column prop="creator" name="建立者" [flexGrow]="1" *ngIf="innerWidth>=1024">\n    </ngx-datatable-column>\n    <ngx-datatable-column prop="modifier" name="更新者" [flexGrow]="1">\n    </ngx-datatable-column>\n\n\n\n    <ngx-datatable-column prop="create_time" name="開始時間" [flexGrow]="2" *ngIf="innerWidth>=1024">\n      <ng-template let-value="value" ngx-datatable-cell-template>\n        <div *ngIf="platform.is(\'ios\')==true">\n          {{value | date:\'y/MM/dd HH:mm:ss \'}}\n        </div>\n        <div *ngIf="platform.is(\'ios\')!=true">\n          {{value | date:\'y/MM/dd HH:mm:ss\'}}\n        </div>\n      </ng-template>\n\n    </ngx-datatable-column>\n    <ngx-datatable-column prop="last_update_time" name="更新時間" [flexGrow]="2">\n      <ng-template let-value="value" ngx-datatable-cell-template>\n        <div *ngIf="platform.is(\'ios\')==true">\n          {{value | date:\'y/MM/dd HH:mm:ss \'}}\n        </div>\n        <div *ngIf="platform.is(\'ios\')!=true">\n          {{value | date:\'y/MM/dd HH:mm:ss\'}}\n        </div>\n      </ng-template>\n\n    </ngx-datatable-column>\n\n  </ngx-datatable>\n  <div *ngIf="totalRows>0 && conf.mobile_mode==true">\n    <ion-row>\n\n      <ion-col col-lg-4 col-md-6 col-sm-6 col-12 *ngFor="let item of data_list">\n\n        <ion-grid [ngClass]="\'bordered\'">\n\n\n\n          <ion-row>\n            <ion-col>\n              <div title="寄送紀錄序號">{{item.email_log_seq}}</div>\n            </ion-col>\n\n          </ion-row>\n          <ion-row>\n            <ion-col>\n              <div title="執行狀態">{{item.send_status}}</div>\n            </ion-col>\n            <ion-col>\n              <div title="開始時間" text-right>\n                {{item.create_time | date:\'short\'}}\n              </div>\n            </ion-col>\n          </ion-row>\n\n        </ion-grid>\n      </ion-col>\n\n    </ion-row>\n  </div>\n  <ion-infinite-scroll *ngIf="pageNumber < totalPages && conf.mobile_mode==true" (ionInfinite)="$event.waitFor(doInfinite())">\n    <ion-infinite-scroll-content loadingSpinner="bubbles">\n    </ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="重新整理" ion-button color="dark" icon-left (click)="LoadData(true)">\n            <ion-checkbox name="order_type" title="遞增/遞減" color="dark" [(ngModel)]="order_type" (ionChange)="LoadData(true)"></ion-checkbox>\n            <ion-icon name="refresh"></ion-icon>\n          </button>\n\n          <button small title="取消" *ngIf="show_select==true" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n\n        </div>\n        <StatusComponent [pageNumber]="pageNumber" [totalPages]="totalPages" [totalRows]="totalRows"></StatusComponent>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"F:\ionic4\prod\src\pages\email-send-log\email-send-log.html"*/
+            selector: "page-email-send-log",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\email-send-log\email-send-log.html"*/'<ion-header>\n  <headerComponent [title]="title" [permission_id]="\'CanBatch\'" [show_table_select]=true></headerComponent>\n</ion-header>\n\n<ion-content (window:resize)="onResize($event)">\n  <ion-row>\n    <ion-col>\n\n      <ion-searchbar [ngClass]="[\'search\']" (keyup.enter)="LoadData(true)" placeholder="搜尋關鍵字(附件轉檔群組包含)" [(ngModel)]="keyword">\n      </ion-searchbar>\n    </ion-col>\n  </ion-row>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-12 col-sm-2 col-md-3>\n      </ion-col>\n      <ion-col col-12 col-sm-8 col-md-6>\n\n        <ion-grid [ngClass]="[\'subject\']">\n          <ion-row>\n            <ion-col>\n\n              <b>{{email.exec_group}}</b>\n            </ion-col>\n          </ion-row>\n          <ion-row>\n            <ion-col>\n\n              <b>{{email.exec_status}}</b>\n            </ion-col>\n          </ion-row>\n          <ion-row>\n            <ion-col>\n\n              <b>{{email.email_full_desc}}</b>\n            </ion-col>\n          </ion-row>\n\n        </ion-grid>\n      </ion-col>\n      <ion-col col-12 col-sm-2 col-md-3>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ngx-datatable NgxResizeWatcher class="bootstrap" *ngIf="totalRows>0 && conf.mobile_mode==false" [selected]="selected" [selectionType]="\'single\'"\n    (select)=\'onRowSelect($event)\' [rows]="data_list" [columnMode]="\'flex\'" [headerHeight]="40" [rowHeight]="\'auto\'" [footerHeight]="40"\n    [reorderable]=false [limit]="limit" [count]="totalRows" [offset]="offset" (page)=\'setPage($event)\'>\n\n    <ngx-datatable-column prop="email_log_seq" name="寄送紀錄序號" [flexGrow]="1" [frozenLeft]="true">\n    </ngx-datatable-column>\n    <ngx-datatable-column prop="send_status" name="寄發狀態" [flexGrow]="2" *ngIf="innerWidth>=1024">\n      <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>\n        {{row[\'send_status_key\']}}-{{value}}\n      </ng-template>\n    </ngx-datatable-column>\n    <ngx-datatable-column prop="creator" name="建立者" [flexGrow]="1" *ngIf="innerWidth>=1024">\n    </ngx-datatable-column>\n    <ngx-datatable-column prop="modifier" name="更新者" [flexGrow]="1">\n    </ngx-datatable-column>\n\n\n\n    <ngx-datatable-column prop="create_time" name="開始時間" [flexGrow]="2" *ngIf="innerWidth>=1024">\n      <ng-template let-value="value" ngx-datatable-cell-template>\n        <div *ngIf="platform.is(\'ios\')==true">\n          {{value | date:\'y/MM/dd HH:mm:ss \'}}\n        </div>\n        <div *ngIf="platform.is(\'ios\')!=true">\n          {{value | date:\'y/MM/dd HH:mm:ss\'}}\n        </div>\n      </ng-template>\n\n    </ngx-datatable-column>\n    <ngx-datatable-column prop="last_update_time" name="更新時間" [flexGrow]="2">\n      <ng-template let-value="value" ngx-datatable-cell-template>\n        <div *ngIf="platform.is(\'ios\')==true">\n          {{value | date:\'y/MM/dd HH:mm:ss \'}}\n        </div>\n        <div *ngIf="platform.is(\'ios\')!=true">\n          {{value | date:\'y/MM/dd HH:mm:ss\'}}\n        </div>\n      </ng-template>\n\n    </ngx-datatable-column>\n\n  </ngx-datatable>\n  <div *ngIf="totalRows>0 && conf.mobile_mode==true">\n    <ion-row>\n\n      <ion-col col-lg-4 col-md-6 col-sm-6 col-12 *ngFor="let item of data_list">\n\n        <ion-grid [ngClass]="\'bordered\'">\n\n\n\n          <ion-row>\n            <ion-col>\n              <div title="寄送紀錄序號">{{item.email_log_seq}}</div>\n            </ion-col>\n\n          </ion-row>\n          <ion-row>\n            <ion-col>\n              <div title="執行狀態">{{item.send_status}}</div>\n            </ion-col>\n            <ion-col>\n              <div title="開始時間" text-right>\n                {{item.create_time | date:\'short\'}}\n              </div>\n            </ion-col>\n          </ion-row>\n\n        </ion-grid>\n      </ion-col>\n\n    </ion-row>\n  </div>\n  <ion-infinite-scroll *ngIf="pageNumber < totalPages && conf.mobile_mode==true" (ionInfinite)="$event.waitFor(doInfinite())">\n    <ion-infinite-scroll-content loadingSpinner="bubbles">\n    </ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="重新整理" ion-button color="dark" icon-left (click)="LoadData(true)">\n            <ion-checkbox name="order_type" title="遞增/遞減" color="dark" [(ngModel)]="order_type" (ionChange)="LoadData(true)"></ion-checkbox>\n            <ion-icon name="refresh"></ion-icon>\n          </button>\n\n          <button small title="取消" *ngIf="show_select==true" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n\n        </div>\n        <StatusComponent [pageNumber]="pageNumber" [totalPages]="totalPages" [totalRows]="totalRows"></StatusComponent>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\email-send-log\email-send-log.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["m" /* NavParams */],
@@ -257,12 +257,12 @@ var EmailSendLogPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1330:
+/***/ 1328:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmailSendLogListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_EmailSendLogViewModel__ = __webpack_require__(1331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_EmailSendLogViewModel__ = __webpack_require__(1329);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -314,7 +314,7 @@ var EmailSendLogListResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 1331:
+/***/ 1329:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -329,7 +329,7 @@ var EmailSendLogViewModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 488:
+/***/ 486:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -337,7 +337,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmailSendLogPageModule", function() { return EmailSendLogPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__email_send_log__ = __webpack_require__(1329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__email_send_log__ = __webpack_require__(1327);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(797);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_email_send_log_services_email_send_log_services__ = __webpack_require__(1199);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10145,7 +10145,7 @@ var HeaderComponent = /** @class */ (function () {
     HeaderComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: "headerComponent",
-            outputs: ['onMobileModeClick'],template:/*ion-inline-start:"F:\ionic4\prod\src\components\header\header.html"*/'\n<ion-navbar (window:resize)="onResize($event)">\n  <ion-title>\n      {{title}}\n  </ion-title>\n\n<button *ngIf="is_modal==false" ion-button menuToggle>\n  <ion-icon name="menu"></ion-icon>\n</button>\n\n\n  <ion-buttons  *ngIf="innerWidth>tableWidth && show_table_select==true" end>\n\n    <button title="並排" ion-button (click)="mobile_click(true)">\n      <ion-icon name="apps"></ion-icon>\n      </button>\n    <button title="表格" ion-button (click)="mobile_click(false)">\n      <ion-icon name="card"></ion-icon>\n      </button>\n  </ion-buttons>\n\n<ion-buttons *ngIf="is_modal==false"  end>\n\n  <button *ngIf="innerWidth>500" style="text-transform: none;" ion-button>\n  {{api_name}}-{{userName}}\n  </button>\n  <button title="登出" ion-button (click)="logout()">\n    <ion-icon name="log-out"></ion-icon>\n    </button>\n</ion-buttons>\n\n</ion-navbar>\n\n\n\n'/*ion-inline-end:"F:\ionic4\prod\src\components\header\header.html"*/,
+            outputs: ['onMobileModeClick'],template:/*ion-inline-start:"C:\jones\ionic\prod\src\components\header\header.html"*/'\n<ion-navbar (window:resize)="onResize($event)">\n  <ion-title>\n      {{title}}\n  </ion-title>\n\n<button *ngIf="is_modal==false" ion-button menuToggle>\n  <ion-icon name="menu"></ion-icon>\n</button>\n\n\n  <ion-buttons  *ngIf="innerWidth>tableWidth && show_table_select==true" end>\n\n    <button title="並排" ion-button (click)="mobile_click(true)">\n      <ion-icon name="apps"></ion-icon>\n      </button>\n    <button title="表格" ion-button (click)="mobile_click(false)">\n      <ion-icon name="card"></ion-icon>\n      </button>\n  </ion-buttons>\n\n<ion-buttons *ngIf="is_modal==false"  end>\n\n  <button *ngIf="innerWidth>500" style="text-transform: none;" ion-button>\n  {{api_name}}-{{userName}}\n  </button>\n  <button title="登出" ion-button (click)="logout()">\n    <ion-icon name="log-out"></ion-icon>\n    </button>\n</ion-buttons>\n\n</ion-navbar>\n\n\n\n'/*ion-inline-end:"C:\jones\ionic\prod\src\components\header\header.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2__providers_auth_services_auth_services__["a" /* AuthServicesProvider */],
@@ -10237,7 +10237,7 @@ var MenuComponent = /** @class */ (function () {
     ], MenuComponent.prototype, "menu_no", void 0);
     MenuComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
-            selector: "menuComponent",template:/*ion-inline-start:"F:\ionic4\prod\src\components\menu\menu.html"*/'<div *ngIf="menu_list" [ngClass]="[\'menu_bordered\']">\n\n  <ion-list  no-lines>\n    <button small ion-item *ngFor="let item of menu_list[0].ProgramPageMenuViewModel" (click)="openPage(item)">\n      <ion-icon name="planet"  color="danger" item-start ></ion-icon>\n     <div [ngClass]="[\'menu_text\']">  {{item.ProgramPageViewModel.page_desc}} </div>\n    </button>\n  </ion-list>\n</div>\n'/*ion-inline-end:"F:\ionic4\prod\src\components\menu\menu.html"*/
+            selector: "menuComponent",template:/*ion-inline-start:"C:\jones\ionic\prod\src\components\menu\menu.html"*/'<div *ngIf="menu_list" [ngClass]="[\'menu_bordered\']">\n\n  <ion-list  no-lines>\n    <button small ion-item *ngFor="let item of menu_list[0].ProgramPageMenuViewModel" (click)="openPage(item)">\n      <ion-icon name="planet"  color="danger" item-start ></ion-icon>\n     <div [ngClass]="[\'menu_text\']">  {{item.ProgramPageViewModel.page_desc}} </div>\n    </button>\n  </ion-list>\n</div>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\components\menu\menu.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* MenuController */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */],
@@ -10282,7 +10282,7 @@ var CopyRightComponent = /** @class */ (function () {
     }
     CopyRightComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'CopyRightComponent',template:/*ion-inline-start:"F:\ionic4\prod\src\components\copy-right\copy-right.html"*/'<div style="text-align:center">版權所有...2018/1/3</div>\n'/*ion-inline-end:"F:\ionic4\prod\src\components\copy-right\copy-right.html"*/
+            selector: 'CopyRightComponent',template:/*ion-inline-start:"C:\jones\ionic\prod\src\components\copy-right\copy-right.html"*/'<div style="text-align:center">版權所有...2018/1/3</div>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\components\copy-right\copy-right.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], CopyRightComponent);
@@ -10372,7 +10372,7 @@ var StatusComponent = /** @class */ (function () {
     ], StatusComponent.prototype, "totalRows", void 0);
     StatusComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'StatusComponent',template:/*ion-inline-start:"F:\ionic4\prod\src\components\status\status.html"*/'<!-- Generated template for the StatusComponent component -->\n<div [ngClass]="[\'status\']">{{totalRows}}筆(第{{pageNumber}}頁/共{{totalPages}}頁)</div>\n'/*ion-inline-end:"F:\ionic4\prod\src\components\status\status.html"*/
+            selector: 'StatusComponent',template:/*ion-inline-start:"C:\jones\ionic\prod\src\components\status\status.html"*/'<!-- Generated template for the StatusComponent component -->\n<div [ngClass]="[\'status\']">{{totalRows}}筆(第{{pageNumber}}頁/共{{totalPages}}頁)</div>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\components\status\status.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], StatusComponent);

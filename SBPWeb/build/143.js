@@ -1,13 +1,13 @@
 webpackJsonp([143],{
 
-/***/ 1201:
+/***/ 1202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ErrDataSrcServicesProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_Response_ErrDataSrcResponse__ = __webpack_require__(1341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_Response_ErrDataSrcResponse__ = __webpack_require__(1343);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_String__ = __webpack_require__(3);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -61,7 +61,7 @@ var ErrDataSrcServicesProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1340:
+/***/ 1342:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70,7 +70,7 @@ var ErrDataSrcServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_global_global__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_services_auth_services__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_err_data_src_services_err_data_src_services__ = __webpack_require__(1201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_err_data_src_services_err_data_src_services__ = __webpack_require__(1202);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -151,7 +151,7 @@ var ErrDataSrcPage = /** @class */ (function () {
     };
     ErrDataSrcPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: "page-ErrDataSrc",template:/*ion-inline-start:"F:\ionic4\prod\src\pages\err-data-src\err-data-src.html"*/'<ion-header>\n    <headerComponent [title]="\'異常資料明細\'" [permission_id]="\'CanViewLog\'"></headerComponent>\n  </ion-header>\n\n\n  <ion-content padding>\n      <ion-grid>\n          <ion-row>\n            <ion-col col-12 col-sm-2 col-md-3>\n            </ion-col>\n            <ion-col col-12 col-sm-8 col-md-6>\n\n              <ion-grid [ngClass]="[\'subject\']">\n                <ion-row>\n                  <ion-col>\n                    <div [ngClass]="[\'label40\']">\n                     列號\n                    </div>\n                    <b>{{title}}</b>\n                  </ion-col>\n                </ion-row>\n              </ion-grid>\n            </ion-col>\n            <ion-col col-12 col-sm-2 col-md-3>\n            </ion-col>\n          </ion-row>\n        </ion-grid>\n    <ion-grid *ngIf="data!=null">\n      <ion-row>\n        <ion-col col-12 col-sm-12 col-md-12>\n        </ion-col>\n        <ion-col col-12 col-sm-12 col-md-12>\n\n          <ion-grid [ngClass]="[\'bordered\']">\n              <ion-row>\n\n                  <ion-col>\n\n                   <b>來源檔資料內容</b>\n                  </ion-col>\n                </ion-row>\n            <ion-row>\n\n              <ion-col>\n                <ion-textarea autosize [(ngModel)]="data.data" >\n\n                </ion-textarea>\n                <!-- {{data.data}} -->\n              </ion-col>\n            </ion-row>\n            <ion-row>\n\n                <ion-col>\n\n                 <b>來源檔資料內容說明</b>\n                </ion-col>\n              </ion-row>\n            <ion-row>\n\n                <ion-col>\n                  <ion-textarea autosize  [(ngModel)]="data.data_desc" >\n\n                  </ion-textarea>\n                  <!-- {{data.data_desc}} -->\n                </ion-col>\n              </ion-row>\n\n          </ion-grid>\n        </ion-col>\n        <ion-col col-12 col-sm-12 col-md-12>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </ion-content>\n'/*ion-inline-end:"F:\ionic4\prod\src\pages\err-data-src\err-data-src.html"*/
+            selector: "page-ErrDataSrc",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\err-data-src\err-data-src.html"*/'<ion-header>\n    <headerComponent [title]="\'異常資料明細\'" [permission_id]="\'CanViewLog\'"></headerComponent>\n  </ion-header>\n\n\n  <ion-content padding>\n      <ion-grid>\n          <ion-row>\n            <ion-col col-12 col-sm-2 col-md-3>\n            </ion-col>\n            <ion-col col-12 col-sm-8 col-md-6>\n\n              <ion-grid [ngClass]="[\'subject\']">\n                <ion-row>\n                  <ion-col>\n                    <div [ngClass]="[\'label40\']">\n                     列號\n                    </div>\n                    <b>{{title}}</b>\n                  </ion-col>\n                </ion-row>\n              </ion-grid>\n            </ion-col>\n            <ion-col col-12 col-sm-2 col-md-3>\n            </ion-col>\n          </ion-row>\n        </ion-grid>\n    <ion-grid *ngIf="data!=null">\n      <ion-row>\n        <ion-col col-12 col-sm-12 col-md-12>\n        </ion-col>\n        <ion-col col-12 col-sm-12 col-md-12>\n\n          <ion-grid [ngClass]="[\'bordered\']">\n              <ion-row>\n\n                  <ion-col>\n\n                   <b>來源檔資料內容</b>\n                  </ion-col>\n                </ion-row>\n            <ion-row>\n\n              <ion-col>\n                <ion-textarea autosize [(ngModel)]="data.data" >\n\n                </ion-textarea>\n                <!-- {{data.data}} -->\n              </ion-col>\n            </ion-row>\n            <ion-row>\n\n                <ion-col>\n\n                 <b>來源檔資料內容說明</b>\n                </ion-col>\n              </ion-row>\n            <ion-row>\n\n                <ion-col>\n                  <ion-textarea autosize  [(ngModel)]="data.data_desc" >\n\n                  </ion-textarea>\n                  <!-- {{data.data_desc}} -->\n                </ion-col>\n              </ion-row>\n\n          </ion-grid>\n        </ion-col>\n        <ion-col col-12 col-sm-12 col-md-12>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </ion-content>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\err-data-src\err-data-src.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
@@ -168,13 +168,13 @@ var ErrDataSrcPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1341:
+/***/ 1343:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ErrDataSrcResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_ErrDataSrcViewModel__ = __webpack_require__(1342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_ErrDataSrcViewModel__ = __webpack_require__(1344);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -221,7 +221,7 @@ var ErrDataSrcResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 1342:
+/***/ 1344:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -244,9 +244,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ErrDataSrcPageModule", function() { return ErrDataSrcPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__err_data_src__ = __webpack_require__(1340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__err_data_src__ = __webpack_require__(1342);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(797);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_err_data_src_services_err_data_src_services__ = __webpack_require__(1201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_err_data_src_services_err_data_src_services__ = __webpack_require__(1202);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -10052,7 +10052,7 @@ var HeaderComponent = /** @class */ (function () {
     HeaderComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: "headerComponent",
-            outputs: ['onMobileModeClick'],template:/*ion-inline-start:"F:\ionic4\prod\src\components\header\header.html"*/'\n<ion-navbar (window:resize)="onResize($event)">\n  <ion-title>\n      {{title}}\n  </ion-title>\n\n<button *ngIf="is_modal==false" ion-button menuToggle>\n  <ion-icon name="menu"></ion-icon>\n</button>\n\n\n  <ion-buttons  *ngIf="innerWidth>tableWidth && show_table_select==true" end>\n\n    <button title="並排" ion-button (click)="mobile_click(true)">\n      <ion-icon name="apps"></ion-icon>\n      </button>\n    <button title="表格" ion-button (click)="mobile_click(false)">\n      <ion-icon name="card"></ion-icon>\n      </button>\n  </ion-buttons>\n\n<ion-buttons *ngIf="is_modal==false"  end>\n\n  <button *ngIf="innerWidth>500" style="text-transform: none;" ion-button>\n  {{api_name}}-{{userName}}\n  </button>\n  <button title="登出" ion-button (click)="logout()">\n    <ion-icon name="log-out"></ion-icon>\n    </button>\n</ion-buttons>\n\n</ion-navbar>\n\n\n\n'/*ion-inline-end:"F:\ionic4\prod\src\components\header\header.html"*/,
+            outputs: ['onMobileModeClick'],template:/*ion-inline-start:"C:\jones\ionic\prod\src\components\header\header.html"*/'\n<ion-navbar (window:resize)="onResize($event)">\n  <ion-title>\n      {{title}}\n  </ion-title>\n\n<button *ngIf="is_modal==false" ion-button menuToggle>\n  <ion-icon name="menu"></ion-icon>\n</button>\n\n\n  <ion-buttons  *ngIf="innerWidth>tableWidth && show_table_select==true" end>\n\n    <button title="並排" ion-button (click)="mobile_click(true)">\n      <ion-icon name="apps"></ion-icon>\n      </button>\n    <button title="表格" ion-button (click)="mobile_click(false)">\n      <ion-icon name="card"></ion-icon>\n      </button>\n  </ion-buttons>\n\n<ion-buttons *ngIf="is_modal==false"  end>\n\n  <button *ngIf="innerWidth>500" style="text-transform: none;" ion-button>\n  {{api_name}}-{{userName}}\n  </button>\n  <button title="登出" ion-button (click)="logout()">\n    <ion-icon name="log-out"></ion-icon>\n    </button>\n</ion-buttons>\n\n</ion-navbar>\n\n\n\n'/*ion-inline-end:"C:\jones\ionic\prod\src\components\header\header.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2__providers_auth_services_auth_services__["a" /* AuthServicesProvider */],
@@ -10144,7 +10144,7 @@ var MenuComponent = /** @class */ (function () {
     ], MenuComponent.prototype, "menu_no", void 0);
     MenuComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
-            selector: "menuComponent",template:/*ion-inline-start:"F:\ionic4\prod\src\components\menu\menu.html"*/'<div *ngIf="menu_list" [ngClass]="[\'menu_bordered\']">\n\n  <ion-list  no-lines>\n    <button small ion-item *ngFor="let item of menu_list[0].ProgramPageMenuViewModel" (click)="openPage(item)">\n      <ion-icon name="planet"  color="danger" item-start ></ion-icon>\n     <div [ngClass]="[\'menu_text\']">  {{item.ProgramPageViewModel.page_desc}} </div>\n    </button>\n  </ion-list>\n</div>\n'/*ion-inline-end:"F:\ionic4\prod\src\components\menu\menu.html"*/
+            selector: "menuComponent",template:/*ion-inline-start:"C:\jones\ionic\prod\src\components\menu\menu.html"*/'<div *ngIf="menu_list" [ngClass]="[\'menu_bordered\']">\n\n  <ion-list  no-lines>\n    <button small ion-item *ngFor="let item of menu_list[0].ProgramPageMenuViewModel" (click)="openPage(item)">\n      <ion-icon name="planet"  color="danger" item-start ></ion-icon>\n     <div [ngClass]="[\'menu_text\']">  {{item.ProgramPageViewModel.page_desc}} </div>\n    </button>\n  </ion-list>\n</div>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\components\menu\menu.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* MenuController */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */],
@@ -10189,7 +10189,7 @@ var CopyRightComponent = /** @class */ (function () {
     }
     CopyRightComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'CopyRightComponent',template:/*ion-inline-start:"F:\ionic4\prod\src\components\copy-right\copy-right.html"*/'<div style="text-align:center">版權所有...2018/1/3</div>\n'/*ion-inline-end:"F:\ionic4\prod\src\components\copy-right\copy-right.html"*/
+            selector: 'CopyRightComponent',template:/*ion-inline-start:"C:\jones\ionic\prod\src\components\copy-right\copy-right.html"*/'<div style="text-align:center">版權所有...2018/1/3</div>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\components\copy-right\copy-right.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], CopyRightComponent);
@@ -10279,7 +10279,7 @@ var StatusComponent = /** @class */ (function () {
     ], StatusComponent.prototype, "totalRows", void 0);
     StatusComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'StatusComponent',template:/*ion-inline-start:"F:\ionic4\prod\src\components\status\status.html"*/'<!-- Generated template for the StatusComponent component -->\n<div [ngClass]="[\'status\']">{{totalRows}}筆(第{{pageNumber}}頁/共{{totalPages}}頁)</div>\n'/*ion-inline-end:"F:\ionic4\prod\src\components\status\status.html"*/
+            selector: 'StatusComponent',template:/*ion-inline-start:"C:\jones\ionic\prod\src\components\status\status.html"*/'<!-- Generated template for the StatusComponent component -->\n<div [ngClass]="[\'status\']">{{totalRows}}筆(第{{pageNumber}}頁/共{{totalPages}}頁)</div>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\components\status\status.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], StatusComponent);
