@@ -32,6 +32,6 @@ end catch
 If not Exists (select loginname from master.dbo.syslogins 
     where name ='sbp_user')
 Begin
-	Select @SqlStatement = 'CREATE LOGIN sbp_user with password= '''+@sbp_user_pwd +''';USE '+@db_name +';ALTER USER sbp_user WITH LOGIN=sbp_user'	
+	Select @SqlStatement = 'CREATE LOGIN sbp_user with password= '''+@sbp_user_pwd +''';ALTER SERVER ROLE [sysadmin] ADD MEMBER [sbp_user];USE '+@db_name +';ALTER USER sbp_user WITH LOGIN=sbp_user'	
     EXEC sp_executesql @SqlStatement	
 end 
