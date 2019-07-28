@@ -1,6 +1,6 @@
 USE [master]
 declare @db_name varchar(255)='SBP'
-DECLARE @backup_file nvarchar(255)=N'C:\init\SBP.bak'
+DECLARE @backup_file nvarchar(255)=N'C:\mssql\SBP.bak'
 declare @mdb_file nvarchar(255)=N'C:\mssql\SBP.mdf'
 declare @log_file nvarchar(255)=N'C:\mssql\SBP_log.ldf'
 declare @data_name nvarchar(255)='SBP_DB'
