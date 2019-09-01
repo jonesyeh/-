@@ -1,4 +1,5 @@
-
+--:setvar batch_role batch_role
+--:setvar batch_user sbp_user
 CREATE ASYMMETRIC KEY AsymKey2048 AUTHORIZATION [$(batch_user)]
       WITH ALGORITHM = RSA_2048 
       ENCRYPTION BY PASSWORD = '$(asym_pwd)'; 
