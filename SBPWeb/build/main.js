@@ -1,4 +1,4 @@
-webpackJsonp([349],[
+webpackJsonp([352],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -60,8 +60,7 @@ var String = /** @class */ (function () {
 //# sourceMappingURL=String.js.map
 
 /***/ }),
-/* 4 */,
-/* 5 */
+/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -98,20 +97,21 @@ var ListModelResponse = /** @class */ (function () {
 //# sourceMappingURL=ListModelResponse.js.map
 
 /***/ }),
+/* 5 */,
 /* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServicesProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(152);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_MyAppSharedSettings__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Model_Response_SingleModelResponse__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Model_Response_ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Model_Response_ListModelResponse__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_Observable__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_Observable__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -874,8 +874,8 @@ var UserViewModel = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_MyAppSharedSettings__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_UserMenuResponse__ = __webpack_require__(345);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_UserResponse__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_UserMenuResponse__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_UserResponse__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_services__ = __webpack_require__(6);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2083,6 +2083,20 @@ var LineMessageViewModel = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MaskColumnViewModel; });
+var MaskColumnViewModel = /** @class */ (function () {
+    function MaskColumnViewModel() {
+    }
+    return MaskColumnViewModel;
+}());
+
+//# sourceMappingURL=MaskColumnViewModel.js.map
+
+/***/ }),
+/* 143 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RolePermissionViewModel; });
 var RolePermissionViewModel = /** @class */ (function () {
     function RolePermissionViewModel() {
@@ -2093,7 +2107,7 @@ var RolePermissionViewModel = /** @class */ (function () {
 //# sourceMappingURL=RolePermissionViewModel.js.map
 
 /***/ }),
-/* 143 */
+/* 144 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2107,7 +2121,7 @@ var QuoteColumnViewModel = /** @class */ (function () {
 //# sourceMappingURL=QuoteColumnViewModel.js.map
 
 /***/ }),
-/* 144 */
+/* 145 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2121,7 +2135,7 @@ var SqlViewModel = /** @class */ (function () {
 //# sourceMappingURL=SqlViewModel.js.map
 
 /***/ }),
-/* 145 */
+/* 146 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2135,7 +2149,7 @@ var SchViewModel = /** @class */ (function () {
 //# sourceMappingURL=SchViewModel.js.map
 
 /***/ }),
-/* 146 */
+/* 147 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2149,9 +2163,9 @@ var ProgViewModel = /** @class */ (function () {
 //# sourceMappingURL=ProgViewModel.js.map
 
 /***/ }),
-/* 147 */,
 /* 148 */,
-/* 149 */
+/* 149 */,
+/* 150 */
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -2164,10 +2178,9 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 149;
+webpackEmptyAsyncContext.id = 150;
 
 /***/ }),
-/* 150 */,
 /* 151 */,
 /* 152 */,
 /* 153 */,
@@ -2210,820 +2223,821 @@ webpackEmptyAsyncContext.id = 149;
 /* 190 */,
 /* 191 */,
 /* 192 */,
-/* 193 */
+/* 193 */,
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/api-url-add-edit-modal/api-url-add-edit-modal.module": [
-		427,
-		348
+		430,
+		351
 	],
 	"../pages/api-url/api-url.module": [
-		426,
+		431,
 		112
 	],
 	"../pages/audit-logger-detail/audit-logger-detail.module": [
-		429,
-		231
+		432,
+		233
 	],
 	"../pages/audit-logger/audit-logger.module": [
-		428,
+		433,
 		146
 	],
 	"../pages/audit-table-add-edit-modal/audit-table-add-edit-modal.module": [
-		430,
-		316
+		434,
+		318
 	],
 	"../pages/audit-table-detail-add-edit-modal/audit-table-detail-add-edit-modal.module": [
-		440,
-		317
+		435,
+		319
 	],
 	"../pages/audit-table-detail/audit-table-detail.module": [
-		431,
+		436,
 		111
 	],
 	"../pages/audit-table/audit-table.module": [
-		432,
+		437,
 		110
 	],
 	"../pages/auth-management/auth-management.module": [
-		433,
-		230
+		438,
+		232
 	],
 	"../pages/batch-bus-type/batch-bus-type.module": [
-		435,
+		439,
 		23
 	],
 	"../pages/batch-exec-program-add-edit-modal/batch-exec-program-add-edit-modal.module": [
-		436,
-		308
+		440,
+		310
 	],
 	"../pages/batch-exec-program-select-modal/batch-exec-program-select-modal.module": [
-		434,
+		441,
 		5
 	],
 	"../pages/batch-exec-program/batch-exec-program.module": [
-		437,
+		453,
 		4
 	],
 	"../pages/batch-management/batch-management.module": [
-		438,
-		229
+		442,
+		231
 	],
 	"../pages/batch-program-add-edit-modal/batch-program-add-edit-modal.module": [
-		439,
-		347
+		454,
+		350
 	],
 	"../pages/batch-program-check-add-edit-modal/batch-program-check-add-edit-modal.module": [
-		449,
-		290
+		443,
+		292
 	],
 	"../pages/batch-program-check-pk-edit-modal/batch-program-check-pk-edit-modal.module": [
 		444,
-		291
+		293
 	],
 	"../pages/batch-program-check-pk/batch-program-check-pk.module": [
-		441,
+		445,
 		55
 	],
 	"../pages/batch-program-check-select-modal/batch-program-check-select-modal.module": [
-		442,
+		446,
 		10
 	],
 	"../pages/batch-program-check/batch-program-check.module": [
-		443,
+		447,
 		9
 	],
 	"../pages/batch-program-management/batch-program-management.module": [
-		448,
-		228
+		449,
+		230
 	],
 	"../pages/batch-program-select-modal/batch-program-select-modal.module": [
-		445,
+		448,
 		159
 	],
 	"../pages/batch-program/batch-program.module": [
-		447,
+		450,
 		158
 	],
 	"../pages/batch-variable/batch-variable.module": [
-		454,
+		451,
 		22
 	],
 	"../pages/change-password/change-password.module": [
-		446,
-		227
+		452,
+		229
 	],
 	"../pages/check-code-column-select-modal/check-code-column-select-modal.module": [
-		451,
-		226
+		455,
+		228
 	],
 	"../pages/check-type-select-modal/check-type-select-modal.module": [
-		466,
-		225
+		456,
+		227
 	],
 	"../pages/cmd-log/cmd-log.module": [
-		450,
-		224
+		457,
+		226
 	],
 	"../pages/code-add-edit-modal/code-add-edit-modal.module": [
-		452,
-		279
+		458,
+		281
 	],
 	"../pages/code-check-add-edit-modal/code-check-add-edit-modal.module": [
 		459,
-		346
+		349
 	],
 	"../pages/code-check-type-detail-modal/code-check-type-detail-modal.module": [
-		453,
+		460,
 		157
 	],
 	"../pages/code-check-type-detail/code-check-type-detail.module": [
-		455,
+		461,
 		156
 	],
 	"../pages/code-check/code-check.module": [
-		457,
+		462,
 		155
 	],
 	"../pages/code-select-modal/code-select-modal.module": [
-		456,
+		463,
 		21
 	],
 	"../pages/code/code.module": [
-		458,
+		464,
 		20
 	],
 	"../pages/column-mapping-add-edit-modal/column-mapping-add-edit-modal.module": [
 		465,
-		315
+		317
 	],
 	"../pages/column-mapping-add-table-modal/column-mapping-add-table-modal.module": [
-		460,
-		314
+		466,
+		316
 	],
 	"../pages/column-mapping/column-mapping.module": [
-		461,
+		467,
 		43
 	],
 	"../pages/column-type-mapping-add-edit-modal/column-type-mapping-add-edit-modal.module": [
-		462,
-		313
+		468,
+		315
 	],
 	"../pages/column-type-mapping/column-type-mapping.module": [
-		464,
+		469,
 		109
 	],
 	"../pages/common-management/common-management.module": [
-		463,
-		223
+		470,
+		225
 	],
 	"../pages/config-col-index-loop-add-edit-modal/config-col-index-loop-add-edit-modal.module": [
-		467,
-		276
+		471,
+		278
 	],
 	"../pages/config-col-index-loop/config-col-index-loop.module": [
-		468,
+		487,
 		108
 	],
 	"../pages/conn-db-add-edit-modal/conn-db-add-edit-modal.module": [
-		469,
-		345
+		472,
+		348
 	],
 	"../pages/conn-db/conn-db.module": [
-		470,
+		473,
 		154
 	],
 	"../pages/conn-ftp-add-edit-modal/conn-ftp-add-edit-modal.module": [
-		471,
-		344
+		474,
+		347
 	],
 	"../pages/conn-ftp/conn-ftp.module": [
-		472,
+		476,
 		153
 	],
 	"../pages/conn-http-add-edit-modal/conn-http-add-edit-modal.module": [
-		478,
-		343
+		475,
+		346
 	],
 	"../pages/conn-http/conn-http.module": [
-		473,
+		477,
 		152
 	],
 	"../pages/conn-management/conn-management.module": [
-		477,
-		222
+		489,
+		224
 	],
 	"../pages/conn-sbp-add-edit-modal/conn-sbp-add-edit-modal.module": [
-		474,
-		342
+		478,
+		345
 	],
 	"../pages/conn-sbp/conn-sbp.module": [
-		476,
+		479,
 		151
 	],
 	"../pages/conn-select-modal/conn-select-modal.module": [
-		475,
+		480,
 		150
 	],
 	"../pages/conn-smtp-add-edit-modal/conn-smtp-add-edit-modal.module": [
-		480,
-		341
+		481,
+		344
 	],
 	"../pages/conn-smtp/conn-smtp.module": [
-		479,
+		482,
 		149
 	],
 	"../pages/conn-ssis/conn-ssis.module": [
-		481,
+		495,
 		148
 	],
 	"../pages/database-management/database-management.module": [
-		482,
-		221
+		483,
+		223
 	],
 	"../pages/del-table-add-edit-modal/del-table-add-edit-modal.module": [
-		483,
-		275
+		484,
+		277
 	],
 	"../pages/del-table/del-table.module": [
-		487,
+		485,
 		107
 	],
 	"../pages/directory-browser-add-edit-modal/directory-browser-add-edit-modal.module": [
-		484,
-		340
+		486,
+		343
 	],
 	"../pages/directory-browser-select-modal/directory-browser-select-modal.module": [
-		486,
+		488,
 		8
 	],
 	"../pages/directory-browser/directory-browser.module": [
-		485,
+		490,
 		7
 	],
 	"../pages/email-add-edit-modal/email-add-edit-modal.module": [
-		489,
-		309
-	],
-	"../pages/email-attach-add-edit-modal/email-attach-add-edit-modal.module": [
-		488,
+		491,
 		311
 	],
+	"../pages/email-attach-add-edit-modal/email-attach-add-edit-modal.module": [
+		492,
+		313
+	],
 	"../pages/email-attach/email-attach.module": [
-		491,
+		493,
 		106
 	],
 	"../pages/email-management/email-management.module": [
-		494,
-		220
+		496,
+		222
 	],
 	"../pages/email-send-log/email-send-log.module": [
-		492,
+		494,
 		145
 	],
 	"../pages/email-user-add-edit-modal/email-user-add-edit-modal.module": [
-		490,
-		310
+		497,
+		312
 	],
 	"../pages/email-user-select-model/email-user-select-model.module": [
-		493,
+		498,
 		16
 	],
 	"../pages/email-user/email-user.module": [
-		495,
+		499,
 		15
 	],
 	"../pages/email/email.module": [
-		497,
+		508,
 		105
 	],
 	"../pages/err-data-log-detail/err-data-log-detail.module": [
-		496,
-		219
+		500,
+		221
 	],
 	"../pages/err-data-log/err-data-log.module": [
-		498,
+		501,
 		144
 	],
 	"../pages/err-data-src/err-data-src.module": [
-		500,
+		502,
 		143
 	],
 	"../pages/err-msg-log-detail/err-msg-log-detail.module": [
-		499,
-		218
+		503,
+		220
 	],
 	"../pages/err-msg-log/err-msg-log.module": [
-		502,
+		504,
 		142
 	],
 	"../pages/export-sql/export-sql.module": [
-		503,
-		217
+		505,
+		219
 	],
 	"../pages/file-backup-management-add-edit-modal/file-backup-management-add-edit-modal.module": [
-		501,
-		339
+		506,
+		342
 	],
 	"../pages/file-backup-management/file-backup-management.module": [
-		504,
-		216
+		507,
+		218
 	],
 	"../pages/file-browser-copy-edit-modal/file-browser-copy-edit-modal.module": [
-		507,
-		338
+		510,
+		341
 	],
 	"../pages/file-browser-management/file-browser-management.module": [
-		508,
-		215
+		509,
+		217
 	],
 	"../pages/file-browser/file-browser.module": [
-		509,
+		511,
 		6
 	],
 	"../pages/file-cmd-add-edit-modal/file-cmd-add-edit-modal.module": [
-		505,
-		274
+		512,
+		276
 	],
 	"../pages/file-cmd/file-cmd.module": [
-		506,
+		513,
 		104
 	],
 	"../pages/file-code-add-edit-modal/file-code-add-edit-modal.module": [
-		510,
-		273
+		514,
+		275
 	],
 	"../pages/file-code/file-code.module": [
-		511,
+		515,
 		103
 	],
 	"../pages/file-copy-add-edit-modal/file-copy-add-edit-modal.module": [
-		512,
-		272
+		516,
+		274
 	],
 	"../pages/file-copy/file-copy.module": [
-		514,
+		517,
 		102
 	],
 	"../pages/file-date-filter-add-edit/file-date-filter-add-edit.module": [
-		513,
+		518,
 		141
 	],
 	"../pages/file-depend-add-edit-modal/file-depend-add-edit-modal.module": [
-		515,
-		307
+		519,
+		309
 	],
 	"../pages/file-depend/file-depend.module": [
-		517,
+		520,
 		101
 	],
 	"../pages/file-directory-add-edit-modal/file-directory-add-edit-modal.module": [
-		516,
-		337
+		523,
+		340
 	],
 	"../pages/file-directory/file-directory.module": [
-		518,
-		214
+		521,
+		216
 	],
 	"../pages/file-email-attach-add-edit-modal/file-email-attach-add-edit-modal.module": [
 		522,
-		271
+		273
 	],
 	"../pages/file-email-attach/file-email-attach.module": [
-		521,
+		524,
 		100
 	],
 	"../pages/file-exec-log-detail/file-exec-log-detail.module": [
-		520,
-		213
+		526,
+		215
 	],
 	"../pages/file-exec-log/file-exec-log.module": [
-		519,
+		525,
 		140
 	],
 	"../pages/file-export-add-edit-modal/file-export-add-edit-modal.module": [
-		523,
-		266
+		527,
+		268
 	],
 	"../pages/file-export-all/file-export-all.module": [
-		524,
+		528,
 		99
 	],
 	"../pages/file-export-blob-add-edit-modal/file-export-blob-add-edit-modal.module": [
-		525,
-		270
+		530,
+		272
 	],
 	"../pages/file-export-blob-table-add-edit-modal/file-export-blob-table-add-edit-modal.module": [
-		527,
-		269
+		529,
+		271
 	],
 	"../pages/file-export-blob-table/file-export-blob-table.module": [
-		526,
+		531,
 		97
 	],
 	"../pages/file-export-blob/file-export-blob.module": [
-		528,
+		532,
 		98
 	],
 	"../pages/file-export-hk-add-edit-modal/file-export-hk-add-edit-modal.module": [
-		529,
-		268
+		533,
+		270
 	],
 	"../pages/file-export-hk-table-add-edit-modal/file-export-hk-table-add-edit-modal.module": [
-		530,
-		267
+		534,
+		269
 	],
 	"../pages/file-export-hk-table/file-export-hk-table.module": [
-		542,
+		535,
 		95
 	],
 	"../pages/file-export-hk/file-export-hk.module": [
-		531,
+		536,
 		96
 	],
 	"../pages/file-export-management/file-export-management.module": [
-		532,
-		212
+		537,
+		214
 	],
 	"../pages/file-export-script-add-edit-modal/file-export-script-add-edit-modal.module": [
-		533,
-		265
+		538,
+		267
 	],
 	"../pages/file-export-script-table-add-edit-modal/file-export-script-table-add-edit-modal.module": [
-		534,
-		264
+		539,
+		266
 	],
 	"../pages/file-export-script-table/file-export-script-table.module": [
-		535,
+		540,
 		92
 	],
 	"../pages/file-export-script/file-export-script.module": [
-		536,
+		541,
 		93
 	],
 	"../pages/file-export-table-add-edit-modal/file-export-table-add-edit-modal.module": [
-		538,
-		263
+		542,
+		265
 	],
 	"../pages/file-export-table/file-export-table.module": [
-		537,
+		543,
 		91
 	],
 	"../pages/file-export-tsql-add-edit-modal/file-export-tsql-add-edit-modal.module": [
-		539,
-		262
+		544,
+		264
 	],
 	"../pages/file-export-tsql-table-add-edit-modal/file-export-tsql-table-add-edit-modal.module": [
-		540,
-		261
+		546,
+		263
 	],
 	"../pages/file-export-tsql-table/file-export-tsql-table.module": [
-		541,
+		545,
 		89
 	],
 	"../pages/file-export-tsql/file-export-tsql.module": [
-		544,
+		547,
 		90
 	],
 	"../pages/file-export/file-export.module": [
-		547,
+		549,
 		94
 	],
 	"../pages/file-exported-header-add-edit/file-exported-header-add-edit.module": [
-		543,
+		548,
 		139
 	],
 	"../pages/file-exported-sql-add-edit/file-exported-sql-add-edit.module": [
-		546,
+		564,
 		138
 	],
 	"../pages/file-filter-add-edit-modal/file-filter-add-edit-modal.module": [
-		555,
-		260
+		550,
+		262
 	],
 	"../pages/file-filter-item-add-edit-modal/file-filter-item-add-edit-modal.module": [
-		545,
-		306
+		551,
+		308
 	],
 	"../pages/file-filter-item/file-filter-item.module": [
-		549,
+		552,
 		88
 	],
 	"../pages/file-filter/file-filter.module": [
-		548,
+		553,
 		87
 	],
 	"../pages/file-ftp-down-add-edit-modal/file-ftp-down-add-edit-modal.module": [
-		550,
-		233
+		554,
+		235
 	],
 	"../pages/file-ftp-down/file-ftp-down.module": [
-		551,
+		555,
 		41
 	],
 	"../pages/file-ftp-up-add-edit-modal/file-ftp-up-add-edit-modal.module": [
-		552,
-		232
+		556,
+		234
 	],
 	"../pages/file-ftp-up/file-ftp-up.module": [
-		554,
+		569,
 		40
 	],
 	"../pages/file-http-down-all/file-http-down-all.module": [
-		553,
+		557,
 		86
 	],
 	"../pages/file-http-down-file-add-edit-modal/file-http-down-file-add-edit-modal.module": [
-		557,
-		259
+		558,
+		261
 	],
 	"../pages/file-http-down-file/file-http-down-file.module": [
-		558,
+		560,
 		85
 	],
 	"../pages/file-http-down-management/file-http-down-management.module": [
-		556,
-		211
+		559,
+		213
 	],
 	"../pages/file-http-h2-c-add-edit-modal/file-http-h2-c-add-edit-modal.module": [
-		560,
-		258
+		561,
+		260
 	],
 	"../pages/file-http-h2-c/file-http-h2-c.module": [
-		559,
+		562,
 		84
 	],
 	"../pages/file-http-html-down-file-add-edit-modal/file-http-html-down-file-add-edit-modal.module": [
-		561,
-		256
+		563,
+		258
 	],
 	"../pages/file-http-html-down-file/file-http-html-down-file.module": [
-		562,
+		565,
 		82
 	],
 	"../pages/file-http-html2-csv-add-edit-modal/file-http-html2-csv-add-edit-modal.module": [
-		567,
-		257
+		566,
+		259
 	],
 	"../pages/file-http-html2-csv/file-http-html2-csv.module": [
-		563,
+		567,
 		83
 	],
 	"../pages/file-http-j2-c-add-edit-modal/file-http-j2-c-add-edit-modal.module": [
-		565,
-		255
+		568,
+		257
 	],
 	"../pages/file-http-j2-c/file-http-j2-c.module": [
-		564,
+		570,
 		81
 	],
 	"../pages/file-http-json2-csv-add-edit-modal/file-http-json2-csv-add-edit-modal.module": [
-		566,
-		254
+		572,
+		256
 	],
 	"../pages/file-http-json2-csv/file-http-json2-csv.module": [
-		568,
+		571,
 		80
 	],
 	"../pages/file-http-up-add-edit-modal/file-http-up-add-edit-modal.module": [
-		571,
-		253
+		573,
+		255
 	],
 	"../pages/file-http-up/file-http-up.module": [
-		569,
+		574,
 		79
 	],
 	"../pages/file-image-add-edit-modal/file-image-add-edit-modal.module": [
-		572,
-		252
+		575,
+		254
 	],
 	"../pages/file-image/file-image.module": [
-		582,
+		577,
 		78
 	],
 	"../pages/file-import-add-edit-modal/file-import-add-edit-modal.module": [
-		570,
-		251
+		579,
+		253
 	],
 	"../pages/file-import-after-add-edit-modal/file-import-after-add-edit-modal.module": [
-		573,
-		305
+		576,
+		307
 	],
 	"../pages/file-import-after/file-import-after.module": [
-		575,
+		578,
 		2
 	],
 	"../pages/file-import-before-add-edit-modal/file-import-before-add-edit-modal.module": [
-		590,
-		304
+		581,
+		306
 	],
 	"../pages/file-import-before-check-add-edit-modal/file-import-before-check-add-edit-modal.module": [
-		576,
-		234
+		582,
+		236
 	],
 	"../pages/file-import-before-sql-add-edit/file-import-before-sql-add-edit.module": [
-		574,
+		580,
 		137
 	],
 	"../pages/file-import-before/file-import-before.module": [
-		579,
+		584,
 		1
 	],
 	"../pages/file-import-data-expression-add-edit/file-import-data-expression-add-edit.module": [
-		577,
+		583,
 		136
 	],
 	"../pages/file-import-data-lookup-add-edit-modal/file-import-data-lookup-add-edit-modal.module": [
-		578,
-		303
+		587,
+		305
 	],
 	"../pages/file-import-data-lookup/file-import-data-lookup.module": [
-		580,
+		585,
 		77
 	],
 	"../pages/file-import-data-search-replace-add-edit-modal/file-import-data-search-replace-add-edit-modal.module": [
-		581,
-		302
+		590,
+		304
 	],
 	"../pages/file-import-data-search-replace/file-import-data-search-replace.module": [
-		584,
+		586,
 		76
 	],
 	"../pages/file-import-select-modal/file-import-select-modal.module": [
-		583,
+		591,
 		14
 	],
 	"../pages/file-import-table-add-edit-modal/file-import-table-add-edit-modal.module": [
-		585,
-		250
+		588,
+		252
 	],
 	"../pages/file-import-table/file-import-table.module": [
 		589,
 		75
 	],
 	"../pages/file-import/file-import.module": [
-		586,
+		592,
 		13
 	],
 	"../pages/file-in-management/file-in-management.module": [
-		597,
-		210
+		593,
+		212
 	],
 	"../pages/file-loop-add-edit-modal/file-loop-add-edit-modal.module": [
-		587,
-		249
+		606,
+		251
 	],
 	"../pages/file-loop/file-loop.module": [
-		588,
+		594,
 		74
 	],
 	"../pages/file-management-all/file-management-all.module": [
-		592,
+		595,
 		73
 	],
 	"../pages/file-management/file-management.module": [
-		591,
-		209
+		596,
+		211
 	],
 	"../pages/file-out-management/file-out-management.module": [
-		593,
-		208
+		597,
+		210
 	],
 	"../pages/file-path/file-path.module": [
-		594,
+		598,
 		19
 	],
 	"../pages/file-pdf2-image-add-edit-modal/file-pdf2-image-add-edit-modal.module": [
-		598,
-		248
+		599,
+		250
 	],
 	"../pages/file-pdf2-image/file-pdf2-image.module": [
-		599,
+		600,
 		72
 	],
 	"../pages/file-processed-exec-group-add-edit/file-processed-exec-group-add-edit.module": [
-		595,
+		602,
 		135
 	],
 	"../pages/file-processed-sql-add-edit/file-processed-sql-add-edit.module": [
-		596,
+		601,
 		134
 	],
 	"../pages/file-replace-data-add-edit-modal/file-replace-data-add-edit-modal.module": [
-		601,
-		247
+		603,
+		249
 	],
 	"../pages/file-replace-data-item-add-edit-modal/file-replace-data-item-add-edit-modal.module": [
-		600,
-		301
+		604,
+		303
 	],
 	"../pages/file-replace-data-item/file-replace-data-item.module": [
-		602,
+		605,
 		71
 	],
 	"../pages/file-replace-data/file-replace-data.module": [
-		603,
+		607,
 		70
 	],
 	"../pages/file-sql-add-edit-modal/file-sql-add-edit-modal.module": [
-		610,
-		246
+		609,
+		248
 	],
 	"../pages/file-sql/file-sql.module": [
-		604,
+		608,
 		69
 	],
 	"../pages/file-ssis-add-edit-modal/file-ssis-add-edit-modal.module": [
-		605,
-		235
+		610,
+		237
 	],
 	"../pages/file-ssis-conn-parm-add-edit-modal/file-ssis-conn-parm-add-edit-modal.module": [
-		606,
-		300
+		611,
+		302
 	],
 	"../pages/file-ssis-conn-parm/file-ssis-conn-parm.module": [
-		614,
+		612,
 		68
 	],
 	"../pages/file-ssis-parm-add-edit-modal/file-ssis-parm-add-edit-modal.module": [
-		608,
-		299
+		613,
+		301
 	],
 	"../pages/file-ssis-parm/file-ssis-parm.module": [
-		609,
+		614,
 		67
 	],
 	"../pages/file-ssis/file-ssis.module": [
-		607,
+		624,
 		39
 	],
 	"../pages/file-un-zip-add-edit-modal/file-un-zip-add-edit-modal.module": [
-		613,
-		245
+		615,
+		247
 	],
 	"../pages/file-un-zip/file-un-zip.module": [
-		612,
+		616,
 		66
 	],
 	"../pages/file-zip-list-add-edit-modal/file-zip-list-add-edit-modal.module": [
-		611,
-		244
+		617,
+		246
 	],
 	"../pages/file-zip-list/file-zip-list.module": [
-		615,
+		618,
 		65
 	],
 	"../pages/file-zip-management/file-zip-management.module": [
-		616,
-		207
+		619,
+		209
 	],
 	"../pages/file-zip-set-add-edit-modal/file-zip-set-add-edit-modal.module": [
 		620,
-		298
+		300
 	],
 	"../pages/file-zip-set/file-zip-set.module": [
-		617,
+		621,
 		64
 	],
 	"../pages/file-zip-src-add-edit-modal/file-zip-src-add-edit-modal.module": [
-		618,
-		243
+		623,
+		245
 	],
 	"../pages/file-zip-src/file-zip-src.module": [
-		619,
+		622,
 		63
 	],
 	"../pages/for-add-edit-modal/for-add-edit-modal.module": [
-		621,
-		242
+		626,
+		244
 	],
 	"../pages/for/for.module": [
-		623,
+		625,
 		62
 	],
 	"../pages/ford-add-edit-modal/ford-add-edit-modal.module": [
 		627,
-		241
+		243
 	],
 	"../pages/ford/ford.module": [
-		622,
+		635,
 		61
 	],
 	"../pages/fors-add-edit-modal/fors-add-edit-modal.module": [
-		624,
-		240
+		637,
+		242
 	],
 	"../pages/fors/fors.module": [
-		626,
+		628,
 		60
 	],
 	"../pages/ftp-directory-browser-add-edit-modal/ftp-directory-browser-add-edit-modal.module": [
-		625,
-		297
+		629,
+		299
 	],
 	"../pages/ftp-directory-browser-select-modal/ftp-directory-browser-select-modal.module": [
-		628,
+		636,
 		33
 	],
 	"../pages/ftp-directory-browser/ftp-directory-browser.module": [
@@ -3031,583 +3045,595 @@ var map = {
 		32
 	],
 	"../pages/ftp-file-browser-download/ftp-file-browser-download.module": [
-		632,
+		631,
 		163
 	],
 	"../pages/ftp-file-browser-edit-modal/ftp-file-browser-edit-modal.module": [
-		629,
-		296
+		632,
+		298
 	],
 	"../pages/ftp-file-browser-upload/ftp-file-browser-upload.module": [
-		631,
+		633,
 		160
 	],
 	"../pages/ftp-file-browser/ftp-file-browser.module": [
-		637,
+		634,
 		31
 	],
 	"../pages/glossary-add-edit-modal/glossary-add-edit-modal.module": [
-		633,
-		336
+		638,
+		339
 	],
 	"../pages/glossary-select-modal/glossary-select-modal.module": [
-		636,
+		639,
 		30
 	],
 	"../pages/glossary/glossary.module": [
-		634,
+		640,
 		29
 	],
 	"../pages/home/home.module": [
-		635,
-		206
+		641,
+		208
 	],
 	"../pages/insert-value-sql/insert-value-sql.module": [
-		640,
-		205
+		642,
+		207
 	],
 	"../pages/ionic-program-add-edit-modal/ionic-program-add-edit-modal.module": [
-		638,
-		335
+		643,
+		338
 	],
 	"../pages/ionic-program-detail-add-edit-modal/ionic-program-detail-add-edit-modal.module": [
-		645,
-		334
+		644,
+		337
 	],
 	"../pages/ionic-program-detail/ionic-program-detail.module": [
-		639,
-		204
+		645,
+		206
 	],
 	"../pages/ionic-program-permission-select-modal/ionic-program-permission-select-modal.module": [
-		641,
+		646,
 		126
 	],
 	"../pages/ionic-program-permission/ionic-program-permission.module": [
-		658,
+		647,
 		54
 	],
 	"../pages/ionic-program/ionic-program.module": [
-		644,
-		203
+		648,
+		205
 	],
 	"../pages/job-add-edit-modal/job-add-edit-modal.module": [
-		643,
-		333
+		649,
+		336
 	],
 	"../pages/job-by-sch-select-modal/job-by-sch-select-modal.module": [
-		642,
+		650,
 		59
 	],
 	"../pages/job-by-sch/job-by-sch.module": [
-		647,
-		202
+		651,
+		204
 	],
 	"../pages/job-detail/job-detail.module": [
-		646,
-		201
+		652,
+		203
 	],
 	"../pages/job-exec-log-detail/job-exec-log-detail.module": [
-		649,
-		200
+		653,
+		202
 	],
 	"../pages/job-exec-log/job-exec-log.module": [
-		650,
+		654,
 		133
 	],
 	"../pages/job-loop-add-edit-modal/job-loop-add-edit-modal.module": [
-		648,
-		239
+		655,
+		241
 	],
 	"../pages/job-loop-add-pwd-modal/job-loop-add-pwd-modal.module": [
-		652,
-		295
+		656,
+		297
 	],
 	"../pages/job-loop-detail/job-loop-detail.module": [
-		665,
-		199
+		657,
+		201
 	],
 	"../pages/job-loop-event-add-edit-modal/job-loop-event-add-edit-modal.module": [
-		651,
-		332
+		659,
+		335
 	],
 	"../pages/job-loop-event/job-loop-event.module": [
-		654,
-		198
+		658,
+		200
 	],
 	"../pages/job-loop/job-loop.module": [
-		653,
+		664,
 		58
 	],
 	"../pages/job-processed-sql-add-edit-modal/job-processed-sql-add-edit-modal.module": [
-		655,
-		331
+		662,
+		334
 	],
 	"../pages/job-processed-sql/job-processed-sql.module": [
-		657,
-		197
+		660,
+		199
 	],
 	"../pages/job-sch-exec-log/job-sch-exec-log.module": [
-		656,
+		661,
 		131
 	],
 	"../pages/job-sch-management/job-sch-management.module": [
-		669,
-		196
+		663,
+		198
 	],
 	"../pages/job-step-add-edit-modal/job-step-add-edit-modal.module": [
-		660,
-		293
+		665,
+		295
 	],
 	"../pages/job-step-detail/job-step-detail.module": [
-		661,
-		195
+		666,
+		197
 	],
 	"../pages/job-step-exec-log-detail/job-step-exec-log-detail.module": [
-		662,
-		194
+		668,
+		196
 	],
 	"../pages/job-step-exec-log/job-step-exec-log.module": [
-		659,
+		667,
 		130
 	],
 	"../pages/job-step-loop-add-edit-modal/job-step-loop-add-edit-modal.module": [
-		663,
-		294
+		669,
+		296
 	],
 	"../pages/job-step-loop/job-step-loop.module": [
-		666,
+		670,
 		56
 	],
 	"../pages/job-step/job-step.module": [
-		664,
+		671,
 		57
 	],
 	"../pages/job/job.module": [
-		667,
+		672,
 		132
 	],
 	"../pages/line-add-edit-modal/line-add-edit-modal.module": [
-		668,
-		281
+		673,
+		283
 	],
 	"../pages/line-message-add-edit-modal/line-message-add-edit-modal.module": [
-		670,
-		330
+		674,
+		333
 	],
 	"../pages/line-message-log/line-message-log.module": [
-		675,
-		193
+		680,
+		195
 	],
 	"../pages/line-message/line-message.module": [
-		676,
-		192
+		678,
+		194
 	],
 	"../pages/line/line.module": [
-		674,
+		675,
 		147
 	],
 	"../pages/login-log/login-log.module": [
-		679,
+		676,
 		129
 	],
 	"../pages/login/login.module": [
-		672,
-		329
+		677,
+		332
 	],
 	"../pages/main-code-add-edit-modal/main-code-add-edit-modal.module": [
-		671,
-		278
+		679,
+		280
 	],
 	"../pages/main-code-copy-modal/main-code-copy-modal.module": [
-		677,
-		277
+		681,
+		279
 	],
 	"../pages/main-code/main-code.module": [
-		673,
+		689,
 		18
 	],
+	"../pages/mask-column-add-edit-modal/mask-column-add-edit-modal.module": [
+		695,
+		331
+	],
+	"../pages/mask-column/mask-column.module": [
+		682,
+		193
+	],
 	"../pages/menu-add-edit-modal/menu-add-edit-modal.module": [
-		678,
-		328
+		683,
+		330
 	],
 	"../pages/menu-by-program-detail-select-modal/menu-by-program-detail-select-modal.module": [
-		680,
+		684,
 		128
 	],
 	"../pages/menu-by-program-detail/menu-by-program-detail.module": [
-		681,
-		191
+		685,
+		192
 	],
 	"../pages/menu-detail-edit-modal/menu-detail-edit-modal.module": [
-		682,
-		327
+		686,
+		329
 	],
 	"../pages/menu-detail-select-modal/menu-detail-select-modal.module": [
-		683,
-		190
+		687,
+		191
 	],
 	"../pages/menu-detail/menu-detail.module": [
-		685,
-		189
+		688,
+		190
 	],
 	"../pages/menu/menu.module": [
-		684,
+		699,
 		127
 	],
 	"../pages/merge-sql/merge-sql.module": [
-		686,
-		188
+		690,
+		189
 	],
 	"../pages/parameter-column-add-edit-modal/parameter-column-add-edit-modal.module": [
-		687,
-		292
+		691,
+		294
 	],
 	"../pages/parameter-column/parameter-column.module": [
 		692,
 		0
 	],
 	"../pages/parameter-group-add-edit-modal/parameter-group-add-edit-modal.module": [
-		688,
-		238
+		693,
+		240
 	],
 	"../pages/parameter-group-select-model/parameter-group-select-model.module": [
-		689,
+		694,
 		12
 	],
 	"../pages/parameter-group/parameter-group.module": [
-		695,
+		696,
 		11
 	],
 	"../pages/permission-add-edit-modal/permission-add-edit-modal.module": [
-		690,
-		326
+		697,
+		328
 	],
 	"../pages/permission-management/permission-management.module": [
-		691,
-		187
+		698,
+		188
 	],
 	"../pages/permission-program-select-modal/permission-program-select-modal.module": [
-		694,
-		186
+		700,
+		187
 	],
 	"../pages/permission-program/permission-program.module": [
-		693,
+		701,
 		53
 	],
 	"../pages/permission-role-select-modal/permission-role-select-modal.module": [
-		696,
+		702,
 		52
 	],
 	"../pages/permission-role/permission-role.module": [
-		702,
-		185
+		703,
+		186
 	],
 	"../pages/permission-user/permission-user.module": [
-		697,
+		704,
 		125
 	],
 	"../pages/permission/permission.module": [
-		698,
+		705,
 		124
 	],
 	"../pages/prog/prog.module": [
-		700,
-		184
+		706,
+		185
 	],
 	"../pages/program-detail-add-edit-modal/program-detail-add-edit-modal.module": [
-		699,
-		325
+		707,
+		327
 	],
 	"../pages/program-detail-by-ionic-program/program-detail-by-ionic-program.module": [
-		701,
-		183
+		708,
+		184
 	],
 	"../pages/program-detail-select-modal/program-detail-select-modal.module": [
-		703,
-		182
+		709,
+		183
 	],
 	"../pages/program-detail/program-detail.module": [
-		704,
-		181
+		714,
+		182
 	],
 	"../pages/program-set-select-modal/program-set-select-modal.module": [
-		705,
+		710,
 		3
 	],
 	"../pages/quote-column-add-edit-modal/quote-column-add-edit-modal.module": [
-		706,
-		324
+		711,
+		326
 	],
 	"../pages/quote-column/quote-column.module": [
-		708,
-		180
+		712,
+		181
 	],
 	"../pages/register/register.module": [
-		707,
-		280
+		713,
+		282
 	],
 	"../pages/role-permission-select-modal/role-permission-select-modal.module": [
-		773,
+		715,
 		123
 	],
 	"../pages/role-permission/role-permission.module": [
-		710,
-		179
+		716,
+		180
 	],
 	"../pages/role-user-select-modal/role-user-select-modal.module": [
-		709,
-		178
+		717,
+		179
 	],
 	"../pages/role-user/role-user.module": [
-		711,
-		177
+		718,
+		178
 	],
 	"../pages/role/role.module": [
-		712,
+		719,
 		51
 	],
 	"../pages/sch-by-job-select-modal/sch-by-job-select-modal.module": [
-		713,
+		720,
 		162
 	],
 	"../pages/sch-by-job/sch-by-job.module": [
-		714,
-		176
+		730,
+		177
 	],
 	"../pages/sch-day-time-add-edit-modal/sch-day-time-add-edit-modal.module": [
-		715,
-		289
+		721,
+		291
 	],
 	"../pages/sch-day-time/sch-day-time.module": [
-		717,
+		722,
 		38
 	],
 	"../pages/sch-management/sch-management.module": [
-		716,
-		175
+		723,
+		176
 	],
 	"../pages/sch-month-lastday-time-add-edit-modal/sch-month-lastday-time-add-edit-modal.module": [
-		718,
-		288
+		724,
+		290
 	],
 	"../pages/sch-month-lastday-time/sch-month-lastday-time.module": [
-		719,
+		726,
 		37
 	],
 	"../pages/sch-month-time-add-edit-modal/sch-month-time-add-edit-modal.module": [
-		720,
-		287
+		725,
+		289
 	],
 	"../pages/sch-month-time/sch-month-time.module": [
-		721,
+		727,
 		36
 	],
 	"../pages/sch-one-day-time-add-edit-modal/sch-one-day-time-add-edit-modal.module": [
-		724,
-		286
+		728,
+		288
 	],
 	"../pages/sch-one-day-time/sch-one-day-time.module": [
-		722,
+		729,
 		35
 	],
 	"../pages/sch-week-time-add-edit-modal/sch-week-time-add-edit-modal.module": [
-		723,
-		285
+		731,
+		287
 	],
 	"../pages/sch-week-time/sch-week-time.module": [
-		725,
+		732,
 		34
 	],
 	"../pages/sch/sch.module": [
-		726,
-		323
+		733,
+		325
 	],
 	"../pages/security-management/security-management.module": [
-		727,
-		174
+		735,
+		175
 	],
 	"../pages/select-value-sql/select-value-sql.module": [
-		728,
+		734,
 		42
 	],
 	"../pages/show-message/show-message.module": [
-		736,
-		173
+		741,
+		174
 	],
 	"../pages/sp-add-edit-modal/sp-add-edit-modal.module": [
-		730,
-		237
+		737,
+		239
 	],
 	"../pages/sp/sp.module": [
-		729,
+		736,
 		49
 	],
 	"../pages/sql-all/sql-all.module": [
-		732,
+		739,
 		48
 	],
 	"../pages/sql-management/sql-management.module": [
-		731,
-		172
+		738,
+		173
 	],
 	"../pages/sql-set-add-edit-modal/sql-set-add-edit-modal.module": [
-		733,
-		322
+		740,
+		324
 	],
 	"../pages/sql-set/sql-set.module": [
-		734,
-		171
+		742,
+		172
 	],
 	"../pages/sql/sql.module": [
-		735,
+		747,
 		161
 	],
 	"../pages/table-add-edit-modal/table-add-edit-modal.module": [
-		737,
-		321
+		743,
+		323
 	],
 	"../pages/table-by-column/table-by-column.module": [
-		738,
+		745,
 		28
 	],
+	"../pages/table-column-ext-select-modal/table-column-ext-select-modal.module": [
+		744,
+		171
+	],
 	"../pages/table-copy-modal/table-copy-modal.module": [
-		739,
-		312
+		746,
+		314
 	],
 	"../pages/table-detail-add-edit-modal/table-detail-add-edit-modal.module": [
-		740,
-		320
+		751,
+		322
 	],
 	"../pages/table-detail-detail/table-detail-detail.module": [
-		741,
+		748,
 		170
 	],
 	"../pages/table-detail-edit-modal/table-detail-edit-modal.module": [
-		742,
-		319
+		749,
+		321
 	],
 	"../pages/table-detail-ext-detail/table-detail-ext-detail.module": [
-		743,
+		750,
 		119
 	],
 	"../pages/table-detail-ext-select-modal/table-detail-ext-select-modal.module": [
-		744,
+		772,
 		118
 	],
 	"../pages/table-detail-ext/table-detail-ext.module": [
-		745,
+		752,
 		117
 	],
 	"../pages/table-detail-fk/table-detail-fk.module": [
-		746,
+		753,
 		116
 	],
 	"../pages/table-detail-select-modal/table-detail-select-modal.module": [
-		747,
+		754,
 		27
 	],
 	"../pages/table-detail/table-detail.module": [
-		748,
+		755,
 		26
 	],
 	"../pages/table-exec-log-detail/table-exec-log-detail.module": [
-		749,
+		756,
 		169
 	],
 	"../pages/table-exec-log/table-exec-log.module": [
-		750,
+		757,
 		122
 	],
 	"../pages/table-ext-select-modal/table-ext-select-modal.module": [
-		751,
+		758,
 		115
 	],
 	"../pages/table-ext/table-ext.module": [
-		752,
+		759,
 		114
 	],
 	"../pages/table-fk/table-fk.module": [
-		753,
+		760,
 		113
 	],
 	"../pages/table-select-modal/table-select-modal.module": [
-		754,
+		761,
 		25
 	],
 	"../pages/table/table.module": [
-		755,
+		762,
 		24
 	],
 	"../pages/table2-table-add-edit-modal/table2-table-add-edit-modal.module": [
-		756,
-		236
+		763,
+		238
 	],
 	"../pages/table2-table/table2-table.module": [
-		757,
+		764,
 		47
 	],
 	"../pages/un-zip-file-loop-pwd-add-edit-modal/un-zip-file-loop-pwd-add-edit-modal.module": [
-		758,
-		284
+		765,
+		286
 	],
 	"../pages/un-zip-file-loop-pwd/un-zip-file-loop-pwd.module": [
-		759,
+		766,
 		46
 	],
 	"../pages/un-zip-file-pwd-add-edit/un-zip-file-pwd-add-edit.module": [
-		761,
+		778,
 		121
 	],
 	"../pages/update-value-sql/update-value-sql.module": [
-		760,
+		767,
 		168
 	],
 	"../pages/url-management/url-management.module": [
-		762,
+		768,
 		167
 	],
 	"../pages/user-add-edit-modal/user-add-edit-modal.module": [
-		763,
-		318
+		769,
+		320
 	],
 	"../pages/user-permission/user-permission.module": [
-		764,
+		770,
 		166
 	],
 	"../pages/user-role-modal/user-role-modal.module": [
-		765,
+		771,
 		50
 	],
 	"../pages/user-role/user-role.module": [
-		766,
+		773,
 		165
 	],
 	"../pages/user/user.module": [
-		771,
+		774,
 		164
 	],
 	"../pages/warning-check-add-edit-modal/warning-check-add-edit-modal.module": [
-		767,
-		283
+		775,
+		285
 	],
 	"../pages/warning-check-select-modal/warning-check-select-modal.module": [
-		768,
+		776,
 		17
 	],
 	"../pages/warning-check/warning-check.module": [
-		769,
+		777,
 		45
 	],
 	"../pages/zip-file-loop-pwd-add-edit-modal/zip-file-loop-pwd-add-edit-modal.module": [
-		770,
-		282
+		779,
+		284
 	],
 	"../pages/zip-file-loop-pwd/zip-file-loop-pwd.module": [
-		774,
+		780,
 		44
 	],
 	"../pages/zip-file-pwd-add-edit/zip-file-pwd-add-edit.module": [
-		772,
+		781,
 		120
 	]
 };
@@ -3622,11 +3648,11 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 193;
+webpackAsyncContext.id = 194;
 module.exports = webpackAsyncContext;
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3692,17 +3718,17 @@ var UserResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=UserResponse.js.map
 
 /***/ }),
-/* 195 */,
 /* 196 */,
 /* 197 */,
 /* 198 */,
-/* 199 */
+/* 199 */,
+/* 200 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DirectoryBrowserListResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_DirectoryBrowserViewModel__ = __webpack_require__(130);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -3761,7 +3787,7 @@ var DirectoryBrowserListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=DirectoryBrowserListResponse.js.map
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3817,7 +3843,7 @@ var DirectoryBrowserResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=DirectoryBrowserResponse.js.map
 
 /***/ }),
-/* 201 */
+/* 202 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3831,13 +3857,13 @@ var FilePathViewModel = /** @class */ (function () {
 //# sourceMappingURL=FilePathViewModel.js.map
 
 /***/ }),
-/* 202 */
+/* 203 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileBrowserListResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_FileBrowserViewModel__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -3887,7 +3913,7 @@ var FileBrowserListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=FileBrowserListResponse.js.map
 
 /***/ }),
-/* 203 */
+/* 204 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3933,7 +3959,7 @@ var FileBrowserResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=FileBrowserResponse.js.map
 
 /***/ }),
-/* 204 */
+/* 205 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3947,7 +3973,7 @@ var TableExtViewModel = /** @class */ (function () {
 //# sourceMappingURL=TableExtViewModel.js.map
 
 /***/ }),
-/* 205 */
+/* 206 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3961,7 +3987,6 @@ var TableDetailExtViewModel = /** @class */ (function () {
 //# sourceMappingURL=TableDetailExtViewModel.js.map
 
 /***/ }),
-/* 206 */,
 /* 207 */,
 /* 208 */,
 /* 209 */,
@@ -4008,18 +4033,19 @@ var TableDetailExtViewModel = /** @class */ (function () {
 /* 250 */,
 /* 251 */,
 /* 252 */,
-/* 253 */
+/* 253 */,
+/* 254 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_global_global__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_auth_services_auth_services__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network__ = __webpack_require__(199);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4192,7 +4218,6 @@ var MyApp = /** @class */ (function () {
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
-/* 254 */,
 /* 255 */,
 /* 256 */,
 /* 257 */,
@@ -4203,7 +4228,8 @@ var MyApp = /** @class */ (function () {
 /* 262 */,
 /* 263 */,
 /* 264 */,
-/* 265 */
+/* 265 */,
+/* 266 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4211,8 +4237,8 @@ var MyApp = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_TableListResponse__ = __webpack_require__(353);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_TableResponse__ = __webpack_require__(354);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_TableListResponse__ = __webpack_require__(355);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_TableResponse__ = __webpack_require__(356);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_StringResponse__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4484,7 +4510,7 @@ var TableServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=table-services.js.map
 
 /***/ }),
-/* 266 */
+/* 267 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4493,11 +4519,11 @@ var TableServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_ConnListResponse__ = __webpack_require__(361);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_ConnResponse__ = __webpack_require__(362);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Model_Response_ConnFtpListResponse__ = __webpack_require__(363);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Model_Response_ConnSmtpListResponse__ = __webpack_require__(364);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Model_Response_ConnHttpListResponse__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_ConnListResponse__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_ConnResponse__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Model_Response_ConnFtpListResponse__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Model_Response_ConnSmtpListResponse__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Model_Response_ConnHttpListResponse__ = __webpack_require__(367);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4764,7 +4790,7 @@ var ConnServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=conn-services.js.map
 
 /***/ }),
-/* 267 */
+/* 268 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4773,8 +4799,8 @@ var ConnServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_FilePathListResponse__ = __webpack_require__(366);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_FilePathResponse__ = __webpack_require__(367);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_FilePathListResponse__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_FilePathResponse__ = __webpack_require__(370);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4913,7 +4939,7 @@ var FilePathServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=file-path-services.js.map
 
 /***/ }),
-/* 268 */
+/* 269 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5008,7 +5034,7 @@ var RunJobServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=run-job-services.js.map
 
 /***/ }),
-/* 269 */
+/* 270 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5292,12 +5318,12 @@ var TableDetailServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=table-detail-services.js.map
 
 /***/ }),
-/* 270 */
+/* 271 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SchServicesProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_Response_SchListResponse__ = __webpack_require__(404);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_Response_SchListResponse__ = __webpack_require__(408);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_services__ = __webpack_require__(6);
@@ -5405,7 +5431,112 @@ var SchServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=sch-services.js.map
 
 /***/ }),
-/* 271 */
+/* 272 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableDetailExtServicesProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_TableDetailExtListResponse__ = __webpack_require__(383);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_TableDetailExtResponse__ = __webpack_require__(384);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+/*
+  Generated class for the TableDetailExtServiceProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var TableDetailExtServicesProvider = /** @class */ (function () {
+    function TableDetailExtServicesProvider(Services) {
+        this.Services = Services;
+        this.ctl = "TableDetailExt";
+        console.log("Hello TableDetailExtServiceProvider Provider");
+    }
+    TableDetailExtServicesProvider.prototype.GetTableDetailByColumnListsAsync = function (PageSize, PageNumber, columnname, keyword, order_type) {
+        var _this = this;
+        var sub_url;
+        sub_url =
+            "TableDetail/TableDetailExtList?PageSize={1}&PageNumber={2}&columnname={3}&keyword={4}&order_type={5}&is_filter=true";
+        sub_url = __WEBPACK_IMPORTED_MODULE_0__Model_String__["a" /* String */].Format(sub_url, this.ctl, PageSize, PageNumber, columnname, keyword, order_type);
+        return this.Services.GetAsync(sub_url, this.ctl, true).map(function (item) {
+            _this.TableDetailExts = new __WEBPACK_IMPORTED_MODULE_3__Model_Response_TableDetailExtListResponse__["a" /* TableDetailExtListResponse */]({
+                Message: item.Message,
+                DidError: item.DidError,
+                ErrorMessage: item.ErrorMessage,
+                PageSize: item.PageSize,
+                PageNumber: item.PageNumber,
+                TotalRows: item.TotalRows,
+                PageRows: item.PageRows,
+                TotalPages: item.TotalPages,
+                Model: item.Model
+            });
+            return _this.TableDetailExts;
+        });
+    };
+    TableDetailExtServicesProvider.prototype.GetTableDetailExtListsAsync = function (PageSize, PageNumber, schemaname, tablename, keyword, order_type) {
+        var _this = this;
+        var sub_url;
+        sub_url = "TableDetail/TableDetailExtList?PageSize={1}&PageNumber={2}&schemaname={3}&tablename={4}&keyword={5}&order_type={6}";
+        sub_url = __WEBPACK_IMPORTED_MODULE_0__Model_String__["a" /* String */].Format(sub_url, this.ctl, PageSize, PageNumber, schemaname, tablename, keyword, order_type);
+        return this.Services.GetAsync(sub_url, this.ctl, true).map(function (item) {
+            _this.TableDetailExts = new __WEBPACK_IMPORTED_MODULE_3__Model_Response_TableDetailExtListResponse__["a" /* TableDetailExtListResponse */]({
+                Message: item.Message,
+                DidError: item.DidError,
+                ErrorMessage: item.ErrorMessage,
+                PageSize: item.PageSize,
+                PageNumber: item.PageNumber,
+                TotalRows: item.TotalRows,
+                PageRows: item.PageRows,
+                TotalPages: item.TotalPages,
+                Model: item.Model
+            });
+            return _this.TableDetailExts;
+        });
+    };
+    TableDetailExtServicesProvider.prototype.PostPutAsync = function (TableDetailExtViewModel, mode) {
+        var _this = this;
+        var sub_url;
+        if (mode === "POST")
+            sub_url = "TableDetailExt";
+        else
+            sub_url = "TableDetailExt/{1}";
+        sub_url = __WEBPACK_IMPORTED_MODULE_0__Model_String__["a" /* String */].Format(sub_url, this.ctl, TableDetailExtViewModel.tablename);
+        return this.Services.PostPutAsync(sub_url, this.ctl, true, TableDetailExtViewModel, mode).map(function (item) {
+            _this.TableDetailExt = new __WEBPACK_IMPORTED_MODULE_4__Model_Response_TableDetailExtResponse__["a" /* TableDetailExtResponse */]({
+                Message: item.Message,
+                DidError: item.DidError,
+                ErrorMessage: item.ErrorMessage,
+                Model: item.Model
+            });
+            return _this.TableDetailExt;
+        });
+    };
+    TableDetailExtServicesProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_services__["a" /* ServicesProvider */]])
+    ], TableDetailExtServicesProvider);
+    return TableDetailExtServicesProvider;
+}());
+
+//# sourceMappingURL=table-detail-ext-services.js.map
+
+/***/ }),
+/* 273 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5662,112 +5793,7 @@ var TableExtServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=table-ext-services.js.map
 
 /***/ }),
-/* 272 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableDetailExtServicesProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_TableDetailExtListResponse__ = __webpack_require__(381);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_TableDetailExtResponse__ = __webpack_require__(382);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-/*
-  Generated class for the TableDetailExtServiceProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
-var TableDetailExtServicesProvider = /** @class */ (function () {
-    function TableDetailExtServicesProvider(Services) {
-        this.Services = Services;
-        this.ctl = "TableDetailExt";
-        console.log("Hello TableDetailExtServiceProvider Provider");
-    }
-    TableDetailExtServicesProvider.prototype.GetTableDetailByColumnListsAsync = function (PageSize, PageNumber, columnname, keyword, order_type) {
-        var _this = this;
-        var sub_url;
-        sub_url =
-            "TableDetail/TableDetailExtList?PageSize={1}&PageNumber={2}&columnname={3}&keyword={4}&order_type={5}&is_filter=true";
-        sub_url = __WEBPACK_IMPORTED_MODULE_0__Model_String__["a" /* String */].Format(sub_url, this.ctl, PageSize, PageNumber, columnname, keyword, order_type);
-        return this.Services.GetAsync(sub_url, this.ctl, true).map(function (item) {
-            _this.TableDetailExts = new __WEBPACK_IMPORTED_MODULE_3__Model_Response_TableDetailExtListResponse__["a" /* TableDetailExtListResponse */]({
-                Message: item.Message,
-                DidError: item.DidError,
-                ErrorMessage: item.ErrorMessage,
-                PageSize: item.PageSize,
-                PageNumber: item.PageNumber,
-                TotalRows: item.TotalRows,
-                PageRows: item.PageRows,
-                TotalPages: item.TotalPages,
-                Model: item.Model
-            });
-            return _this.TableDetailExts;
-        });
-    };
-    TableDetailExtServicesProvider.prototype.GetTableDetailExtListsAsync = function (PageSize, PageNumber, schemaname, tablename, keyword, order_type) {
-        var _this = this;
-        var sub_url;
-        sub_url = "TableDetail/TableDetailExtList?PageSize={1}&PageNumber={2}&schemaname={3}&tablename={4}&keyword={5}&order_type={6}";
-        sub_url = __WEBPACK_IMPORTED_MODULE_0__Model_String__["a" /* String */].Format(sub_url, this.ctl, PageSize, PageNumber, schemaname, tablename, keyword, order_type);
-        return this.Services.GetAsync(sub_url, this.ctl, true).map(function (item) {
-            _this.TableDetailExts = new __WEBPACK_IMPORTED_MODULE_3__Model_Response_TableDetailExtListResponse__["a" /* TableDetailExtListResponse */]({
-                Message: item.Message,
-                DidError: item.DidError,
-                ErrorMessage: item.ErrorMessage,
-                PageSize: item.PageSize,
-                PageNumber: item.PageNumber,
-                TotalRows: item.TotalRows,
-                PageRows: item.PageRows,
-                TotalPages: item.TotalPages,
-                Model: item.Model
-            });
-            return _this.TableDetailExts;
-        });
-    };
-    TableDetailExtServicesProvider.prototype.PostPutAsync = function (TableDetailExtViewModel, mode) {
-        var _this = this;
-        var sub_url;
-        if (mode === "POST")
-            sub_url = "TableDetailExt";
-        else
-            sub_url = "TableDetailExt/{1}";
-        sub_url = __WEBPACK_IMPORTED_MODULE_0__Model_String__["a" /* String */].Format(sub_url, this.ctl, TableDetailExtViewModel.tablename);
-        return this.Services.PostPutAsync(sub_url, this.ctl, true, TableDetailExtViewModel, mode).map(function (item) {
-            _this.TableDetailExt = new __WEBPACK_IMPORTED_MODULE_4__Model_Response_TableDetailExtResponse__["a" /* TableDetailExtResponse */]({
-                Message: item.Message,
-                DidError: item.DidError,
-                ErrorMessage: item.ErrorMessage,
-                Model: item.Model
-            });
-            return _this.TableDetailExt;
-        });
-    };
-    TableDetailExtServicesProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_services__["a" /* ServicesProvider */]])
-    ], TableDetailExtServicesProvider);
-    return TableDetailExtServicesProvider;
-}());
-
-//# sourceMappingURL=table-detail-ext-services.js.map
-
-/***/ }),
-/* 273 */
+/* 274 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5775,8 +5801,8 @@ var TableDetailExtServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_UserListResponse__ = __webpack_require__(391);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_UserResponse__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_UserListResponse__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_UserResponse__ = __webpack_require__(195);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5913,7 +5939,7 @@ var UserServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=user-services.js.map
 
 /***/ }),
-/* 274 */
+/* 275 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5941,7 +5967,7 @@ var ConnHttpViewModel = /** @class */ (function (_super) {
 //# sourceMappingURL=ConnHttpViewModel.js.map
 
 /***/ }),
-/* 275 */
+/* 276 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5983,7 +6009,7 @@ var ConnFtpViewModel = /** @class */ (function (_super) {
 //# sourceMappingURL=ConnFtpViewModel.js.map
 
 /***/ }),
-/* 276 */
+/* 277 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6022,7 +6048,7 @@ var ConnSmtpViewModel = /** @class */ (function (_super) {
 //# sourceMappingURL=ConnSmtpViewModel.js.map
 
 /***/ }),
-/* 277 */
+/* 278 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6031,8 +6057,8 @@ var ConnSmtpViewModel = /** @class */ (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_ProgListResponse__ = __webpack_require__(396);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_ProgResponse__ = __webpack_require__(397);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_ProgListResponse__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_ProgResponse__ = __webpack_require__(403);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6136,7 +6162,7 @@ var ProgServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=prog-services.js.map
 
 /***/ }),
-/* 278 */
+/* 279 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6145,8 +6171,8 @@ var ProgServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_GlossaryListResponse__ = __webpack_require__(379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_GlossaryResponse__ = __webpack_require__(380);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_GlossaryListResponse__ = __webpack_require__(381);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_GlossaryResponse__ = __webpack_require__(382);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6250,7 +6276,7 @@ var GlossaryServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=glossary-services.js.map
 
 /***/ }),
-/* 279 */
+/* 280 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6270,7 +6296,7 @@ var JobViewModel = /** @class */ (function () {
 //# sourceMappingURL=JobViewModel.js.map
 
 /***/ }),
-/* 280 */
+/* 281 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6279,10 +6305,10 @@ var JobViewModel = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_CodeCheckListResponse__ = __webpack_require__(315);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_CodeCheckResponse__ = __webpack_require__(316);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Model_Response_VwCodeTypeCheckListResponse__ = __webpack_require__(317);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Model_Response_VwCodeCheckListResponse__ = __webpack_require__(319);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_CodeCheckListResponse__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_CodeCheckResponse__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Model_Response_VwCodeTypeCheckListResponse__ = __webpack_require__(319);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Model_Response_VwCodeCheckListResponse__ = __webpack_require__(321);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6428,7 +6454,7 @@ var CodeCheckServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=code-check-services.js.map
 
 /***/ }),
-/* 281 */
+/* 282 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6436,8 +6462,8 @@ var CodeCheckServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_ProgramListResponse__ = __webpack_require__(355);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_ProgramResponse__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_ProgramListResponse__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_ProgramResponse__ = __webpack_require__(358);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_StringResponse__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -6635,7 +6661,7 @@ var ProgramServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=program-services.js.map
 
 /***/ }),
-/* 282 */
+/* 283 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6643,8 +6669,8 @@ var ProgramServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_FileBrowserListResponse__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_FileBrowserResponse__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_FileBrowserListResponse__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_FileBrowserResponse__ = __webpack_require__(204);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6760,7 +6786,7 @@ var FtpFileBrowserServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=ftp-file-browser-services.js.map
 
 /***/ }),
-/* 283 */
+/* 284 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6768,8 +6794,8 @@ var FtpFileBrowserServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_FileManagementListResponse__ = __webpack_require__(369);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_FileManagementResponse__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_FileManagementListResponse__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_FileManagementResponse__ = __webpack_require__(380);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__file_services_file_services__ = __webpack_require__(127);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -6865,7 +6891,7 @@ var FileManagementServicesProvider = /** @class */ (function (_super) {
 //# sourceMappingURL=file-management-services.js.map
 
 /***/ }),
-/* 284 */
+/* 285 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6873,8 +6899,8 @@ var FileManagementServicesProvider = /** @class */ (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_ProgramPageListResponse__ = __webpack_require__(383);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_ProgramPageResponse__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_ProgramPageListResponse__ = __webpack_require__(385);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_ProgramPageResponse__ = __webpack_require__(386);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7045,24 +7071,24 @@ var ProgramPageServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=program-page-services.js.map
 
 /***/ }),
-/* 285 */
+/* 286 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ApiUrlServicesProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_Response_ApiUrlListResponse__ = __webpack_require__(341);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_Response_ApiUrlResponse__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_Response_ApiUrlListResponse__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_Response_ApiUrlResponse__ = __webpack_require__(344);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_ViewModel_ApiUrlViewModel__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_MyAppSharedSettings__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map__ = __webpack_require__(152);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_fromPromise__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_fromPromise__ = __webpack_require__(345);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_fromPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_storage__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Model_Repository_ApiUrlRepository__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Model_Repository_ApiUrlRepository__ = __webpack_require__(346);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7195,7 +7221,7 @@ var ApiUrlServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=api-url-services.js.map
 
 /***/ }),
-/* 286 */
+/* 287 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7203,8 +7229,8 @@ var ApiUrlServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_DirectoryBrowserListResponse__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_DirectoryBrowserResponse__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_DirectoryBrowserListResponse__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_DirectoryBrowserResponse__ = __webpack_require__(201);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7309,7 +7335,7 @@ var DirectoryBrowserServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=directory-browser-services.js.map
 
 /***/ }),
-/* 287 */
+/* 288 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7317,8 +7343,8 @@ var DirectoryBrowserServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_FileBrowserListResponse__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_FileBrowserResponse__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_FileBrowserListResponse__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_FileBrowserResponse__ = __webpack_require__(204);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7417,7 +7443,7 @@ var FileBrowserServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=file-browser-services.js.map
 
 /***/ }),
-/* 288 */
+/* 289 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7425,8 +7451,8 @@ var FileBrowserServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_DirectoryBrowserListResponse__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_DirectoryBrowserResponse__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_DirectoryBrowserListResponse__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_DirectoryBrowserResponse__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_StringResponse__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -7531,7 +7557,7 @@ var FtpDirectoryBrowserServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=ftp-directory-browser-services.js.map
 
 /***/ }),
-/* 289 */
+/* 290 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7539,8 +7565,8 @@ var FtpDirectoryBrowserServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_LineMessageListResponse__ = __webpack_require__(392);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_LineMessageResponse__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_LineMessageListResponse__ = __webpack_require__(394);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_LineMessageResponse__ = __webpack_require__(395);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7650,7 +7676,7 @@ var LineMessageServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=line-message-services.js.map
 
 /***/ }),
-/* 290 */
+/* 291 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7658,8 +7684,8 @@ var LineMessageServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_SqlListResponse__ = __webpack_require__(405);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_SqlResponse__ = __webpack_require__(406);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_SqlListResponse__ = __webpack_require__(409);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_SqlResponse__ = __webpack_require__(410);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_StringResponse__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__table_set_services_table_set_services__ = __webpack_require__(131);
 var __extends = (this && this.__extends) || (function () {
@@ -7794,7 +7820,7 @@ var SqlServicesProvider = /** @class */ (function (_super) {
 //# sourceMappingURL=sql-services.js.map
 
 /***/ }),
-/* 291 */
+/* 292 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7802,8 +7828,8 @@ var SqlServicesProvider = /** @class */ (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_JobSchListResponse__ = __webpack_require__(385);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_JobSchResponse__ = __webpack_require__(386);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_JobSchListResponse__ = __webpack_require__(388);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_JobSchResponse__ = __webpack_require__(389);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7973,7 +7999,7 @@ var JobSchServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=job-sch-services.js.map
 
 /***/ }),
-/* 292 */
+/* 293 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7987,7 +8013,7 @@ var JobSchViewModel = /** @class */ (function () {
 //# sourceMappingURL=JobSchViewModel.js.map
 
 /***/ }),
-/* 293 */
+/* 294 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7995,8 +8021,8 @@ var JobSchViewModel = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_ProgramPageMenuListResponse__ = __webpack_require__(394);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_ProgramPageMenuResponse__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_ProgramPageMenuListResponse__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_ProgramPageMenuResponse__ = __webpack_require__(399);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8186,7 +8212,7 @@ var ProgramPageMenuServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=program-page-menu-services.js.map
 
 /***/ }),
-/* 294 */
+/* 295 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8194,8 +8220,8 @@ var ProgramPageMenuServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_RolePermissionListResponse__ = __webpack_require__(398);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_RolePermissionResponse__ = __webpack_require__(399);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_RolePermissionListResponse__ = __webpack_require__(400);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_RolePermissionResponse__ = __webpack_require__(401);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8329,7 +8355,7 @@ var RolePermissionServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=role-permission-services.js.map
 
 /***/ }),
-/* 295 */
+/* 296 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8337,8 +8363,8 @@ var RolePermissionServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_UserRoleListResponse__ = __webpack_require__(402);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_UserRoleResponse__ = __webpack_require__(403);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_UserRoleListResponse__ = __webpack_require__(406);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_UserRoleResponse__ = __webpack_require__(407);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8457,8 +8483,8 @@ var UserRoleServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=user-role-services.js.map
 
 /***/ }),
-/* 296 */,
-/* 297 */
+/* 297 */,
+/* 298 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8466,7 +8492,7 @@ var UserRoleServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_CmdLogResponse__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_CmdLogResponse__ = __webpack_require__(361);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8518,15 +8544,15 @@ var CmdLogServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=cmd-log-services.js.map
 
 /***/ }),
-/* 298 */
+/* 299 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobLoopEventServicesProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_Response_JobLoopEventListResponse__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_Response_JobLoopEventListResponse__ = __webpack_require__(390);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_JobLoopEventResponse__ = __webpack_require__(388);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_JobLoopEventResponse__ = __webpack_require__(391);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_services__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_StringResponse__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -8632,15 +8658,15 @@ var JobLoopEventServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=job-loop-event-services.js.map
 
 /***/ }),
-/* 299 */
+/* 300 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobProcessedSqlServicesProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_Response_JobProcessedSqlListResponse__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_Response_JobProcessedSqlListResponse__ = __webpack_require__(392);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_JobProcessedSqlResponse__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_JobProcessedSqlResponse__ = __webpack_require__(393);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_services__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_StringResponse__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -8748,7 +8774,121 @@ var JobProcessedSqlServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=job-processed-sql-services.js.map
 
 /***/ }),
-/* 300 */
+/* 301 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MaskColumnServicesProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_Response_StringResponse__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_services__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_MaskColumnListResponse__ = __webpack_require__(396);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_MaskColumnResponse__ = __webpack_require__(397);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+/*
+  Generated class for the MaskColumnServiceProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var MaskColumnServicesProvider = /** @class */ (function () {
+    function MaskColumnServicesProvider(Services) {
+        this.Services = Services;
+        this.ctl = "MaskColumn";
+        console.log("Hello MaskColumnServiceProvider Provider");
+    }
+    MaskColumnServicesProvider.prototype.GetListsByAsync = function (PageSize, PageNumber, schemaname, tablename, keyword, order_type) {
+        var _this = this;
+        var sub_url;
+        sub_url = "MaskColumn?PageSize={1}&PageNumber={2}&keyword={3}&schemaname={4}&tablename={5}&order_type={6}";
+        sub_url = __WEBPACK_IMPORTED_MODULE_1__Model_String__["a" /* String */].Format(sub_url, this.ctl, PageSize, PageNumber, keyword, schemaname, tablename, order_type);
+        return this.Services.GetAsync(sub_url, this.ctl, true).map(function (item) {
+            _this.MaskColumns = new __WEBPACK_IMPORTED_MODULE_4__Model_Response_MaskColumnListResponse__["a" /* MaskColumnListResponse */]({
+                Message: item.Message,
+                DidError: item.DidError,
+                ErrorMessage: item.ErrorMessage,
+                PageSize: item.PageSize,
+                PageNumber: item.PageNumber,
+                TotalRows: item.TotalRows,
+                PageRows: item.PageRows,
+                TotalPages: item.TotalPages,
+                Model: item.Model
+            });
+            return _this.MaskColumns;
+        });
+    };
+    MaskColumnServicesProvider.prototype.PostPutAsync = function (MaskColumnViewModel, mode) {
+        var _this = this;
+        var sub_url;
+        if (mode === "POST")
+            sub_url = "MaskColumn";
+        else
+            sub_url = "MaskColumn?schemaname={1}&tablename={2}&columnname={3}";
+        sub_url = __WEBPACK_IMPORTED_MODULE_1__Model_String__["a" /* String */].Format(sub_url, this.ctl, MaskColumnViewModel.schemaname, MaskColumnViewModel.tablename, MaskColumnViewModel.columnname);
+        return this.Services.PostPutAsync(sub_url, this.ctl, true, MaskColumnViewModel, mode).map(function (item) {
+            _this.MaskColumn = new __WEBPACK_IMPORTED_MODULE_5__Model_Response_MaskColumnResponse__["a" /* MaskColumnResponse */]({
+                Message: item.Message,
+                DidError: item.DidError,
+                ErrorMessage: item.ErrorMessage,
+                Model: item.Model
+            });
+            return _this.MaskColumn;
+        });
+    };
+    MaskColumnServicesProvider.prototype.DeleteAsync = function (schemaname, tablename, columnname) {
+        var _this = this;
+        var sub_url;
+        sub_url = "MaskColumn?schemaname={1}&tablename={2}&columnname={3}";
+        sub_url = __WEBPACK_IMPORTED_MODULE_1__Model_String__["a" /* String */].Format(sub_url, this.ctl, schemaname, tablename, columnname);
+        return this.Services.DeleteAsync(sub_url, this.ctl, true).map(function (item) {
+            _this.MaskColumn = new __WEBPACK_IMPORTED_MODULE_5__Model_Response_MaskColumnResponse__["a" /* MaskColumnResponse */]({
+                Message: item.Message,
+                DidError: item.DidError,
+                ErrorMessage: item.ErrorMessage,
+                Model: item.Model
+            });
+            return _this.MaskColumn;
+        });
+    };
+    MaskColumnServicesProvider.prototype.GetSqlAsync = function (schemaname, tablename, columnname, method) {
+        var sub_url;
+        sub_url = "MaskColumn/get_{4}_sql?schemaname={1}&tablename={2}&columnname={3}";
+        sub_url = __WEBPACK_IMPORTED_MODULE_1__Model_String__["a" /* String */].Format(sub_url, this.ctl, schemaname, tablename, columnname, method);
+        return this.Services.GetAsync(sub_url, this.ctl, true).map(function (item) {
+            return new __WEBPACK_IMPORTED_MODULE_0__Model_Response_StringResponse__["a" /* StringResponse */]({
+                Message: item.Message,
+                DidError: item.DidError,
+                ErrorMessage: item.ErrorMessage,
+                Model: item.Model
+            });
+        });
+    };
+    MaskColumnServicesProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__services_services__["a" /* ServicesProvider */]])
+    ], MaskColumnServicesProvider);
+    return MaskColumnServicesProvider;
+}());
+
+//# sourceMappingURL=mask-column-services.js.map
+
+/***/ }),
+/* 302 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8757,8 +8897,8 @@ var JobProcessedSqlServicesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_QuoteColumnListResponse__ = __webpack_require__(400);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_QuoteColumnResponse__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_QuoteColumnListResponse__ = __webpack_require__(404);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_QuoteColumnResponse__ = __webpack_require__(405);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8862,85 +9002,87 @@ var QuoteColumnServicesProvider = /** @class */ (function () {
 //# sourceMappingURL=quote-column-services.js.map
 
 /***/ }),
-/* 301 */
+/* 303 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(302);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(311);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
 
 /***/ }),
-/* 302 */,
-/* 303 */,
 /* 304 */,
 /* 305 */,
 /* 306 */,
 /* 307 */,
 /* 308 */,
-/* 309 */
+/* 309 */,
+/* 310 */,
+/* 311 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_code_check_services_code_check_services__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_code_check_services_code_check_services__ = __webpack_require__(281);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(253);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_auth_services_auth_services__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Model_MyAppSharedSettings__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_global_global__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_run_job_services_run_job_services__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_run_job_services_run_job_services__ = __webpack_require__(269);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_user_role_services_user_role_services__ = __webpack_require__(295);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_user_services_user_services__ = __webpack_require__(273);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_role_permission_services_role_permission_services__ = __webpack_require__(294);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_program_services_program_services__ = __webpack_require__(281);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_program_page_services_program_page_services__ = __webpack_require__(284);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_program_page_menu_services_program_page_menu_services__ = __webpack_require__(293);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_job_sch_services_job_sch_services__ = __webpack_require__(291);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_sch_services_sch_services__ = __webpack_require__(270);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_table_services_table_services__ = __webpack_require__(265);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_table_detail_services_table_detail_services__ = __webpack_require__(269);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_sql_services_sql_services__ = __webpack_require__(290);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_table_ext_services_table_ext_services__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_user_role_services_user_role_services__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_user_services_user_services__ = __webpack_require__(274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_role_permission_services_role_permission_services__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_program_services_program_services__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_program_page_services_program_page_services__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_program_page_menu_services_program_page_menu_services__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_job_sch_services_job_sch_services__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_sch_services_sch_services__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_table_services_table_services__ = __webpack_require__(266);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_table_detail_services_table_detail_services__ = __webpack_require__(270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_sql_services_sql_services__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_table_ext_services_table_ext_services__ = __webpack_require__(273);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__providers_table_detail_ext_services_table_detail_ext_services__ = __webpack_require__(272);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__providers_glossary_services_glossary_services__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__providers_glossary_services_glossary_services__ = __webpack_require__(279);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_file_services_file_services__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__providers_file_path_services_file_path_services__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_file_management_services_file_management_services__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__providers_file_path_services_file_path_services__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_file_management_services_file_management_services__ = __webpack_require__(284);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__providers_table_set_services_table_set_services__ = __webpack_require__(131);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__providers_api_url_services_api_url_services__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__providers_api_url_services_api_url_services__ = __webpack_require__(286);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__ionic_storage__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__angular_common_http__ = __webpack_require__(150);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__ionic_native_file__ = __webpack_require__(296);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__ionic_native_file_chooser__ = __webpack_require__(424);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__ionic_native_file_path__ = __webpack_require__(425);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__providers_directory_browser_services_directory_browser_services__ = __webpack_require__(286);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__providers_file_browser_services_file_browser_services__ = __webpack_require__(287);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__providers_ftp_directory_browser_services_ftp_directory_browser_services__ = __webpack_require__(288);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__providers_ftp_file_browser_services_ftp_file_browser_services__ = __webpack_require__(282);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__providers_prog_services_prog_services__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__providers_conn_services_conn_services__ = __webpack_require__(266);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__providers_job_loop_event_services_job_loop_event_services__ = __webpack_require__(298);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__ionic_native_network__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__providers_job_processed_sql_services_job_processed_sql_services__ = __webpack_require__(299);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__providers_quote_column_services_quote_column_services__ = __webpack_require__(300);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__providers_line_message_services_line_message_services__ = __webpack_require__(289);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__providers_cmd_log_services_cmd_log_services__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__angular_common_http__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__ionic_native_file__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__ionic_native_file_chooser__ = __webpack_require__(428);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__ionic_native_file_path__ = __webpack_require__(429);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__providers_directory_browser_services_directory_browser_services__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__providers_file_browser_services_file_browser_services__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__providers_ftp_directory_browser_services_ftp_directory_browser_services__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__providers_ftp_file_browser_services_ftp_file_browser_services__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__providers_prog_services_prog_services__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__providers_conn_services_conn_services__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__providers_job_loop_event_services_job_loop_event_services__ = __webpack_require__(299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__ionic_native_network__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__providers_job_processed_sql_services_job_processed_sql_services__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__providers_quote_column_services_quote_column_services__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__providers_line_message_services_line_message_services__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__providers_cmd_log_services_cmd_log_services__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__providers_mask_column_services_mask_column_services__ = __webpack_require__(301);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -8999,325 +9141,328 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["BrowserModule"],
                 __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/api-url/api-url.module#ApiUrlPageModule', name: 'ApiUrlPage', segment: 'api-url', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/api-url-add-edit-modal/api-url-add-edit-modal.module#ApiUrlAddEditModalPageModule', name: 'ApiUrlAddEditModalPage', segment: 'api-url-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/audit-logger/audit-logger.module#AuditLoggerPageModule', name: 'AuditLoggerPage', segment: 'audit-logger', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/api-url/api-url.module#ApiUrlPageModule', name: 'ApiUrlPage', segment: 'api-url', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/audit-logger-detail/audit-logger-detail.module#AuditLoggerDetailPageModule', name: 'AuditLoggerDetailPage', segment: 'audit-logger-detail', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/audit-logger/audit-logger.module#AuditLoggerPageModule', name: 'AuditLoggerPage', segment: 'audit-logger', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/audit-table-add-edit-modal/audit-table-add-edit-modal.module#AuditTableAddEditModalPageModule', name: 'AuditTableAddEditModalPage', segment: 'audit-table-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/audit-table-detail-add-edit-modal/audit-table-detail-add-edit-modal.module#AuditTableDetailAddEditModalPageModule', name: 'AuditTableDetailAddEditModalPage', segment: 'audit-table-detail-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/audit-table-detail/audit-table-detail.module#AuditTableDetailPageModule', name: 'AuditTableDetailPage', segment: 'audit-table-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/audit-table/audit-table.module#AuditTablePageModule', name: 'AuditTablePage', segment: 'audit-table', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/auth-management/auth-management.module#AuthManagementPageModule', name: 'AuthManagementPage', segment: 'auth-management', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/batch-exec-program-select-modal/batch-exec-program-select-modal.module#BatchExecProgramSelectModalPageModule', name: 'BatchExecProgramSelectModalPage', segment: 'batch-exec-program-select-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/batch-bus-type/batch-bus-type.module#BatchBusTypePageModule', name: 'BatchBusTypePage', segment: 'batch-bus-type', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/batch-exec-program-add-edit-modal/batch-exec-program-add-edit-modal.module#BatchExecProgramAddEditModalPageModule', name: 'BatchExecProgramAddEditModalPage', segment: 'batch-exec-program-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/batch-exec-program/batch-exec-program.module#BatchExecProgramPageModule', name: 'BatchExecProgramPage', segment: 'batch-exec-program', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/batch-exec-program-select-modal/batch-exec-program-select-modal.module#BatchExecProgramSelectModalPageModule', name: 'BatchExecProgramSelectModalPage', segment: 'batch-exec-program-select-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/batch-management/batch-management.module#BatchManagementPageModule', name: 'BatchManagementPage', segment: 'batch-management', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/batch-program-add-edit-modal/batch-program-add-edit-modal.module#BatchProgramAddEditModalPageModule', name: 'BatchProgramAddEditModalPage', segment: 'batch-program-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/audit-table-detail-add-edit-modal/audit-table-detail-add-edit-modal.module#AuditTableDetailAddEditModalPageModule', name: 'AuditTableDetailAddEditModalPage', segment: 'audit-table-detail-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/batch-program-check-add-edit-modal/batch-program-check-add-edit-modal.module#BatchProgramCheckAddEditModalPageModule', name: 'BatchProgramCheckAddEditModalPage', segment: 'batch-program-check-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/batch-program-check-pk-edit-modal/batch-program-check-pk-edit-modal.module#BatchProgramCheckPkEditModalPageModule', name: 'BatchProgramCheckPkEditModalPage', segment: 'batch-program-check-pk-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/batch-program-check-pk/batch-program-check-pk.module#BatchProgramCheckPkPageModule', name: 'BatchProgramCheckPkPage', segment: 'batch-program-check-pk', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/batch-program-check-select-modal/batch-program-check-select-modal.module#BatchProgramCheckSelectModalPageModule', name: 'BatchProgramCheckSelectModalPage', segment: 'batch-program-check-select-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/batch-program-check/batch-program-check.module#BatchProgramCheckPageModule', name: 'BatchProgramCheckPage', segment: 'batch-program-check', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/batch-program-check-pk-edit-modal/batch-program-check-pk-edit-modal.module#BatchProgramCheckPkEditModalPageModule', name: 'BatchProgramCheckPkEditModalPage', segment: 'batch-program-check-pk-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/batch-program-select-modal/batch-program-select-modal.module#BatchProgramSelectModalPageModule', name: 'BatchProgramSelectModalPage', segment: 'batch-program-select-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/change-password/change-password.module#ChangePasswordPageModule', name: 'ChangePasswordPage', segment: 'change-password', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/batch-program/batch-program.module#BatchProgramPageModule', name: 'BatchProgramPage', segment: 'batch-program', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/batch-program-management/batch-program-management.module#BatchProgramManagementPageModule', name: 'BatchProgramManagementPage', segment: 'batch-program-management', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/batch-program-check-add-edit-modal/batch-program-check-add-edit-modal.module#BatchProgramCheckAddEditModalPageModule', name: 'BatchProgramCheckAddEditModalPage', segment: 'batch-program-check-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/cmd-log/cmd-log.module#CmdLogPageModule', name: 'CmdLogPage', segment: 'cmd-log', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/check-code-column-select-modal/check-code-column-select-modal.module#CheckCodeColumnSelectModalPageModule', name: 'CheckCodeColumnSelectModalPage', segment: 'check-code-column-select-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/code-add-edit-modal/code-add-edit-modal.module#CodeAddEditModalPageModule', name: 'CodeAddEditModalPage', segment: 'code-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/code-check-type-detail-modal/code-check-type-detail-modal.module#CodeCheckTypeDetailModalPageModule', name: 'CodeCheckTypeDetailModalPage', segment: 'code-check-type-detail-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/batch-program/batch-program.module#BatchProgramPageModule', name: 'BatchProgramPage', segment: 'batch-program', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/batch-variable/batch-variable.module#BatchVariablePageModule', name: 'BatchVariablePage', segment: 'batch-variable', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/code-check-type-detail/code-check-type-detail.module#CodeCheckTypeDetailPageModule', name: 'CodeCheckTypeDetailPage', segment: 'code-check-type-detail', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/code-select-modal/code-select-modal.module#CodeSelectModalPageModule', name: 'CodeSelectModalPage', segment: 'code-select-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/code-check/code-check.module#CodeCheckPageModule', name: 'CodeCheckPage', segment: 'code-check', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/code/code.module#CodePageModule', name: 'CodePage', segment: 'code', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/change-password/change-password.module#ChangePasswordPageModule', name: 'ChangePasswordPage', segment: 'change-password', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/batch-exec-program/batch-exec-program.module#BatchExecProgramPageModule', name: 'BatchExecProgramPage', segment: 'batch-exec-program', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/batch-program-add-edit-modal/batch-program-add-edit-modal.module#BatchProgramAddEditModalPageModule', name: 'BatchProgramAddEditModalPage', segment: 'batch-program-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/check-code-column-select-modal/check-code-column-select-modal.module#CheckCodeColumnSelectModalPageModule', name: 'CheckCodeColumnSelectModalPage', segment: 'check-code-column-select-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/check-type-select-modal/check-type-select-modal.module#CheckTypeSelectModalPageModule', name: 'CheckTypeSelectModalPage', segment: 'check-type-select-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/cmd-log/cmd-log.module#CmdLogPageModule', name: 'CmdLogPage', segment: 'cmd-log', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/code-add-edit-modal/code-add-edit-modal.module#CodeAddEditModalPageModule', name: 'CodeAddEditModalPage', segment: 'code-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/code-check-add-edit-modal/code-check-add-edit-modal.module#CodeCheckAddEditModalPageModule', name: 'CodeCheckAddEditModalPage', segment: 'code-check-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/code-check-type-detail-modal/code-check-type-detail-modal.module#CodeCheckTypeDetailModalPageModule', name: 'CodeCheckTypeDetailModalPage', segment: 'code-check-type-detail-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/code-check-type-detail/code-check-type-detail.module#CodeCheckTypeDetailPageModule', name: 'CodeCheckTypeDetailPage', segment: 'code-check-type-detail', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/code-check/code-check.module#CodeCheckPageModule', name: 'CodeCheckPage', segment: 'code-check', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/code-select-modal/code-select-modal.module#CodeSelectModalPageModule', name: 'CodeSelectModalPage', segment: 'code-select-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/code/code.module#CodePageModule', name: 'CodePage', segment: 'code', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/column-mapping-add-edit-modal/column-mapping-add-edit-modal.module#ColumnMappingAddEditModalPageModule', name: 'ColumnMappingAddEditModalPage', segment: 'column-mapping-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/column-mapping-add-table-modal/column-mapping-add-table-modal.module#ColumnMappingAddTableModalPageModule', name: 'ColumnMappingAddTableModalPage', segment: 'column-mapping-add-table-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/column-mapping/column-mapping.module#ColumnMappingPageModule', name: 'ColumnMappingPage', segment: 'column-mapping', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/column-type-mapping-add-edit-modal/column-type-mapping-add-edit-modal.module#ColumnTypeMappingAddEditModalPageModule', name: 'ColumnTypeMappingAddEditModalPage', segment: 'column-type-mapping-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/common-management/common-management.module#CommonManagementPageModule', name: 'CommonManagementPage', segment: 'common-management', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/column-type-mapping/column-type-mapping.module#ColumnTypeMappingPageModule', name: 'ColumnTypeMappingPage', segment: 'column-type-mapping', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/column-mapping-add-edit-modal/column-mapping-add-edit-modal.module#ColumnMappingAddEditModalPageModule', name: 'ColumnMappingAddEditModalPage', segment: 'column-mapping-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/check-type-select-modal/check-type-select-modal.module#CheckTypeSelectModalPageModule', name: 'CheckTypeSelectModalPage', segment: 'check-type-select-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/common-management/common-management.module#CommonManagementPageModule', name: 'CommonManagementPage', segment: 'common-management', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/config-col-index-loop-add-edit-modal/config-col-index-loop-add-edit-modal.module#ConfigColIndexLoopAddEditModalPageModule', name: 'ConfigColIndexLoopAddEditModalPage', segment: 'config-col-index-loop-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/config-col-index-loop/config-col-index-loop.module#ConfigColIndexLoopPageModule', name: 'ConfigColIndexLoopPage', segment: 'config-col-index-loop', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/conn-db-add-edit-modal/conn-db-add-edit-modal.module#ConnDbAddEditModalPageModule', name: 'ConnDbAddEditModalPage', segment: 'conn-db-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/conn-db/conn-db.module#ConnDbPageModule', name: 'ConnDbPage', segment: 'conn-db', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/conn-ftp-add-edit-modal/conn-ftp-add-edit-modal.module#ConnFtpAddEditModalPageModule', name: 'ConnFtpAddEditModalPage', segment: 'conn-ftp-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/conn-http-add-edit-modal/conn-http-add-edit-modal.module#ConnHttpAddEditModalPageModule', name: 'ConnHttpAddEditModalPage', segment: 'conn-http-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/conn-ftp/conn-ftp.module#ConnFtpPageModule', name: 'ConnFtpPage', segment: 'conn-ftp', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/conn-http/conn-http.module#ConnHttpPageModule', name: 'ConnHttpPage', segment: 'conn-http', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/conn-sbp-add-edit-modal/conn-sbp-add-edit-modal.module#ConnSbpAddEditModalPageModule', name: 'ConnSbpAddEditModalPage', segment: 'conn-sbp-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/conn-select-modal/conn-select-modal.module#ConnSelectModalPageModule', name: 'ConnSelectModalPage', segment: 'conn-select-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/conn-sbp/conn-sbp.module#ConnSbpPageModule', name: 'ConnSbpPage', segment: 'conn-sbp', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/conn-management/conn-management.module#ConnManagementPageModule', name: 'ConnManagementPage', segment: 'conn-management', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/conn-http-add-edit-modal/conn-http-add-edit-modal.module#ConnHttpAddEditModalPageModule', name: 'ConnHttpAddEditModalPage', segment: 'conn-http-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/conn-smtp/conn-smtp.module#ConnSmtpPageModule', name: 'ConnSmtpPage', segment: 'conn-smtp', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/conn-select-modal/conn-select-modal.module#ConnSelectModalPageModule', name: 'ConnSelectModalPage', segment: 'conn-select-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/conn-smtp-add-edit-modal/conn-smtp-add-edit-modal.module#ConnSmtpAddEditModalPageModule', name: 'ConnSmtpAddEditModalPage', segment: 'conn-smtp-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/conn-ssis/conn-ssis.module#ConnSsisPageModule', name: 'ConnSsisPage', segment: 'conn-ssis', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/conn-smtp/conn-smtp.module#ConnSmtpPageModule', name: 'ConnSmtpPage', segment: 'conn-smtp', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/database-management/database-management.module#DatabaseManagementPageModule', name: 'DatabaseManagementPage', segment: 'database-management', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/del-table-add-edit-modal/del-table-add-edit-modal.module#DelTableAddEditModalPageModule', name: 'DelTableAddEditModalPage', segment: 'del-table-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/directory-browser-add-edit-modal/directory-browser-add-edit-modal.module#DirectoryBrowserAddEditModalPageModule', name: 'DirectoryBrowserAddEditModalPage', segment: 'directory-browser-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/directory-browser/directory-browser.module#DirectoryBrowserPageModule', name: 'DirectoryBrowserPage', segment: 'directory-browser', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/directory-browser-select-modal/directory-browser-select-modal.module#DirectoryBrowserSelectModalPageModule', name: 'DirectoryBrowserSelectModalPage', segment: 'directory-browser-select-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/del-table/del-table.module#DelTablePageModule', name: 'DelTablePage', segment: 'del-table', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/email-attach-add-edit-modal/email-attach-add-edit-modal.module#EmailAttachAddEditModalPageModule', name: 'EmailAttachAddEditModalPage', segment: 'email-attach-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/directory-browser-add-edit-modal/directory-browser-add-edit-modal.module#DirectoryBrowserAddEditModalPageModule', name: 'DirectoryBrowserAddEditModalPage', segment: 'directory-browser-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/config-col-index-loop/config-col-index-loop.module#ConfigColIndexLoopPageModule', name: 'ConfigColIndexLoopPage', segment: 'config-col-index-loop', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/directory-browser-select-modal/directory-browser-select-modal.module#DirectoryBrowserSelectModalPageModule', name: 'DirectoryBrowserSelectModalPage', segment: 'directory-browser-select-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/conn-management/conn-management.module#ConnManagementPageModule', name: 'ConnManagementPage', segment: 'conn-management', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/directory-browser/directory-browser.module#DirectoryBrowserPageModule', name: 'DirectoryBrowserPage', segment: 'directory-browser', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/email-add-edit-modal/email-add-edit-modal.module#EmailAddEditModalPageModule', name: 'EmailAddEditModalPage', segment: 'email-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/email-user-add-edit-modal/email-user-add-edit-modal.module#EmailUserAddEditModalPageModule', name: 'EmailUserAddEditModalPage', segment: 'email-user-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/email-attach-add-edit-modal/email-attach-add-edit-modal.module#EmailAttachAddEditModalPageModule', name: 'EmailAttachAddEditModalPage', segment: 'email-attach-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/email-attach/email-attach.module#EmailAttachPageModule', name: 'EmailAttachPage', segment: 'email-attach', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/email-send-log/email-send-log.module#EmailSendLogPageModule', name: 'EmailSendLogPage', segment: 'email-send-log', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/email-user-select-model/email-user-select-model.module#EmailUserSelectModelPageModule', name: 'EmailUserSelectModelPage', segment: 'email-user-select-model', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/conn-ssis/conn-ssis.module#ConnSsisPageModule', name: 'ConnSsisPage', segment: 'conn-ssis', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/email-management/email-management.module#EmailManagementPageModule', name: 'EmailManagementPage', segment: 'email-management', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/email-user-add-edit-modal/email-user-add-edit-modal.module#EmailUserAddEditModalPageModule', name: 'EmailUserAddEditModalPage', segment: 'email-user-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/email-user-select-model/email-user-select-model.module#EmailUserSelectModelPageModule', name: 'EmailUserSelectModelPage', segment: 'email-user-select-model', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/email-user/email-user.module#EmailUserPageModule', name: 'EmailUserPage', segment: 'email-user', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/err-data-log-detail/err-data-log-detail.module#ErrDataLogDetailPageModule', name: 'ErrDataLogDetailPage', segment: 'err-data-log-detail', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/email/email.module#EmailPageModule', name: 'EmailPage', segment: 'email', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/err-data-log/err-data-log.module#ErrDataLogPageModule', name: 'ErrDataLogPage', segment: 'err-data-log', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/err-msg-log-detail/err-msg-log-detail.module#ErrMsgLogDetailPageModule', name: 'ErrMsgLogDetailPage', segment: 'err-msg-log-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/err-data-src/err-data-src.module#ErrDataSrcPageModule', name: 'ErrDataSrcPage', segment: 'err-data-src', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-backup-management-add-edit-modal/file-backup-management-add-edit-modal.module#FileBackupManagementAddEditModalPageModule', name: 'FileBackupManagementAddEditModalPage', segment: 'file-backup-management-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/err-msg-log-detail/err-msg-log-detail.module#ErrMsgLogDetailPageModule', name: 'ErrMsgLogDetailPage', segment: 'err-msg-log-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/err-msg-log/err-msg-log.module#ErrMsgLogPageModule', name: 'ErrMsgLogPage', segment: 'err-msg-log', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/export-sql/export-sql.module#ExportSqlPageModule', name: 'ExportSqlPage', segment: 'export-sql', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-backup-management-add-edit-modal/file-backup-management-add-edit-modal.module#FileBackupManagementAddEditModalPageModule', name: 'FileBackupManagementAddEditModalPage', segment: 'file-backup-management-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-backup-management/file-backup-management.module#FileBackupManagementPageModule', name: 'FileBackupManagementPage', segment: 'file-backup-management', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/email/email.module#EmailPageModule', name: 'EmailPage', segment: 'email', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-browser-management/file-browser-management.module#FileBrowserManagementPageModule', name: 'FileBrowserManagementPage', segment: 'file-browser-management', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-browser-copy-edit-modal/file-browser-copy-edit-modal.module#FileBrowserCopyEditModalPageModule', name: 'FileBrowserCopyEditModalPage', segment: 'file-browser-copy-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-browser/file-browser.module#FileBrowserPageModule', name: 'FileBrowserPage', segment: 'file-browser', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-cmd-add-edit-modal/file-cmd-add-edit-modal.module#FileCmdAddEditModalPageModule', name: 'FileCmdAddEditModalPage', segment: 'file-cmd-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-cmd/file-cmd.module#FileCmdPageModule', name: 'FileCmdPage', segment: 'file-cmd', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-browser-copy-edit-modal/file-browser-copy-edit-modal.module#FileBrowserCopyEditModalPageModule', name: 'FileBrowserCopyEditModalPage', segment: 'file-browser-copy-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-browser-management/file-browser-management.module#FileBrowserManagementPageModule', name: 'FileBrowserManagementPage', segment: 'file-browser-management', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-browser/file-browser.module#FileBrowserPageModule', name: 'FileBrowserPage', segment: 'file-browser', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-code-add-edit-modal/file-code-add-edit-modal.module#FileCodeAddEditModalPageModule', name: 'FileCodeAddEditModalPage', segment: 'file-code-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-code/file-code.module#FileCodePageModule', name: 'FileCodePage', segment: 'file-code', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-copy-add-edit-modal/file-copy-add-edit-modal.module#FileCopyAddEditModalPageModule', name: 'FileCopyAddEditModalPage', segment: 'file-copy-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-date-filter-add-edit/file-date-filter-add-edit.module#FileDateFilterAddEditPageModule', name: 'FileDateFilterAddEditPage', segment: 'file-date-filter-add-edit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-copy/file-copy.module#FileCopyPageModule', name: 'FileCopyPage', segment: 'file-copy', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-date-filter-add-edit/file-date-filter-add-edit.module#FileDateFilterAddEditPageModule', name: 'FileDateFilterAddEditPage', segment: 'file-date-filter-add-edit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-depend-add-edit-modal/file-depend-add-edit-modal.module#FileDependAddEditModalPageModule', name: 'FileDependAddEditModalPage', segment: 'file-depend-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-directory-add-edit-modal/file-directory-add-edit-modal.module#FileDirectoryAddEditModalPageModule', name: 'FileDirectoryAddEditModalPage', segment: 'file-directory-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-depend/file-depend.module#FileDependPageModule', name: 'FileDependPage', segment: 'file-depend', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-directory/file-directory.module#FileDirectoryPageModule', name: 'FileDirectoryPage', segment: 'file-directory', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-email-attach-add-edit-modal/file-email-attach-add-edit-modal.module#FileEmailAttachAddEditModalPageModule', name: 'FileEmailAttachAddEditModalPage', segment: 'file-email-attach-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-directory-add-edit-modal/file-directory-add-edit-modal.module#FileDirectoryAddEditModalPageModule', name: 'FileDirectoryAddEditModalPage', segment: 'file-directory-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-email-attach/file-email-attach.module#FileEmailAttachPageModule', name: 'FileEmailAttachPage', segment: 'file-email-attach', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-exec-log/file-exec-log.module#FileExecLogPageModule', name: 'FileExecLogPage', segment: 'file-exec-log', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-exec-log-detail/file-exec-log-detail.module#FileExecLogDetailPageModule', name: 'FileExecLogDetailPage', segment: 'file-exec-log-detail', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-email-attach/file-email-attach.module#FileEmailAttachPageModule', name: 'FileEmailAttachPage', segment: 'file-email-attach', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-email-attach-add-edit-modal/file-email-attach-add-edit-modal.module#FileEmailAttachAddEditModalPageModule', name: 'FileEmailAttachAddEditModalPage', segment: 'file-email-attach-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export-add-edit-modal/file-export-add-edit-modal.module#FileExportAddEditModalPageModule', name: 'FileExportAddEditModalPage', segment: 'file-export-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export-all/file-export-all.module#FileExportAllPageModule', name: 'FileExportAllPage', segment: 'file-export-all', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-export-blob-table-add-edit-modal/file-export-blob-table-add-edit-modal.module#FileExportBlobTableAddEditModalPageModule', name: 'FileExportBlobTableAddEditModalPage', segment: 'file-export-blob-table-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export-blob-add-edit-modal/file-export-blob-add-edit-modal.module#FileExportBlobAddEditModalPageModule', name: 'FileExportBlobAddEditModalPage', segment: 'file-export-blob-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export-blob-table/file-export-blob-table.module#FileExportBlobTablePageModule', name: 'FileExportBlobTablePage', segment: 'file-export-blob-table', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-export-blob-table-add-edit-modal/file-export-blob-table-add-edit-modal.module#FileExportBlobTableAddEditModalPageModule', name: 'FileExportBlobTableAddEditModalPage', segment: 'file-export-blob-table-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export-blob/file-export-blob.module#FileExportBlobPageModule', name: 'FileExportBlobPage', segment: 'file-export-blob', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export-hk-add-edit-modal/file-export-hk-add-edit-modal.module#FileExportHkAddEditModalPageModule', name: 'FileExportHkAddEditModalPage', segment: 'file-export-hk-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export-hk-table-add-edit-modal/file-export-hk-table-add-edit-modal.module#FileExportHkTableAddEditModalPageModule', name: 'FileExportHkTableAddEditModalPage', segment: 'file-export-hk-table-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-export-hk-table/file-export-hk-table.module#FileExportHkTablePageModule', name: 'FileExportHkTablePage', segment: 'file-export-hk-table', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export-hk/file-export-hk.module#FileExportHkPageModule', name: 'FileExportHkPage', segment: 'file-export-hk', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export-management/file-export-management.module#FileExportManagementPageModule', name: 'FileExportManagementPage', segment: 'file-export-management', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export-script-add-edit-modal/file-export-script-add-edit-modal.module#FileExportScriptAddEditModalPageModule', name: 'FileExportScriptAddEditModalPage', segment: 'file-export-script-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export-script-table-add-edit-modal/file-export-script-table-add-edit-modal.module#FileExportScriptTableAddEditModalPageModule', name: 'FileExportScriptTableAddEditModalPage', segment: 'file-export-script-table-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export-script-table/file-export-script-table.module#FileExportScriptTablePageModule', name: 'FileExportScriptTablePage', segment: 'file-export-script-table', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export-script/file-export-script.module#FileExportScriptPageModule', name: 'FileExportScriptPage', segment: 'file-export-script', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-export-table/file-export-table.module#FileExportTablePageModule', name: 'FileExportTablePage', segment: 'file-export-table', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export-table-add-edit-modal/file-export-table-add-edit-modal.module#FileExportTableAddEditModalPageModule', name: 'FileExportTableAddEditModalPage', segment: 'file-export-table-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-export-table/file-export-table.module#FileExportTablePageModule', name: 'FileExportTablePage', segment: 'file-export-table', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export-tsql-add-edit-modal/file-export-tsql-add-edit-modal.module#FileExportTsqlAddEditModalPageModule', name: 'FileExportTsqlAddEditModalPage', segment: 'file-export-tsql-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-export-tsql-table-add-edit-modal/file-export-tsql-table-add-edit-modal.module#FileExportTsqlTableAddEditModalPageModule', name: 'FileExportTsqlTableAddEditModalPage', segment: 'file-export-tsql-table-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export-tsql-table/file-export-tsql-table.module#FileExportTsqlTablePageModule', name: 'FileExportTsqlTablePage', segment: 'file-export-tsql-table', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-export-hk-table/file-export-hk-table.module#FileExportHkTablePageModule', name: 'FileExportHkTablePage', segment: 'file-export-hk-table', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-exported-header-add-edit/file-exported-header-add-edit.module#FileExportedHeaderAddEditPageModule', name: 'FileExportedHeaderAddEditPage', segment: 'file-exported-header-add-edit', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-export-tsql-table-add-edit-modal/file-export-tsql-table-add-edit-modal.module#FileExportTsqlTableAddEditModalPageModule', name: 'FileExportTsqlTableAddEditModalPage', segment: 'file-export-tsql-table-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export-tsql/file-export-tsql.module#FileExportTsqlPageModule', name: 'FileExportTsqlPage', segment: 'file-export-tsql', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-filter-item-add-edit-modal/file-filter-item-add-edit-modal.module#FileFilterItemAddEditModalPageModule', name: 'FileFilterItemAddEditModalPage', segment: 'file-filter-item-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-exported-sql-add-edit/file-exported-sql-add-edit.module#FileExportedSqlAddEditPageModule', name: 'FileExportedSqlAddEditPage', segment: 'file-exported-sql-add-edit', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-exported-header-add-edit/file-exported-header-add-edit.module#FileExportedHeaderAddEditPageModule', name: 'FileExportedHeaderAddEditPage', segment: 'file-exported-header-add-edit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-export/file-export.module#FileExportPageModule', name: 'FileExportPage', segment: 'file-export', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-filter/file-filter.module#FileFilterPageModule', name: 'FileFilterPage', segment: 'file-filter', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-filter-add-edit-modal/file-filter-add-edit-modal.module#FileFilterAddEditModalPageModule', name: 'FileFilterAddEditModalPage', segment: 'file-filter-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-filter-item-add-edit-modal/file-filter-item-add-edit-modal.module#FileFilterItemAddEditModalPageModule', name: 'FileFilterItemAddEditModalPage', segment: 'file-filter-item-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-filter-item/file-filter-item.module#FileFilterItemPageModule', name: 'FileFilterItemPage', segment: 'file-filter-item', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-filter/file-filter.module#FileFilterPageModule', name: 'FileFilterPage', segment: 'file-filter', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-ftp-down-add-edit-modal/file-ftp-down-add-edit-modal.module#FileFtpDownAddEditModalPageModule', name: 'FileFtpDownAddEditModalPage', segment: 'file-ftp-down-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-ftp-down/file-ftp-down.module#FileFtpDownPageModule', name: 'FileFtpDownPage', segment: 'file-ftp-down', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-ftp-up-add-edit-modal/file-ftp-up-add-edit-modal.module#FileFtpUpAddEditModalPageModule', name: 'FileFtpUpAddEditModalPage', segment: 'file-ftp-up-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-http-down-all/file-http-down-all.module#FileHttpDownAllPageModule', name: 'FileHttpDownAllPage', segment: 'file-http-down-all', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-ftp-up/file-ftp-up.module#FileFtpUpPageModule', name: 'FileFtpUpPage', segment: 'file-ftp-up', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-filter-add-edit-modal/file-filter-add-edit-modal.module#FileFilterAddEditModalPageModule', name: 'FileFilterAddEditModalPage', segment: 'file-filter-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-http-down-management/file-http-down-management.module#FileHttpDownManagementPageModule', name: 'FileHttpDownManagementPage', segment: 'file-http-down-management', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-http-down-file-add-edit-modal/file-http-down-file-add-edit-modal.module#FileHttpDownFileAddEditModalPageModule', name: 'FileHttpDownFileAddEditModalPage', segment: 'file-http-down-file-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-http-down-management/file-http-down-management.module#FileHttpDownManagementPageModule', name: 'FileHttpDownManagementPage', segment: 'file-http-down-management', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-http-down-file/file-http-down-file.module#FileHttpDownFilePageModule', name: 'FileHttpDownFilePage', segment: 'file-http-down-file', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-http-h2-c/file-http-h2-c.module#FileHttpH2CPageModule', name: 'FileHttpH2CPage', segment: 'file-http-h2-c', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-http-h2-c-add-edit-modal/file-http-h2-c-add-edit-modal.module#FileHttpH2CAddEditModalPageModule', name: 'FileHttpH2CAddEditModalPage', segment: 'file-http-h2-c-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-http-h2-c/file-http-h2-c.module#FileHttpH2CPageModule', name: 'FileHttpH2CPage', segment: 'file-http-h2-c', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-http-html-down-file-add-edit-modal/file-http-html-down-file-add-edit-modal.module#FileHttpHtmlDownFileAddEditModalPageModule', name: 'FileHttpHtmlDownFileAddEditModalPage', segment: 'file-http-html-down-file-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-exported-sql-add-edit/file-exported-sql-add-edit.module#FileExportedSqlAddEditPageModule', name: 'FileExportedSqlAddEditPage', segment: 'file-exported-sql-add-edit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-http-html-down-file/file-http-html-down-file.module#FileHttpHtmlDownFilePageModule', name: 'FileHttpHtmlDownFilePage', segment: 'file-http-html-down-file', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-http-html2-csv/file-http-html2-csv.module#FileHttpHtml2CsvPageModule', name: 'FileHttpHtml2CsvPage', segment: 'file-http-html2-csv', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-http-j2-c/file-http-j2-c.module#FileHttpJ2CPageModule', name: 'FileHttpJ2CPage', segment: 'file-http-j2-c', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-http-j2-c-add-edit-modal/file-http-j2-c-add-edit-modal.module#FileHttpJ2CAddEditModalPageModule', name: 'FileHttpJ2CAddEditModalPage', segment: 'file-http-j2-c-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-http-json2-csv-add-edit-modal/file-http-json2-csv-add-edit-modal.module#FileHttpJson2CsvAddEditModalPageModule', name: 'FileHttpJson2CsvAddEditModalPage', segment: 'file-http-json2-csv-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-http-html2-csv-add-edit-modal/file-http-html2-csv-add-edit-modal.module#FileHttpHtml2CsvAddEditModalPageModule', name: 'FileHttpHtml2CsvAddEditModalPage', segment: 'file-http-html2-csv-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-http-html2-csv/file-http-html2-csv.module#FileHttpHtml2CsvPageModule', name: 'FileHttpHtml2CsvPage', segment: 'file-http-html2-csv', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-http-j2-c-add-edit-modal/file-http-j2-c-add-edit-modal.module#FileHttpJ2CAddEditModalPageModule', name: 'FileHttpJ2CAddEditModalPage', segment: 'file-http-j2-c-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-ftp-up/file-ftp-up.module#FileFtpUpPageModule', name: 'FileFtpUpPage', segment: 'file-ftp-up', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-http-j2-c/file-http-j2-c.module#FileHttpJ2CPageModule', name: 'FileHttpJ2CPage', segment: 'file-http-j2-c', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-http-json2-csv/file-http-json2-csv.module#FileHttpJson2CsvPageModule', name: 'FileHttpJson2CsvPage', segment: 'file-http-json2-csv', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-http-up/file-http-up.module#FileHttpUpPageModule', name: 'FileHttpUpPage', segment: 'file-http-up', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-import-add-edit-modal/file-import-add-edit-modal.module#FileImportAddEditModalPageModule', name: 'FileImportAddEditModalPage', segment: 'file-import-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-http-json2-csv-add-edit-modal/file-http-json2-csv-add-edit-modal.module#FileHttpJson2CsvAddEditModalPageModule', name: 'FileHttpJson2CsvAddEditModalPage', segment: 'file-http-json2-csv-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-http-up-add-edit-modal/file-http-up-add-edit-modal.module#FileHttpUpAddEditModalPageModule', name: 'FileHttpUpAddEditModalPage', segment: 'file-http-up-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-http-up/file-http-up.module#FileHttpUpPageModule', name: 'FileHttpUpPage', segment: 'file-http-up', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-image-add-edit-modal/file-image-add-edit-modal.module#FileImageAddEditModalPageModule', name: 'FileImageAddEditModalPage', segment: 'file-image-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-import-after-add-edit-modal/file-import-after-add-edit-modal.module#FileImportAfterAddEditModalPageModule', name: 'FileImportAfterAddEditModalPage', segment: 'file-import-after-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-import-before-sql-add-edit/file-import-before-sql-add-edit.module#FileImportBeforeSqlAddEditPageModule', name: 'FileImportBeforeSqlAddEditPage', segment: 'file-import-before-sql-add-edit', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-image/file-image.module#FileImagePageModule', name: 'FileImagePage', segment: 'file-image', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-import-after/file-import-after.module#FileImportAfterPageModule', name: 'FileImportAfterPage', segment: 'file-import-after', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-import-add-edit-modal/file-import-add-edit-modal.module#FileImportAddEditModalPageModule', name: 'FileImportAddEditModalPage', segment: 'file-import-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-import-before-sql-add-edit/file-import-before-sql-add-edit.module#FileImportBeforeSqlAddEditPageModule', name: 'FileImportBeforeSqlAddEditPage', segment: 'file-import-before-sql-add-edit', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-import-before-add-edit-modal/file-import-before-add-edit-modal.module#FileImportBeforeAddEditModalPageModule', name: 'FileImportBeforeAddEditModalPage', segment: 'file-import-before-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-import-before-check-add-edit-modal/file-import-before-check-add-edit-modal.module#FileImportBeforeCheckAddEditModalPageModule', name: 'FileImportBeforeCheckAddEditModalPage', segment: 'file-import-before-check-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-import-data-expression-add-edit/file-import-data-expression-add-edit.module#FileImportDataExpressionAddEditPageModule', name: 'FileImportDataExpressionAddEditPage', segment: 'file-import-data-expression-add-edit', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-import-data-lookup-add-edit-modal/file-import-data-lookup-add-edit-modal.module#FileImportDataLookupAddEditModalPageModule', name: 'FileImportDataLookupAddEditModalPage', segment: 'file-import-data-lookup-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-import-before/file-import-before.module#FileImportBeforePageModule', name: 'FileImportBeforePage', segment: 'file-import-before', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-import-data-lookup/file-import-data-lookup.module#FileImportDataLookupPageModule', name: 'FileImportDataLookupPage', segment: 'file-import-data-lookup', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-import-data-search-replace-add-edit-modal/file-import-data-search-replace-add-edit-modal.module#FileImportDataSearchReplaceAddEditModalPageModule', name: 'FileImportDataSearchReplaceAddEditModalPage', segment: 'file-import-data-search-replace-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-image/file-image.module#FileImagePageModule', name: 'FileImagePage', segment: 'file-image', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-import-select-modal/file-import-select-modal.module#FileImportSelectModalPageModule', name: 'FileImportSelectModalPage', segment: 'file-import-select-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-import-data-search-replace/file-import-data-search-replace.module#FileImportDataSearchReplacePageModule', name: 'FileImportDataSearchReplacePage', segment: 'file-import-data-search-replace', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-import-data-lookup-add-edit-modal/file-import-data-lookup-add-edit-modal.module#FileImportDataLookupAddEditModalPageModule', name: 'FileImportDataLookupAddEditModalPage', segment: 'file-import-data-lookup-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-import-table-add-edit-modal/file-import-table-add-edit-modal.module#FileImportTableAddEditModalPageModule', name: 'FileImportTableAddEditModalPage', segment: 'file-import-table-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-import/file-import.module#FileImportPageModule', name: 'FileImportPage', segment: 'file-import', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-loop-add-edit-modal/file-loop-add-edit-modal.module#FileLoopAddEditModalPageModule', name: 'FileLoopAddEditModalPage', segment: 'file-loop-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-loop/file-loop.module#FileLoopPageModule', name: 'FileLoopPage', segment: 'file-loop', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-import-table/file-import-table.module#FileImportTablePageModule', name: 'FileImportTablePage', segment: 'file-import-table', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-import-before-add-edit-modal/file-import-before-add-edit-modal.module#FileImportBeforeAddEditModalPageModule', name: 'FileImportBeforeAddEditModalPage', segment: 'file-import-before-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-management/file-management.module#FileManagementPageModule', name: 'FileManagementPage', segment: 'file-management', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-import-data-search-replace-add-edit-modal/file-import-data-search-replace-add-edit-modal.module#FileImportDataSearchReplaceAddEditModalPageModule', name: 'FileImportDataSearchReplaceAddEditModalPage', segment: 'file-import-data-search-replace-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-import-select-modal/file-import-select-modal.module#FileImportSelectModalPageModule', name: 'FileImportSelectModalPage', segment: 'file-import-select-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-import/file-import.module#FileImportPageModule', name: 'FileImportPage', segment: 'file-import', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-in-management/file-in-management.module#FileInManagementPageModule', name: 'FileInManagementPage', segment: 'file-in-management', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-loop/file-loop.module#FileLoopPageModule', name: 'FileLoopPage', segment: 'file-loop', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-management-all/file-management-all.module#FileManagementAllPageModule', name: 'FileManagementAllPage', segment: 'file-management-all', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-management/file-management.module#FileManagementPageModule', name: 'FileManagementPage', segment: 'file-management', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-out-management/file-out-management.module#FileOutManagementPageModule', name: 'FileOutManagementPage', segment: 'file-out-management', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-path/file-path.module#FilePathPageModule', name: 'FilePathPage', segment: 'file-path', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-processed-exec-group-add-edit/file-processed-exec-group-add-edit.module#FileProcessedExecGroupAddEditPageModule', name: 'FileProcessedExecGroupAddEditPage', segment: 'file-processed-exec-group-add-edit', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-processed-sql-add-edit/file-processed-sql-add-edit.module#FileProcessedSqlAddEditPageModule', name: 'FileProcessedSqlAddEditPage', segment: 'file-processed-sql-add-edit', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-in-management/file-in-management.module#FileInManagementPageModule', name: 'FileInManagementPage', segment: 'file-in-management', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-pdf2-image-add-edit-modal/file-pdf2-image-add-edit-modal.module#FilePdf2ImageAddEditModalPageModule', name: 'FilePdf2ImageAddEditModalPage', segment: 'file-pdf2-image-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-pdf2-image/file-pdf2-image.module#FilePdf2ImagePageModule', name: 'FilePdf2ImagePage', segment: 'file-pdf2-image', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-replace-data-item-add-edit-modal/file-replace-data-item-add-edit-modal.module#FileReplaceDataItemAddEditModalPageModule', name: 'FileReplaceDataItemAddEditModalPage', segment: 'file-replace-data-item-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-processed-sql-add-edit/file-processed-sql-add-edit.module#FileProcessedSqlAddEditPageModule', name: 'FileProcessedSqlAddEditPage', segment: 'file-processed-sql-add-edit', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-processed-exec-group-add-edit/file-processed-exec-group-add-edit.module#FileProcessedExecGroupAddEditPageModule', name: 'FileProcessedExecGroupAddEditPage', segment: 'file-processed-exec-group-add-edit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-replace-data-add-edit-modal/file-replace-data-add-edit-modal.module#FileReplaceDataAddEditModalPageModule', name: 'FileReplaceDataAddEditModalPage', segment: 'file-replace-data-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-replace-data-item-add-edit-modal/file-replace-data-item-add-edit-modal.module#FileReplaceDataItemAddEditModalPageModule', name: 'FileReplaceDataItemAddEditModalPage', segment: 'file-replace-data-item-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-replace-data-item/file-replace-data-item.module#FileReplaceDataItemPageModule', name: 'FileReplaceDataItemPage', segment: 'file-replace-data-item', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-loop-add-edit-modal/file-loop-add-edit-modal.module#FileLoopAddEditModalPageModule', name: 'FileLoopAddEditModalPage', segment: 'file-loop-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-replace-data/file-replace-data.module#FileReplaceDataPageModule', name: 'FileReplaceDataPage', segment: 'file-replace-data', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-sql/file-sql.module#FileSqlPageModule', name: 'FileSqlPage', segment: 'file-sql', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-sql-add-edit-modal/file-sql-add-edit-modal.module#FileSqlAddEditModalPageModule', name: 'FileSqlAddEditModalPage', segment: 'file-sql-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-ssis-add-edit-modal/file-ssis-add-edit-modal.module#FileSsisAddEditModalPageModule', name: 'FileSsisAddEditModalPage', segment: 'file-ssis-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-ssis-conn-parm-add-edit-modal/file-ssis-conn-parm-add-edit-modal.module#FileSsisConnParmAddEditModalPageModule', name: 'FileSsisConnParmAddEditModalPage', segment: 'file-ssis-conn-parm-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-ssis/file-ssis.module#FileSsisPageModule', name: 'FileSsisPage', segment: 'file-ssis', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-ssis-conn-parm/file-ssis-conn-parm.module#FileSsisConnParmPageModule', name: 'FileSsisConnParmPage', segment: 'file-ssis-conn-parm', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-ssis-parm-add-edit-modal/file-ssis-parm-add-edit-modal.module#FileSsisParmAddEditModalPageModule', name: 'FileSsisParmAddEditModalPage', segment: 'file-ssis-parm-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-ssis-parm/file-ssis-parm.module#FileSsisParmPageModule', name: 'FileSsisParmPage', segment: 'file-ssis-parm', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-sql-add-edit-modal/file-sql-add-edit-modal.module#FileSqlAddEditModalPageModule', name: 'FileSqlAddEditModalPage', segment: 'file-sql-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-zip-list-add-edit-modal/file-zip-list-add-edit-modal.module#FileZipListAddEditModalPageModule', name: 'FileZipListAddEditModalPage', segment: 'file-zip-list-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-un-zip/file-un-zip.module#FileUnZipPageModule', name: 'FileUnZipPage', segment: 'file-un-zip', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-un-zip-add-edit-modal/file-un-zip-add-edit-modal.module#FileUnZipAddEditModalPageModule', name: 'FileUnZipAddEditModalPage', segment: 'file-un-zip-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-ssis-conn-parm/file-ssis-conn-parm.module#FileSsisConnParmPageModule', name: 'FileSsisConnParmPage', segment: 'file-ssis-conn-parm', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-un-zip/file-un-zip.module#FileUnZipPageModule', name: 'FileUnZipPage', segment: 'file-un-zip', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-zip-list-add-edit-modal/file-zip-list-add-edit-modal.module#FileZipListAddEditModalPageModule', name: 'FileZipListAddEditModalPage', segment: 'file-zip-list-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-zip-list/file-zip-list.module#FileZipListPageModule', name: 'FileZipListPage', segment: 'file-zip-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-zip-management/file-zip-management.module#FileZipManagementPageModule', name: 'FileZipManagementPage', segment: 'file-zip-management', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-zip-set/file-zip-set.module#FileZipSetPageModule', name: 'FileZipSetPage', segment: 'file-zip-set', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-zip-src-add-edit-modal/file-zip-src-add-edit-modal.module#FileZipSrcAddEditModalPageModule', name: 'FileZipSrcAddEditModalPage', segment: 'file-zip-src-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/file-zip-src/file-zip-src.module#FileZipSrcPageModule', name: 'FileZipSrcPage', segment: 'file-zip-src', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/file-zip-set-add-edit-modal/file-zip-set-add-edit-modal.module#FileZipSetAddEditModalPageModule', name: 'FileZipSetAddEditModalPage', segment: 'file-zip-set-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/for-add-edit-modal/for-add-edit-modal.module#ForAddEditModalPageModule', name: 'ForAddEditModalPage', segment: 'for-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ford/ford.module#FordPageModule', name: 'FordPage', segment: 'ford', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-zip-set/file-zip-set.module#FileZipSetPageModule', name: 'FileZipSetPage', segment: 'file-zip-set', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-zip-src/file-zip-src.module#FileZipSrcPageModule', name: 'FileZipSrcPage', segment: 'file-zip-src', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-zip-src-add-edit-modal/file-zip-src-add-edit-modal.module#FileZipSrcAddEditModalPageModule', name: 'FileZipSrcAddEditModalPage', segment: 'file-zip-src-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file-ssis/file-ssis.module#FileSsisPageModule', name: 'FileSsisPage', segment: 'file-ssis', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/for/for.module#ForPageModule', name: 'ForPage', segment: 'for', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/fors-add-edit-modal/fors-add-edit-modal.module#ForsAddEditModalPageModule', name: 'ForsAddEditModalPage', segment: 'fors-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ftp-directory-browser-add-edit-modal/ftp-directory-browser-add-edit-modal.module#FtpDirectoryBrowserAddEditModelPageModule', name: 'FtpDirectoryBrowserAddEditModalPage', segment: 'ftp-directory-browser-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/fors/fors.module#ForsPageModule', name: 'ForsPage', segment: 'fors', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/for-add-edit-modal/for-add-edit-modal.module#ForAddEditModalPageModule', name: 'ForAddEditModalPage', segment: 'for-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ford-add-edit-modal/ford-add-edit-modal.module#FordAddEditModalPageModule', name: 'FordAddEditModalPage', segment: 'ford-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ftp-directory-browser-select-modal/ftp-directory-browser-select-modal.module#FtpDirectoryBrowserSelectModalPageModule', name: 'FtpDirectoryBrowserSelectModalPage', segment: 'ftp-directory-browser-select-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ftp-file-browser-edit-modal/ftp-file-browser-edit-modal.module#FtpFileBrowserEditModalPageModule', name: 'FtpFileBrowserEditModalPage', segment: 'ftp-file-browser-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/fors/fors.module#ForsPageModule', name: 'ForsPage', segment: 'fors', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ftp-directory-browser-add-edit-modal/ftp-directory-browser-add-edit-modal.module#FtpDirectoryBrowserAddEditModelPageModule', name: 'FtpDirectoryBrowserAddEditModalPage', segment: 'ftp-directory-browser-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ftp-directory-browser/ftp-directory-browser.module#FtpDirectoryBrowserPageModule', name: 'FtpDirectoryBrowserPage', segment: 'ftp-directory-browser', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ftp-file-browser-upload/ftp-file-browser-upload.module#FtpFileBrowserUploadPageModule', name: 'FtpFileBrowserUploadPage', segment: 'ftp-file-browser-upload', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ftp-file-browser-download/ftp-file-browser-download.module#FtpFileBrowserDownloadPageModule', name: 'FtpFileBrowserDownloadPage', segment: 'ftp-file-browser-download', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ftp-file-browser-edit-modal/ftp-file-browser-edit-modal.module#FtpFileBrowserEditModalPageModule', name: 'FtpFileBrowserEditModalPage', segment: 'ftp-file-browser-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ftp-file-browser-upload/ftp-file-browser-upload.module#FtpFileBrowserUploadPageModule', name: 'FtpFileBrowserUploadPage', segment: 'ftp-file-browser-upload', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ftp-file-browser/ftp-file-browser.module#FtpFileBrowserPageModule', name: 'FtpFileBrowserPage', segment: 'ftp-file-browser', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ford/ford.module#FordPageModule', name: 'FordPage', segment: 'ford', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ftp-directory-browser-select-modal/ftp-directory-browser-select-modal.module#FtpDirectoryBrowserSelectModalPageModule', name: 'FtpDirectoryBrowserSelectModalPage', segment: 'ftp-directory-browser-select-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/fors-add-edit-modal/fors-add-edit-modal.module#ForsAddEditModalPageModule', name: 'ForsAddEditModalPage', segment: 'fors-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/glossary-add-edit-modal/glossary-add-edit-modal.module#GlossaryAddEditModalPageModule', name: 'GlossaryAddEditModalPage', segment: 'glossary-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/glossary-select-modal/glossary-select-modal.module#GlossarySelectModalPageModule', name: 'GlossarySelectModalPage', segment: 'glossary-select-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/glossary/glossary.module#GlossaryPageModule', name: 'GlossaryPage', segment: 'glossary', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/glossary-select-modal/glossary-select-modal.module#GlossarySelectModalPageModule', name: 'GlossarySelectModalPage', segment: 'glossary-select-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ftp-file-browser/ftp-file-browser.module#FtpFileBrowserPageModule', name: 'FtpFileBrowserPage', segment: 'ftp-file-browser', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ionic-program-add-edit-modal/ionic-program-add-edit-modal.module#IonicProgramAddEditModalPageModule', name: 'IonicProgramAddEditModalPage', segment: 'ionic-program-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ionic-program-detail/ionic-program-detail.module#IonicProgramDetailPageModule', name: 'IonicProgramDetailPage', segment: 'ionic-program-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/insert-value-sql/insert-value-sql.module#InsertValueSqlPageModule', name: 'InsertValueSqlPage', segment: 'insert-value-sql', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ionic-program-permission-select-modal/ionic-program-permission-select-modal.module#IonicProgramPermissionSelectModalPageModule', name: 'IonicProgramPermissionSelectModalPage', segment: 'ionic-program-permission-select-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/job-by-sch-select-modal/job-by-sch-select-modal.module#JobBySchSelectModalPageModule', name: 'JobBySchSelectModalPage', segment: 'job-by-sch-select-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/job-add-edit-modal/job-add-edit-modal.module#JobAddEditModalPageModule', name: 'JobAddEditModalPage', segment: 'job-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ionic-program/ionic-program.module#IonicProgramPageModule', name: 'IonicProgramPage', segment: 'ionic-program', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ionic-program-add-edit-modal/ionic-program-add-edit-modal.module#IonicProgramAddEditModalPageModule', name: 'IonicProgramAddEditModalPage', segment: 'ionic-program-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ionic-program-detail-add-edit-modal/ionic-program-detail-add-edit-modal.module#IonicProgramDetailAddEditModalPageModule', name: 'IonicProgramDetailAddEditModalPage', segment: 'ionic-program-detail-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/job-detail/job-detail.module#JobDetailPageModule', name: 'JobDetailPage', segment: 'job-detail', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ionic-program-detail/ionic-program-detail.module#IonicProgramDetailPageModule', name: 'IonicProgramDetailPage', segment: 'ionic-program-detail', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ionic-program-permission-select-modal/ionic-program-permission-select-modal.module#IonicProgramPermissionSelectModalPageModule', name: 'IonicProgramPermissionSelectModalPage', segment: 'ionic-program-permission-select-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ionic-program-permission/ionic-program-permission.module#IonicProgramPermissionPageModule', name: 'IonicProgramPermissionPage', segment: 'ionic-program-permission', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ionic-program/ionic-program.module#IonicProgramPageModule', name: 'IonicProgramPage', segment: 'ionic-program', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/job-add-edit-modal/job-add-edit-modal.module#JobAddEditModalPageModule', name: 'JobAddEditModalPage', segment: 'job-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/job-by-sch-select-modal/job-by-sch-select-modal.module#JobBySchSelectModalPageModule', name: 'JobBySchSelectModalPage', segment: 'job-by-sch-select-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/job-by-sch/job-by-sch.module#JobBySchPageModule', name: 'JobBySchPage', segment: 'job-by-sch', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/job-loop-add-edit-modal/job-loop-add-edit-modal.module#JobLoopAddEditModalPageModule', name: 'JobLoopAddEditModalPage', segment: 'job-loop-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/job-detail/job-detail.module#JobDetailPageModule', name: 'JobDetailPage', segment: 'job-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/job-exec-log-detail/job-exec-log-detail.module#JobExecLogDetailPageModule', name: 'JobExecLogDetailPage', segment: 'job-exec-log-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/job-exec-log/job-exec-log.module#JobExecLogPageModule', name: 'JobExecLogPage', segment: 'job-exec-log', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/job-loop-event-add-edit-modal/job-loop-event-add-edit-modal.module#JobLoopEventAddEditModalPageModule', name: 'JobLoopEventAddEditModalPage', segment: 'job-loop-event-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/job-loop-add-edit-modal/job-loop-add-edit-modal.module#JobLoopAddEditModalPageModule', name: 'JobLoopAddEditModalPage', segment: 'job-loop-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/job-loop-add-pwd-modal/job-loop-add-pwd-modal.module#JobLoopAddPwdModalPageModule', name: 'JobLoopAddPwdModalPage', segment: 'job-loop-add-pwd-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/job-loop/job-loop.module#JobLoopPageModule', name: 'JobLoopPage', segment: 'job-loop', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/job-loop-detail/job-loop-detail.module#JobLoopDetailPageModule', name: 'JobLoopDetailPage', segment: 'job-loop-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/job-loop-event/job-loop-event.module#JobLoopEventPageModule', name: 'JobLoopEventPage', segment: 'job-loop-event', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/job-processed-sql-add-edit-modal/job-processed-sql-add-edit-modal.module#JobProcessedSqlAddEditModalPageModule', name: 'JobProcessedSqlAddEditModalPage', segment: 'job-processed-sql-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/job-sch-exec-log/job-sch-exec-log.module#JobSchExecLogPageModule', name: 'JobSchExecLogPage', segment: 'job-sch-exec-log', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/job-loop-event-add-edit-modal/job-loop-event-add-edit-modal.module#JobLoopEventAddEditModalPageModule', name: 'JobLoopEventAddEditModalPage', segment: 'job-loop-event-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/job-processed-sql/job-processed-sql.module#JobProcessedSqlPageModule', name: 'JobProcessedSqlPage', segment: 'job-processed-sql', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ionic-program-permission/ionic-program-permission.module#IonicProgramPermissionPageModule', name: 'IonicProgramPermissionPage', segment: 'ionic-program-permission', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/job-step-exec-log/job-step-exec-log.module#JobStepExecLogPageModule', name: 'JobStepExecLogPage', segment: 'job-step-exec-log', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/job-sch-exec-log/job-sch-exec-log.module#JobSchExecLogPageModule', name: 'JobSchExecLogPage', segment: 'job-sch-exec-log', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/job-processed-sql-add-edit-modal/job-processed-sql-add-edit-modal.module#JobProcessedSqlAddEditModalPageModule', name: 'JobProcessedSqlAddEditModalPage', segment: 'job-processed-sql-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/job-sch-management/job-sch-management.module#JobSchManagementPageModule', name: 'JobSchManagementPage', segment: 'job-sch-management', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/job-loop/job-loop.module#JobLoopPageModule', name: 'JobLoopPage', segment: 'job-loop', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/job-step-add-edit-modal/job-step-add-edit-modal.module#JobStepAddEditModalPageModule', name: 'JobStepAddEditModalPage', segment: 'job-step-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/job-step-detail/job-step-detail.module#JobStepDetailPageModule', name: 'JobStepDetailPage', segment: 'job-step-detail', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/job-step-exec-log/job-step-exec-log.module#JobStepExecLogPageModule', name: 'JobStepExecLogPage', segment: 'job-step-exec-log', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/job-step-exec-log-detail/job-step-exec-log-detail.module#JobStepExecLogDetailPageModule', name: 'JobStepExecLogDetailPage', segment: 'job-step-exec-log-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/job-step-loop-add-edit-modal/job-step-loop-add-edit-modal.module#JobStepLoopAddEditModalPageModule', name: 'JobStepLoopAddEditModalPage', segment: 'job-step-loop-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/job-step/job-step.module#JobStepPageModule', name: 'JobStepPage', segment: 'job-step', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/job-loop-detail/job-loop-detail.module#JobLoopDetailPageModule', name: 'JobLoopDetailPage', segment: 'job-loop-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/job-step-loop/job-step-loop.module#JobStepLoopPageModule', name: 'JobStepLoopPage', segment: 'job-step-loop', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/job-step/job-step.module#JobStepPageModule', name: 'JobStepPage', segment: 'job-step', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/job/job.module#JobPageModule', name: 'JobPage', segment: 'job', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/line-add-edit-modal/line-add-edit-modal.module#LineAddEditModalPageModule', name: 'LineAddEditModalPage', segment: 'line-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/job-sch-management/job-sch-management.module#JobSchManagementPageModule', name: 'JobSchManagementPage', segment: 'job-sch-management', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/line-message-add-edit-modal/line-message-add-edit-modal.module#LineMessageAddEditModalPageModule', name: 'LineMessageAddEditModalPage', segment: 'line-message-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/main-code-add-edit-modal/main-code-add-edit-modal.module#MainCodeAddEditModalPageModule', name: 'MainCodeAddEditModalPage', segment: 'main-code-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/main-code/main-code.module#MainCodePageModule', name: 'MainCodePage', segment: 'main-code', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/line/line.module#LinePageModule', name: 'LinePage', segment: 'line', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/line-message-log/line-message-log.module#LineMessageLogPageModule', name: 'LineMessageLogPage', segment: 'line-message-log', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/line-message/line-message.module#LineMessagePageModule', name: 'LineMessagePage', segment: 'line-message', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/main-code-copy-modal/main-code-copy-modal.module#MainCodeCopyModalPageModule', name: 'MainCodeCopyModalPage', segment: 'main-code-copy-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/menu-add-edit-modal/menu-add-edit-modal.module#MenuAddEditModalPageModule', name: 'MenuAddEditModalPage', segment: 'menu-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login-log/login-log.module#LoginLogPageModule', name: 'LoginLogPage', segment: 'login-log', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/line-message/line-message.module#LineMessagePageModule', name: 'LineMessagePage', segment: 'line-message', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/main-code-add-edit-modal/main-code-add-edit-modal.module#MainCodeAddEditModalPageModule', name: 'MainCodeAddEditModalPage', segment: 'main-code-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/line-message-log/line-message-log.module#LineMessageLogPageModule', name: 'LineMessageLogPage', segment: 'line-message-log', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/main-code-copy-modal/main-code-copy-modal.module#MainCodeCopyModalPageModule', name: 'MainCodeCopyModalPage', segment: 'main-code-copy-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/mask-column/mask-column.module#MaskColumnPageModule', name: 'MaskColumnPage', segment: 'mask-column', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/menu-add-edit-modal/menu-add-edit-modal.module#MenuAddEditModalPageModule', name: 'MenuAddEditModalPage', segment: 'menu-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/menu-by-program-detail-select-modal/menu-by-program-detail-select-modal.module#MenuByProgramDetailSelectModalPageModule', name: 'MenuByProgramDetailSelectModalPage', segment: 'menu-by-program-detail-select-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/menu-by-program-detail/menu-by-program-detail.module#MenuByProgramDetailPageModule', name: 'MenuByProgramDetailPage', segment: 'menu-by-program-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/menu-detail-edit-modal/menu-detail-edit-modal.module#MenuDetailEditModalPageModule', name: 'MenuDetailEditModalPage', segment: 'menu-detail-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/menu-detail-select-modal/menu-detail-select-modal.module#MenuDetailSelectModalPageModule', name: 'MenuDetailSelectModalPage', segment: 'menu-detail-select-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/menu-detail/menu-detail.module#MenuDetailPageModule', name: 'MenuDetailPage', segment: 'menu-detail', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/main-code/main-code.module#MainCodePageModule', name: 'MainCodePage', segment: 'main-code', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/merge-sql/merge-sql.module#MergeSqlPageModule', name: 'MergeSqlPage', segment: 'merge-sql', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/parameter-column-add-edit-modal/parameter-column-add-edit-modal.module#ParameterColumnAddEditModalPageModule', name: 'ParameterColumnAddEditModalPage', segment: 'parameter-column-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/parameter-column/parameter-column.module#ParameterColumnPageModule', name: 'ParameterColumnPage', segment: 'parameter-column', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/parameter-group-add-edit-modal/parameter-group-add-edit-modal.module#ParameterGroupAddEditModalPageModule', name: 'ParameterGroupAddEditModalPage', segment: 'parameter-group-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/parameter-group-select-model/parameter-group-select-model.module#ParameterGroupSelectModelPageModule', name: 'ParameterGroupSelectModelPage', segment: 'parameter-group-select-model', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/mask-column-add-edit-modal/mask-column-add-edit-modal.module#MaskColumnAddEditModalPageModule', name: 'MaskColumnAddEditModalPage', segment: 'mask-column-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/parameter-group/parameter-group.module#ParameterGroupPageModule', name: 'ParameterGroupPage', segment: 'parameter-group', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/permission-add-edit-modal/permission-add-edit-modal.module#PermissionAddEditModalPageModule', name: 'PermissionAddEditModalPage', segment: 'permission-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/permission-management/permission-management.module#PermissionManagementPageModule', name: 'PermissionManagementPage', segment: 'permission-management', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/parameter-column/parameter-column.module#ParameterColumnPageModule', name: 'ParameterColumnPage', segment: 'parameter-column', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/permission-program/permission-program.module#PermissionProgramPageModule', name: 'PermissionProgramPage', segment: 'permission-program', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/permission-program-select-modal/permission-program-select-modal.module#PermissionProgramSelectModalPageModule', name: 'PermissionProgramSelectModalPage', segment: 'permission-program-select-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/parameter-group/parameter-group.module#ParameterGroupPageModule', name: 'ParameterGroupPage', segment: 'parameter-group', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/permission-program/permission-program.module#PermissionProgramPageModule', name: 'PermissionProgramPage', segment: 'permission-program', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/permission-role-select-modal/permission-role-select-modal.module#PermissionRoleSelectModalPageModule', name: 'PermissionRoleSelectModalPage', segment: 'permission-role-select-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/permission-role/permission-role.module#PermissionRolePageModule', name: 'PermissionRolePage', segment: 'permission-role', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/permission-user/permission-user.module#PermissionUserPageModule', name: 'PermissionUserPage', segment: 'permission-user', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/permission/permission.module#PermissionPageModule', name: 'PermissionPage', segment: 'permission', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/program-detail-add-edit-modal/program-detail-add-edit-modal.module#ProgramDetailAddEditModalPageModule', name: 'ProgramDetailAddEditModalPage', segment: 'program-detail-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/prog/prog.module#ProgPageModule', name: 'ProgPage', segment: 'prog', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/program-detail-add-edit-modal/program-detail-add-edit-modal.module#ProgramDetailAddEditModalPageModule', name: 'ProgramDetailAddEditModalPage', segment: 'program-detail-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/program-detail-by-ionic-program/program-detail-by-ionic-program.module#ProgramDetailByIonicProgramPageModule', name: 'ProgramDetailByIonicProgramPage', segment: 'program-detail-by-ionic-program', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/permission-role/permission-role.module#PermissionRolePageModule', name: 'PermissionRolePage', segment: 'permission-role', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/program-detail-select-modal/program-detail-select-modal.module#ProgramDetailSelectModalPageModule', name: 'ProgramDetailSelectModalPage', segment: 'program-detail-select-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/program-detail/program-detail.module#ProgramDetailPageModule', name: 'ProgramDetailPage', segment: 'program-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/program-set-select-modal/program-set-select-modal.module#ProgramSetSelectModalPageModule', name: 'ProgramSetSelectModalPage', segment: 'program-set-select-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/quote-column-add-edit-modal/quote-column-add-edit-modal.module#QuoteColumnAddEditModalPageModule', name: 'QuoteColumnAddEditModalPage', segment: 'quote-column-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/quote-column/quote-column.module#QuoteColumnPageModule', name: 'QuoteColumnPage', segment: 'quote-column', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/role-user-select-modal/role-user-select-modal.module#RoleUserSelectModalPageModule', name: 'RoleUserSelectModalPage', segment: 'role-user-select-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/program-detail/program-detail.module#ProgramDetailPageModule', name: 'ProgramDetailPage', segment: 'program-detail', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/role-permission-select-modal/role-permission-select-modal.module#RolePermissionSelectModalPageModule', name: 'RolePermissionSelectModalPage', segment: 'role-permission-select-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/role-permission/role-permission.module#RolePermissionPageModule', name: 'RolePermissionPage', segment: 'role-permission', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/role-user-select-modal/role-user-select-modal.module#RoleUserSelectModalPageModule', name: 'RoleUserSelectModalPage', segment: 'role-user-select-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/role-user/role-user.module#RoleUserPageModule', name: 'RoleUserPage', segment: 'role-user', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/role/role.module#RolePageModule', name: 'RolePage', segment: 'role', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sch-by-job-select-modal/sch-by-job-select-modal.module#SchByJobSelectModalPageModule', name: 'SchByJobSelectModalPage', segment: 'sch-by-job-select-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/sch-by-job/sch-by-job.module#SchByJobPageModule', name: 'SchByJobPage', segment: 'sch-by-job', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sch-day-time-add-edit-modal/sch-day-time-add-edit-modal.module#SchDayTimeAddEditModalPageModule', name: 'SchDayTimeAddEditModalPage', segment: 'sch-day-time-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/sch-management/sch-management.module#SchManagementPageModule', name: 'SchManagementPage', segment: 'sch-management', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sch-day-time/sch-day-time.module#SchDayTimePageModule', name: 'SchDayTimePage', segment: 'sch-day-time', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/sch-management/sch-management.module#SchManagementPageModule', name: 'SchManagementPage', segment: 'sch-management', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sch-month-lastday-time-add-edit-modal/sch-month-lastday-time-add-edit-modal.module#SchMonthLastdayTimeAddEditModalPageModule', name: 'SchMonthLastdayTimeAddEditModalPage', segment: 'sch-month-lastday-time-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/sch-month-lastday-time/sch-month-lastday-time.module#SchMonthLastdayTimePageModule', name: 'SchMonthLastdayTimePage', segment: 'sch-month-lastday-time', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sch-month-time-add-edit-modal/sch-month-time-add-edit-modal.module#SchMonthTimeAddEditModalPageModule', name: 'SchMonthTimeAddEditModalPage', segment: 'sch-month-time-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/sch-month-lastday-time/sch-month-lastday-time.module#SchMonthLastdayTimePageModule', name: 'SchMonthLastdayTimePage', segment: 'sch-month-lastday-time', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sch-month-time/sch-month-time.module#SchMonthTimePageModule', name: 'SchMonthTimePage', segment: 'sch-month-time', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/sch-one-day-time/sch-one-day-time.module#SchOneDayTimePageModule', name: 'SchOneDayTimePage', segment: 'sch-one-day-time', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/sch-week-time-add-edit-modal/sch-week-time-add-edit-modal.module#SchWeekTimeAddEditModalPageModule', name: 'SchWeekTimeAddEditModalPage', segment: 'sch-week-time-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sch-one-day-time-add-edit-modal/sch-one-day-time-add-edit-modal.module#SchOneDayTimeAddEditModalPageModule', name: 'SchOneDayTimeAddEditModalPage', segment: 'sch-one-day-time-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/sch-one-day-time/sch-one-day-time.module#SchOneDayTimePageModule', name: 'SchOneDayTimePage', segment: 'sch-one-day-time', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/sch-by-job/sch-by-job.module#SchByJobPageModule', name: 'SchByJobPage', segment: 'sch-by-job', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/sch-week-time-add-edit-modal/sch-week-time-add-edit-modal.module#SchWeekTimeAddEditModalPageModule', name: 'SchWeekTimeAddEditModalPage', segment: 'sch-week-time-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sch-week-time/sch-week-time.module#SchWeekTimePageModule', name: 'SchWeekTimePage', segment: 'sch-week-time', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sch/sch.module#SchPageModule', name: 'SchPage', segment: 'sch', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/security-management/security-management.module#SecurityManagementPageModule', name: 'SecurityManagementPage', segment: 'security-management', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/select-value-sql/select-value-sql.module#SelectValueSqlPageModule', name: 'SelectValueSqlPage', segment: 'select-value-sql', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/security-management/security-management.module#SecurityManagementPageModule', name: 'SecurityManagementPage', segment: 'security-management', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sp/sp.module#SpPageModule', name: 'SpPage', segment: 'sp', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sp-add-edit-modal/sp-add-edit-modal.module#SpAddEditModalPageModule', name: 'SpAddEditModalPage', segment: 'sp-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sql-management/sql-management.module#SqlManagementPageModule', name: 'SqlManagementPage', segment: 'sql-management', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sql-all/sql-all.module#SqlAllPageModule', name: 'SqlAllPage', segment: 'sql-all', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sql-set-add-edit-modal/sql-set-add-edit-modal.module#SqlSetAddEditModalPageModule', name: 'SqlSetAddEditModalPage', segment: 'sql-set-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/sql-set/sql-set.module#SqlSetPageModule', name: 'SqlSetPage', segment: 'sql-set', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/sql/sql.module#SqlPageModule', name: 'SqlPage', segment: 'sql', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/show-message/show-message.module#ShowMessagePageModule', name: 'ShowMessagePage', segment: 'show-message', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/sql-set/sql-set.module#SqlSetPageModule', name: 'SqlSetPage', segment: 'sql-set', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/table-add-edit-modal/table-add-edit-modal.module#TableAddEditModalPageModule', name: 'TableAddEditModalPage', segment: 'table-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/table-column-ext-select-modal/table-column-ext-select-modal.module#TableColumnExtSelectModalPageModule', name: 'TableColumnExtSelectModalPage', segment: 'table-column-ext-select-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/table-by-column/table-by-column.module#TableByColumnPageModule', name: 'TableByColumnPage', segment: 'table-by-column', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/table-copy-modal/table-copy-modal.module#TableCopyModalPageModule', name: 'TableCopyModalPage', segment: 'table-copy-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/table-detail-add-edit-modal/table-detail-add-edit-modal.module#TableDetailAddEditModalPageModule', name: 'TableDetailAddEditModalPage', segment: 'table-detail-add-edit-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/sql/sql.module#SqlPageModule', name: 'SqlPage', segment: 'sql', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/table-detail-detail/table-detail-detail.module#TableDetailDetailPageModule', name: 'TableDetailDetailPage', segment: 'table-detail-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/table-detail-edit-modal/table-detail-edit-modal.module#TableDetailEditModalPageModule', name: 'TableDetailEditModalPage', segment: 'table-detail-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/table-detail-ext-detail/table-detail-ext-detail.module#TableDetailExtDetailPageModule', name: 'TableDetailExtDetailPage', segment: 'table-detail-ext-detail', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/table-detail-ext-select-modal/table-detail-ext-select-modal.module#TableDetailExtSelectModalPageModule', name: 'TableDetailExtSelectModalPage', segment: 'table-detail-ext-select-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/table-detail-add-edit-modal/table-detail-add-edit-modal.module#TableDetailAddEditModalPageModule', name: 'TableDetailAddEditModalPage', segment: 'table-detail-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/table-detail-ext/table-detail-ext.module#TableDetailExtPageModule', name: 'TableDetailExtPage', segment: 'table-detail-ext', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/table-detail-fk/table-detail-fk.module#TableDetailFkPageModule', name: 'TableDetailFkPage', segment: 'table-detail-fk', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/table-detail-select-modal/table-detail-select-modal.module#TableDetailSelectModalPageModule', name: 'TableDetailSelectModalPage', segment: 'table-detail-select-modal', priority: 'low', defaultHistory: [] },
@@ -9334,20 +9479,20 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/un-zip-file-loop-pwd-add-edit-modal/un-zip-file-loop-pwd-add-edit-modal.module#UnZipFileLoopPwdAddEditModalPageModule', name: 'UnZipFileLoopPwdAddEditModalPage', segment: 'un-zip-file-loop-pwd-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/un-zip-file-loop-pwd/un-zip-file-loop-pwd.module#UnZipFileLoopPwdPageModule', name: 'UnZipFileLoopPwdPage', segment: 'un-zip-file-loop-pwd', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/update-value-sql/update-value-sql.module#UpdateValueSqlPageModule', name: 'UpdateValueSqlPage', segment: 'update-value-sql', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/un-zip-file-pwd-add-edit/un-zip-file-pwd-add-edit.module#UnZipFilePwdAddEditPageModule', name: 'UnZipFilePwdAddEditPage', segment: 'un-zip-file-pwd-add-edit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/url-management/url-management.module#UrlManagementPageModule', name: 'UrlManagementPage', segment: 'url-management', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/user-add-edit-modal/user-add-edit-modal.module#UserAddEditModalPageModule', name: 'UserAddEditModalPage', segment: 'user-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/user-permission/user-permission.module#UserPermissionPageModule', name: 'UserPermissionPage', segment: 'user-permission', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/user-role-modal/user-role-modal.module#UserRoleModalPageModule', name: 'UserRoleModalPage', segment: 'user-role-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/table-detail-ext-select-modal/table-detail-ext-select-modal.module#TableDetailExtSelectModalPageModule', name: 'TableDetailExtSelectModalPage', segment: 'table-detail-ext-select-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/user-role/user-role.module#UserRolePageModule', name: 'UserRolePage', segment: 'user-role', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/user/user.module#UserPageModule', name: 'UserPage', segment: 'user', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/warning-check-add-edit-modal/warning-check-add-edit-modal.module#WarningCheckAddEditModalPageModule', name: 'WarningCheckAddEditModalPage', segment: 'warning-check-add-edit-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/warning-check-select-modal/warning-check-select-modal.module#WarningCheckSelectModalPageModule', name: 'WarningCheckSelectModalPage', segment: 'warning-check-select-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/warning-check/warning-check.module#WarningCheckPageModule', name: 'WarningCheckPage', segment: 'warning-check', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/un-zip-file-pwd-add-edit/un-zip-file-pwd-add-edit.module#UnZipFilePwdAddEditPageModule', name: 'UnZipFilePwdAddEditPage', segment: 'un-zip-file-pwd-add-edit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/zip-file-loop-pwd-add-edit-modal/zip-file-loop-pwd-add-edit-modal.module#ZipFileLoopPwdAddEditModalPageModule', name: 'ZipFileLoopPwdAddEditModalPage', segment: 'zip-file-loop-pwd-add-edit-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/user/user.module#UserPageModule', name: 'UserPage', segment: 'user', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/zip-file-pwd-add-edit/zip-file-pwd-add-edit.module#ZipFilePwdAddEditPageModule', name: 'ZipFilePwdAddEditPage', segment: 'zip-file-pwd-add-edit', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/role-permission-select-modal/role-permission-select-modal.module#RolePermissionSelectModalPageModule', name: 'RolePermissionSelectModalPage', segment: 'role-permission-select-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/zip-file-loop-pwd/zip-file-loop-pwd.module#ZipFileLoopPwdPageModule', name: 'ZipFileLoopPwdPage', segment: 'zip-file-loop-pwd', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/zip-file-loop-pwd/zip-file-loop-pwd.module#ZipFileLoopPwdPageModule', name: 'ZipFileLoopPwdPage', segment: 'zip-file-loop-pwd', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/zip-file-pwd-add-edit/zip-file-pwd-add-edit.module#ZipFilePwdAddEditPageModule', name: 'ZipFilePwdAddEditPage', segment: 'zip-file-pwd-add-edit', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_31__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
@@ -9400,6 +9545,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_45__providers_quote_column_services_quote_column_services__["a" /* QuoteColumnServicesProvider */],
                 __WEBPACK_IMPORTED_MODULE_46__providers_line_message_services_line_message_services__["a" /* LineMessageServicesProvider */],
                 __WEBPACK_IMPORTED_MODULE_47__providers_cmd_log_services_cmd_log_services__["a" /* CmdLogServicesProvider */],
+                __WEBPACK_IMPORTED_MODULE_48__providers_mask_column_services_mask_column_services__["a" /* MaskColumnServicesProvider */],
             ]
         })
     ], AppModule);
@@ -9409,18 +9555,18 @@ var AppModule = /** @class */ (function () {
 //# sourceMappingURL=app.module.js.map
 
 /***/ }),
-/* 310 */,
-/* 311 */,
 /* 312 */,
 /* 313 */,
 /* 314 */,
-/* 315 */
+/* 315 */,
+/* 316 */,
+/* 317 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CodeCheckListResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_CodeCheckViewModel__ = __webpack_require__(138);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -9478,7 +9624,7 @@ var CodeCheckListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=CodeCheckListResponse.js.map
 
 /***/ }),
-/* 316 */
+/* 318 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9533,13 +9679,13 @@ var CodeCheckResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=CodeCheckResponse.js.map
 
 /***/ }),
-/* 317 */
+/* 319 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VwCodeTypeCheckListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_VwCodeTypeCheckViewModel__ = __webpack_require__(318);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_VwCodeTypeCheckViewModel__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -9581,7 +9727,7 @@ var VwCodeTypeCheckListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=VwCodeTypeCheckListResponse.js.map
 
 /***/ }),
-/* 318 */
+/* 320 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9595,13 +9741,13 @@ var VwCodeTypeCheckViewModel = /** @class */ (function () {
 //# sourceMappingURL=VwCodeTypeCheckViewModel.js.map
 
 /***/ }),
-/* 319 */
+/* 321 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VwCodeCheckListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_VwCodeCheckViewModel__ = __webpack_require__(320);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_VwCodeCheckViewModel__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -9645,7 +9791,7 @@ var VwCodeCheckListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=VwCodeCheckListResponse.js.map
 
 /***/ }),
-/* 320 */
+/* 322 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9659,8 +9805,6 @@ var VwCodeCheckViewModel = /** @class */ (function () {
 //# sourceMappingURL=VwCodeCheckViewModel.js.map
 
 /***/ }),
-/* 321 */,
-/* 322 */,
 /* 323 */,
 /* 324 */,
 /* 325 */,
@@ -9679,13 +9823,15 @@ var VwCodeCheckViewModel = /** @class */ (function () {
 /* 338 */,
 /* 339 */,
 /* 340 */,
-/* 341 */
+/* 341 */,
+/* 342 */,
+/* 343 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ApiUrlListResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_ApiUrlViewModel__ = __webpack_require__(68);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -9736,7 +9882,7 @@ var ApiUrlListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=ApiUrlListResponse.js.map
 
 /***/ }),
-/* 342 */
+/* 344 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9784,8 +9930,8 @@ var ApiUrlResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=ApiUrlResponse.js.map
 
 /***/ }),
-/* 343 */,
-/* 344 */
+/* 345 */,
+/* 346 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9839,12 +9985,12 @@ var ApiUrlRepository = /** @class */ (function () {
 //# sourceMappingURL=ApiUrlRepository.js.map
 
 /***/ }),
-/* 345 */
+/* 347 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserMenuResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_user_menuViewModel__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_user_menuViewModel__ = __webpack_require__(348);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__SingleModelResponse__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ViewModel_UserViewModel__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ViewModel_MenuViewModel__ = __webpack_require__(136);
@@ -9945,7 +10091,7 @@ var UserMenuResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=UserMenuResponse.js.map
 
 /***/ }),
-/* 346 */
+/* 348 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9959,19 +10105,19 @@ var user_menuViewModel = /** @class */ (function () {
 //# sourceMappingURL=user_menuViewModel.js.map
 
 /***/ }),
-/* 347 */,
-/* 348 */,
 /* 349 */,
 /* 350 */,
 /* 351 */,
 /* 352 */,
-/* 353 */
+/* 353 */,
+/* 354 */,
+/* 355 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableListResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_TableViewModel__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -10022,6 +10168,11 @@ var TableListResponse = /** @class */ (function (_super) {
                     item.quote_column_color = "danger";
                 else
                     item.quote_column_color = "light";
+                item.mask_column_cnt = data.mask_column_cnt;
+                if (item.mask_column_cnt > 0)
+                    item.mask_column_color = "danger";
+                else
+                    item.mask_column_color = "light";
                 _this.Model.push(item);
             }) || null;
         }
@@ -10033,7 +10184,7 @@ var TableListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=TableListResponse.js.map
 
 /***/ }),
-/* 354 */
+/* 356 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10087,12 +10238,12 @@ var TableResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=TableResponse.js.map
 
 /***/ }),
-/* 355 */
+/* 357 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgramListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ListModelResponse__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_ProgramViewModel__ = __webpack_require__(49);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -10169,7 +10320,7 @@ var ProgramListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=ProgramListResponse.js.map
 
 /***/ }),
-/* 356 */
+/* 358 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10233,67 +10384,13 @@ var ProgramResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=ProgramResponse.js.map
 
 /***/ }),
-/* 357 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CmdLogResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_CmdLogViewModel__ = __webpack_require__(358);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-var CmdLogResponse = /** @class */ (function (_super) {
-    __extends(CmdLogResponse, _super);
-    function CmdLogResponse(obj) {
-        var _this = _super.call(this, obj) || this;
-        _this.Message = obj.Message;
-        _this.DidError = obj.DidError;
-        _this.ErrorMessage = obj.ErrorMessage;
-        if (_this.DidError === false) {
-            _this.Model = new __WEBPACK_IMPORTED_MODULE_1__ViewModel_CmdLogViewModel__["a" /* CmdLogViewModel */]();
-            _this.Model.exec_log_seq = obj.Model.exec_log_seq; //轉檔記錄序號
-            _this.Model.msg = obj.Model.msg; //訊息
-            _this.Model.create_time = obj.Model.create_time; //建立時間
-        }
-        return _this;
-    }
-    return CmdLogResponse;
-}(__WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__["a" /* SingleModelResponse */]));
-
-//# sourceMappingURL=CmdLogResponse.js.map
-
-/***/ }),
-/* 358 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CmdLogViewModel; });
-var CmdLogViewModel = /** @class */ (function () {
-    function CmdLogViewModel() {
-    }
-    return CmdLogViewModel;
-}());
-
-//# sourceMappingURL=CmdLogViewModel.js.map
-
-/***/ }),
 /* 359 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableDetailListResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_TableDetailViewModel__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -10440,9 +10537,63 @@ var TableDetailResponse = /** @class */ (function (_super) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CmdLogResponse; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_CmdLogViewModel__ = __webpack_require__(362);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var CmdLogResponse = /** @class */ (function (_super) {
+    __extends(CmdLogResponse, _super);
+    function CmdLogResponse(obj) {
+        var _this = _super.call(this, obj) || this;
+        _this.Message = obj.Message;
+        _this.DidError = obj.DidError;
+        _this.ErrorMessage = obj.ErrorMessage;
+        if (_this.DidError === false) {
+            _this.Model = new __WEBPACK_IMPORTED_MODULE_1__ViewModel_CmdLogViewModel__["a" /* CmdLogViewModel */]();
+            _this.Model.exec_log_seq = obj.Model.exec_log_seq; //轉檔記錄序號
+            _this.Model.msg = obj.Model.msg; //訊息
+            _this.Model.create_time = obj.Model.create_time; //建立時間
+        }
+        return _this;
+    }
+    return CmdLogResponse;
+}(__WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__["a" /* SingleModelResponse */]));
+
+//# sourceMappingURL=CmdLogResponse.js.map
+
+/***/ }),
+/* 362 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CmdLogViewModel; });
+var CmdLogViewModel = /** @class */ (function () {
+    function CmdLogViewModel() {
+    }
+    return CmdLogViewModel;
+}());
+
+//# sourceMappingURL=CmdLogViewModel.js.map
+
+/***/ }),
+/* 363 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConnListResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_ConnViewModel__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -10492,7 +10643,7 @@ var ConnListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=ConnListResponse.js.map
 
 /***/ }),
-/* 362 */
+/* 364 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10539,13 +10690,13 @@ var ConnResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=ConnResponse.js.map
 
 /***/ }),
-/* 363 */
+/* 365 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConnFtpListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_ConnFtpViewModel__ = __webpack_require__(275);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_ConnFtpViewModel__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -10601,13 +10752,13 @@ var ConnFtpListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=ConnFtpListResponse.js.map
 
 /***/ }),
-/* 364 */
+/* 366 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConnSmtpListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_ConnSmtpViewModel__ = __webpack_require__(276);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_ConnSmtpViewModel__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -10662,13 +10813,13 @@ var ConnSmtpListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=ConnSmtpListResponse.js.map
 
 /***/ }),
-/* 365 */
+/* 367 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConnHttpListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_ConnHttpViewModel__ = __webpack_require__(274);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_ConnHttpViewModel__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -10718,13 +10869,47 @@ var ConnHttpListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=ConnHttpListResponse.js.map
 
 /***/ }),
-/* 366 */
+/* 368 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RunJobResponse; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+var RunJobResponse = /** @class */ (function (_super) {
+    __extends(RunJobResponse, _super);
+    function RunJobResponse(obj) {
+        var _this = _super.call(this, obj) || this;
+        _this.Message = obj.Message;
+        _this.DidError = obj.DidError;
+        _this.ErrorMessage = obj.ErrorMessage;
+        console.log(_this.DidError);
+        _this.Model = obj.Model;
+        return _this;
+    }
+    return RunJobResponse;
+}(__WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__["a" /* SingleModelResponse */]));
+
+//# sourceMappingURL=RunJobResponse.js.map
+
+/***/ }),
+/* 369 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FilePathListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_FilePathViewModel__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_FilePathViewModel__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -10773,13 +10958,13 @@ var FilePathListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=FilePathListResponse.js.map
 
 /***/ }),
-/* 367 */
+/* 370 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FilePathResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_FilePathViewModel__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_FilePathViewModel__ = __webpack_require__(202);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -10819,261 +11004,13 @@ var FilePathResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=FilePathResponse.js.map
 
 /***/ }),
-/* 368 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RunJobResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-var RunJobResponse = /** @class */ (function (_super) {
-    __extends(RunJobResponse, _super);
-    function RunJobResponse(obj) {
-        var _this = _super.call(this, obj) || this;
-        _this.Message = obj.Message;
-        _this.DidError = obj.DidError;
-        _this.ErrorMessage = obj.ErrorMessage;
-        console.log(_this.DidError);
-        _this.Model = obj.Model;
-        return _this;
-    }
-    return RunJobResponse;
-}(__WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__["a" /* SingleModelResponse */]));
-
-//# sourceMappingURL=RunJobResponse.js.map
-
-/***/ }),
-/* 369 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileManagementListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_FileManagementViewModel__ = __webpack_require__(129);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-var FileManagementListResponse = /** @class */ (function (_super) {
-    __extends(FileManagementListResponse, _super);
-    function FileManagementListResponse(obj) {
-        var _this = _super.call(this, obj) || this;
-        _this.Model = [];
-        _this.Message = obj.Messag;
-        _this.DidError = obj.DidError;
-        _this.ErrorMessage = (obj && obj.ErrorMessage) || null;
-        _this.PageNumber = obj.PageNumber;
-        _this.PageSize = obj.PageSize;
-        _this.PageRows = obj.PageRows;
-        _this.TotalPages = obj.TotalPages;
-        _this.TotalRows = obj.TotalRows;
-        if (_this.DidError === false) {
-            obj.Model.forEach(function (data) {
-                var item = new __WEBPACK_IMPORTED_MODULE_0__ViewModel_FileManagementViewModel__["a" /* FileManagementViewModel */]();
-                item.exec_file_seq = data.exec_file_seq;
-                item.exec_group = data.exec_group;
-                item.file_keyword = data.file_keyword;
-                item.file_min_length = data.file_min_length;
-                item.file_max_length = data.file_max_length;
-                item.is_active = data.is_active;
-                item.recursive = data.recursive;
-                item.file_proc_key = data.file_proc_key;
-                item.exec_seq = data.exec_seq;
-                item.can_rerun = data.can_rerun;
-                item.parameter_column_group = data.parameter_column_group;
-                item.creator = data.creator;
-                item.create_time = data.create_time;
-                item.modifier = data.modifier;
-                item.last_update_time = data.last_update_time;
-                item.note = (data && data.note) || null;
-                item.file_proc = data.file_proc;
-                item.is_active_desc = data.is_active_desc;
-                switch (data.is_active) {
-                    case false: {
-                        item.is_active_color = "danger";
-                        item.is_active_color_right = "danger-right";
-                        break;
-                    }
-                    default: {
-                        item.is_active_color = "active";
-                        item.is_active_color_right = "active-right";
-                    }
-                }
-                item.empty_file_check_flag = data.empty_file_check_flag;
-                item.is_fail_stop = data.is_fail_stop;
-                item.src_file_path = data.src_file_path;
-                item.bk_file_path = data.bk_file_path;
-                item.target_file_path = data.target_file_path;
-                item.src_file_path_key = data.src_file_path_key;
-                item.bk_file_path_key = data.bk_file_path_key;
-                item.target_file_path_key = data.target_file_path_key;
-                item.is_processed_sql = data.is_processed_sql;
-                if (item.is_processed_sql === true) {
-                    item.processed_sql_color = "danger";
-                }
-                else
-                    item.processed_sql_color = "light";
-                item.is_processed_exec_group = data.is_processed_exec_group;
-                if (item.is_processed_exec_group === true) {
-                    item.processed_exec_group_color = "danger";
-                }
-                else
-                    item.processed_exec_group_color = "light";
-                item.is_date_filter = data.is_date_filter;
-                if (item.is_date_filter === true) {
-                    item.date_filter_color = "danger";
-                }
-                else
-                    item.date_filter_color = "light";
-                item.is_pwd = data.is_pwd;
-                if (item.is_pwd === true) {
-                    item.pwd_color = "danger";
-                }
-                else
-                    item.pwd_color = "light";
-                item.loop_pwd_cnt = data.loop_pwd_cnt;
-                if (item.loop_pwd_cnt > 0) {
-                    item.loop_pwd_color = "danger";
-                }
-                else
-                    item.loop_pwd_color = "light";
-                _this.Model.push(item);
-            }) || null;
-        }
-        return _this;
-    }
-    return FileManagementListResponse;
-}(__WEBPACK_IMPORTED_MODULE_1__ListModelResponse__["a" /* ListModelResponse */]));
-
-//# sourceMappingURL=FileManagementListResponse.js.map
-
-/***/ }),
-/* 370 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileManagementResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_FileManagementViewModel__ = __webpack_require__(129);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-var FileManagementResponse = /** @class */ (function (_super) {
-    __extends(FileManagementResponse, _super);
-    function FileManagementResponse(obj) {
-        var _this = _super.call(this, obj) || this;
-        _this.Message = obj.Message;
-        _this.DidError = obj.DidError;
-        _this.ErrorMessage = obj.ErrorMessage;
-        if (_this.DidError === false) {
-            _this.Model = new __WEBPACK_IMPORTED_MODULE_1__ViewModel_FileManagementViewModel__["a" /* FileManagementViewModel */]();
-            _this.Model.exec_file_seq = obj.Model.exec_file_seq;
-            _this.Model.exec_group = obj.Model.exec_group;
-            _this.Model.file_keyword = obj.Model.file_keyword;
-            _this.Model.file_min_length = obj.Model.file_min_length;
-            _this.Model.file_max_length = obj.Model.file_max_length;
-            _this.Model.is_active = obj.Model.is_active;
-            _this.Model.recursive = obj.Model.recursive;
-            _this.Model.file_proc_key = obj.Model.file_proc_key;
-            _this.Model.exec_seq = obj.Model.exec_seq;
-            _this.Model.can_rerun = obj.Model.can_rerun;
-            _this.Model.parameter_column_group = obj.Model.parameter_column_group;
-            _this.Model.creator = obj.Model.creator;
-            _this.Model.create_time = obj.Model.create_time;
-            _this.Model.modifier = obj.Model.modifier;
-            _this.Model.last_update_time = obj.Model.last_update_time;
-            _this.Model.note = (obj && obj.Model.note) || null;
-            _this.Model.file_proc = obj.Model.file_proc;
-            _this.Model.is_active_desc = obj.Model.is_active_desc;
-            switch (obj.Model.is_active) {
-                case false: {
-                    _this.Model.is_active_color = "danger";
-                    break;
-                }
-                default:
-                    _this.Model.is_active_color = "active";
-            }
-            _this.Model.empty_file_check_flag = obj.Model.empty_file_check_flag;
-            _this.Model.is_fail_stop = obj.Model.is_fail_stop;
-            _this.Model.src_file_path_key = obj.Model.src_file_path_key;
-            _this.Model.bk_file_path_key = obj.Model.bk_file_path_key;
-            _this.Model.target_file_path_key = obj.Model.target_file_path_key;
-            _this.Model.src_file_path = obj.Model.src_file_path;
-            _this.Model.bk_file_path = obj.Model.bk_file_path;
-            _this.Model.target_file_path = obj.Model.target_file_path;
-            _this.Model.is_processed_sql = obj.Model.is_processed_sql;
-            if (_this.Model.is_processed_sql === true) {
-                _this.Model.processed_sql_color = "danger";
-            }
-            else
-                _this.Model.processed_sql_color = "light";
-            _this.Model.is_processed_exec_group = obj.Model.is_processed_exec_group;
-            if (_this.Model.is_processed_exec_group === true) {
-                _this.Model.processed_exec_group_color = "danger";
-            }
-            else
-                _this.Model.processed_exec_group_color = "light";
-            _this.Model.is_date_filter = obj.Model.is_date_filter;
-            if (_this.Model.is_date_filter === true) {
-                _this.Model.date_filter_color = "danger";
-            }
-            else
-                _this.Model.date_filter_color = "light";
-            _this.Model.is_pwd = obj.Model.is_pwd;
-            if (_this.Model.is_pwd === true) {
-                _this.Model.pwd_color = "danger";
-            }
-            else
-                _this.Model.pwd_color = "light";
-            _this.Model.loop_pwd_cnt = obj.Model.loop_pwd_cnt;
-            if (_this.Model.loop_pwd_cnt > 0) {
-                _this.Model.loop_pwd_color = "danger";
-            }
-            else
-                _this.Model.loop_pwd_color = "light";
-        }
-        return _this;
-    }
-    return FileManagementResponse;
-}(__WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__["a" /* SingleModelResponse */]));
-
-//# sourceMappingURL=FileManagementResponse.js.map
-
-/***/ }),
 /* 371 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableExtListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_TableExtViewModel__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_TableExtViewModel__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -11115,6 +11052,16 @@ var TableExtListResponse = /** @class */ (function (_super) {
                 item.category_sql = (data && data.category_sql) || null;
                 item.table_set_sql = (data && data.table_set_sql) || null;
                 item.copy_table_set_sql = (data && data.copy_table_set_sql) || null;
+                item.quote_column_cnt = data.quote_column_cnt;
+                if (item.quote_column_cnt > 0)
+                    item.quote_column_color = "danger";
+                else
+                    item.quote_column_color = "light";
+                item.mask_column_cnt = data.mask_column_cnt;
+                if (item.mask_column_cnt > 0)
+                    item.mask_column_color = "danger";
+                else
+                    item.mask_column_color = "light";
                 _this.Model.push(item);
             }) || null;
         }
@@ -11132,7 +11079,7 @@ var TableExtListResponse = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableExtResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_TableExtViewModel__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_TableExtViewModel__ = __webpack_require__(205);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -11245,7 +11192,7 @@ var TableCreateExtViewModel = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableFKListResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_TableFKViewModel__ = __webpack_require__(376);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -11315,7 +11262,7 @@ var TableFKViewModel = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableDetailFKListResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_TableDetailFKViewModel__ = __webpack_require__(378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -11385,9 +11332,223 @@ var TableDetailFKViewModel = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileManagementListResponse; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_FileManagementViewModel__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var FileManagementListResponse = /** @class */ (function (_super) {
+    __extends(FileManagementListResponse, _super);
+    function FileManagementListResponse(obj) {
+        var _this = _super.call(this, obj) || this;
+        _this.Model = [];
+        _this.Message = obj.Messag;
+        _this.DidError = obj.DidError;
+        _this.ErrorMessage = (obj && obj.ErrorMessage) || null;
+        _this.PageNumber = obj.PageNumber;
+        _this.PageSize = obj.PageSize;
+        _this.PageRows = obj.PageRows;
+        _this.TotalPages = obj.TotalPages;
+        _this.TotalRows = obj.TotalRows;
+        if (_this.DidError === false) {
+            obj.Model.forEach(function (data) {
+                var item = new __WEBPACK_IMPORTED_MODULE_0__ViewModel_FileManagementViewModel__["a" /* FileManagementViewModel */]();
+                item.exec_file_seq = data.exec_file_seq;
+                item.exec_group = data.exec_group;
+                item.file_keyword = data.file_keyword;
+                item.file_min_length = data.file_min_length;
+                item.file_max_length = data.file_max_length;
+                item.is_active = data.is_active;
+                item.recursive = data.recursive;
+                item.file_proc_key = data.file_proc_key;
+                item.exec_seq = data.exec_seq;
+                item.can_rerun = data.can_rerun;
+                item.parameter_column_group = data.parameter_column_group;
+                item.creator = data.creator;
+                item.create_time = data.create_time;
+                item.modifier = data.modifier;
+                item.last_update_time = data.last_update_time;
+                item.note = (data && data.note) || null;
+                item.file_proc = data.file_proc;
+                item.is_active_desc = data.is_active_desc;
+                switch (data.is_active) {
+                    case false: {
+                        item.is_active_color = "danger";
+                        item.is_active_color_right = "danger-right";
+                        break;
+                    }
+                    default: {
+                        item.is_active_color = "active";
+                        item.is_active_color_right = "active-right";
+                    }
+                }
+                item.empty_file_check_flag = data.empty_file_check_flag;
+                item.is_fail_stop = data.is_fail_stop;
+                item.src_file_path = data.src_file_path;
+                item.bk_file_path = data.bk_file_path;
+                item.target_file_path = data.target_file_path;
+                item.src_file_path_key = data.src_file_path_key;
+                item.bk_file_path_key = data.bk_file_path_key;
+                item.target_file_path_key = data.target_file_path_key;
+                item.is_processed_sql = data.is_processed_sql;
+                if (item.is_processed_sql === true) {
+                    item.processed_sql_color = "danger";
+                }
+                else
+                    item.processed_sql_color = "light";
+                item.is_processed_exec_group = data.is_processed_exec_group;
+                if (item.is_processed_exec_group === true) {
+                    item.processed_exec_group_color = "danger";
+                }
+                else
+                    item.processed_exec_group_color = "light";
+                item.is_date_filter = data.is_date_filter;
+                if (item.is_date_filter === true) {
+                    item.date_filter_color = "danger";
+                }
+                else
+                    item.date_filter_color = "light";
+                item.is_pwd = data.is_pwd;
+                if (item.is_pwd === true) {
+                    item.pwd_color = "danger";
+                }
+                else
+                    item.pwd_color = "light";
+                item.loop_pwd_cnt = data.loop_pwd_cnt;
+                if (item.loop_pwd_cnt > 0) {
+                    item.loop_pwd_color = "danger";
+                }
+                else
+                    item.loop_pwd_color = "light";
+                _this.Model.push(item);
+            }) || null;
+        }
+        return _this;
+    }
+    return FileManagementListResponse;
+}(__WEBPACK_IMPORTED_MODULE_1__ListModelResponse__["a" /* ListModelResponse */]));
+
+//# sourceMappingURL=FileManagementListResponse.js.map
+
+/***/ }),
+/* 380 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileManagementResponse; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_FileManagementViewModel__ = __webpack_require__(129);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var FileManagementResponse = /** @class */ (function (_super) {
+    __extends(FileManagementResponse, _super);
+    function FileManagementResponse(obj) {
+        var _this = _super.call(this, obj) || this;
+        _this.Message = obj.Message;
+        _this.DidError = obj.DidError;
+        _this.ErrorMessage = obj.ErrorMessage;
+        if (_this.DidError === false) {
+            _this.Model = new __WEBPACK_IMPORTED_MODULE_1__ViewModel_FileManagementViewModel__["a" /* FileManagementViewModel */]();
+            _this.Model.exec_file_seq = obj.Model.exec_file_seq;
+            _this.Model.exec_group = obj.Model.exec_group;
+            _this.Model.file_keyword = obj.Model.file_keyword;
+            _this.Model.file_min_length = obj.Model.file_min_length;
+            _this.Model.file_max_length = obj.Model.file_max_length;
+            _this.Model.is_active = obj.Model.is_active;
+            _this.Model.recursive = obj.Model.recursive;
+            _this.Model.file_proc_key = obj.Model.file_proc_key;
+            _this.Model.exec_seq = obj.Model.exec_seq;
+            _this.Model.can_rerun = obj.Model.can_rerun;
+            _this.Model.parameter_column_group = obj.Model.parameter_column_group;
+            _this.Model.creator = obj.Model.creator;
+            _this.Model.create_time = obj.Model.create_time;
+            _this.Model.modifier = obj.Model.modifier;
+            _this.Model.last_update_time = obj.Model.last_update_time;
+            _this.Model.note = (obj && obj.Model.note) || null;
+            _this.Model.file_proc = obj.Model.file_proc;
+            _this.Model.is_active_desc = obj.Model.is_active_desc;
+            switch (obj.Model.is_active) {
+                case false: {
+                    _this.Model.is_active_color = "danger";
+                    break;
+                }
+                default:
+                    _this.Model.is_active_color = "active";
+            }
+            _this.Model.empty_file_check_flag = obj.Model.empty_file_check_flag;
+            _this.Model.is_fail_stop = obj.Model.is_fail_stop;
+            _this.Model.src_file_path_key = obj.Model.src_file_path_key;
+            _this.Model.bk_file_path_key = obj.Model.bk_file_path_key;
+            _this.Model.target_file_path_key = obj.Model.target_file_path_key;
+            _this.Model.src_file_path = obj.Model.src_file_path;
+            _this.Model.bk_file_path = obj.Model.bk_file_path;
+            _this.Model.target_file_path = obj.Model.target_file_path;
+            _this.Model.is_processed_sql = obj.Model.is_processed_sql;
+            if (_this.Model.is_processed_sql === true) {
+                _this.Model.processed_sql_color = "danger";
+            }
+            else
+                _this.Model.processed_sql_color = "light";
+            _this.Model.is_processed_exec_group = obj.Model.is_processed_exec_group;
+            if (_this.Model.is_processed_exec_group === true) {
+                _this.Model.processed_exec_group_color = "danger";
+            }
+            else
+                _this.Model.processed_exec_group_color = "light";
+            _this.Model.is_date_filter = obj.Model.is_date_filter;
+            if (_this.Model.is_date_filter === true) {
+                _this.Model.date_filter_color = "danger";
+            }
+            else
+                _this.Model.date_filter_color = "light";
+            _this.Model.is_pwd = obj.Model.is_pwd;
+            if (_this.Model.is_pwd === true) {
+                _this.Model.pwd_color = "danger";
+            }
+            else
+                _this.Model.pwd_color = "light";
+            _this.Model.loop_pwd_cnt = obj.Model.loop_pwd_cnt;
+            if (_this.Model.loop_pwd_cnt > 0) {
+                _this.Model.loop_pwd_color = "danger";
+            }
+            else
+                _this.Model.loop_pwd_color = "light";
+        }
+        return _this;
+    }
+    return FileManagementResponse;
+}(__WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__["a" /* SingleModelResponse */]));
+
+//# sourceMappingURL=FileManagementResponse.js.map
+
+/***/ }),
+/* 381 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GlossaryListResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_GlossaryViewModel__ = __webpack_require__(135);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -11437,7 +11598,7 @@ var GlossaryListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=GlossaryListResponse.js.map
 
 /***/ }),
-/* 380 */
+/* 382 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11484,13 +11645,13 @@ var GlossaryResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=GlossaryResponse.js.map
 
 /***/ }),
-/* 381 */
+/* 383 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableDetailExtListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_TableDetailExtViewModel__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_TableDetailExtViewModel__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -11558,13 +11719,13 @@ var TableDetailExtListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=TableDetailExtListResponse.js.map
 
 /***/ }),
-/* 382 */
+/* 384 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableDetailExtResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_TableDetailExtViewModel__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_TableDetailExtViewModel__ = __webpack_require__(206);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -11623,12 +11784,12 @@ var TableDetailExtResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=TableDetailExtResponse.js.map
 
 /***/ }),
-/* 383 */
+/* 385 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgramPageListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ListModelResponse__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_ProgramPageViewModel__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ViewModel_ProgramViewModel__ = __webpack_require__(49);
 var __extends = (this && this.__extends) || (function () {
@@ -11703,7 +11864,7 @@ var ProgramPageListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=ProgramPageListResponse.js.map
 
 /***/ }),
-/* 384 */
+/* 386 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11771,15 +11932,85 @@ var ProgramPageResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=ProgramPageResponse.js.map
 
 /***/ }),
-/* 385 */
+/* 387 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserListResponse; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ListModelResponse__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_UserViewModel__ = __webpack_require__(50);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+/**
+ * 回傳IQueryable物件內容及訊息
+ *
+ * @public
+ * @class ListModelResponse
+ * @implements  IListModelResponse
+ * @param   {Function}    [name]
+ */
+var UserListResponse = /** @class */ (function (_super) {
+    __extends(UserListResponse, _super);
+    function UserListResponse(obj) {
+        var _this = _super.call(this, obj) || this;
+        _this.Model = [];
+        _this.Message = obj.Messag;
+        _this.DidError = obj.DidError;
+        _this.ErrorMessage = (obj && obj.ErrorMessage) || null;
+        _this.PageNumber = obj.PageNumber;
+        _this.PageSize = obj.PageSize;
+        _this.PageRows = obj.PageRows;
+        _this.TotalPages = obj.TotalPages;
+        _this.TotalRows = obj.TotalRows;
+        if (obj.DidError === false) {
+            obj.Model.forEach(function (data) {
+                var item = new __WEBPACK_IMPORTED_MODULE_1__ViewModel_UserViewModel__["a" /* UserViewModel */]();
+                item.userName = data.userName;
+                item.roleName = [];
+                // item.PermissionViewModel=[];
+                if (data.roleName != null) {
+                    data.roleName.forEach(function (element) {
+                        item.roleName.push(element);
+                    });
+                }
+                // if(data.permission_no!=null)
+                // {
+                //   data.permission_no.forEach(element => {
+                //     item.permission_no.push(element);
+                //   });
+                // }
+                item.Email = data.Email;
+                item.password = data.password;
+                _this.Model.push(item);
+            }) || null;
+        }
+        return _this;
+    }
+    return UserListResponse;
+}(__WEBPACK_IMPORTED_MODULE_0__ListModelResponse__["a" /* ListModelResponse */]));
+
+//# sourceMappingURL=UserListResponse.js.map
+
+/***/ }),
+/* 388 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobSchListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_JobSchViewModel__ = __webpack_require__(292);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ViewModel_JobViewModel__ = __webpack_require__(279);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ViewModel_SchViewModel__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_JobSchViewModel__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ViewModel_JobViewModel__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ViewModel_SchViewModel__ = __webpack_require__(146);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -11852,7 +12083,7 @@ var JobSchListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=JobSchListResponse.js.map
 
 /***/ }),
-/* 386 */
+/* 389 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11908,13 +12139,13 @@ var JobSchResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=JobSchResponse.js.map
 
 /***/ }),
-/* 387 */
+/* 390 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobLoopEventListResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_JobLoopEventViewModel__ = __webpack_require__(139);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -11987,7 +12218,7 @@ var JobLoopEventListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=JobLoopEventListResponse.js.map
 
 /***/ }),
-/* 388 */
+/* 391 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12046,13 +12277,13 @@ var JobLoopEventResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=JobLoopEventResponse.js.map
 
 /***/ }),
-/* 389 */
+/* 392 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobProcessedSqlListResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_JobProcessedSqlViewModel__ = __webpack_require__(140);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -12123,7 +12354,7 @@ var JobProcessedSqlListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=JobProcessedSqlListResponse.js.map
 
 /***/ }),
-/* 390 */
+/* 393 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12168,83 +12399,13 @@ var JobProcessedSqlResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=JobProcessedSqlResponse.js.map
 
 /***/ }),
-/* 391 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ListModelResponse__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_UserViewModel__ = __webpack_require__(50);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-/**
- * 回傳IQueryable物件內容及訊息
- *
- * @public
- * @class ListModelResponse
- * @implements  IListModelResponse
- * @param   {Function}    [name]
- */
-var UserListResponse = /** @class */ (function (_super) {
-    __extends(UserListResponse, _super);
-    function UserListResponse(obj) {
-        var _this = _super.call(this, obj) || this;
-        _this.Model = [];
-        _this.Message = obj.Messag;
-        _this.DidError = obj.DidError;
-        _this.ErrorMessage = (obj && obj.ErrorMessage) || null;
-        _this.PageNumber = obj.PageNumber;
-        _this.PageSize = obj.PageSize;
-        _this.PageRows = obj.PageRows;
-        _this.TotalPages = obj.TotalPages;
-        _this.TotalRows = obj.TotalRows;
-        if (obj.DidError === false) {
-            obj.Model.forEach(function (data) {
-                var item = new __WEBPACK_IMPORTED_MODULE_1__ViewModel_UserViewModel__["a" /* UserViewModel */]();
-                item.userName = data.userName;
-                item.roleName = [];
-                // item.PermissionViewModel=[];
-                if (data.roleName != null) {
-                    data.roleName.forEach(function (element) {
-                        item.roleName.push(element);
-                    });
-                }
-                // if(data.permission_no!=null)
-                // {
-                //   data.permission_no.forEach(element => {
-                //     item.permission_no.push(element);
-                //   });
-                // }
-                item.Email = data.Email;
-                item.password = data.password;
-                _this.Model.push(item);
-            }) || null;
-        }
-        return _this;
-    }
-    return UserListResponse;
-}(__WEBPACK_IMPORTED_MODULE_0__ListModelResponse__["a" /* ListModelResponse */]));
-
-//# sourceMappingURL=UserListResponse.js.map
-
-/***/ }),
-/* 392 */
+/* 394 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LineMessageListResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_LineMessageViewModel__ = __webpack_require__(141);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -12305,7 +12466,7 @@ var LineMessageListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=LineMessageListResponse.js.map
 
 /***/ }),
-/* 393 */
+/* 395 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12364,12 +12525,115 @@ var LineMessageResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=LineMessageResponse.js.map
 
 /***/ }),
-/* 394 */
+/* 396 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MaskColumnListResponse; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_MaskColumnViewModel__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var MaskColumnListResponse = /** @class */ (function (_super) {
+    __extends(MaskColumnListResponse, _super);
+    function MaskColumnListResponse(obj) {
+        var _this = _super.call(this, obj) || this;
+        _this.Model = [];
+        _this.Message = obj.Messag;
+        _this.DidError = obj.DidError;
+        _this.ErrorMessage = (obj && obj.ErrorMessage) || null;
+        _this.PageNumber = obj.PageNumber;
+        _this.PageSize = obj.PageSize;
+        _this.PageRows = obj.PageRows;
+        _this.TotalPages = obj.TotalPages;
+        _this.TotalRows = obj.TotalRows;
+        if (_this.DidError === false) {
+            obj.Model.forEach(function (data) {
+                var item = new __WEBPACK_IMPORTED_MODULE_0__ViewModel_MaskColumnViewModel__["a" /* MaskColumnViewModel */]();
+                item.schemaname = data.schemaname; //結構描述
+                item.tablename = data.tablename; //資料表
+                item.columnname = data.columnname; //欄位名稱
+                item.col_start_loc = data.col_start_loc; //資料欄起始位置
+                item.col_length = data.col_length; //資料欄位長度
+                item.mask = data.mask; //遮罩字元
+                item.creator = data.creator; //鍵檔人員
+                item.create_time = data.create_time; //建立時間
+                item.modifier = data.modifier; //異動人員
+                item.last_update_time = data.last_update_time; //最後更新時間
+                _this.Model.push(item);
+            }) || null;
+        }
+        return _this;
+    }
+    return MaskColumnListResponse;
+}(__WEBPACK_IMPORTED_MODULE_1__ListModelResponse__["a" /* ListModelResponse */]));
+
+//# sourceMappingURL=MaskColumnListResponse.js.map
+
+/***/ }),
+/* 397 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MaskColumnResponse; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_MaskColumnViewModel__ = __webpack_require__(142);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var MaskColumnResponse = /** @class */ (function (_super) {
+    __extends(MaskColumnResponse, _super);
+    function MaskColumnResponse(obj) {
+        var _this = _super.call(this, obj) || this;
+        _this.Message = obj.Message;
+        _this.DidError = obj.DidError;
+        _this.ErrorMessage = obj.ErrorMessage;
+        if (_this.DidError === false) {
+            _this.Model = new __WEBPACK_IMPORTED_MODULE_1__ViewModel_MaskColumnViewModel__["a" /* MaskColumnViewModel */]();
+            _this.Model.schemaname = obj.Model.schemaname; //結構描述
+            _this.Model.tablename = obj.Model.tablename; //資料表
+            _this.Model.columnname = obj.Model.columnname; //欄位名稱
+            _this.Model.col_start_loc = obj.Model.col_start_loc; //資料欄起始位置
+            _this.Model.col_length = obj.Model.col_length; //資料欄位長度
+            _this.Model.mask = obj.Model.mask; //遮罩字元
+            _this.Model.creator = obj.Model.creator; //鍵檔人員
+            _this.Model.create_time = obj.Model.create_time; //建立時間
+            _this.Model.modifier = obj.Model.modifier; //異動人員
+            _this.Model.last_update_time = obj.Model.last_update_time; //最後更新時間
+        }
+        return _this;
+    }
+    return MaskColumnResponse;
+}(__WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__["a" /* SingleModelResponse */]));
+
+//# sourceMappingURL=MaskColumnResponse.js.map
+
+/***/ }),
+/* 398 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgramPageMenuListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ListModelResponse__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_ProgramPageMenuViewModel__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ViewModel_ProgramPageViewModel__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ViewModel_MenuViewModel__ = __webpack_require__(136);
@@ -12439,7 +12703,7 @@ var ProgramPageMenuListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=ProgramPageMenuListResponse.js.map
 
 /***/ }),
-/* 395 */
+/* 399 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12483,120 +12747,13 @@ var ProgramPageMenuResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=ProgramPageMenuResponse.js.map
 
 /***/ }),
-/* 396 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_ProgViewModel__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-var ProgListResponse = /** @class */ (function (_super) {
-    __extends(ProgListResponse, _super);
-    function ProgListResponse(obj) {
-        var _this = _super.call(this, obj) || this;
-        _this.Model = [];
-        _this.Message = obj.Messag;
-        _this.DidError = obj.DidError;
-        _this.ErrorMessage = (obj && obj.ErrorMessage) || null;
-        _this.PageNumber = obj.PageNumber;
-        _this.PageSize = obj.PageSize;
-        _this.PageRows = obj.PageRows;
-        _this.TotalPages = obj.TotalPages;
-        _this.TotalRows = obj.TotalRows;
-        if (_this.DidError === false) {
-            obj.Model.forEach(function (data) {
-                var item = new __WEBPACK_IMPORTED_MODULE_0__ViewModel_ProgViewModel__["a" /* ProgViewModel */]();
-                item.schemaname = data.schemaname;
-                item.name = data.name;
-                item.object_desc = (data && data.object_desc) || null;
-                item.program_desc = (data && data.program_desc) || null;
-                item.type = (data && data.type) || null;
-                item.type_desc = (data && data.type_desc) || null;
-                item.ttype = (data && data.ttype) || null;
-                item.drop_sql = (data && data.drop_sql) || null;
-                item.create_sql = (data && data.drop_sql + data.create_sql + (data.name_property_sql == null ? "" : data.name_property_sql) + (data.category_property_sql == null ? "" : data.category_property_sql)) || null;
-                item.create_date = (data && data.create_date) || null;
-                item.modify_date = (data && data.modify_date) || null;
-                item.category = (data && data.category) || null;
-                item.fullname = data.schemaname + "." + data.name;
-                _this.Model.push(item);
-            }) || null;
-        }
-        return _this;
-    }
-    return ProgListResponse;
-}(__WEBPACK_IMPORTED_MODULE_1__ListModelResponse__["a" /* ListModelResponse */]));
-
-//# sourceMappingURL=ProgListResponse.js.map
-
-/***/ }),
-/* 397 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_ProgViewModel__ = __webpack_require__(146);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-var ProgResponse = /** @class */ (function (_super) {
-    __extends(ProgResponse, _super);
-    function ProgResponse(obj) {
-        var _this = _super.call(this, obj) || this;
-        _this.Message = obj.Message;
-        _this.DidError = obj.DidError;
-        _this.ErrorMessage = obj.ErrorMessage;
-        if (_this.DidError === false) {
-            _this.Model = new __WEBPACK_IMPORTED_MODULE_1__ViewModel_ProgViewModel__["a" /* ProgViewModel */]();
-            _this.Model.schemaname = obj.Model.schemaname;
-            _this.Model.name = obj.Model.name;
-            _this.Model.object_desc = (obj && obj.Model.object_desc) || null;
-            _this.Model.type = (obj && obj.Model.type) || null;
-            _this.Model.type_desc = (obj && obj.Model.type_desc) || null;
-            _this.Model.ttype = (obj && obj.Model.ttype) || null;
-            _this.Model.drop_sql = (obj && obj.Model.drop_sql) || null;
-            _this.Model.create_sql = (obj && obj.Model.create_sql) || null;
-            _this.Model.create_date = (obj && obj.Model.create_date) || null;
-            _this.Model.modify_date = (obj && obj.Model.modify_date) || null;
-            _this.Model.category = (obj && obj.Model.category) || null;
-        }
-        return _this;
-    }
-    return ProgResponse;
-}(__WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__["a" /* SingleModelResponse */]));
-
-//# sourceMappingURL=ProgResponse.js.map
-
-/***/ }),
-/* 398 */
+/* 400 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RolePermissionListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ListModelResponse__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_RolePermissionViewModel__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ListModelResponse__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_RolePermissionViewModel__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ViewModel_PermissionViewModel__ = __webpack_require__(66);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -12661,13 +12818,13 @@ var RolePermissionListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=RolePermissionListResponse.js.map
 
 /***/ }),
-/* 399 */
+/* 401 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RolePermissionResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_RolePermissionViewModel__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_RolePermissionViewModel__ = __webpack_require__(143);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -12704,13 +12861,120 @@ var RolePermissionResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=RolePermissionResponse.js.map
 
 /***/ }),
-/* 400 */
+/* 402 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgListResponse; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_ProgViewModel__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var ProgListResponse = /** @class */ (function (_super) {
+    __extends(ProgListResponse, _super);
+    function ProgListResponse(obj) {
+        var _this = _super.call(this, obj) || this;
+        _this.Model = [];
+        _this.Message = obj.Messag;
+        _this.DidError = obj.DidError;
+        _this.ErrorMessage = (obj && obj.ErrorMessage) || null;
+        _this.PageNumber = obj.PageNumber;
+        _this.PageSize = obj.PageSize;
+        _this.PageRows = obj.PageRows;
+        _this.TotalPages = obj.TotalPages;
+        _this.TotalRows = obj.TotalRows;
+        if (_this.DidError === false) {
+            obj.Model.forEach(function (data) {
+                var item = new __WEBPACK_IMPORTED_MODULE_0__ViewModel_ProgViewModel__["a" /* ProgViewModel */]();
+                item.schemaname = data.schemaname;
+                item.name = data.name;
+                item.object_desc = (data && data.object_desc) || null;
+                item.program_desc = (data && data.program_desc) || null;
+                item.type = (data && data.type) || null;
+                item.type_desc = (data && data.type_desc) || null;
+                item.ttype = (data && data.ttype) || null;
+                item.drop_sql = (data && data.drop_sql) || null;
+                item.create_sql = (data && data.drop_sql + data.create_sql + (data.name_property_sql == null ? "" : data.name_property_sql) + (data.category_property_sql == null ? "" : data.category_property_sql)) || null;
+                item.create_date = (data && data.create_date) || null;
+                item.modify_date = (data && data.modify_date) || null;
+                item.category = (data && data.category) || null;
+                item.fullname = data.schemaname + "." + data.name;
+                _this.Model.push(item);
+            }) || null;
+        }
+        return _this;
+    }
+    return ProgListResponse;
+}(__WEBPACK_IMPORTED_MODULE_1__ListModelResponse__["a" /* ListModelResponse */]));
+
+//# sourceMappingURL=ProgListResponse.js.map
+
+/***/ }),
+/* 403 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgResponse; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_ProgViewModel__ = __webpack_require__(147);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var ProgResponse = /** @class */ (function (_super) {
+    __extends(ProgResponse, _super);
+    function ProgResponse(obj) {
+        var _this = _super.call(this, obj) || this;
+        _this.Message = obj.Message;
+        _this.DidError = obj.DidError;
+        _this.ErrorMessage = obj.ErrorMessage;
+        if (_this.DidError === false) {
+            _this.Model = new __WEBPACK_IMPORTED_MODULE_1__ViewModel_ProgViewModel__["a" /* ProgViewModel */]();
+            _this.Model.schemaname = obj.Model.schemaname;
+            _this.Model.name = obj.Model.name;
+            _this.Model.object_desc = (obj && obj.Model.object_desc) || null;
+            _this.Model.type = (obj && obj.Model.type) || null;
+            _this.Model.type_desc = (obj && obj.Model.type_desc) || null;
+            _this.Model.ttype = (obj && obj.Model.ttype) || null;
+            _this.Model.drop_sql = (obj && obj.Model.drop_sql) || null;
+            _this.Model.create_sql = (obj && obj.Model.create_sql) || null;
+            _this.Model.create_date = (obj && obj.Model.create_date) || null;
+            _this.Model.modify_date = (obj && obj.Model.modify_date) || null;
+            _this.Model.category = (obj && obj.Model.category) || null;
+        }
+        return _this;
+    }
+    return ProgResponse;
+}(__WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__["a" /* SingleModelResponse */]));
+
+//# sourceMappingURL=ProgResponse.js.map
+
+/***/ }),
+/* 404 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QuoteColumnListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_QuoteColumnViewModel__ = __webpack_require__(143);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_QuoteColumnViewModel__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -12757,13 +13021,13 @@ var QuoteColumnListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=QuoteColumnListResponse.js.map
 
 /***/ }),
-/* 401 */
+/* 405 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QuoteColumnResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_QuoteColumnViewModel__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_QuoteColumnViewModel__ = __webpack_require__(144);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -12801,12 +13065,12 @@ var QuoteColumnResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=QuoteColumnResponse.js.map
 
 /***/ }),
-/* 402 */
+/* 406 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserRoleListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ListModelResponse__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_UserRoleViewModel__ = __webpack_require__(137);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -12857,7 +13121,7 @@ var UserRoleListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=UserRoleListResponse.js.map
 
 /***/ }),
-/* 403 */
+/* 407 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12896,13 +13160,13 @@ var UserRoleResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=UserRoleResponse.js.map
 
 /***/ }),
-/* 404 */
+/* 408 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SchListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ListModelResponse__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_SchViewModel__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ListModelResponse__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_SchViewModel__ = __webpack_require__(146);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -12954,13 +13218,13 @@ var SchListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=SchListResponse.js.map
 
 /***/ }),
-/* 405 */
+/* 409 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SqlListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_SqlViewModel__ = __webpack_require__(144);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_SqlViewModel__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -13034,13 +13298,13 @@ var SqlListResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=SqlListResponse.js.map
 
 /***/ }),
-/* 406 */
+/* 410 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SqlResponse; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_SqlViewModel__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_SqlViewModel__ = __webpack_require__(145);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -13099,5 +13363,5 @@ var SqlResponse = /** @class */ (function (_super) {
 //# sourceMappingURL=SqlResponse.js.map
 
 /***/ })
-],[301]);
+],[303]);
 //# sourceMappingURL=main.js.map
