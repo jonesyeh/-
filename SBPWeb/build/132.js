@@ -329,7 +329,7 @@ var JobResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 1574:
+/***/ 1570:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -718,7 +718,7 @@ var JobPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 672:
+/***/ 670:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -726,7 +726,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JobPageModule", function() { return JobPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__job__ = __webpack_require__(1574);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__job__ = __webpack_require__(1570);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(808);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_job_services_job_services__ = __webpack_require__(1074);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
