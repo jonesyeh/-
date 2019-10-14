@@ -321,7 +321,7 @@ var FileExportScriptTableResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 1401:
+/***/ 1412:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -389,12 +389,14 @@ var FileExportScriptTablePage = /** @class */ (function () {
         this.title = "SQL檔案匯出進階設定";
         this.exec_file_seq = 0;
         this.show_select = false;
+        this.parent_page = null;
         this.table_detail_page = "TableDetailPage";
         this.Loop_page = "FileLoopPage";
         this.detail_page = "FileDetailByFilePage";
         this.sql_page = "SqlPage";
         this.order_type = true;
         this.exec_file_seq = navParams.data.item.exec_file_seq;
+        this.parent_page = navParams.data.parent_page;
         this.subject = __WEBPACK_IMPORTED_MODULE_5__Model_String__["a" /* String */].Format("{0}", this.exec_file_seq);
         this.innerWidth = window.innerWidth;
         this.innerHeight = window.innerHeight;
@@ -545,6 +547,7 @@ var FileExportScriptTablePage = /** @class */ (function () {
                 _this.FileExportScriptTableServices.PostPutAsync(select_data, _this.mode).subscribe(function (data) {
                     if (data.DidError === false) {
                         _this.LoadData(true);
+                        _this.parent_page.LoadData(true);
                         _this.global.dismissLoading();
                         _this.global.showPopup("SQL檔案匯出", data.Message);
                     }
@@ -656,7 +659,7 @@ var FileExportScriptTablePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 539:
+/***/ 549:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -664,7 +667,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FileExportScriptTablePageModule", function() { return FileExportScriptTablePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__file_export_script_table__ = __webpack_require__(1401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__file_export_script_table__ = __webpack_require__(1412);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(808);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_file_export_script_table_services_file_export_script_table_services__ = __webpack_require__(1037);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
