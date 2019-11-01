@@ -24,8 +24,8 @@ var EmailViewModel = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_services__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_EmailListResponse__ = __webpack_require__(1346);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_EmailResponse__ = __webpack_require__(1347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_EmailListResponse__ = __webpack_require__(1347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_EmailResponse__ = __webpack_require__(1348);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -130,7 +130,7 @@ var EmailServicesProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1345:
+/***/ 1346:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -462,7 +462,7 @@ var EmailPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1346:
+/***/ 1347:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -525,7 +525,7 @@ var EmailListResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 1347:
+/***/ 1348:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -580,7 +580,7 @@ var EmailResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 498:
+/***/ 499:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -588,7 +588,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmailPageModule", function() { return EmailPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__email__ = __webpack_require__(1345);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__email__ = __webpack_require__(1346);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(808);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_email_services_email_services__ = __webpack_require__(1211);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
