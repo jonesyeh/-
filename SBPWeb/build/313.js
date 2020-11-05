@@ -1,28 +1,29 @@
 webpackJsonp([313],{
 
-/***/ 1030:
+/***/ 1044:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmailViewModel; });
-var EmailViewModel = /** @class */ (function () {
-    function EmailViewModel() {
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileDependViewModel; });
+var FileDependViewModel = /** @class */ (function () {
+    function FileDependViewModel() {
     }
-    return EmailViewModel;
+    return FileDependViewModel;
 }());
 
-//# sourceMappingURL=EmailViewModel.js.map
+//# sourceMappingURL=FileDependViewModel.js.map
 
 /***/ }),
 
-/***/ 1344:
+/***/ 1399:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmailAddEditModalPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileDependAddEditModalPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_EmailViewModel__ = __webpack_require__(1030);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_String__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_ViewModel_FileDependViewModel__ = __webpack_require__(1044);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -36,97 +37,85 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
- * Generated class for the EmailModalPage page.
+ * Generated class for the FileDependModalPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var EmailAddEditModalPage = /** @class */ (function () {
-    function EmailAddEditModalPage(navCtrl, navParams, viewCtrl, loadingCtrl, modalCtrl) {
+var FileDependAddEditModalPage = /** @class */ (function () {
+    function FileDependAddEditModalPage(navCtrl, navParams, viewCtrl, loadingCtrl, modalCtrl) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.viewCtrl = viewCtrl;
         this.loadingCtrl = loadingCtrl;
         this.modalCtrl = modalCtrl;
-        this.item = new __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_EmailViewModel__["a" /* EmailViewModel */]();
-        this.item.exec_group = navParams.data.item.exec_group;
-        this.item.exec_status_key = navParams.data.item.exec_status_key;
-        this.item.exec_status = navParams.data.item.exec_status;
-        this.item.email_id = navParams.data.item.email_id;
+        this.mode = navParams.data.mode;
+        this.change_mode = navParams.data.change_mode;
+        this.item = new __WEBPACK_IMPORTED_MODULE_3__Model_ViewModel_FileDependViewModel__["a" /* FileDependViewModel */]();
+        this.item.exec_file_seq = navParams.data.item.exec_file_seq;
+        this.item.exec_file_depend_seq = navParams.data.item.exec_file_depend_seq;
+        this.item.depend_filename = navParams.data.item.depend_filename;
         this.item.creator = navParams.data.item.creator;
         this.item.create_time = navParams.data.item.create_time;
         this.item.modifier = navParams.data.item.modifier;
         this.item.last_update_time = navParams.data.item.last_update_time;
-        this.item.email_desc = navParams.data.item.email_desc;
-        this.item.email_full_desc = navParams.data.item.email_full_desc;
-        this.CanEditEmail = navParams.data.CanEditEmail;
-        this.mode = navParams.data.mode;
-        this.title = "Email寄發設定";
+        this.item.depend_file_keyword = navParams.data.item.depend_file_keyword;
+        this.CanEditBatch = navParams.data.CanEditBatch;
+        this.title = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format("{0}", this.item.exec_file_seq);
+        this.file_keyword = navParams.data.file_keyword;
+        this.exec_group = navParams.data.exec_group;
     }
-    EmailAddEditModalPage.prototype.SelectExecStatus = function () {
+    FileDependAddEditModalPage.prototype.SelectDepend = function () {
         var _this = this;
-        var modal = this.modalCtrl.create("CodeSelectModalPage", {
-            select_key: this.item.exec_status_key,
-            code_key: "012|C,012|F,012|S",
+        var modal = this.modalCtrl.create("FileImportSelectModalPage", {
+            exec_file_seq: this.item.exec_file_seq,
+            exec_group: this.exec_group
         });
         modal.onDidDismiss(function (select_data) {
             if (select_data == null)
                 return;
-            _this.item.exec_status_key = select_data.code_key;
-            _this.item.exec_status = select_data.code_desc;
+            _this.item.exec_file_depend_seq = select_data.exec_file_seq;
+            _this.item.depend_file_keyword = select_data.file_keyword;
         });
         modal.present();
     };
-    EmailAddEditModalPage.prototype.SelectEmailID = function () {
-        var _this = this;
-        var modal = this.modalCtrl.create("EmailUserSelectModelPage", {
-            select_id: this.item.email_id,
-            show_select_add: (this.mode === "POST" ? true : false),
-        });
-        modal.onDidDismiss(function (select_data) {
-            if (select_data == null)
-                return;
-            _this.item.email_id = select_data.email_id;
-            _this.item.email_desc = select_data.email_desc;
-        });
-        modal.present();
-    };
-    EmailAddEditModalPage.prototype.Save = function () {
+    FileDependAddEditModalPage.prototype.Save = function () {
         this.viewCtrl.dismiss(this.item);
     };
-    EmailAddEditModalPage.prototype.close = function () {
+    FileDependAddEditModalPage.prototype.close = function () {
         this.viewCtrl.dismiss();
     };
-    EmailAddEditModalPage.prototype.ionViewDidLoad = function () {
-        console.log("ionViewDidLoad EmailModalPage");
+    FileDependAddEditModalPage.prototype.ionViewDidLoad = function () {
+        console.log("ionViewDidLoad FileDependModalPage");
     };
-    EmailAddEditModalPage = __decorate([
+    FileDependAddEditModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
-            selector: "page-email-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\email-add-edit-modal\email-add-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content  padding>\n    <form #Form="ngForm">\n\n      <ion-row>\n        <ion-col >\n          <ion-item>\n            <ion-label stacked>作業編號</ion-label>\n            <ion-input type="text" [disabled]="CanEditEmail==false || mode==\'PUT\'" name="exec_group" #exec_group="ngModel" [(ngModel)]="item.exec_group"\n              required maxlength="30"></ion-input>\n          </ion-item>\n          <div *ngIf="exec_group.errors && exec_group.touched" class="error-message">\n            作業編號不能為空白\n          </div>\n        </ion-col>\n\n      </ion-row>\n      <ion-row>\n        <ion-col col-12 col-sm-4>\n          <ion-item>\n            <ion-label stacked>執行狀態</ion-label>\n            <ion-input type="text" readonly=true [disabled]="CanEditEmail==false || mode==\'PUT\'" name="exec_status_key" #exec_status_key="ngModel" [(ngModel)]="item.exec_status_key"\n              required></ion-input>\n\n            <button ion-button outline item-end *ngIf="CanEditEmail==true && mode==\'POST\'" icon-right (click)="SelectExecStatus()">\n              <ion-icon name="arrow-dropdown"></ion-icon>\n            </button>\n          </ion-item>\n\n          <div *ngIf="exec_status_key.errors && exec_status_key.touched " class="error-message">\n            執行狀態不能為空白\n          </div>\n        </ion-col>\n        <ion-col col-12 col-sm-8>\n          <ion-item>\n            <ion-label stacked>執行狀態</ion-label>\n            <ion-input type="text" [disabled]=true name="exec_status" #exec_status="ngModel" [(ngModel)]="item.exec_status" required></ion-input>\n          </ion-item>\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-12 col-sm-4>\n          <ion-item>\n            <ion-label stacked>收件者</ion-label>\n            <ion-input type="text" readonly=true [disabled]="CanEditEmail==false || mode==\'PUT\' " name="email_id" #email_id="ngModel" [(ngModel)]="item.email_id"\n              required maxlength="255"></ion-input>\n\n            <button ion-button outline item-end *ngIf="CanEditEmail==true" icon-right (click)="SelectEmailID()">\n              <ion-icon name="arrow-dropdown"></ion-icon>\n            </button>\n          </ion-item>\n\n          <div *ngIf="email_id.errors && email_id.touched " class="error-message">\n            收件者不能為空白\n          </div>\n        </ion-col>\n        <ion-col col-12 col-sm-8>\n          <ion-item>\n            <ion-label stacked>收件者</ion-label>\n            <ion-input type="text" [disabled]=true name="email_desc" #email_desc="ngModel" [(ngModel)]="item.email_desc" required></ion-input>\n          </ion-item>\n        </ion-col>\n      </ion-row>\n      </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditEmail==false || mode==\'PUT\'"  ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\email-add-edit-modal\email-add-edit-modal.html"*/
+            selector: "page-file-depend-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\file-depend-add-edit-modal\file-depend-add-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form #Form="ngForm">\n\n    <ion-grid >\n      <ion-row>\n        <ion-col col-12 col-sm-2 col-md-3>\n        </ion-col>\n        <ion-col col-12 col-sm-8 col-md-6>\n\n          <ion-grid [ngClass]="[\'subject\']">\n            <ion-row>\n              <ion-col>\n\n                <b>{{file_keyword}}</b>\n              </ion-col>\n            </ion-row>\n          </ion-grid>\n        </ion-col>\n        <ion-col col-12 col-sm-2 col-md-3>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n    <ion-row>\n      <ion-col col-12>\n        <ion-item>\n          <ion-label stacked>相依檔案</ion-label>\n          <ion-input type="number" readonly=true [disabled]="CanEditBatch==false  || mode==\'PUT\'" name="exec_file_depend_seq" #exec_file_depend_seq="ngModel" [(ngModel)]="item.exec_file_depend_seq"\n            required maxlength="30"></ion-input>\n            <button ion-button outline item-end icon-right *ngIf="CanEditBatch==true && mode==\'POST\'" (click)="SelectDepend()">\n              <ion-icon name="arrow-dropdown"></ion-icon>\n            </button>\n        </ion-item>\n\n        <div *ngIf="exec_file_depend_seq.errors && exec_file_depend_seq.touched" class="error-message">\n          相依檔案不能為空白\n        </div>\n      </ion-col>\n      <ion-col col-12>\n        <ion-item>\n          <ion-label stacked>相依檔案</ion-label>\n          <ion-input type="text"  [disabled]=true name="depend_file_keyword" #depend_file_keyword="ngModel" [(ngModel)]="item.depend_file_keyword"\n            required maxlength="50"></ion-input>\n\n        </ion-item>\n\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-12 col-sm-6 >\n        <ion-item>\n          <ion-label stacked>相依檔名條件</ion-label>\n          <ion-input type="text" [disabled]="CanEditBatch==false" name="depend_filename" #depend_filename="ngModel" [(ngModel)]="item.depend_filename"\n            required maxlength="50"></ion-input>\n\n        </ion-item>\n\n        <div *ngIf="depend_filename.errors && depend_filename.touched " class="error-message">\n          相依檔名條件不能為空白\n        </div>\n      </ion-col>\n      </ion-row>\n\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditBatch==false" ion-button color="dark" [disabled]="!Form.form.valid" icon-left\n            (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\file-depend-add-edit-modal\file-depend-add-edit-modal.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["m" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["p" /* ViewController */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["h" /* LoadingController */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["j" /* ModalController */]])
-    ], EmailAddEditModalPage);
-    return EmailAddEditModalPage;
+    ], FileDependAddEditModalPage);
+    return FileDependAddEditModalPage;
 }());
 
-//# sourceMappingURL=email-add-edit-modal.js.map
+//# sourceMappingURL=file-depend-add-edit-modal.js.map
 
 /***/ }),
 
-/***/ 497:
+/***/ 535:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmailAddEditModalPageModule", function() { return EmailAddEditModalPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FileDependAddEditModalPageModule", function() { return FileDependAddEditModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__email_add_edit_modal__ = __webpack_require__(1344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__file_depend_add_edit_modal__ = __webpack_require__(1399);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -136,23 +125,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var EmailAddEditModalPageModule = /** @class */ (function () {
-    function EmailAddEditModalPageModule() {
+var FileDependAddEditModalPageModule = /** @class */ (function () {
+    function FileDependAddEditModalPageModule() {
     }
-    EmailAddEditModalPageModule = __decorate([
+    FileDependAddEditModalPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__email_add_edit_modal__["a" /* EmailAddEditModalPage */],
+                __WEBPACK_IMPORTED_MODULE_2__file_depend_add_edit_modal__["a" /* FileDependAddEditModalPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__email_add_edit_modal__["a" /* EmailAddEditModalPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__file_depend_add_edit_modal__["a" /* FileDependAddEditModalPage */]),
             ],
         })
-    ], EmailAddEditModalPageModule);
-    return EmailAddEditModalPageModule;
+    ], FileDependAddEditModalPageModule);
+    return FileDependAddEditModalPageModule;
 }());
 
-//# sourceMappingURL=email-add-edit-modal.module.js.map
+//# sourceMappingURL=file-depend-add-edit-modal.module.js.map
 
 /***/ })
 

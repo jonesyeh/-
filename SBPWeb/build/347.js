@@ -1,13 +1,13 @@
 webpackJsonp([347],{
 
-/***/ 1329:
+/***/ 1346:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConnSbpAddEditModalPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_ConnViewModel__ = __webpack_require__(40);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DirectoryBrowserAddEditModalPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_DirectoryBrowserViewModel__ = __webpack_require__(130);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,68 +20,64 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
- * Generated class for the ConnSbpAddEditModalPage page.
+ * Generated class for the DirectoryBrowserModalPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var ConnSbpAddEditModalPage = /** @class */ (function () {
-    function ConnSbpAddEditModalPage(navCtrl, navParams, viewCtrl, loadingCtrl) {
+var DirectoryBrowserAddEditModalPage = /** @class */ (function () {
+    function DirectoryBrowserAddEditModalPage(navCtrl, navParams, viewCtrl, loadingCtrl) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.viewCtrl = viewCtrl;
         this.loadingCtrl = loadingCtrl;
-        this.mode = navParams.data.mode;
-        this.change_mode = navParams.data.change_mode;
-        this.item = new __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_ConnViewModel__["a" /* ConnViewModel */]();
-        this.item.remote_conn_id = navParams.data.item.remote_conn_id;
-        this.item.conn_string = navParams.data.item.conn_string;
-        this.item.creator = navParams.data.item.creator;
+        this.item = new __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_DirectoryBrowserViewModel__["a" /* DirectoryBrowserViewModel */]();
+        this.item.filepath = navParams.data.item.filepath;
+        this.item.directory_name = navParams.data.item.directory_name;
         this.item.create_time = navParams.data.item.create_time;
-        this.item.modifier = navParams.data.item.modifier;
-        this.item.last_update_time = navParams.data.item.last_update_time;
-        this.item.conn_type_key = navParams.data.item.conn_type_key;
-        this.item.conn_type = navParams.data.item.conn_type;
-        if (this.change_mode === "c")
-            this.item.remote_conn_id = this.item.remote_conn_id + "_copy";
-        this.CanEditConn = navParams.data.CanEditConn;
-        this.title = "SBP連線";
+        this.CanEditFileBrowser = navParams.data.CanEditFileBrowser;
+        this.mode = navParams.data.mode;
+        if (this.mode === "POST")
+            this.title = "新增資料夾";
+        else
+            this.title = "變更資料夾";
     }
-    ConnSbpAddEditModalPage.prototype.Save = function () {
+    DirectoryBrowserAddEditModalPage.prototype.Save = function () {
         this.viewCtrl.dismiss(this.item);
     };
-    ConnSbpAddEditModalPage.prototype.close = function () {
+    DirectoryBrowserAddEditModalPage.prototype.close = function () {
         this.viewCtrl.dismiss();
     };
-    ConnSbpAddEditModalPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ConnSbpAddEditModalPage');
+    DirectoryBrowserAddEditModalPage.prototype.ionViewDidLoad = function () {
+        console.log("ionViewDidLoad DirectoryBrowserModalPage");
     };
-    ConnSbpAddEditModalPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-conn-sbp-add-edit-modal',template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\conn-sbp-add-edit-modal\conn-sbp-add-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form #Form="ngForm">\n\n\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>遠端連線編號</ion-label>\n          <ion-input type="text" [disabled]="CanEditConn==false || mode==\'PUT\'" name="remote_conn_id" #remote_conn_id="ngModel" [(ngModel)]="item.remote_conn_id"\n            required maxlength="20"></ion-input>\n\n        </ion-item>\n        <div *ngIf="remote_conn_id.errors && remote_conn_id.touched" class="error-message">\n          遠端連線編號不能為空白\n        </div>\n\n      </ion-col>\n    </ion-row>\n\n\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>SBPClient程式路徑</ion-label>\n          <ion-input type="text"  required [disabled]="CanEditConn==false" name="conn_string" #conn_string="ngModel" [(ngModel)]="item.conn_string"\n            maxlength="250"></ion-input>\n        </ion-item>\n\n      </ion-col>\n    </ion-row>\n\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditConn==false" ion-button color="dark" [disabled]="!Form.form.valid" icon-left\n            (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\conn-sbp-add-edit-modal\conn-sbp-add-edit-modal.html"*/,
+    DirectoryBrowserAddEditModalPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
+            selector: "page-directory-browser-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\directory-browser-add-edit-modal\directory-browser-add-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content  padding>\n    <form #Form="ngForm">\n\n        <ion-row>\n          <ion-col>\n            <ion-item>\n              <ion-label stacked >目前路徑</ion-label>\n              <ion-input type="text" disabled=true name="filepath" #filepath="ngModel" [(ngModel)]="item.filepath"\n                required></ion-input>\n            </ion-item>\n          </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col>\n            <ion-item>\n              <ion-label stacked >資料夾名稱</ion-label>\n              <ion-input type="text" [disabled]="CanEditFileBrowser==false" name="directory_name" #directory_name="ngModel" [(ngModel)]="item.directory_name"\n                required ></ion-input>\n            </ion-item>\n            <div *ngIf="directory_name.errors && directory_name.touched" class="error-message">\n              資料夾名稱不能為空白\n            </div>\n\n          </ion-col>\n        </ion-row>\n      </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditFileBrowser==false"  ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\directory-browser-add-edit-modal\directory-browser-add-edit-modal.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */]])
-    ], ConnSbpAddEditModalPage);
-    return ConnSbpAddEditModalPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["p" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["h" /* LoadingController */]])
+    ], DirectoryBrowserAddEditModalPage);
+    return DirectoryBrowserAddEditModalPage;
 }());
 
-//# sourceMappingURL=conn-sbp-add-edit-modal.js.map
+//# sourceMappingURL=directory-browser-add-edit-modal.js.map
 
 /***/ }),
 
-/***/ 482:
+/***/ 497:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConnSbpAddEditModalPageModule", function() { return ConnSbpAddEditModalPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DirectoryBrowserAddEditModalPageModule", function() { return DirectoryBrowserAddEditModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__conn_sbp_add_edit_modal__ = __webpack_require__(1329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directory_browser_add_edit_modal__ = __webpack_require__(1346);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -91,23 +87,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ConnSbpAddEditModalPageModule = /** @class */ (function () {
-    function ConnSbpAddEditModalPageModule() {
+var DirectoryBrowserAddEditModalPageModule = /** @class */ (function () {
+    function DirectoryBrowserAddEditModalPageModule() {
     }
-    ConnSbpAddEditModalPageModule = __decorate([
+    DirectoryBrowserAddEditModalPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__conn_sbp_add_edit_modal__["a" /* ConnSbpAddEditModalPage */],
+                __WEBPACK_IMPORTED_MODULE_2__directory_browser_add_edit_modal__["a" /* DirectoryBrowserAddEditModalPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__conn_sbp_add_edit_modal__["a" /* ConnSbpAddEditModalPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__directory_browser_add_edit_modal__["a" /* DirectoryBrowserAddEditModalPage */]),
             ],
         })
-    ], ConnSbpAddEditModalPageModule);
-    return ConnSbpAddEditModalPageModule;
+    ], DirectoryBrowserAddEditModalPageModule);
+    return DirectoryBrowserAddEditModalPageModule;
 }());
 
-//# sourceMappingURL=conn-sbp-add-edit-modal.module.js.map
+//# sourceMappingURL=directory-browser-add-edit-modal.module.js.map
 
 /***/ })
 

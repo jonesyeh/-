@@ -1,15 +1,15 @@
 webpackJsonp([283],{
 
-/***/ 1305:
+/***/ 1599:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CodeAddEditModalPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_code_services_code_services__ = __webpack_require__(920);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainCodeCopyModalPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_code_services_code_services__ = __webpack_require__(928);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_global_global__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_ViewModel_CodeViewModel__ = __webpack_require__(919);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_ViewModel_CodeViewModel__ = __webpack_require__(927);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -31,15 +31,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var CodeAddEditModalPage = /** @class */ (function () {
-    function CodeAddEditModalPage(navCtrl, navParams, viewCtrl, CodeServices, loadingCtrl, global) {
+var MainCodeCopyModalPage = /** @class */ (function () {
+    function MainCodeCopyModalPage(navCtrl, navParams, viewCtrl, CodeServices, loadingCtrl, global) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.viewCtrl = viewCtrl;
         this.CodeServices = CodeServices;
         this.loadingCtrl = loadingCtrl;
         this.global = global;
-        this.code_type = navParams.data.item.code_type;
+        this.code_type = "000";
         this.item = new __WEBPACK_IMPORTED_MODULE_4__Model_ViewModel_CodeViewModel__["a" /* CodeViewModel */]();
         this.item.code_key = navParams.data.item.code_key;
         this.item.code_type = navParams.data.item.code_type;
@@ -51,15 +51,12 @@ var CodeAddEditModalPage = /** @class */ (function () {
         this.item.last_update_time = navParams.data.item.last_update_time;
         this.item.display_order_no = navParams.data.item.display_order_no;
         this.item.code_value = navParams.data.item.code_value;
+        this.from_item = navParams.data.from_item;
         this.CanEditCode = navParams.data.CanEditCode;
         this.mode = navParams.data.mode;
-        if (this.item.code_type === "000")
-            this.code_no_length = 3;
-        else
-            this.code_no_length = 6;
-        this.title = "代碼設定";
+        this.title = "主代碼複製";
     }
-    CodeAddEditModalPage.prototype.get_max_code_no = function () {
+    MainCodeCopyModalPage.prototype.get_max_code_no = function () {
         var _this = this;
         var code_key = this.code_type + "|" + this.item.code_no;
         this.global.createLoader("取得最大值中...");
@@ -80,7 +77,7 @@ var CodeAddEditModalPage = /** @class */ (function () {
             });
         });
     };
-    CodeAddEditModalPage.prototype.get_max_display_order_no = function () {
+    MainCodeCopyModalPage.prototype.get_max_display_order_no = function () {
         var _this = this;
         var code_key = this.code_type + "|";
         this.global.createLoader("取得最大值中...");
@@ -101,18 +98,18 @@ var CodeAddEditModalPage = /** @class */ (function () {
             });
         });
     };
-    CodeAddEditModalPage.prototype.Save = function () {
+    MainCodeCopyModalPage.prototype.Save = function () {
         this.viewCtrl.dismiss(this.item);
     };
-    CodeAddEditModalPage.prototype.close = function () {
+    MainCodeCopyModalPage.prototype.close = function () {
         this.viewCtrl.dismiss();
     };
-    CodeAddEditModalPage.prototype.ionViewDidLoad = function () {
+    MainCodeCopyModalPage.prototype.ionViewDidLoad = function () {
         console.log("ionViewDidLoad CodeModalPage");
     };
-    CodeAddEditModalPage = __decorate([
+    MainCodeCopyModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["Component"])({
-            selector: "page-code-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\code-add-edit-modal\code-add-edit-modal.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n\n\n    <ion-title>{{title}}</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content  padding>\n\n    <form #Form="ngForm">\n\n\n\n        <ion-row>\n\n          <ion-col>\n\n            <ion-item>\n\n              <ion-label stacked >代碼主鍵</ion-label>\n\n              <ion-input type="text" disabled=true name="code_key" #code_key="ngModel" [(ngModel)]="item.code_key"\n\n                required></ion-input>\n\n            </ion-item>\n\n          </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n          <ion-col>\n\n            <ion-item>\n\n              <ion-label stacked >代碼編號</ion-label>\n\n              <ion-input type="text" [disabled]="CanEditCode==false || mode==\'PUT\'" name="code_no" #code_no="ngModel" [(ngModel)]="item.code_no"\n\n                required  [maxlength]="code_no_length"></ion-input>\n\n                <button ion-button outline item-end *ngIf="CanEditCode==true && mode==\'POST\'"  icon-right (click)="get_max_code_no()">\n\n                  <ion-icon name="arrow-dropdown"></ion-icon>\n\n                </button>\n\n            </ion-item>\n\n            <div *ngIf="code_no.errors && code_no.touched" class="error-message">\n\n              代碼編號不能為空白\n\n            </div>\n\n\n\n          </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n          <ion-col>\n\n            <ion-item>\n\n                <ion-label stacked >代碼說明</ion-label>\n\n              <ion-input type="text"  [disabled]="CanEditCode==false" name="code_desc" #code_desc="ngModel" [(ngModel)]="item.code_desc"\n\n                required  maxlength="100"></ion-input>\n\n            </ion-item>\n\n            <div *ngIf="code_desc.errors && code_desc.touched" class="error-message">\n\n              代碼說明不能為空白\n\n            </div>\n\n          </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n          <ion-col>\n\n            <ion-item>\n\n                <ion-label stacked >代碼值</ion-label>\n\n              <ion-input type="text"  [disabled]="CanEditCode==false" name="code_value" #code_value="ngModel" [(ngModel)]="item.code_value"\n\n               maxlength="30"></ion-input>\n\n            </ion-item>\n\n\n\n          </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n          <ion-col>\n\n            <ion-item>\n\n                <ion-label stacked >顯示順序</ion-label>\n\n              <ion-input type="number"  [disabled]="CanEditCode==false" name="display_order_no" #display_order_no="ngModel" [(ngModel)]="item.display_order_no"\n\n               ></ion-input>\n\n               <button ion-button outline item-end *ngIf="CanEditCode==true"  icon-right (click)="get_max_display_order_no()">\n\n                <ion-icon name="arrow-dropdown"></ion-icon>\n\n              </button>\n\n            </ion-item>\n\n\n\n          </ion-col>\n\n        </ion-row>\n\n      </form>\n\n\n\n</ion-content>\n\n<ion-footer>\n\n  <ion-toolbar>\n\n    <ion-row>\n\n      <ion-col>\n\n        <div [ngClass]="[\'command\']">\n\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n\n            <ion-icon name="backspace"></ion-icon>\n\n          </button>\n\n          <button small title="確認" [disabled]="CanEditCode==false"  ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n\n            <ion-icon name="checkmark-circle"></ion-icon>\n\n          </button>\n\n        </div>\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-toolbar>\n\n</ion-footer>\n\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\code-add-edit-modal\code-add-edit-modal.html"*/
+            selector: "page-main-code-copy-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\main-code-copy-modal\main-code-copy-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content  padding>\n    <form #Form="ngForm">\n      <ion-row>\n        <ion-col>\n          <ion-item>\n              <ion-label stacked >複製來源說明</ion-label>\n            <ion-input type="text" disabled=true name="from_code_desc" #from_code_desc="ngModel" [(ngModel)]="from_item.code_desc"\n              required maxlength="100"></ion-input>\n          </ion-item>\n\n        </ion-col>\n      </ion-row>\n        <ion-row>\n          <ion-col>\n            <ion-item>\n              <ion-label stacked >代碼主鍵</ion-label>\n              <ion-input type="text" disabled=true name="code_key" #code_key="ngModel" [(ngModel)]="item.code_key"\n                required></ion-input>\n            </ion-item>\n          </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col>\n            <ion-item>\n              <ion-label stacked >代碼編號</ion-label>\n              <ion-input type="text" [disabled]="CanEditCode==false || mode==\'PUT\'" name="code_no" #code_no="ngModel" [(ngModel)]="item.code_no"\n                required  maxlength="3"></ion-input>\n                <button ion-button outline item-end *ngIf="CanEditCode==true && mode==\'POST\'"  icon-right (click)="get_max_code_no()">\n                  <ion-icon name="arrow-dropdown"></ion-icon>\n                </button>\n            </ion-item>\n            <div *ngIf="code_no.errors && code_no.touched" class="error-message">\n              代碼編號不能為空白\n            </div>\n\n          </ion-col>\n        </ion-row>\n\n        <ion-row>\n          <ion-col>\n            <ion-item>\n                <ion-label stacked >代碼說明</ion-label>\n              <ion-input type="text" [disabled]="CanEditCode==false" name="code_desc" #code_desc="ngModel" [(ngModel)]="item.code_desc"\n                required maxlength="100"></ion-input>\n            </ion-item>\n            <div *ngIf="code_desc.errors && code_desc.touched" class="error-message">\n              代碼說明不能為空白\n            </div>\n          </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col>\n            <ion-item>\n                <ion-label stacked >代碼值</ion-label>\n              <ion-input type="text"  [disabled]="CanEditCode==false" name="code_value" #code_value="ngModel" [(ngModel)]="item.code_value"\n               maxlength="30"></ion-input>\n            </ion-item>\n\n          </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col>\n            <ion-item>\n                <ion-label stacked >顯示順序</ion-label>\n              <ion-input type="number"  [disabled]="CanEditCode==false" name="display_order_no" #display_order_no="ngModel" [(ngModel)]="item.display_order_no"\n               ></ion-input>\n               <button ion-button outline item-end *ngIf="CanEditCode==true"  icon-right (click)="get_max_display_order_no()">\n                <ion-icon name="arrow-dropdown"></ion-icon>\n              </button>\n            </ion-item>\n\n          </ion-col>\n        </ion-row>\n\n      </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditCode==false"  ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\main-code-copy-modal\main-code-copy-modal.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["m" /* NavParams */],
@@ -120,24 +117,24 @@ var CodeAddEditModalPage = /** @class */ (function () {
             __WEBPACK_IMPORTED_MODULE_0__providers_code_services_code_services__["a" /* CodeServicesProvider */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* LoadingController */],
             __WEBPACK_IMPORTED_MODULE_1__components_global_global__["a" /* GlobalComponent */]])
-    ], CodeAddEditModalPage);
-    return CodeAddEditModalPage;
+    ], MainCodeCopyModalPage);
+    return MainCodeCopyModalPage;
 }());
 
-//# sourceMappingURL=code-add-edit-modal.js.map
+//# sourceMappingURL=main-code-copy-modal.js.map
 
 /***/ }),
 
-/***/ 460:
+/***/ 693:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CodeAddEditModalPageModule", function() { return CodeAddEditModalPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainCodeCopyModalPageModule", function() { return MainCodeCopyModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__code_add_edit_modal__ = __webpack_require__(1305);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_code_services_code_services__ = __webpack_require__(920);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__main_code_copy_modal__ = __webpack_require__(1599);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_code_services_code_services__ = __webpack_require__(928);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -148,29 +145,29 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var CodeAddEditModalPageModule = /** @class */ (function () {
-    function CodeAddEditModalPageModule() {
+var MainCodeCopyModalPageModule = /** @class */ (function () {
+    function MainCodeCopyModalPageModule() {
     }
-    CodeAddEditModalPageModule = __decorate([
+    MainCodeCopyModalPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__code_add_edit_modal__["a" /* CodeAddEditModalPage */],
+                __WEBPACK_IMPORTED_MODULE_2__main_code_copy_modal__["a" /* MainCodeCopyModalPage */],
             ],
             providers: [__WEBPACK_IMPORTED_MODULE_3__providers_code_services_code_services__["a" /* CodeServicesProvider */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__code_add_edit_modal__["a" /* CodeAddEditModalPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__main_code_copy_modal__["a" /* MainCodeCopyModalPage */]),
             ],
         })
-    ], CodeAddEditModalPageModule);
-    return CodeAddEditModalPageModule;
+    ], MainCodeCopyModalPageModule);
+    return MainCodeCopyModalPageModule;
 }());
 
-//# sourceMappingURL=code-add-edit-modal.module.js.map
+//# sourceMappingURL=main-code-copy-modal.module.js.map
 
 /***/ }),
 
-/***/ 919:
+/***/ 927:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -185,17 +182,17 @@ var CodeViewModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 920:
+/***/ 928:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CodeServicesProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_Response_StringResponse__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_Response_StringResponse__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_services__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_CodeListResponse__ = __webpack_require__(921);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_CodeResponse__ = __webpack_require__(922);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_CodeListResponse__ = __webpack_require__(929);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_CodeResponse__ = __webpack_require__(930);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -326,13 +323,13 @@ var CodeServicesProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 921:
+/***/ 929:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CodeListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_CodeViewModel__ = __webpack_require__(919);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_CodeViewModel__ = __webpack_require__(927);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(6);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -383,13 +380,13 @@ var CodeListResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 922:
+/***/ 930:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CodeResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_CodeViewModel__ = __webpack_require__(919);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_CodeViewModel__ = __webpack_require__(927);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||

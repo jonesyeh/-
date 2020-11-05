@@ -1,13 +1,14 @@
 webpackJsonp([338],{
 
-/***/ 1545:
+/***/ 1568:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobAddEditModalPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobProcessedSqlAddEditModalPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_JobViewModel__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_JobProcessedSqlViewModel__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_global_global__ = __webpack_require__(119);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -21,68 +22,94 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
- * Generated class for the JobModalPage page.
+ * Generated class for the JobProcessedSqlModalPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var JobAddEditModalPage = /** @class */ (function () {
-    function JobAddEditModalPage(navCtrl, navParams, viewCtrl, loadingCtrl) {
+var JobProcessedSqlAddEditModalPage = /** @class */ (function () {
+    function JobProcessedSqlAddEditModalPage(navCtrl, navParams, viewCtrl, loadingCtrl, modalCtrl, global) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.viewCtrl = viewCtrl;
         this.loadingCtrl = loadingCtrl;
-        this.item = new __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_JobViewModel__["a" /* JobViewModel */]();
-        this.item.ssis_job_no = navParams.data.item.ssis_job_no;
-        this.item.ssis_job_name = navParams.data.item.ssis_job_name;
-        this.item.last_exec_status_key = navParams.data.item.last_exec_status_key;
-        this.item.last_exec_date = navParams.data.item.last_exec_date;
-        this.item.is_active = navParams.data.item.is_active;
-        this.item.creator = navParams.data.item.creator;
-        this.item.create_time = navParams.data.item.create_time;
-        this.item.modifier = navParams.data.item.modifier;
-        this.item.last_update_time = navParams.data.item.last_update_time;
-        this.item.retry_cnt = navParams.data.item.retry_cnt; //重試次數
-        this.item.delay_min = navParams.data.item.delay_min; //延遲分鐘數
+        this.modalCtrl = modalCtrl;
+        this.global = global;
+        this.sql_help = "\n  \u8B8A\u6578\u8AAA\u660E\uFF1A\n  {ERR_MSG}=\u7570\u5E38\u8A0A\u606F,\n  {ERR_MSG_SEQ}=\u7570\u5E38\u8A0A\u606F\u7DE8\u865F,\n  {SSIS_JOB_NO}=\u4F5C\u696D\u7DE8\u865F,\n  {JOBDESC}=\u4F5C\u696D\u63CF\u8FF0,\n  {JOB01},{JOB02},{JOB03}=\u4F5C\u696D\u8FF4\u5708\u53C3\u6578,\n  --\u7BC4\u4F8B1:\u80CC\u666F\u57F7\u884C\u4F5C\u696D\nINSERT INTO [comm].[tb_ssis_job_loop_event]\n           ([ssis_job_no]\n           )\n     VALUES\n           ('s1_daily_job'\n           )\n--\u7BC4\u4F8B2:\u80CC\u666F\u57F7\u884C\u5177\u6709\u4F5C\u696D\u8FF4\u5708\u8B8A\u6578\nINSERT INTO [comm].[tb_ssis_job_loop_event]\n           ([ssis_job_no]\n           ,[job01]\n           )\n     VALUES\n           ('s1_daily_job'\n           ,'F'\n           )\n   ";
+        this.item = new __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_JobProcessedSqlViewModel__["a" /* JobProcessedSqlViewModel */]();
+        this.item.ssis_job_no = navParams.data.item.ssis_job_no; //SSIS作業編號
+        this.item.exec_status_key = navParams.data.item.exec_status_key; //執行狀態主鍵
+        this.item.sql_statement = navParams.data.item.sql_statement; //sql語法
+        this.item.is_active = navParams.data.item.is_active; //啟用註記
+        this.item.creator = navParams.data.item.creator; //建立者
+        this.item.create_time = navParams.data.item.create_time; //建立時間
+        this.item.modifier = navParams.data.item.modifier; //最後更新者
+        this.item.last_update_time = navParams.data.item.last_update_time; //最後更新時間
+        this.item.exec_status = navParams.data.item.exec_status; //執行狀態
         this.CanEditJob = navParams.data.CanEditJob;
         this.mode = navParams.data.mode;
-        this.title = "作業設定";
+        this.change_mode = navParams.data.change_mode;
+        this.title = this.item.ssis_job_no;
     }
-    JobAddEditModalPage.prototype.Save = function () {
+    JobProcessedSqlAddEditModalPage.prototype.SelectExecStatus = function () {
+        var _this = this;
+        var modal = this.modalCtrl.create("CodeSelectModalPage", {
+            select_key: this.item.exec_status_key,
+            code_key: "012|C,012|F,012|S",
+        });
+        modal.onDidDismiss(function (select_data) {
+            if (select_data == null)
+                return;
+            _this.item.exec_status_key = select_data.code_key;
+            _this.item.exec_status = select_data.code_desc;
+        });
+        modal.present();
+    };
+    JobProcessedSqlAddEditModalPage.prototype.Save = function () {
         this.viewCtrl.dismiss(this.item);
     };
-    JobAddEditModalPage.prototype.close = function () {
+    JobProcessedSqlAddEditModalPage.prototype.close = function () {
         this.viewCtrl.dismiss();
     };
-    JobAddEditModalPage.prototype.ionViewDidLoad = function () {
-        console.log("ionViewDidLoad JobModalPage");
+    JobProcessedSqlAddEditModalPage.prototype.Help = function () {
+        var _this = this;
+        this.global.createLoader();
+        this.global.loading.present().then(function () {
+            _this.global.showMessage("SQL語法說明", _this.sql_help);
+        });
     };
-    JobAddEditModalPage = __decorate([
+    JobProcessedSqlAddEditModalPage.prototype.ionViewDidLoad = function () {
+        console.log("ionViewDidLoad JobProcessedSqlModalPage");
+    };
+    JobProcessedSqlAddEditModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
-            selector: "page-job-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\job-add-edit-modal\job-add-edit-modal.html"*/'<ion-header>\n\n    <ion-navbar>\n\n      <ion-title>{{title}}</ion-title>\n    </ion-navbar>\n  </ion-header>\n\n  <ion-content padding>\n    <form #Form="ngForm">\n\n      <ion-row>\n        <ion-col col-12 col-sm-8 >\n          <ion-item>\n            <ion-label stacked>作業編號</ion-label>\n            <ion-input type="text"  name="ssis_job_no" [disabled]="CanEditJob==false || mode==\'PUT\'" #ssis_job_no="ngModel" [(ngModel)]="item.ssis_job_no" required></ion-input>\n          </ion-item>\n          <div *ngIf="ssis_job_no.errors && ssis_job_no.touched" class="error-message">\n              作業編號不能為空白\n          </div>\n        </ion-col>\n        <ion-col col-12 col-sm-4>\n            <ion-item>\n              <ion-label stacked>啟用</ion-label>\n              <ion-checkbox name="is_active" [disabled]="CanEditJob==false" [(ngModel)]="item.is_active"></ion-checkbox>\n            </ion-item>\n\n          </ion-col>\n      </ion-row>\n      <ion-row>\n          <ion-col>\n            <ion-item>\n              <ion-label stacked>作業名稱</ion-label>\n              <ion-input type="text"  name="ssis_job_name" [disabled]="CanEditJob==false" #ssis_job_name="ngModel" [(ngModel)]="item.ssis_job_name" required></ion-input>\n            </ion-item>\n            <div *ngIf="ssis_job_name.errors && ssis_job_name.touched" class="error-message">\n                作業名稱不能為空白\n            </div>\n          </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n            <ion-col col-12 col-sm-6 >\n                <ion-item>\n                  <ion-label stacked>異常重試次數</ion-label>\n                  <ion-input type="number"  name="retry_cnt" [disabled]="CanEditJob==false" #retry_cnt="ngModel" [(ngModel)]="item.retry_cnt" required></ion-input>\n                </ion-item>\n                <div *ngIf="retry_cnt.errors && retry_cnt.touched" class="error-message">\n                    異常重試次數不能為空白\n                </div>\n              </ion-col>\n          <ion-col col-12 col-sm-6 >\n            <ion-item>\n              <ion-label stacked>延遲分鐘數</ion-label>\n              <ion-input type="number"  name="delay_min" [disabled]="CanEditJob==false" #delay_min="ngModel" [(ngModel)]="item.delay_min" required></ion-input>\n              <div *ngIf="delay_min.errors && delay_min.touched" class="error-message">\n                  延遲分鐘數不能為空白\n              </div>\n            </ion-item>\n\n          </ion-col>\n        </ion-row>\n\n    </form>\n\n  </ion-content>\n  <ion-footer>\n    <ion-toolbar>\n      <ion-row>\n        <ion-col>\n          <div [ngClass]="[\'command\']">\n            <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n              <ion-icon name="backspace"></ion-icon>\n            </button>\n            <button [disabled]="CanEditJob==false" small title="確認" ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n              <ion-icon name="checkmark-circle"></ion-icon>\n            </button>\n          </div>\n        </ion-col>\n      </ion-row>\n    </ion-toolbar>\n  </ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\job-add-edit-modal\job-add-edit-modal.html"*/
+            selector: "page-job-processed-sql-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\job-processed-sql-add-edit-modal\job-processed-sql-add-edit-modal.html"*/'<ion-header>\n\n    <ion-navbar>\n\n      <ion-title>{{title}}</ion-title>\n    </ion-navbar>\n  </ion-header>\n\n  <ion-content padding>\n    <form #Form="ngForm">\n        <ion-row>\n            <ion-col col-12 col-sm-4>\n              <ion-item>\n                <ion-label stacked>執行狀態</ion-label>\n                <ion-input type="text" readonly=true [disabled]="CanEditJob==false || mode==\'PUT\'" name="exec_status_key" #exec_status_key="ngModel" [(ngModel)]="item.exec_status_key"\n                  required></ion-input>\n\n                <button ion-button outline item-end *ngIf="CanEditJob==true && mode==\'POST\'" icon-right (click)="SelectExecStatus()">\n                  <ion-icon name="arrow-dropdown"></ion-icon>\n                </button>\n              </ion-item>\n\n              <div *ngIf="exec_status_key.errors && exec_status_key.touched " class="error-message">\n                執行狀態不能為空白\n              </div>\n            </ion-col>\n            <ion-col col-12 col-sm-4>\n              <ion-item>\n                <ion-label stacked>執行狀態</ion-label>\n                <ion-input type="text" [disabled]=true name="exec_status" #exec_status="ngModel" [(ngModel)]="item.exec_status" required></ion-input>\n              </ion-item>\n            </ion-col>\n            <ion-col col-12 col-sm-4>\n                <ion-item>\n                  <ion-label stacked>啟用</ion-label>\n                  <ion-checkbox name="is_active" [disabled]="CanEditJob==false" [(ngModel)]="item.is_active"></ion-checkbox>\n                </ion-item>\n\n              </ion-col>\n          </ion-row>\n      <ion-row>\n          <ion-col>\n            <ion-item>\n              <ion-label stacked>SQL</ion-label>\n              <ion-textarea rows=20 [disabled]="CanEditJob==false" name="sql_statement" #note="ngModel" [(ngModel)]="item.sql_statement"></ion-textarea>\n            </ion-item>\n          </ion-col>\n        </ion-row>\n\n    </form>\n\n  </ion-content>\n  <ion-footer>\n    <ion-toolbar>\n      <ion-row>\n        <ion-col>\n          <div [ngClass]="[\'command\']">\n            <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n              <ion-icon name="backspace"></ion-icon>\n            </button>\n            <button [disabled]="CanEditJob==false" small title="確認" ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n              <ion-icon name="checkmark-circle"></ion-icon>\n            </button>\n            <button small title="複製SQL語法" ion-button color="dark" icon-left (click)="global.copyTextToClipboard(item.sql_statement)">\n            <ion-icon name="copy"></ion-icon>\n          </button>\n          <button small title="變數說明" [disabled]="CanEditJob==false" ion-button color="dark"  icon-left\n          (click)="Help()">\n          <ion-icon name="help"></ion-icon>\n        </button>\n          </div>\n        </ion-col>\n      </ion-row>\n    </ion-toolbar>\n  </ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\job-processed-sql-add-edit-modal\job-processed-sql-add-edit-modal.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["m" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["p" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["h" /* LoadingController */]])
-    ], JobAddEditModalPage);
-    return JobAddEditModalPage;
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["j" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_3__components_global_global__["a" /* GlobalComponent */]])
+    ], JobProcessedSqlAddEditModalPage);
+    return JobProcessedSqlAddEditModalPage;
 }());
 
-//# sourceMappingURL=job-add-edit-modal.js.map
+//# sourceMappingURL=job-processed-sql-add-edit-modal.js.map
 
 /***/ }),
 
-/***/ 652:
+/***/ 672:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JobAddEditModalPageModule", function() { return JobAddEditModalPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JobProcessedSqlAddEditModalPageModule", function() { return JobProcessedSqlAddEditModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__job_add_edit_modal__ = __webpack_require__(1545);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__job_processed_sql_add_edit_modal__ = __webpack_require__(1568);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -92,23 +119,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var JobAddEditModalPageModule = /** @class */ (function () {
-    function JobAddEditModalPageModule() {
+var JobProcessedSqlAddEditModalPageModule = /** @class */ (function () {
+    function JobProcessedSqlAddEditModalPageModule() {
     }
-    JobAddEditModalPageModule = __decorate([
+    JobProcessedSqlAddEditModalPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__job_add_edit_modal__["a" /* JobAddEditModalPage */],
+                __WEBPACK_IMPORTED_MODULE_2__job_processed_sql_add_edit_modal__["a" /* JobProcessedSqlAddEditModalPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__job_add_edit_modal__["a" /* JobAddEditModalPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__job_processed_sql_add_edit_modal__["a" /* JobProcessedSqlAddEditModalPage */]),
             ],
         })
-    ], JobAddEditModalPageModule);
-    return JobAddEditModalPageModule;
+    ], JobProcessedSqlAddEditModalPageModule);
+    return JobProcessedSqlAddEditModalPageModule;
 }());
 
-//# sourceMappingURL=job-add-edit-modal.module.js.map
+//# sourceMappingURL=job-processed-sql-add-edit-modal.module.js.map
 
 /***/ })
 

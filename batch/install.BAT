@@ -29,3 +29,9 @@ pause
 REM 安裝sql client 
 sqlncli.msi
 pause
+REM 安裝ODBC driver 
+msodbcsql.msi
+pause
+REM 安裝bcp cmd
+MsSqlCmdLnUtils.msi
+pause

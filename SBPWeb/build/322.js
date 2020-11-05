@@ -1,14 +1,28 @@
 webpackJsonp([322],{
 
-/***/ 1700:
+/***/ 1017:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserAddEditModalPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuditTableViewModel; });
+var AuditTableViewModel = /** @class */ (function () {
+    function AuditTableViewModel() {
+    }
+    return AuditTableViewModel;
+}());
+
+//# sourceMappingURL=AuditTableViewModel.js.map
+
+/***/ }),
+
+/***/ 1283:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuditTableAddEditModalPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_UserViewModel__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_global_global__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_AuditTableViewModel__ = __webpack_require__(1017);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -21,68 +35,83 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 /**
- * Generated class for the UserModalPage page.
+ * Generated class for the AuditTableModalPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var UserAddEditModalPage = /** @class */ (function () {
-    function UserAddEditModalPage(navCtrl, navParams, viewCtrl, global) {
+var AuditTableAddEditModalPage = /** @class */ (function () {
+    function AuditTableAddEditModalPage(navCtrl, navParams, viewCtrl, modalCtrl) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.viewCtrl = viewCtrl;
-        this.global = global;
-        this.item = new __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_UserViewModel__["a" /* UserViewModel */]();
-        this.item.userName = this.navParams.data.item.userName;
-        this.item.Email = this.navParams.data.item.Email;
-        this.mode = this.navParams.data.mode;
-        this.change_mode = this.navParams.data.change_mode;
-        this.CanEditAuth = this.navParams.data.CanEditAuth;
+        this.modalCtrl = modalCtrl;
+        this.item = new __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_AuditTableViewModel__["a" /* AuditTableViewModel */]();
+        this.item.schemaname = navParams.data.item.schemaname;
+        this.item.tablename = navParams.data.item.tablename;
+        this.item.loginserts = navParams.data.item.loginserts;
+        this.item.logdeletes = navParams.data.item.logdeletes;
+        this.item.creator = navParams.data.item.creator;
+        this.item.create_time = navParams.data.item.create_time;
+        this.item.modifier = navParams.data.item.modifier;
+        this.item.last_update_time = navParams.data.item.last_update_time;
+        this.mode = navParams.data.mode;
+        this.CanEditTable = navParams.data.CanEditTable;
+        if (this.mode === "POST")
+            this.title = "新增";
+        else
+            this.title = "更新";
     }
-    UserAddEditModalPage.prototype.Save = function () {
-        if (this.confirm_password != this.item.password) {
-            this.global.showPopup("密碼錯誤", "確認密碼不一致");
-            return;
-        }
-        if (this.mode === "POST") {
-            this.item.roleName = [];
-            this.item.roleName.push("users");
-        }
-        if (this.change_mode === "detail")
-            this.item.password = "";
-        console.log(this.item);
+    AuditTableAddEditModalPage.prototype.SelectTable = function () {
+        var _this = this;
+        var modal = this.modalCtrl.create("TableExtSelectModalPage", {
+            select_item: this.item.schemaname + "." + this.item.tablename,
+        });
+        modal.onDidDismiss(function (select_data) {
+            if (select_data == null)
+                return;
+            _this.item.schemaname = select_data.schemaname;
+            _this.item.tablename = select_data.tablename;
+            _this.item.schemaname = select_data.schemaname;
+            _this.item.tablename = select_data.tablename;
+        });
+        modal.present();
+    };
+    AuditTableAddEditModalPage.prototype.Save = function () {
         this.viewCtrl.dismiss(this.item);
     };
-    UserAddEditModalPage.prototype.close = function () {
+    AuditTableAddEditModalPage.prototype.close = function () {
         this.viewCtrl.dismiss();
     };
-    UserAddEditModalPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad UserModalPage');
+    AuditTableAddEditModalPage.prototype.ionViewDidLoad = function () {
+        console.log("ionViewDidLoad AuditTableAddEditModalPage");
     };
-    UserAddEditModalPage = __decorate([
+    AuditTableAddEditModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-user-add-edit-modal',template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\user-add-edit-modal\user-add-edit-modal.html"*/'<ion-header>\n\n    <ion-navbar>\n\n      <ion-title>{{title}}</ion-title>\n    </ion-navbar>\n  </ion-header>\n\n  <ion-content  padding>\n      <form #registerForm="ngForm">\n\n          <ion-row>\n            <ion-col>\n              <ion-item>\n                <ion-label stacked >使用者名稱</ion-label>\n                <ion-input type="text" [disabled]="CanEditAuth==false" [disabled]="mode==\'PUT\'" name="userName" #userName="ngModel" [(ngModel)]="item.userName"\n                  required></ion-input>\n              </ion-item>\n              <div *ngIf="userName.errors?.required && userName.touched" class="error-message">\n                  使用者名稱不能為空白\n              </div>\n            </ion-col>\n          </ion-row>\n\n          <ion-row>\n            <ion-col>\n              <ion-item>\n                  <ion-label stacked >電子郵件</ion-label>\n                <ion-input type="email" [disabled]="CanEditAuth==false" name="Email" #Email="ngModel"  [(ngModel)]="item.Email"></ion-input>\n              </ion-item>\n              <div *ngIf="Email.errors && Email.touched" class="error-message">\n                  不是有效的電子郵件\n              </div>\n            </ion-col>\n          </ion-row>\n          <ion-row *ngIf="change_mode==\'password\'" >\n              <ion-col>\n                <ion-item>\n                    <ion-label stacked >密碼</ion-label>\n                    <ion-input type="password"  name="password" #password="ngModel" [(ngModel)]="item.password" required minlength="6"></ion-input>\n                </ion-item>\n                 <div  *ngIf="password.errors && password.errors.required && password.touched"  class="error-message">\n                    密碼不能為空白\n                  </div>\n                  <div  *ngIf="password.errors && password.errors.minlength && password.touched" class="error-message">\n                    最少為6碼\n                  </div>\n              </ion-col>\n            </ion-row>\n            <ion-row *ngIf="change_mode==\'password\'" >\n                <ion-col>\n                    <ion-item>\n                        <ion-label stacked >確認密碼</ion-label>\n                        <ion-input type="password"   name="confirm_password" #confirmpassword="ngModel" [(ngModel)]="confirm_password" required minlength="6"></ion-input>\n                        </ion-item>\n                       <div  *ngIf="confirmpassword.errors && confirmpassword.errors.required && confirmpassword.touched"  class="error-message">\n                          密碼不能為空白\n                        </div>\n                        <div  *ngIf="confirmpassword.errors && confirmpassword.errors.minlength && confirmpassword.touched" class="error-message">\n                          最少為6碼\n                        </div>\n\n                </ion-col>\n              </ion-row>\n\n\n        </form>\n\n  </ion-content>\n  <ion-footer>\n    <ion-toolbar>\n      <ion-row>\n        <ion-col>\n          <div [ngClass]="[\'command\']">\n            <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n              <ion-icon name="backspace"></ion-icon>\n            </button>\n            <button small title="確認" [disabled]="CanEditAuth==false" ion-button color="dark" [disabled]="!registerForm.form.valid" icon-left (click)="Save()">\n              <ion-icon name="checkmark-circle"></ion-icon>\n            </button>\n          </div>\n        </ion-col>\n      </ion-row>\n    </ion-toolbar>\n  </ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\user-add-edit-modal\user-add-edit-modal.html"*/,
+            selector: "page audit-table-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\audit-table-add-edit-modal\audit-table-add-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form #Form="ngForm" >\n\n    <ion-row>\n      <ion-col col-12 col-sm-4>\n        <ion-item>\n          <ion-label stacked>結構描述</ion-label>\n          <ion-input type="text"  [disabled]="CanEditTable==false  || mode==\'PUT\'" name="schemaname" #schemaname="ngModel" [(ngModel)]="item.schemaname"\n             maxlength="30"></ion-input>\n        </ion-item>\n\n      </ion-col>\n      <ion-col col-12 col-sm-8>\n        <ion-item>\n          <ion-label stacked>資料表名稱</ion-label>\n          <ion-input type="text"  [disabled]="CanEditTable==false || mode==\'PUT\'" name="tablename" #tablename="ngModel" [(ngModel)]="item.tablename"\n            required maxlength="50"></ion-input>\n          <button ion-button outline item-end icon-right *ngIf="CanEditTable==true && mode==\'POST\'" (click)="SelectTable()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n        <div *ngIf="tablename.errors && tablename.touched" class="error-message">\n          資料表名稱不能為空白\n        </div>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>新增稽核</ion-label>\n          <ion-checkbox [disabled]="CanEditTable==false" name="loginserts" #loginserts="ngModel" [(ngModel)]="item.loginserts"></ion-checkbox>\n        </ion-item>\n\n      </ion-col>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>刪除稽核</ion-label>\n          <ion-checkbox [disabled]="CanEditTable==false" name="logdeletes" #logdeletes="ngModel" [(ngModel)]="item.logdeletes"></ion-checkbox>\n        </ion-item>\n\n      </ion-col>\n    </ion-row>\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small [disabled]="CanEditTable==false" title="確認" ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\audit-table-add-edit-modal\audit-table-add-edit-modal.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */], __WEBPACK_IMPORTED_MODULE_3__components_global_global__["a" /* GlobalComponent */]])
-    ], UserAddEditModalPage);
-    return UserAddEditModalPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */]])
+    ], AuditTableAddEditModalPage);
+    return AuditTableAddEditModalPage;
 }());
 
-//# sourceMappingURL=user-add-edit-modal.js.map
+//# sourceMappingURL=audit-table-add-edit-modal.js.map
 
 /***/ }),
 
-/***/ 774:
+/***/ 442:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserAddEditModalPageModule", function() { return UserAddEditModalPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuditTableAddEditModalPageModule", function() { return AuditTableAddEditModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_add_edit_modal__ = __webpack_require__(1700);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__audit_table_add_edit_modal__ = __webpack_require__(1283);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -92,23 +121,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var UserAddEditModalPageModule = /** @class */ (function () {
-    function UserAddEditModalPageModule() {
+var AuditTableAddEditModalPageModule = /** @class */ (function () {
+    function AuditTableAddEditModalPageModule() {
     }
-    UserAddEditModalPageModule = __decorate([
+    AuditTableAddEditModalPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__user_add_edit_modal__["a" /* UserAddEditModalPage */],
+                __WEBPACK_IMPORTED_MODULE_2__audit_table_add_edit_modal__["a" /* AuditTableAddEditModalPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__user_add_edit_modal__["a" /* UserAddEditModalPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__audit_table_add_edit_modal__["a" /* AuditTableAddEditModalPage */]),
             ],
         })
-    ], UserAddEditModalPageModule);
-    return UserAddEditModalPageModule;
+    ], AuditTableAddEditModalPageModule);
+    return AuditTableAddEditModalPageModule;
 }());
 
-//# sourceMappingURL=user-add-edit-modal.module.js.map
+//# sourceMappingURL=audit-table-add-edit-modal.module.js.map
 
 /***/ })
 

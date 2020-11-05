@@ -1,17 +1,26 @@
 webpackJsonp([279],{
 
-/***/ 1028:
+/***/ 1041:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DelTableServicesProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_Response_StringResponse__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_Response_NumberResponse__ = __webpack_require__(128);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_String__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_services__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_DelTableListResponse__ = __webpack_require__(1113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Model_Response_DelTableResponse__ = __webpack_require__(1114);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileCodePageServicesProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_FileCodePageListResponse__ = __webpack_require__(1129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_FileCodePageResponse__ = __webpack_require__(1130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__file_services_file_services__ = __webpack_require__(127);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -27,65 +36,34 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 /*
-  Generated class for the DelTableServiceProvider provider.
+  Generated class for the FileCodePageServiceProvider provider.
 
   See https://angular.io/guide/dependency-injection for more info on providers
   and Angular DI.
 */
-var DelTableServicesProvider = /** @class */ (function () {
-    function DelTableServicesProvider(Services) {
-        this.Services = Services;
-        this.ctl = "exec_table_seq";
-        console.log("Hello ServicesProvider Provider");
+var FileCodePageServicesProvider = /** @class */ (function (_super) {
+    __extends(FileCodePageServicesProvider, _super);
+    function FileCodePageServicesProvider(Services) {
+        var _this = _super.call(this, Services) || this;
+        _this.Services = Services;
+        _this.ctl = "FileCodePage";
+        console.log("Hello FileCodePageServiceProvider Provider");
+        return _this;
     }
-    DelTableServicesProvider.prototype.GetMaxExecTableSeqAsync = function (exec_group, min_exec_table_seq, max_exec_table_seq) {
-        var sub_url;
-        sub_url = "DelTable/get_max_exec_table_seq?exec_group={1}&min_exec_table_seq={2}&max_exec_table_seq={3}";
-        sub_url = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format(sub_url, this.ctl, exec_group, min_exec_table_seq, max_exec_table_seq);
-        return this.Services.GetAsync(sub_url, this.ctl, true).map(function (item) {
-            return new __WEBPACK_IMPORTED_MODULE_1__Model_Response_NumberResponse__["a" /* NumberResponse */]({
-                Message: item.Message,
-                DidError: item.DidError,
-                ErrorMessage: item.ErrorMessage,
-                Model: item.Model
-            });
-        });
-    };
-    DelTableServicesProvider.prototype.GetMaxExecSeqAsync = function (exec_group) {
-        var sub_url;
-        sub_url = "DelTable/get_max_exec_seq?exec_group={1}";
-        sub_url = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format(sub_url, this.ctl, exec_group);
-        return this.Services.GetAsync(sub_url, this.ctl, true).map(function (item) {
-            return new __WEBPACK_IMPORTED_MODULE_1__Model_Response_NumberResponse__["a" /* NumberResponse */]({
-                Message: item.Message,
-                DidError: item.DidError,
-                ErrorMessage: item.ErrorMessage,
-                Model: item.Model
-            });
-        });
-    };
-    DelTableServicesProvider.prototype.GetSqlAsync = function (exec_table_seq, method) {
-        var sub_url;
-        sub_url = "DelTable/get_{2}_sql?exec_table_seq={1}";
-        sub_url = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format(sub_url, this.ctl, exec_table_seq, method);
-        return this.Services.GetAsync(sub_url, this.ctl, true).map(function (item) {
-            return new __WEBPACK_IMPORTED_MODULE_0__Model_Response_StringResponse__["a" /* StringResponse */]({
-                Message: item.Message,
-                DidError: item.DidError,
-                ErrorMessage: item.ErrorMessage,
-                Model: item.Model
-            });
-        });
-    };
-    DelTableServicesProvider.prototype.GetListsByAsync = function (exec_group, PageSize, PageNumber, keyword, order_type) {
+    FileCodePageServicesProvider.prototype.GetListsByAsync = function (PageSize, PageNumber, keyword, exec_group, exec_file_seq, order_type) {
         var _this = this;
         var sub_url;
-        sub_url = "DelTable?PageSize={1}&PageNumber={2}&keyword={3}&pexec_group={4}&order_type={5}";
-        sub_url = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format(sub_url, this.ctl, PageSize, PageNumber, keyword, exec_group, order_type);
+        if (exec_file_seq === 0) {
+            sub_url = "FileCodePage?PageSize={1}&PageNumber={2}&keyword={3}&exec_group={4}&order_type={5}";
+            sub_url = __WEBPACK_IMPORTED_MODULE_0__Model_String__["a" /* String */].Format(sub_url, this.ctl, PageSize, PageNumber, keyword, exec_group, order_type);
+        }
+        else {
+            sub_url = "FileCodePage/Select?PageSize={1}&PageNumber={2}&keyword={3}&exec_group={4}&exec_file_seq={5}&order_type={6}";
+            sub_url = __WEBPACK_IMPORTED_MODULE_0__Model_String__["a" /* String */].Format(sub_url, this.ctl, PageSize, PageNumber, keyword, exec_group, exec_file_seq, order_type);
+        }
         return this.Services.GetAsync(sub_url, this.ctl, true).map(function (item) {
-            _this.DelTables = new __WEBPACK_IMPORTED_MODULE_5__Model_Response_DelTableListResponse__["a" /* DelTableListResponse */]({
+            _this.FileCodePages = new __WEBPACK_IMPORTED_MODULE_3__Model_Response_FileCodePageListResponse__["a" /* FileCodePageListResponse */]({
                 Message: item.Message,
                 DidError: item.DidError,
                 ErrorMessage: item.ErrorMessage,
@@ -96,72 +74,45 @@ var DelTableServicesProvider = /** @class */ (function () {
                 TotalPages: item.TotalPages,
                 Model: item.Model
             });
-            return _this.DelTables;
+            return _this.FileCodePages;
         });
     };
-    DelTableServicesProvider.prototype.PostPutAsync = function (DelTableViewModel, mode) {
+    FileCodePageServicesProvider.prototype.PostPutAsync = function (FileCodePageViewModel, mode) {
         var _this = this;
         var sub_url;
         if (mode === "POST")
-            sub_url = "DelTable";
+            sub_url = "FileCodePage";
         else
-            sub_url = "DelTable/{1}";
-        sub_url = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format(sub_url, this.ctl, DelTableViewModel.exec_table_seq);
-        return this.Services.PostPutAsync(sub_url, this.ctl, true, DelTableViewModel, mode).map(function (item) {
-            _this.DelTable = new __WEBPACK_IMPORTED_MODULE_6__Model_Response_DelTableResponse__["a" /* DelTableResponse */]({
+            sub_url = "FileCodePage/{1}";
+        sub_url = __WEBPACK_IMPORTED_MODULE_0__Model_String__["a" /* String */].Format(sub_url, this.ctl, FileCodePageViewModel.exec_file_seq);
+        return this.Services.PostPutAsync(sub_url, this.ctl, true, FileCodePageViewModel, mode).map(function (item) {
+            _this.FileCodePage = new __WEBPACK_IMPORTED_MODULE_4__Model_Response_FileCodePageResponse__["a" /* FileCodePageResponse */]({
                 Message: item.Message,
                 DidError: item.DidError,
                 ErrorMessage: item.ErrorMessage,
                 Model: item.Model
             });
-            return _this.DelTable;
+            return _this.FileCodePage;
         });
     };
-    DelTableServicesProvider.prototype.GetDelTableSqlAsync = function (tablefullname, date_columnname, dateformat_columnname, datepart, keep_num, del_method_key) {
-        var sub_url;
-        sub_url = "DelTable/gen_del_table_sql?tablefullname={1}&date_columnname={2}&dateformat_columnname={3}&datepart={4}&keep_num={5}&del_method_key={6}";
-        sub_url = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format(sub_url, this.ctl, tablefullname, date_columnname, dateformat_columnname, datepart, keep_num, del_method_key);
-        return this.Services.GetAsync(sub_url, this.ctl, true).map(function (item) {
-            return new __WEBPACK_IMPORTED_MODULE_0__Model_Response_StringResponse__["a" /* StringResponse */]({
-                Message: item.Message,
-                DidError: item.DidError,
-                ErrorMessage: item.ErrorMessage,
-                Model: item.Model
-            });
-        });
-    };
-    DelTableServicesProvider.prototype.DeleteAsync = function (exec_table_seq) {
-        var sub_url;
-        sub_url = "DelTable/{1}";
-        sub_url = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format(sub_url, this.ctl, exec_table_seq);
-        return this.Services.DeleteAsync(sub_url, this.ctl, true).map(function (item) {
-            return new __WEBPACK_IMPORTED_MODULE_0__Model_Response_StringResponse__["a" /* StringResponse */]({
-                Message: item.Message,
-                DidError: item.DidError,
-                ErrorMessage: item.ErrorMessage,
-                Model: ""
-            });
-        });
-    };
-    DelTableServicesProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__services_services__["a" /* ServicesProvider */]])
-    ], DelTableServicesProvider);
-    return DelTableServicesProvider;
-}());
+    FileCodePageServicesProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_services__["a" /* ServicesProvider */]])
+    ], FileCodePageServicesProvider);
+    return FileCodePageServicesProvider;
+}(__WEBPACK_IMPORTED_MODULE_5__file_services_file_services__["a" /* FileServicesProvider */]));
 
-//# sourceMappingURL=del-table-services.js.map
+//# sourceMappingURL=file-code-page-services.js.map
 
 /***/ }),
 
-/***/ 1113:
+/***/ 1129:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DelTableListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_DelTableViewModel__ = __webpack_require__(960);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_String__ = __webpack_require__(3);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileCodePageListResponse; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_FileCodePageViewModel__ = __webpack_require__(970);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(6);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -174,10 +125,9 @@ var __extends = (this && this.__extends) || (function () {
 })();
 
 
-
-var DelTableListResponse = /** @class */ (function (_super) {
-    __extends(DelTableListResponse, _super);
-    function DelTableListResponse(obj) {
+var FileCodePageListResponse = /** @class */ (function (_super) {
+    __extends(FileCodePageListResponse, _super);
+    function FileCodePageListResponse(obj) {
         var _this = _super.call(this, obj) || this;
         _this.Model = [];
         _this.Message = obj.Messag;
@@ -190,22 +140,24 @@ var DelTableListResponse = /** @class */ (function (_super) {
         _this.TotalRows = obj.TotalRows;
         if (_this.DidError === false) {
             obj.Model.forEach(function (data) {
-                var item = new __WEBPACK_IMPORTED_MODULE_0__ViewModel_DelTableViewModel__["a" /* DelTableViewModel */]();
-                item.exec_table_seq = data.exec_table_seq;
+                var item = new __WEBPACK_IMPORTED_MODULE_0__ViewModel_FileCodePageViewModel__["a" /* FileCodePageViewModel */]();
+                item.exec_file_seq = data.exec_file_seq;
                 item.exec_group = data.exec_group;
-                item.tablefullname = data.tablefullname;
-                item.combo_tablefullname = (data && data.combo_tablefullname) || null;
-                item.date_columnname = data.date_columnname;
-                item.dateformat_columnname = data.dateformat_columnname;
-                item.datepart = data.datepart;
-                item.keep_num = data.keep_num;
-                item.del_method_key = data.del_method_key;
-                item.exec_seq = data.exec_seq;
+                item.file_keyword = data.file_keyword;
+                item.file_min_length = data.file_min_length;
+                item.file_max_length = data.file_max_length;
                 item.is_active = data.is_active;
+                item.recursive = data.recursive;
+                item.file_proc_key = data.file_proc_key;
+                item.exec_seq = data.exec_seq;
+                item.can_rerun = data.can_rerun;
+                item.parameter_column_group = data.parameter_column_group;
                 item.creator = data.creator;
                 item.create_time = data.create_time;
                 item.modifier = data.modifier;
                 item.last_update_time = data.last_update_time;
+                item.note = (data && data.note) || null;
+                item.file_proc = data.file_proc;
                 item.is_active_desc = data.is_active_desc;
                 switch (data.is_active) {
                     case false: {
@@ -218,66 +170,57 @@ var DelTableListResponse = /** @class */ (function (_super) {
                         item.is_active_color_right = "active-right";
                     }
                 }
-                // <ion-option value="yy">年</ion-option>
-                // <ion-option value="qq">季</ion-option>
-                // <ion-option value="mm">月</ion-option>
-                // <ion-option value="d">日</ion-option>
-                // <ion-option value="wk">週(1-52)</ion-option>
-                // <ion-option value="dw">星期(1-7)</ion-option>
-                // <ion-option value="hh">小時(0-23)</ion-option>
-                // <ion-option value="n">分</ion-option>
-                // <ion-option value="ss">秒</ion-option>
-                switch (data.datepart) {
-                    case "yy":
-                        item.datepart_desc = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format("{0}{1}", data.keep_num, "年");
-                        break;
-                    case "qq":
-                        item.datepart_desc = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format("{0}{1}", data.keep_num, "季");
-                        break;
-                    case "mm":
-                        item.datepart_desc = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format("{0}{1}", data.keep_num, "月");
-                        break;
-                    case "d":
-                        item.datepart_desc = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format("{0}{1}", data.keep_num, "日");
-                        break;
-                    case "wk":
-                        item.datepart_desc = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format("{0}{1}", data.keep_num, "週(1-52)");
-                        break;
-                    case "dw":
-                        item.datepart_desc = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format("{0}{1}", data.keep_num, "星期(1-7)");
-                        break;
-                    case "hh":
-                        data.datepart_desc = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format("{0}{1}", data.keep_num, "小時(0-23)");
-                        break;
-                    case "n":
-                        item.datepart_desc = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format("{0}{1}", data.keep_num, "分");
-                        break;
-                    case "ss":
-                        item.datepart_desc = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format("{0}{1}", data.keep_num, "秒");
-                        break;
-                    default:
-                        item.datepart_desc = __WEBPACK_IMPORTED_MODULE_2__Model_String__["a" /* String */].Format("{0}{1}", data.keep_num, "月");
+                item.empty_file_check_flag = data.empty_file_check_flag;
+                item.is_fail_stop = data.is_fail_stop;
+                item.rerun_file_proc_key = data.rerun_file_proc_key;
+                item.rerun_file_proc = data.rerun_file_proc;
+                item.src_file_path = data.src_file_path;
+                item.bk_file_path = data.bk_file_path;
+                item.target_file_path = data.target_file_path;
+                item.src_file_path_key = data.src_file_path_key;
+                item.bk_file_path_key = data.bk_file_path_key;
+                item.target_file_path_key = data.target_file_path_key;
+                item.is_processed_sql = data.is_processed_sql;
+                if (item.is_processed_sql === true) {
+                    item.processed_sql_color = "danger";
                 }
-                item.del_method = data.del_method;
+                else
+                    item.processed_sql_color = "light";
+                item.is_processed_exec_group = data.is_processed_exec_group;
+                if (item.is_processed_exec_group === true) {
+                    item.processed_exec_group_color = "danger";
+                }
+                else
+                    item.processed_exec_group_color = "light";
+                item.is_date_filter = data.is_date_filter;
+                if (item.is_date_filter === true) {
+                    item.date_filter_color = "danger";
+                }
+                else
+                    item.date_filter_color = "light";
+                item.file_format_key = data.file_format_key;
+                item.file_format = data.file_format;
+                item.file_func_proc_key = data.file_func_proc_key;
+                item.file_func_proc = data.file_func_proc;
                 _this.Model.push(item);
             }) || null;
         }
         return _this;
     }
-    return DelTableListResponse;
+    return FileCodePageListResponse;
 }(__WEBPACK_IMPORTED_MODULE_1__ListModelResponse__["a" /* ListModelResponse */]));
 
-//# sourceMappingURL=DelTableListResponse.js.map
+//# sourceMappingURL=FileCodePageListResponse.js.map
 
 /***/ }),
 
-/***/ 1114:
+/***/ 1130:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DelTableResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_DelTableViewModel__ = __webpack_require__(960);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileCodePageResponse; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_FileCodePageViewModel__ = __webpack_require__(970);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -290,31 +233,33 @@ var __extends = (this && this.__extends) || (function () {
 })();
 
 
-var DelTableResponse = /** @class */ (function (_super) {
-    __extends(DelTableResponse, _super);
-    function DelTableResponse(obj) {
+var FileCodePageResponse = /** @class */ (function (_super) {
+    __extends(FileCodePageResponse, _super);
+    function FileCodePageResponse(obj) {
         var _this = _super.call(this, obj) || this;
         _this.Message = obj.Message;
         _this.DidError = obj.DidError;
         _this.ErrorMessage = obj.ErrorMessage;
         if (_this.DidError === false) {
-            _this.Model = new __WEBPACK_IMPORTED_MODULE_1__ViewModel_DelTableViewModel__["a" /* DelTableViewModel */]();
-            _this.Model.exec_table_seq = obj.Model.exec_table_seq;
+            _this.Model = new __WEBPACK_IMPORTED_MODULE_1__ViewModel_FileCodePageViewModel__["a" /* FileCodePageViewModel */]();
+            _this.Model.exec_file_seq = obj.Model.exec_file_seq;
             _this.Model.exec_group = obj.Model.exec_group;
-            _this.Model.tablefullname = obj.Model.tablefullname;
-            _this.Model.combo_tablefullname = obj && obj.Model.combo_tablefullname || null;
-            _this.Model.date_columnname = obj.Model.date_columnname;
-            _this.Model.dateformat_columnname = obj.Model.dateformat_columnname;
-            _this.Model.datepart = obj.Model.datepart;
-            _this.Model.keep_num = obj.Model.keep_num;
-            _this.Model.del_method_key = obj.Model.del_method_key;
-            _this.Model.exec_seq = obj.Model.exec_seq;
+            _this.Model.file_keyword = obj.Model.file_keyword;
+            _this.Model.file_min_length = obj.Model.file_min_length;
+            _this.Model.file_max_length = obj.Model.file_max_length;
             _this.Model.is_active = obj.Model.is_active;
+            _this.Model.recursive = obj.Model.recursive;
+            _this.Model.file_proc_key = obj.Model.file_proc_key;
+            _this.Model.exec_seq = obj.Model.exec_seq;
+            _this.Model.can_rerun = obj.Model.can_rerun;
+            _this.Model.parameter_column_group = obj.Model.parameter_column_group;
             _this.Model.creator = obj.Model.creator;
             _this.Model.create_time = obj.Model.create_time;
             _this.Model.modifier = obj.Model.modifier;
             _this.Model.last_update_time = obj.Model.last_update_time;
-            _this.Model.del_method = obj.Model.del_method;
+            _this.Model.note = (obj && obj.Model.note) || null;
+            _this.Model.file_proc = obj.Model.file_proc;
+            _this.Model.is_active_desc = obj.Model.is_active_desc;
             switch (obj.Model.is_active) {
                 case false: {
                     _this.Model.is_active_color = "danger";
@@ -323,27 +268,61 @@ var DelTableResponse = /** @class */ (function (_super) {
                 default:
                     _this.Model.is_active_color = "active";
             }
+            _this.Model.empty_file_check_flag = obj.Model.empty_file_check_flag;
+            _this.Model.is_fail_stop = obj.Model.is_fail_stop;
+            _this.Model.rerun_file_proc_key = obj.Model.rerun_file_proc_key;
+            _this.Model.rerun_file_proc = obj.Model.rerun_file_proc;
+            _this.Model.src_file_path_key = obj.Model.src_file_path_key;
+            _this.Model.bk_file_path_key = obj.Model.bk_file_path_key;
+            _this.Model.target_file_path_key = obj.Model.target_file_path_key;
+            _this.Model.src_file_path = obj.Model.src_file_path;
+            _this.Model.bk_file_path = obj.Model.bk_file_path;
+            _this.Model.target_file_path = obj.Model.target_file_path;
+            _this.Model.is_processed_sql = obj.Model.is_processed_sql;
+            if (_this.Model.is_processed_sql === true) {
+                _this.Model.processed_sql_color = "danger";
+            }
+            else
+                _this.Model.processed_sql_color = "light";
+            _this.Model.is_processed_exec_group = obj.Model.is_processed_exec_group;
+            if (_this.Model.is_processed_exec_group === true) {
+                _this.Model.processed_exec_group_color = "danger";
+            }
+            else
+                _this.Model.processed_exec_group_color = "light";
+            _this.Model.is_date_filter = obj.Model.is_date_filter;
+            if (_this.Model.is_date_filter === true) {
+                _this.Model.date_filter_color = "danger";
+            }
+            else
+                _this.Model.date_filter_color = "light";
+            _this.Model.file_format_key = (obj && obj.Model.file_format_key) || null;
+            _this.Model.file_format = (obj && obj.Model.file_format) || null;
+            _this.Model.file_func_proc_key =
+                (obj && obj.Model.file_func_proc_key) || null;
+            _this.Model.file_func_proc = (obj && obj.Model.file_func_proc) || null;
         }
         return _this;
     }
-    return DelTableResponse;
+    return FileCodePageResponse;
 }(__WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__["a" /* SingleModelResponse */]));
 
-//# sourceMappingURL=DelTableResponse.js.map
+//# sourceMappingURL=FileCodePageResponse.js.map
 
 /***/ }),
 
-/***/ 1340:
+/***/ 1384:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DelTableAddEditModalPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_del_table_services_del_table_services__ = __webpack_require__(1028);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileCodeAddEditModalPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_file_code_page_services_file_code_page_services__ = __webpack_require__(1041);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_global_global__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_String__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_ViewModel_DelTableViewModel__ = __webpack_require__(960);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_ViewModel_FileCodePageViewModel__ = __webpack_require__(970);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_file_path_services_file_path_services__ = __webpack_require__(269);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -360,86 +339,188 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
- * Generated class for the DelTableModalPage page.
+ * Generated class for the FileCodePageModalPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var DelTableAddEditModalPage = /** @class */ (function () {
-    function DelTableAddEditModalPage(navCtrl, navParams, viewCtrl, DelTableServices, loadingCtrl, global, modalCtrl) {
+var FileCodeAddEditModalPage = /** @class */ (function () {
+    function FileCodeAddEditModalPage(navCtrl, navParams, viewCtrl, FileCodePageServices, FilePathServices, loadingCtrl, global, modalCtrl) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.viewCtrl = viewCtrl;
-        this.DelTableServices = DelTableServices;
+        this.FileCodePageServices = FileCodePageServices;
+        this.FilePathServices = FilePathServices;
         this.loadingCtrl = loadingCtrl;
         this.global = global;
         this.modalCtrl = modalCtrl;
-        this.min_exec_table_seq = 100000;
-        this.max_exec_table_seq = this.min_exec_table_seq + 9999;
-        this.range_exec_table_seq = __WEBPACK_IMPORTED_MODULE_4__Model_String__["a" /* String */].Format("{0}-{1}", this.min_exec_table_seq, this.max_exec_table_seq);
+        this.func_no = 8;
+        this.func_key = "014|" + this.func_no;
+        this.min_exec_file_seq = 82000;
+        this.max_exec_file_seq = this.min_exec_file_seq + 999;
+        this.range_exec_file_seq = __WEBPACK_IMPORTED_MODULE_4__Model_String__["a" /* String */].Format("{0}-{1}", this.min_exec_file_seq, this.max_exec_file_seq);
         this.mode = navParams.data.mode;
         this.change_mode = navParams.data.change_mode;
-        this.item = new __WEBPACK_IMPORTED_MODULE_5__Model_ViewModel_DelTableViewModel__["a" /* DelTableViewModel */]();
-        this.item.exec_table_seq = navParams.data.item.exec_table_seq;
+        this.item = new __WEBPACK_IMPORTED_MODULE_5__Model_ViewModel_FileCodePageViewModel__["a" /* FileCodePageViewModel */]();
+        this.item.exec_file_seq = navParams.data.item.exec_file_seq;
         this.item.exec_group = navParams.data.item.exec_group;
-        this.item.tablefullname = navParams.data.item.tablefullname;
-        this.item.date_columnname = navParams.data.item.date_columnname;
-        this.item.dateformat_columnname = navParams.data.item.dateformat_columnname;
-        this.item.datepart = navParams.data.item.datepart;
-        this.item.keep_num = navParams.data.item.keep_num;
-        this.item.del_method_key = navParams.data.item.del_method_key;
-        this.item.exec_seq = navParams.data.item.exec_seq;
+        this.item.file_keyword = navParams.data.item.file_keyword;
+        this.item.file_min_length = navParams.data.item.file_min_length;
+        this.item.file_max_length = navParams.data.item.file_max_length;
         this.item.is_active = navParams.data.item.is_active;
+        this.item.recursive = navParams.data.item.recursive;
+        this.item.file_proc_key = navParams.data.item.file_proc_key;
+        this.item.exec_seq = navParams.data.item.exec_seq;
+        this.item.can_rerun = navParams.data.item.can_rerun;
+        this.item.parameter_column_group =
+            navParams.data.item.parameter_column_group;
         this.item.creator = navParams.data.item.creator;
         this.item.create_time = navParams.data.item.create_time;
         this.item.modifier = navParams.data.item.modifier;
         this.item.last_update_time = navParams.data.item.last_update_time;
-        this.item.del_method = navParams.data.item.del_method;
+        this.item.note = navParams.data.item.note;
+        this.item.file_proc = navParams.data.item.file_proc;
+        this.item.empty_file_check_flag = navParams.data.item.empty_file_check_flag;
+        this.item.is_fail_stop = navParams.data.item.is_fail_stop;
+        this.item.rerun_file_proc_key = navParams.data.item.rerun_file_proc_key;
+        this.item.rerun_file_proc = navParams.data.item.rerun_file_proc;
+        this.item.src_file_path_key = navParams.data.item.src_file_path_key;
+        this.item.bk_file_path_key = navParams.data.item.bk_file_path_key;
+        this.item.target_file_path_key = navParams.data.item.target_file_path_key;
+        this.item.src_file_path = navParams.data.item.src_file_path;
+        this.item.bk_file_path = navParams.data.item.bk_file_path;
+        this.item.target_file_path = navParams.data.item.target_file_path;
+        this.item.file_format_key = navParams.data.item.file_format_key;
+        this.item.file_format = navParams.data.item.file_format;
+        this.item.file_func_proc_key = navParams.data.item.file_func_proc_key;
+        this.item.file_func_proc = navParams.data.item.file_func_proc;
+        if (this.change_mode === "n") {
+            this.get_default_path();
+        }
         if (this.change_mode === "c") {
-            this.get_max_exec_table_seq();
+            this.get_max_exec_file_seq();
             this.get_max_exec_seq();
         }
         this.CanEditBatch = navParams.data.CanEditBatch;
-        this.title = "刪除資料表";
+        this.CanFileBrowser = navParams.data.CanFileBrowser;
+        this.title = "檔案編碼轉換";
     }
-    DelTableAddEditModalPage.prototype.SelectImportMode = function () {
+    FileCodeAddEditModalPage.prototype.openNavPage = function (parent_path) {
+        var _this = this;
+        var page;
+        if (parent_path.indexOf("\\") >= 0)
+            page = "DirectoryBrowserPage";
+        if (parent_path.indexOf("/") >= 0)
+            page = "FtpDirectoryBrowserPage";
+        this.global.createLoader("連線中...");
+        this.global.loading.present().then(function () {
+            _this.navCtrl.push(page, { parent_path: parent_path, parent_page: _this, is_modal: true });
+        });
+        this.global.dismissLoading();
+    };
+    FileCodeAddEditModalPage.prototype.SelectFileProcType = function () {
         var _this = this;
         var modal = this.modalCtrl.create("CodeSelectModalPage", {
-            select_key: this.item.del_method_key,
-            code_type: "027"
+            select_key: this.item.file_proc_key,
+            code_key: "018|1,018|2,018|2A,018|2AR,018|2R,018|3,018|3A,018|3AR,018|3B,018|3BR,018|3R,018|4,018|4R,018|5,018|6,018|6A,018|6AR,018|6R,018|7,018|7A,018|7AR,018|7B,018|7BR,018|7R,018|8"
         });
         modal.onDidDismiss(function (select_data) {
             if (select_data == null)
                 return;
-            _this.item.del_method_key = select_data.code_key;
-            _this.item.del_method = select_data.code_desc;
+            _this.item.file_proc_key = select_data.code_key;
+            _this.item.file_proc = select_data.code_desc;
         });
         modal.present();
     };
-    DelTableAddEditModalPage.prototype.SelectTable = function () {
+    FileCodeAddEditModalPage.prototype.SelectRerunFileProcType = function () {
         var _this = this;
-        var modal = this.modalCtrl.create("TableExtSelectModalPage", {
-            select_item: this.item.tablefullname
+        var modal = this.modalCtrl.create("CodeSelectModalPage", {
+            select_key: this.item.rerun_file_proc_key,
+            code_key: "018|1,018|2,018|2A,018|2AR,018|2R,018|3,018|3A,018|3AR,018|3B,018|3BR,018|3R,018|4,018|4R,018|5,018|6,018|6A,018|6AR,018|6R,018|7,018|7A,018|7AR,018|7B,018|7BR,018|7R,018|8,018|NOLOG"
         });
         modal.onDidDismiss(function (select_data) {
             if (select_data == null)
                 return;
-            _this.item.tablefullname = select_data.tablefullname;
+            _this.item.rerun_file_proc_key = select_data.code_key;
+            _this.item.rerun_file_proc = select_data.code_desc;
         });
         modal.present();
     };
-    DelTableAddEditModalPage.prototype.get_max_exec_table_seq = function () {
+    FileCodeAddEditModalPage.prototype.SelectParameterGroup = function () {
+        var _this = this;
+        var modal = this.modalCtrl.create("ParameterGroupSelectModelPage", {
+            select_parameter_column_group: this.item.parameter_column_group,
+        });
+        modal.onDidDismiss(function (select_data) {
+            if (select_data == null)
+                return;
+            _this.item.parameter_column_group = select_data.parameter_column_group;
+        });
+        modal.present();
+    };
+    FileCodeAddEditModalPage.prototype.openNavParameterColumnPage = function (item) {
+        var _this = this;
+        this.global.createLoader("連線中...");
+        this.global.loading.present().then(function () {
+            _this.navCtrl.push("ParameterColumnPage", { item: item });
+        });
+        this.global.dismissLoading();
+    };
+    FileCodeAddEditModalPage.prototype.SelectSrcFilePath = function () {
+        var _this = this;
+        var modal = this.modalCtrl.create("CodeSelectModalPage", {
+            select_key: this.item.src_file_path_key,
+            code_type: "005"
+        });
+        modal.onDidDismiss(function (select_data) {
+            if (select_data == null)
+                return;
+            _this.item.src_file_path_key = select_data.code_key;
+            _this.item.src_file_path = select_data.code_desc;
+        });
+        modal.present();
+    };
+    FileCodeAddEditModalPage.prototype.SelectTargetFilePath = function () {
+        var _this = this;
+        var modal = this.modalCtrl.create("CodeSelectModalPage", {
+            select_key: this.item.target_file_path_key,
+            code_type: "005"
+        });
+        modal.onDidDismiss(function (select_data) {
+            if (select_data == null)
+                return;
+            _this.item.target_file_path_key = select_data.code_key;
+            _this.item.target_file_path = select_data.code_desc;
+        });
+        modal.present();
+    };
+    FileCodeAddEditModalPage.prototype.SelectBkFilePath = function () {
+        var _this = this;
+        var modal = this.modalCtrl.create("CodeSelectModalPage", {
+            select_key: this.item.bk_file_path_key,
+            code_type: "005"
+        });
+        modal.onDidDismiss(function (select_data) {
+            if (select_data == null)
+                return;
+            _this.item.bk_file_path_key = select_data.code_key;
+            _this.item.bk_file_path = select_data.code_desc;
+        });
+        modal.present();
+    };
+    FileCodeAddEditModalPage.prototype.get_max_exec_file_seq = function () {
         var _this = this;
         this.global.createLoader("取得最大值中...");
         this.global.loading.present().then(function () {
-            _this.DelTableServices.GetMaxExecTableSeqAsync(_this.item.exec_group, _this.min_exec_table_seq, _this.max_exec_table_seq).subscribe(function (data) {
+            _this.FileCodePageServices.GetMaxRangeExecFileSeqAsync(_this.func_no, _this.item.exec_group, _this.min_exec_file_seq, _this.max_exec_file_seq).subscribe(function (data) {
                 if (data.DidError === true) {
                     _this.global.dismissLoading();
                     _this.global.showError(data.ErrorMessage);
                 }
                 else {
-                    _this.item.exec_table_seq = data.Model;
+                    _this.item.exec_file_seq = data.Model;
                     _this.global.dismissLoading();
                 }
             }, function (err) {
@@ -448,11 +529,39 @@ var DelTableAddEditModalPage = /** @class */ (function () {
             });
         });
     };
-    DelTableAddEditModalPage.prototype.get_max_exec_seq = function () {
+    FileCodeAddEditModalPage.prototype.get_default_path = function () {
+        var _this = this;
+        this.global.createLoader("取得預設資料夾中...");
+        this.global.loading.present().then(function () {
+            _this.FilePathServices.GetDefaultListsByAsync(_this.func_key).subscribe(function (data) {
+                if (data.DidError === true) {
+                    _this.global.dismissLoading();
+                    _this.global.showError(data.ErrorMessage);
+                }
+                else {
+                    _this.default_path = data.Model;
+                    _this.src_file_path = _this.default_path.filter(function (item, FilePathViewModel) { return item.file_path_type_key === "004|SRC"; })[0];
+                    _this.item.src_file_path_key = _this.src_file_path.file_path_key;
+                    _this.item.src_file_path = _this.src_file_path.file_path;
+                    _this.bk_file_path = _this.default_path.filter(function (item, FilePathViewModel) { return item.file_path_type_key === "004|BK"; })[0];
+                    _this.item.bk_file_path_key = _this.bk_file_path.file_path_key;
+                    _this.item.bk_file_path = _this.bk_file_path.file_path;
+                    _this.target_file_path = _this.default_path.filter(function (item, FilePathViewModel) { return item.file_path_type_key === "004|TAR"; })[0];
+                    _this.item.target_file_path_key = _this.target_file_path.file_path_key;
+                    _this.item.target_file_path = _this.target_file_path.file_path;
+                    _this.global.dismissLoading();
+                }
+            }, function (err) {
+                _this.global.dismissLoading();
+                _this.global.showError("無法連上WebAPI伺服器-" + err.message);
+            });
+        });
+    };
+    FileCodeAddEditModalPage.prototype.get_max_exec_seq = function () {
         var _this = this;
         this.global.createLoader("取得最大值中...");
         this.global.loading.present().then(function () {
-            _this.DelTableServices.GetMaxExecSeqAsync(_this.item.exec_group).subscribe(function (data) {
+            _this.FileCodePageServices.GetMaxExecSeqAsync(_this.func_no, _this.item.exec_group).subscribe(function (data) {
                 if (data.DidError === true) {
                     _this.global.dismissLoading();
                     _this.global.showError(data.ErrorMessage);
@@ -467,44 +576,73 @@ var DelTableAddEditModalPage = /** @class */ (function () {
             });
         });
     };
-    DelTableAddEditModalPage.prototype.Save = function () {
+    FileCodeAddEditModalPage.prototype.SelectFileFormat = function () {
+        var _this = this;
+        var modal = this.modalCtrl.create("CodeSelectModalPage", {
+            select_key: this.item.file_format_key,
+            code_key: "011|C,011|UTF16,011|UTF32,011|UTF7,011|UTF8,011|UTF8B,011|W,011|W"
+        });
+        modal.onDidDismiss(function (select_data) {
+            if (select_data == null)
+                return;
+            _this.item.file_format_key = select_data.code_key;
+            _this.item.file_format = select_data.code_desc;
+        });
+        modal.present();
+    };
+    FileCodeAddEditModalPage.prototype.SelectFileFuncProc = function () {
+        var _this = this;
+        var modal = this.modalCtrl.create("CodeSelectModalPage", {
+            select_key: this.item.file_func_proc_key,
+            code_key: "060|BIG5,060|EBCDIC,060|UNICDE,060|UTF16,060|UTF32,060|UTF7,060|UTF8"
+        });
+        modal.onDidDismiss(function (select_data) {
+            if (select_data == null)
+                return;
+            _this.item.file_func_proc_key = select_data.code_key;
+            _this.item.file_func_proc = select_data.code_desc;
+        });
+        modal.present();
+    };
+    FileCodeAddEditModalPage.prototype.Save = function () {
         this.viewCtrl.dismiss(this.item);
     };
-    DelTableAddEditModalPage.prototype.close = function () {
+    FileCodeAddEditModalPage.prototype.close = function () {
         this.viewCtrl.dismiss();
     };
-    DelTableAddEditModalPage.prototype.ionViewDidLoad = function () {
-        console.log("ionViewDidLoad DelTableModalPage");
+    FileCodeAddEditModalPage.prototype.ionViewDidLoad = function () {
+        console.log("ionViewDidLoad FileCodePageModalPage");
     };
-    DelTableAddEditModalPage = __decorate([
+    FileCodeAddEditModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["Component"])({
-            selector: "page-Del-table-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\del-table-add-edit-modal\Del-table-add-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form #Form="ngForm">\n\n\n    <ion-row>\n      <ion-col col-12 col-sm-6>\n        <ion-item>\n          <ion-label stacked>轉檔群組</ion-label>\n          <ion-input type="text" [disabled]="CanEditBatch==false" name="exec_group" #exec_group="ngModel" [(ngModel)]="item.exec_group"\n            required maxlength="30"></ion-input>\n        </ion-item>\n        <div *ngIf="exec_group.errors && exec_group.touched" class="error-message">\n          轉檔群組不能為空白\n        </div>\n      </ion-col>\n      <ion-col col-12 col-sm-6>\n        <ion-item>\n          <ion-label stacked>轉檔序號:{{range_exec_table_seq}}</ion-label>\n          <ion-input type="number" [disabled]="CanEditBatch==false || mode==\'PUT\'" name="exec_table_seq" #exec_table_seq="ngModel" [(ngModel)]="item.exec_table_seq"\n            required></ion-input>\n          <button ion-button outline item-end *ngIf="CanEditBatch==true && mode==\'POST\'" icon-right (click)="get_max_exec_table_seq()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n        <div *ngIf="exec_table_seq.errors && exec_table_seq.touched" class="error-message">\n          轉檔序號不能為空白\n        </div>\n\n      </ion-col>\n    </ion-row>\n\n      <ion-row>\n\n        <ion-col>\n          <ion-item>\n            <ion-label stacked>資料表全名</ion-label>\n            <ion-input type="text"  [disabled]="CanEditBatch==false" name="tablefullname" #tablefullname="ngModel" [(ngModel)]="item.tablefullname"\n              required maxlength="80"></ion-input>\n            <button ion-button outline item-end icon-right *ngIf="CanEditBatch==true " (click)="SelectTable()">\n              <ion-icon name="arrow-dropdown"></ion-icon>\n            </button>\n          </ion-item>\n          <div *ngIf="tablefullname.errors && tablefullname.touched" class="error-message">\n            資料表全名不能為空白\n          </div>\n\n        </ion-col>\n      </ion-row>\n\n\n\n\n\n\n\n    <ion-row>\n      <ion-col col-12 col-sm-4>\n        <ion-item>\n          <ion-label stacked>刪除方法</ion-label>\n          <ion-input type="text" readonly=true [disabled]="CanEditBatch==false" name="del_method_key" #del_method_key="ngModel" [(ngModel)]="item.del_method_key"\n            required></ion-input>\n\n          <button ion-button outline item-end *ngIf="CanEditBatch==true" icon-right (click)="SelectImportMode()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n\n        <div *ngIf="del_method_key.errors && del_method_key.touched " class="error-message">\n          刪除方法不能為空白\n        </div>\n      </ion-col>\n      <ion-col col-12 col-sm-8>\n        <ion-item>\n          <ion-label stacked>刪除方法</ion-label>\n          <ion-input type="text" maxlength=10  [disabled]=true name="del_method" #del_method="ngModel" [(ngModel)]="item.del_method"\n            required></ion-input>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n\n    <ion-row  >\n        <ion-col col-4>\n            <ion-item>\n              <ion-label stacked>執行順序</ion-label>\n              <ion-input type="number" [disabled]="CanEditBatch==false" name="exec_seq" #exec_seq="ngModel" [(ngModel)]="item.exec_seq"\n                required></ion-input>\n              <button ion-button outline item-end *ngIf="CanEditBatch==true" icon-right (click)="get_max_exec_seq()">\n                <ion-icon name="arrow-dropdown"></ion-icon>\n              </button>\n            </ion-item>\n            <div *ngIf="exec_seq.errors && exec_seq.touched" class="error-message">\n              執行順序不能為空白\n            </div>\n          </ion-col>\n        <ion-col col-8>\n          <ion-item>\n            <ion-label stacked>日期資料欄位名稱</ion-label>\n            <ion-input type="text" maxlength="50" [disabled]="CanEditBatch==false" name="date_columnname" #date_columnname="ngModel" [(ngModel)]="item.date_columnname"\n            ></ion-input>\n          </ion-item>\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row>\n        <ion-col>\n          <ion-item>\n            <ion-label>日期顯示格式</ion-label>\n            <ion-select [disabled]="CanEditSch==false" name="dateformat_columnname" [(ngModel)]="item.dateformat_columnname">\n              <ion-option value="data_date">1911-01-01</ion-option>\n              <ion-option value="data_date">1911/01/01</ion-option>\n              <ion-option value="year_month_day">19110101</ion-option>\n              <ion-option value="year_month">191101</ion-option>\n              <ion-option value="year_int">1911</ion-option>\n              <ion-option value=day_begin>1911-01-01 00:00:00.000</ion-option>\n              <ion-option value=day_end>1911-01-01 23:59:59.000</ion-option>\n            </ion-select>\n\n          </ion-item>\n        </ion-col>\n\n        <ion-col>\n          <ion-item>\n            <ion-label>啟用</ion-label>\n            <ion-checkbox name="is_active" [disabled]="CanEditSch==false" [(ngModel)]="item.is_active"></ion-checkbox>\n          </ion-item>\n\n        </ion-col>\n      </ion-row>\n<ion-row>\n        <ion-col col-12 col-sm-12>\n          <ion-item>\n            <ion-label item-start>保留</ion-label>\n            <ion-input  item-start type="number" [disabled]="CanEditSch==false" name="keep_num" #keep_num="ngModel" [(ngModel)]="item.keep_num"\n              required></ion-input>\n              <ion-select item-start name="datepart" [disabled]="CanEditSch==false" [(ngModel)]="item.datepart">\n                  <ion-option value="yy">年</ion-option>\n                  <ion-option value="qq">季</ion-option>\n                  <ion-option value="mm">月</ion-option>\n                  <ion-option value="d">日</ion-option>\n                  <ion-option value="wk">週(1-52)</ion-option>\n                  <ion-option value="dw">星期(1-7)</ion-option>\n                  <ion-option value="hh">小時(0-23)</ion-option>\n                  <ion-option value="n">分</ion-option>\n                  <ion-option value="ss">秒</ion-option>\n                </ion-select>\n          </ion-item>\n          <div *ngIf="keep_num.errors && keep_num.touched" class="error-message">\n            保留值不能為空白\n          </div>\n        </ion-col>\n\n\n      </ion-row>\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditBatch==false" ion-button color="dark" [disabled]="!Form.form.valid" icon-left\n            (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\del-table-add-edit-modal\Del-table-add-edit-modal.html"*/
+            selector: "page-file-code-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\file-code-add-edit-modal\file-code-add-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form #Form="ngForm">\n\n\n    <ion-row>\n      <ion-col col-12 col-sm-6>\n        <ion-item>\n          <ion-label stacked>轉檔群組</ion-label>\n          <ion-input type="text" [disabled]="CanEditBatch==false" name="exec_group" #exec_group="ngModel" [(ngModel)]="item.exec_group"\n            required maxlength="30"></ion-input>\n        </ion-item>\n        <div *ngIf="exec_group.errors && exec_group.touched" class="error-message">\n          轉檔群組不能為空白\n        </div>\n      </ion-col>\n      <ion-col col-12 col-sm-6>\n        <ion-item>\n          <ion-label stacked>轉檔序號:{{range_exec_file_seq}}</ion-label>\n          <ion-input type="number" [disabled]="CanEditBatch==false || mode==\'PUT\'" name="exec_file_seq" #exec_file_seq="ngModel" [(ngModel)]="item.exec_file_seq"\n            required></ion-input>\n          <button ion-button outline item-end *ngIf="CanEditBatch==true && mode==\'POST\'" icon-right (click)="get_max_exec_file_seq()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n        <div *ngIf="exec_file_seq.errors && exec_file_seq.touched" class="error-message">\n          轉檔序號不能為空白\n        </div>\n\n      </ion-col>\n    </ion-row>\n    <ion-row>\n        <ion-col col-12 col-sm-8 >\n            <ion-item>\n              <ion-label stacked>檔案搜尋關鍵字</ion-label>\n              <ion-input type="text" [disabled]="CanEditBatch==false" name="file_keyword" #file_keyword="ngModel" [(ngModel)]="item.file_keyword"\n                required maxlength="256"></ion-input>\n            </ion-item>\n            <div *ngIf="file_keyword.errors && file_keyword.touched" class="error-message">\n              檔案搜尋關鍵字不能為空白\n            </div>\n          </ion-col>\n      <ion-col col-12 col-sm-4>\n        <ion-item>\n          <ion-label stacked>執行順序</ion-label>\n          <ion-input type="number" [disabled]="CanEditBatch==false" name="exec_seq" #exec_seq="ngModel" [(ngModel)]="item.exec_seq"\n            required></ion-input>\n          <button ion-button outline item-end *ngIf="CanEditBatch==true && mode==\'POST\'" icon-right (click)="get_max_exec_seq()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n        <div *ngIf="exec_seq.errors && exec_seq.touched" class="error-message">\n          執行順序不能為空白\n        </div>\n      </ion-col>\n\n    </ion-row>\n    <ion-row>\n        <ion-col>\n          <ion-item>\n            <ion-label stacked>檔名最小長度</ion-label>\n            <ion-input type="number" [disabled]="CanEditBatch==false" name="file_min_length" #file_min_length="ngModel" [(ngModel)]="item.file_min_length"></ion-input>\n          </ion-item>\n\n        </ion-col>\n        <ion-col>\n          <ion-item>\n            <ion-label stacked>檔名最大長度</ion-label>\n            <ion-input type="number" [disabled]="CanEditBatch==false" name="file_max_length" #file_max_length="ngModel" [(ngModel)]="item.file_max_length"></ion-input>\n          </ion-item>\n\n        </ion-col>\n      </ion-row>\n    <ion-row>\n\n        <ion-col>\n            <ion-item>\n              <ion-label stacked>失敗停止</ion-label>\n              <ion-checkbox [disabled]="CanEditBatch==false" name="is_fail_stop" #is_fail_stop="ngModel" [(ngModel)]="item.is_fail_stop"></ion-checkbox>\n            </ion-item>\n\n          </ion-col>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>子資料夾</ion-label>\n          <ion-checkbox [disabled]="CanEditBatch==false" name="recursive" #recursive="ngModel" [(ngModel)]="item.recursive"></ion-checkbox>\n        </ion-item>\n\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n        <ion-col>\n            <ion-item>\n              <ion-label stacked>空檔檢核</ion-label>\n              <ion-checkbox [disabled]="CanEditBatch==false" name="empty_file_check_flag" #empty_file_check_flag="ngModel" [(ngModel)]="item.empty_file_check_flag"></ion-checkbox>\n            </ion-item>\n          </ion-col>\n          <ion-col>\n              <ion-item>\n                <ion-label stacked>重複</ion-label>\n                <ion-checkbox [disabled]="CanEditBatch==false" name="can_rerun" #can_rerun="ngModel" [(ngModel)]="item.can_rerun"></ion-checkbox>\n              </ion-item>\n            </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-12 col-sm-4>\n          <ion-item>\n            <ion-label stacked>來源內文格式</ion-label>\n            <ion-input type="text" readonly=true maxlength=10  [disabled]="CanEditBatch==false " name="file_format_key" #file_format_key="ngModel" [(ngModel)]="item.file_format_key"\n              required></ion-input>\n\n            <button ion-button outline item-end *ngIf="CanEditBatch==true" icon-right (click)="SelectFileFormat()">\n              <ion-icon name="arrow-dropdown"></ion-icon>\n            </button>\n          </ion-item>\n\n          <div *ngIf="file_format_key.errors && file_format_key.touched " class="error-message">\n              來源內文格式不能為空白\n          </div>\n        </ion-col>\n        <ion-col col-12 col-sm-8>\n          <ion-item>\n            <ion-label stacked>來源內文格式</ion-label>\n            <ion-input type="text" [disabled]=true name="file_format" #file_format="ngModel" [(ngModel)]="item.file_format"\n              required></ion-input>\n          </ion-item>\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-12 col-sm-4>\n          <ion-item>\n            <ion-label stacked>轉換編碼</ion-label>\n            <ion-input type="text" readonly=true maxlength=10  [disabled]="CanEditBatch==false " name="file_func_proc_key" #file_func_proc_key="ngModel" [(ngModel)]="item.file_func_proc_key"\n              required></ion-input>\n\n            <button ion-button outline item-end *ngIf="CanEditBatch==true" icon-right (click)="SelectFileFuncProc()">\n              <ion-icon name="arrow-dropdown"></ion-icon>\n            </button>\n          </ion-item>\n\n          <div *ngIf="file_func_proc_key.errors && file_func_proc_key.touched " class="error-message">\n            轉換編碼不能為空白\n          </div>\n        </ion-col>\n        <ion-col col-12 col-sm-8>\n          <ion-item>\n            <ion-label stacked>轉換編碼</ion-label>\n            <ion-input type="text" [disabled]=true name="file_func_proc" #file_func_proc="ngModel" [(ngModel)]="item.file_func_proc"\n              required></ion-input>\n          </ion-item>\n        </ion-col>\n      </ion-row>\n    <ion-row>\n      <ion-col col-12 col-sm-4>\n        <ion-item>\n          <ion-label stacked>執行後處理方式</ion-label>\n          <ion-input type="text" readonly=true [disabled]="CanEditBatch==false" name="file_proc_key" #file_proc_key="ngModel" [(ngModel)]="item.file_proc_key"\n            required></ion-input>\n\n          <button ion-button outline item-end *ngIf="CanEditBatch==true" icon-right (click)="SelectFileProcType()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n\n        <div *ngIf="file_proc_key.errors && file_proc_key.touched " class="error-message">\n          執行後處理方式不能為空白\n        </div>\n      </ion-col>\n      <ion-col col-12 col-sm-8>\n        <ion-item>\n          <ion-label stacked>執行後處理方式</ion-label>\n\n          <ion-textarea [disabled]=true name="file_proc" #file_proc="ngModel" [(ngModel)]="item.file_proc" required>\n          </ion-textarea>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n<ion-row>\n      <ion-col col-12 col-sm-4>\n        <ion-item>\n          <ion-label stacked>RERUN處理方式</ion-label>\n          <ion-input type="text" readonly=true [disabled]="CanEditBatch==false" name="rerun_file_proc_key" #rerun_file_proc_key="ngModel" [(ngModel)]="item.rerun_file_proc_key"\n            required></ion-input>\n\n          <button ion-button outline item-end *ngIf="CanEditBatch==true" icon-right (click)="SelectRerunFileProcType()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n\n        <div *ngIf="rerun_file_proc_key.errors && rerun_file_proc_key.touched " class="error-message">\n          RERUN處理方式不能為空白\n        </div>\n      </ion-col>\n      <ion-col col-12 col-sm-8>\n        <ion-item>\n          <ion-label stacked>RERUN處理方式</ion-label>\n\n          <ion-textarea [disabled]=true name="rerun_file_proc" #rerun_file_proc="ngModel" [(ngModel)]="item.rerun_file_proc" required>\n          </ion-textarea>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-12 col-sm-4>\n        <ion-item>\n          <ion-label stacked>來源檔案路徑</ion-label>\n          <ion-input type="text" readonly=true [disabled]="CanEditBatch==false" name="src_file_path_key" #src_file_path_key="ngModel" [(ngModel)]="item.src_file_path_key"\n            required></ion-input>\n\n          <button ion-button outline item-end *ngIf="CanEditBatch==true" icon-right (click)="SelectSrcFilePath()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n\n        <div *ngIf="src_file_path_key.errors && src_file_path_key.touched " class="error-message">\n          來源檔案路徑不能為空白\n        </div>\n      </ion-col>\n      <ion-col col-12 col-sm-8>\n        <ion-item>\n          <button ion-button clear=true [disabled]="CanFileBrowser==false" (click)="openNavPage(item.src_file_path)">\n            {{item.src_file_path}}\n          </button>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-12 col-sm-4>\n        <ion-item>\n          <ion-label stacked>目的檔案路徑</ion-label>\n          <ion-input type="text" readonly=true [disabled]="CanEditBatch==false" name="target_file_path_key" #target_file_path_key="ngModel" [(ngModel)]="item.target_file_path_key"\n            required></ion-input>\n\n          <button ion-button outline item-end *ngIf="CanEditBatch==true" icon-right (click)="SelectTargetFilePath()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n\n        <div *ngIf="target_file_path_key.errors && target_file_path_key.touched " class="error-message">\n          目的檔案路徑不能為空白\n        </div>\n      </ion-col>\n      <ion-col col-12 col-sm-8>\n        <ion-item>\n          <button ion-button clear=true [disabled]="CanFileBrowser==false" (click)="openNavPage(item.target_file_path)">\n            {{item.target_file_path}}\n          </button>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-12 col-sm-4>\n        <ion-item>\n          <ion-label stacked>備份檔案路徑</ion-label>\n          <ion-input type="text" readonly=true [disabled]="CanEditBatch==false" name="bk_file_path_key" #bk_file_path_key="ngModel" [(ngModel)]="item.bk_file_path_key"\n            required></ion-input>\n\n          <button ion-button outline item-end *ngIf="CanEditBatch==true" icon-right (click)="SelectBkFilePath()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n\n        <div *ngIf="bk_file_path_key.errors && bk_file_path_key.touched " class="error-message">\n          備份檔案路徑不能為空白\n        </div>\n      </ion-col>\n      <ion-col col-12 col-sm-8>\n        <ion-item>\n          <button ion-button clear=true [disabled]="CanFileBrowser==false" (click)="openNavPage(item.bk_file_path)">\n            {{item.bk_file_path}}\n          </button>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n<ion-row>\n    <ion-col>\n        <ion-item>\n          <ion-label stacked>參數群組</ion-label>\n          <ion-input type="text" readonly=true [disabled]="CanEditBatch==false" name="parameter_column_group" #parameter_column_group="ngModel" [(ngModel)]="item.parameter_column_group"\n            required maxlength="3"></ion-input>\n\n          <button ion-button outline item-end *ngIf="CanEditBatch==true" icon-right (click)="SelectParameterGroup()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n\n        <div *ngIf="parameter_column_group.errors && parameter_column_group.touched " class="error-message">\n          參數群組不能為空白\n        </div>\n      </ion-col>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>啟用</ion-label>\n          <ion-checkbox [disabled]="CanEditBatch==false" name="is_active" #is_active="ngModel" [(ngModel)]="item.is_active"></ion-checkbox>\n        </ion-item>\n\n      </ion-col>\n</ion-row>\n<ion-row>\n    <ion-col>\n      <ion-item>\n        <ion-label stacked>備註</ion-label>\n        <ion-textarea [disabled]="CanEditBatch==false" name="note" #note="ngModel" [(ngModel)]="item.note" maxlength="255"  required></ion-textarea>\n      </ion-item>\n      <div *ngIf="note.errors && note.touched " class="error-message">\n          備註不能為空白\n      </div>\n    </ion-col>\n  </ion-row>\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditBatch==false" ion-button color="dark" [disabled]="!Form.form.valid" icon-left\n            (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n          <button small title="參數群組" ion-button color="dark" icon-left (click)="openNavParameterColumnPage(item)">\n            <ion-icon name="outlet"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\file-code-add-edit-modal\file-code-add-edit-modal.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["m" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["p" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_0__providers_del_table_services_del_table_services__["a" /* DelTableServicesProvider */],
+            __WEBPACK_IMPORTED_MODULE_0__providers_file_code_page_services_file_code_page_services__["a" /* FileCodePageServicesProvider */],
+            __WEBPACK_IMPORTED_MODULE_6__providers_file_path_services_file_path_services__["a" /* FilePathServicesProvider */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* LoadingController */],
             __WEBPACK_IMPORTED_MODULE_1__components_global_global__["a" /* GlobalComponent */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["j" /* ModalController */]])
-    ], DelTableAddEditModalPage);
-    return DelTableAddEditModalPage;
+    ], FileCodeAddEditModalPage);
+    return FileCodeAddEditModalPage;
 }());
 
-//# sourceMappingURL=del-table-add-edit-modal.js.map
+//# sourceMappingURL=file-code-add-edit-modal.js.map
 
 /***/ }),
 
-/***/ 493:
+/***/ 523:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DelTableAddEditModalPageModule", function() { return DelTableAddEditModalPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FileCodeAddEditModalPageModule", function() { return FileCodeAddEditModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__del_table_add_edit_modal__ = __webpack_require__(1340);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_del_table_services_del_table_services__ = __webpack_require__(1028);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__file_code_add_edit_modal__ = __webpack_require__(1384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_file_code_page_services_file_code_page_services__ = __webpack_require__(1041);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -515,40 +653,54 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var DelTableAddEditModalPageModule = /** @class */ (function () {
-    function DelTableAddEditModalPageModule() {
+var FileCodeAddEditModalPageModule = /** @class */ (function () {
+    function FileCodeAddEditModalPageModule() {
     }
-    DelTableAddEditModalPageModule = __decorate([
+    FileCodeAddEditModalPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__del_table_add_edit_modal__["a" /* DelTableAddEditModalPage */],
+                __WEBPACK_IMPORTED_MODULE_2__file_code_add_edit_modal__["a" /* FileCodeAddEditModalPage */],
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_3__providers_del_table_services_del_table_services__["a" /* DelTableServicesProvider */],
+            providers: [__WEBPACK_IMPORTED_MODULE_3__providers_file_code_page_services_file_code_page_services__["a" /* FileCodePageServicesProvider */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__del_table_add_edit_modal__["a" /* DelTableAddEditModalPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__file_code_add_edit_modal__["a" /* FileCodeAddEditModalPage */]),
             ],
         })
-    ], DelTableAddEditModalPageModule);
-    return DelTableAddEditModalPageModule;
+    ], FileCodeAddEditModalPageModule);
+    return FileCodeAddEditModalPageModule;
 }());
 
-//# sourceMappingURL=del-table-add-edit-modal.module.js.map
+//# sourceMappingURL=file-code-add-edit-modal.module.js.map
 
 /***/ }),
 
-/***/ 960:
+/***/ 970:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DelTableViewModel; });
-var DelTableViewModel = /** @class */ (function () {
-    function DelTableViewModel() {
-    }
-    return DelTableViewModel;
-}());
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileCodePageViewModel; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FileManagementViewModel__ = __webpack_require__(129);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 
-//# sourceMappingURL=DelTableViewModel.js.map
+var FileCodePageViewModel = /** @class */ (function (_super) {
+    __extends(FileCodePageViewModel, _super);
+    function FileCodePageViewModel() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return FileCodePageViewModel;
+}(__WEBPACK_IMPORTED_MODULE_0__FileManagementViewModel__["a" /* FileManagementViewModel */]));
+
+//# sourceMappingURL=FileCodePageViewModel.js.map
 
 /***/ })
 

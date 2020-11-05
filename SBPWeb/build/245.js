@@ -1,41 +1,17 @@
 webpackJsonp([245],{
 
-/***/ 1000:
+/***/ 1088:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FordViewModel; });
-var FordViewModel = /** @class */ (function () {
-    function FordViewModel() {
-    }
-    return FordViewModel;
-}());
-
-//# sourceMappingURL=FordViewModel.js.map
-
-/***/ }),
-
-/***/ 1074:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FordServicesProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_FordListResponse__ = __webpack_require__(1194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_FordResponse__ = __webpack_require__(1195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__table_set_services_table_set_services__ = __webpack_require__(131);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobLoopServicesProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_Response_JobLoopListResponse__ = __webpack_require__(1208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_JobLoopResponse__ = __webpack_require__(1209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_services__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_StringResponse__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Model_Response_NumberResponse__ = __webpack_require__(128);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -51,28 +27,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /*
-  Generated class for the FordServiceProvider provider.
+  Generated class for the jobloopServicesProvider provider.
 
   See https://angular.io/guide/dependency-injection for more info on providers
   and Angular DI.
 */
-var FordServicesProvider = /** @class */ (function (_super) {
-    __extends(FordServicesProvider, _super);
-    function FordServicesProvider(Services) {
-        var _this = _super.call(this, Services) || this;
-        _this.Services = Services;
-        _this.ctl = "Ford";
-        console.log("Hello FordServiceProvider Provider");
-        return _this;
+var JobLoopServicesProvider = /** @class */ (function () {
+    function JobLoopServicesProvider(Services) {
+        this.Services = Services;
+        // this.originUrl =apiUrl;
+        this.ctl = "jobloop";
+        console.log("Hello jobloopServicesProvider Provider");
     }
-    FordServicesProvider.prototype.GetListsByAsync = function (PageSize, PageNumber, keyword, order_type) {
+    JobLoopServicesProvider.prototype.GetListsAsync = function (ssis_job_no, PageSize, PageNumber, keyword, order_type) {
         var _this = this;
         var sub_url;
-        sub_url = "Ford?PageSize={1}&PageNumber={2}&keyword={3}&order_type={4}";
-        sub_url = __WEBPACK_IMPORTED_MODULE_0__Model_String__["a" /* String */].Format(sub_url, this.ctl, PageSize, PageNumber, keyword, order_type);
-        return this.Services.GetAsync(sub_url, this.ctl, true).map(function (item) {
-            _this.Fords = new __WEBPACK_IMPORTED_MODULE_3__Model_Response_FordListResponse__["a" /* FordListResponse */]({
+        sub_url = "jobloop?PageSize={1}&PageNumber={2}&keyword={3}&ssis_job_no={4}&order_type={5}";
+        sub_url = __WEBPACK_IMPORTED_MODULE_1__Model_String__["a" /* String */].Format(sub_url, this.ctl, PageSize, PageNumber, keyword, ssis_job_no, order_type);
+        return this.Services.GetAsync(sub_url, this.ctl, true)
+            .map(function (item) {
+            _this.jobloops = new __WEBPACK_IMPORTED_MODULE_0__Model_Response_JobLoopListResponse__["a" /* JobLoopListResponse */]({
                 Message: item.Message,
                 DidError: item.DidError,
                 ErrorMessage: item.ErrorMessage,
@@ -83,74 +59,149 @@ var FordServicesProvider = /** @class */ (function (_super) {
                 TotalPages: item.TotalPages,
                 Model: item.Model
             });
-            return _this.Fords;
+            return _this.jobloops;
         });
     };
-    FordServicesProvider.prototype.PostPutAsync = function (FordViewModel, mode) {
+    JobLoopServicesProvider.prototype.PostPutAsync = function (JobLoopViewModel, mode) {
         var _this = this;
         var sub_url;
         if (mode === "POST")
-            sub_url = "Ford";
+            sub_url = "JobLoop";
         else
-            sub_url = "Ford/{1}";
-        sub_url = __WEBPACK_IMPORTED_MODULE_0__Model_String__["a" /* String */].Format(sub_url, this.ctl, FordViewModel.exec_table_seq);
-        return this.Services.PostPutAsync(sub_url, this.ctl, true, FordViewModel, mode).map(function (item) {
-            _this.Ford = new __WEBPACK_IMPORTED_MODULE_4__Model_Response_FordResponse__["a" /* FordResponse */]({
+            sub_url = "JobLoop/" + JobLoopViewModel.loop_seq;
+        return this.Services.PostPutAsync(sub_url, this.ctl, true, JobLoopViewModel, mode).map(function (item) {
+            _this.jobloop = new __WEBPACK_IMPORTED_MODULE_3__Model_Response_JobLoopResponse__["a" /* JobLoopResponse */]({
                 Message: item.Message,
                 DidError: item.DidError,
                 ErrorMessage: item.ErrorMessage,
                 Model: item.Model
             });
-            return _this.Ford;
+            return _this.jobloop;
         });
     };
-    FordServicesProvider.prototype.ExecuteAsync = function (StringViewModel) {
+    JobLoopServicesProvider.prototype.DeleteAsync = function (loop_seq) {
         var _this = this;
         var sub_url;
-        sub_url = "Ford/Execute";
-        return this.Services.PostAsync(sub_url, this.ctl, true, StringViewModel).map(function (item) {
-            _this.Ford = new __WEBPACK_IMPORTED_MODULE_4__Model_Response_FordResponse__["a" /* FordResponse */]({
-                Message: item.Message,
-                DidError: item.DidError,
-                ErrorMessage: item.ErrorMessage,
-                Model: item.Model
-            });
-            return _this.Ford;
-        });
-    };
-    FordServicesProvider.prototype.DeleteAsync = function (exec_table_seq) {
-        var _this = this;
-        var sub_url;
-        sub_url = "Ford/{1}";
-        sub_url = __WEBPACK_IMPORTED_MODULE_0__Model_String__["a" /* String */].Format(sub_url, this.ctl, exec_table_seq);
+        sub_url = "JobLoop/" + loop_seq;
         return this.Services.DeleteAsync(sub_url, this.ctl, true).map(function (item) {
-            _this.Ford = new __WEBPACK_IMPORTED_MODULE_4__Model_Response_FordResponse__["a" /* FordResponse */]({
+            _this.jobloop = new __WEBPACK_IMPORTED_MODULE_3__Model_Response_JobLoopResponse__["a" /* JobLoopResponse */]({
                 Message: item.Message,
                 DidError: item.DidError,
                 ErrorMessage: item.ErrorMessage,
                 Model: item.Model
             });
-            return _this.Ford;
+            return _this.jobloop;
         });
     };
-    FordServicesProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_services__["a" /* ServicesProvider */]])
-    ], FordServicesProvider);
-    return FordServicesProvider;
-}(__WEBPACK_IMPORTED_MODULE_5__table_set_services_table_set_services__["a" /* TableSetServicesProvider */]));
+    JobLoopServicesProvider.prototype.GetSqlAsync = function (loop_seq, method) {
+        var sub_url;
+        sub_url = "JobLoop/get_{2}_sql/{1}";
+        sub_url = __WEBPACK_IMPORTED_MODULE_1__Model_String__["a" /* String */].Format(sub_url, this.ctl, loop_seq, method);
+        return this.Services.GetAsync(sub_url, this.ctl, true).map(function (item) {
+            return new __WEBPACK_IMPORTED_MODULE_5__Model_Response_StringResponse__["a" /* StringResponse */]({
+                Message: item.Message,
+                DidError: item.DidError,
+                ErrorMessage: item.ErrorMessage,
+                Model: item.Model
+            });
+        });
+    };
+    JobLoopServicesProvider.prototype.GetMaxLoopSeqAsync = function (ssis_job_no) {
+        var sub_url;
+        sub_url = "JobLoop/get_max_loop_seq?ssis_job_no={1}";
+        sub_url = __WEBPACK_IMPORTED_MODULE_1__Model_String__["a" /* String */].Format(sub_url, this.ctl, ssis_job_no);
+        return this.Services.GetAsync(sub_url, this.ctl, true).map(function (item) {
+            return new __WEBPACK_IMPORTED_MODULE_6__Model_Response_NumberResponse__["a" /* NumberResponse */]({
+                Message: item.Message,
+                DidError: item.DidError,
+                ErrorMessage: item.ErrorMessage,
+                Model: item.Model
+            });
+        });
+    };
+    JobLoopServicesProvider.prototype.GetMaxExecSeqAsync = function (ssis_job_no) {
+        var sub_url;
+        sub_url = "JobLoop/get_max_exec_seq?ssis_job_no={1}";
+        sub_url = __WEBPACK_IMPORTED_MODULE_1__Model_String__["a" /* String */].Format(sub_url, this.ctl, ssis_job_no);
+        return this.Services.GetAsync(sub_url, this.ctl, true).map(function (item) {
+            return new __WEBPACK_IMPORTED_MODULE_6__Model_Response_NumberResponse__["a" /* NumberResponse */]({
+                Message: item.Message,
+                DidError: item.DidError,
+                ErrorMessage: item.ErrorMessage,
+                Model: item.Model
+            });
+        });
+    };
+    JobLoopServicesProvider.prototype.unzip_pwd = function (JobLoopViewModel) {
+        var sub_url;
+        sub_url = "JobLoop/unzip_pwd/{1}";
+        sub_url = __WEBPACK_IMPORTED_MODULE_1__Model_String__["a" /* String */].Format(sub_url, this.ctl, JobLoopViewModel.loop_seq);
+        return this.Services.PutAsync(sub_url, this.ctl, true, JobLoopViewModel).map(function (item) {
+            return new __WEBPACK_IMPORTED_MODULE_5__Model_Response_StringResponse__["a" /* StringResponse */]({
+                Message: item.Message,
+                DidError: item.DidError,
+                ErrorMessage: item.ErrorMessage,
+                Model: item.Model
+            });
+        });
+    };
+    JobLoopServicesProvider.prototype.zip_pwd = function (JobLoopViewModel) {
+        var sub_url;
+        sub_url = "JobLoop/zip_pwd/{1}";
+        sub_url = __WEBPACK_IMPORTED_MODULE_1__Model_String__["a" /* String */].Format(sub_url, this.ctl, JobLoopViewModel.loop_seq);
+        return this.Services.PutAsync(sub_url, this.ctl, true, JobLoopViewModel).map(function (item) {
+            return new __WEBPACK_IMPORTED_MODULE_5__Model_Response_StringResponse__["a" /* StringResponse */]({
+                Message: item.Message,
+                DidError: item.DidError,
+                ErrorMessage: item.ErrorMessage,
+                Model: item.Model
+            });
+        });
+    };
+    JobLoopServicesProvider.prototype.clear_unzip_pwd = function (JobLoopViewModel) {
+        var sub_url;
+        sub_url = "JobLoop/clear_unzip_pwd/{1}";
+        sub_url = __WEBPACK_IMPORTED_MODULE_1__Model_String__["a" /* String */].Format(sub_url, this.ctl, JobLoopViewModel.loop_seq);
+        return this.Services.PutAsync(sub_url, this.ctl, true, JobLoopViewModel).map(function (item) {
+            return new __WEBPACK_IMPORTED_MODULE_5__Model_Response_StringResponse__["a" /* StringResponse */]({
+                Message: item.Message,
+                DidError: item.DidError,
+                ErrorMessage: item.ErrorMessage,
+                Model: item.Model
+            });
+        });
+    };
+    JobLoopServicesProvider.prototype.clear_zip_pwd = function (JobLoopViewModel) {
+        var sub_url;
+        sub_url = "JobLoop/clear_zip_pwd/{1}";
+        sub_url = __WEBPACK_IMPORTED_MODULE_1__Model_String__["a" /* String */].Format(sub_url, this.ctl, JobLoopViewModel.loop_seq);
+        return this.Services.PutAsync(sub_url, this.ctl, true, JobLoopViewModel).map(function (item) {
+            return new __WEBPACK_IMPORTED_MODULE_5__Model_Response_StringResponse__["a" /* StringResponse */]({
+                Message: item.Message,
+                DidError: item.DidError,
+                ErrorMessage: item.ErrorMessage,
+                Model: item.Model
+            });
+        });
+    };
+    JobLoopServicesProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__services_services__["a" /* ServicesProvider */]])
+    ], JobLoopServicesProvider);
+    return JobLoopServicesProvider;
+}());
 
-//# sourceMappingURL=ford-services.js.map
+//# sourceMappingURL=job-loop-services.js.map
 
 /***/ }),
 
-/***/ 1194:
+/***/ 1208:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FordListResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_FordViewModel__ = __webpack_require__(1000);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(5);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobLoopListResponse; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ViewModel_JobLoopViewModel__ = __webpack_require__(961);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListModelResponse__ = __webpack_require__(6);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -163,11 +214,10 @@ var __extends = (this && this.__extends) || (function () {
 })();
 
 
-var FordListResponse = /** @class */ (function (_super) {
-    __extends(FordListResponse, _super);
-    function FordListResponse(obj) {
+var JobLoopListResponse = /** @class */ (function (_super) {
+    __extends(JobLoopListResponse, _super);
+    function JobLoopListResponse(obj) {
         var _this = _super.call(this, obj) || this;
-        _this.Model = [];
         _this.Message = obj.Messag;
         _this.DidError = obj.DidError;
         _this.ErrorMessage = (obj && obj.ErrorMessage) || null;
@@ -177,64 +227,75 @@ var FordListResponse = /** @class */ (function (_super) {
         _this.TotalPages = obj.TotalPages;
         _this.TotalRows = obj.TotalRows;
         if (_this.DidError === false) {
+            _this.Model = [];
             obj.Model.forEach(function (data) {
-                var item = new __WEBPACK_IMPORTED_MODULE_0__ViewModel_FordViewModel__["a" /* FordViewModel */]();
-                item.exec_table_seq = data.exec_table_seq;
-                item.exec_group = data.exec_group;
-                item.src_schema = data.src_schema;
-                item.src_tablename = data.src_tablename;
-                item.schemaname = data.schemaname;
-                item.tablename = data.tablename;
+                var item = new __WEBPACK_IMPORTED_MODULE_0__ViewModel_JobLoopViewModel__["a" /* JobLoopViewModel */]();
+                item.loop_seq = data.loop_seq;
+                item.ssis_job_no = data.ssis_job_no;
+                item.job01 = (data && data.job01) || null;
+                item.job02 = (data && data.job02) || null;
+                item.job03 = (data && data.job03) || null;
                 item.exec_seq = data.exec_seq;
                 item.is_active = data.is_active;
-                item.tran_flag = data.tran_flag == null ? false : data.tran_flag;
-                item.db_conn_id = (data && data.db_conn_id) || null;
-                item.memo = (data && data.memo) || null;
+                item.job_loop_desc = (data && data.job_loop_desc) || null;
+                item.job_loop_replace_desc =
+                    (data && data.job_loop_replace_desc) || null;
+                item.remote_conn_id = (data && data.remote_conn_id) || null;
+                item.last_exec_date = (data && data.last_exec_date) || null;
+                item.last_exec_status_key = (data && data.last_exec_status_key) || null;
                 item.creator = data.creator;
                 item.create_time = data.create_time;
                 item.modifier = data.modifier;
                 item.last_update_time = data.last_update_time;
-                item.db_conn_string = (data && data.db_conn_string) || null;
+                item.last_exec_status_desc = data.last_exec_status_desc;
                 item.is_active_desc = data.is_active_desc;
-                switch (data.is_active) {
-                    case false: {
-                        item.is_active_color = "danger";
-                        item.is_active_color_right = "danger-right";
+                item.end_time = data.end_time;
+                item.duration = data.duration;
+                item.remote_conn_string = (data && data.remote_conn_string) || null;
+                switch (data.last_exec_status_key) {
+                    case "012|R": {
+                        item.last_exec_status_color = "running-left";
+                        break;
+                    }
+                    case "012|F": {
+                        item.last_exec_status_color = "danger-left";
                         break;
                     }
                     default:
-                        {
-                            item.is_active_color = "active";
-                            item.is_active_color_right = "active-right";
-                        }
+                        item.last_exec_status_color = "normal-left";
                 }
-                if (data.src_schema > "" && data.src_tablename > "")
-                    item.src_tablefullname = item.src_schema + "." + item.src_tablename;
-                if (data.schemaname > "" && data.tablename > "")
-                    item.tablefullname = item.schemaname + "." + item.tablename;
-                item.sp_name = data.sp_name;
-                item.date_type = data.date_type;
-                item.date_type_desc = data.date_type_desc;
-                item.sql_statement = data.sql_statement;
+                switch (data.is_active) {
+                    case false: {
+                        item.is_active_color = "danger-left";
+                        break;
+                    }
+                    default:
+                        item.is_active_color = "active-left";
+                }
+                item.event_cnt = data.event_cnt;
+                if (item.event_cnt > 0)
+                    item.event_color = "danger";
+                else
+                    item.event_color = "light";
                 _this.Model.push(item);
             }) || null;
         }
         return _this;
     }
-    return FordListResponse;
+    return JobLoopListResponse;
 }(__WEBPACK_IMPORTED_MODULE_1__ListModelResponse__["a" /* ListModelResponse */]));
 
-//# sourceMappingURL=FordListResponse.js.map
+//# sourceMappingURL=JobLoopListResponse.js.map
 
 /***/ }),
 
-/***/ 1195:
+/***/ 1209:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FordResponse; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_FordViewModel__ = __webpack_require__(1000);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobLoopResponse; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ViewModel_JobLoopViewModel__ = __webpack_require__(961);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -247,70 +308,54 @@ var __extends = (this && this.__extends) || (function () {
 })();
 
 
-var FordResponse = /** @class */ (function (_super) {
-    __extends(FordResponse, _super);
-    function FordResponse(obj) {
+var JobLoopResponse = /** @class */ (function (_super) {
+    __extends(JobLoopResponse, _super);
+    function JobLoopResponse(obj) {
         var _this = _super.call(this, obj) || this;
         _this.Message = obj.Message;
         _this.DidError = obj.DidError;
         _this.ErrorMessage = obj.ErrorMessage;
         if (_this.DidError === false) {
-            _this.Model = new __WEBPACK_IMPORTED_MODULE_1__ViewModel_FordViewModel__["a" /* FordViewModel */]();
-            _this.Model.exec_table_seq = obj.Model.exec_table_seq;
-            _this.Model.exec_group = obj.Model.exec_group;
-            _this.Model.src_schema = (obj && obj.Model.src_schema) || null;
-            _this.Model.src_tablename = (obj && obj.Model.src_tablename) || null;
-            _this.Model.schemaname = (obj && obj.Model.schemaname) || null;
-            _this.Model.tablename = obj.Model.tablename;
-            _this.Model.exec_seq = obj.Model.exec_seq;
-            _this.Model.is_active = obj.Model.is_active;
-            _this.Model.tran_flag = obj.Model.tran_flag == null ? false : obj.Model.tran_flag;
-            _this.Model.db_conn_id = (obj && obj.Model.db_conn_id) || null;
-            _this.Model.memo = (obj && obj.Model.memo) || null;
-            _this.Model.creator = obj.Model.creator;
-            _this.Model.create_time = obj.Model.create_time;
-            _this.Model.modifier = obj.Model.modifier;
-            _this.Model.last_update_time = obj.Model.last_update_time;
-            _this.Model.db_conn_string = (obj.Model && obj.Model.db_conn_string) || null;
-            _this.Model.is_active_desc = obj.Model.is_active_desc;
-            _this.Model.src_tablefullname = obj.Model.src_schema + "." + obj.Model.src_tablename;
-            _this.Model.tablefullname = obj.Model.schemaname + "." + obj.Model.tablename;
-            switch (obj.Model.is_active) {
-                case false: {
-                    _this.Model.is_active_color = "danger";
-                    break;
-                }
-                default:
-                    _this.Model.is_active_color = "active";
+            if (obj.Model.loop_seq) {
+                _this.Model = new __WEBPACK_IMPORTED_MODULE_1__ViewModel_JobLoopViewModel__["a" /* JobLoopViewModel */]();
+                _this.Model.loop_seq = obj.Model.loop_seq;
+                _this.Model.ssis_job_no = obj.Model.ssis_job_no;
+                _this.Model.job01 = (obj && obj.Model.job01) || null;
+                _this.Model.job02 = (obj && obj.Model.job02) || null;
+                _this.Model.job03 = (obj && obj.Model.job03) || null;
+                _this.Model.exec_seq = obj.Model.exec_seq;
+                _this.Model.is_active = obj.Model.is_active;
+                _this.Model.job_loop_desc = (obj && obj.Model.job_loop_desc) || null;
+                _this.Model.remote_conn_id = (obj && obj.Model.remote_conn_id) || null;
+                _this.Model.last_exec_date = (obj && obj.Model.last_exec_date) || null;
+                _this.Model.last_exec_status_key =
+                    (obj && obj.Model.last_exec_status_key) || null;
+                _this.Model.creator = obj.Model.creator;
+                _this.Model.create_time = obj.Model.create_time;
+                _this.Model.modifier = obj.Model.modifier;
+                _this.Model.last_update_time = obj.Model.last_update_time;
+                _this.Model.remote_conn_string = (obj && obj.Model.remote_conn_string) || null;
             }
-            _this.Model.sql_statement = obj.Model.sql_statement;
-            _this.Model.date_type = obj.Model.date_type;
-            _this.Model.date_type_desc = obj.Model.date_type_desc;
-            _this.Model.sp_name = obj.Model.sp_name;
         }
         return _this;
     }
-    return FordResponse;
+    return JobLoopResponse;
 }(__WEBPACK_IMPORTED_MODULE_0__SingleModelResponse__["a" /* SingleModelResponse */]));
 
-//# sourceMappingURL=FordResponse.js.map
+//# sourceMappingURL=JobLoopResponse.js.map
 
 /***/ }),
 
-/***/ 1525:
+/***/ 1561:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FordAddEditModalPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_ford_services_ford_services__ = __webpack_require__(1074);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_global_global__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_String__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_ViewModel_FordViewModel__ = __webpack_require__(1000);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_conn_services_conn_services__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_prog_services_prog_services__ = __webpack_require__(274);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_auth_services_auth_services__ = __webpack_require__(64);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobLoopAddEditModalPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_JobLoopViewModel__ = __webpack_require__(961);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_global_global__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_job_loop_services_job_loop_services__ = __webpack_require__(1088);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -326,175 +371,59 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
-
-
 /**
- * Generated class for the SqlModalPage page.
+ * Generated class for the JobLoopModalPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var FordAddEditModalPage = /** @class */ (function () {
-    function FordAddEditModalPage(navCtrl, navParams, viewCtrl, FordServices, loadingCtrl, global, modalCtrl, ConnServices, ProgServices, authServices) {
+var JobLoopAddEditModalPage = /** @class */ (function () {
+    function JobLoopAddEditModalPage(navCtrl, navParams, viewCtrl, loadingCtrl, modalCtrl, global, JobLoopServices) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.viewCtrl = viewCtrl;
-        this.FordServices = FordServices;
         this.loadingCtrl = loadingCtrl;
-        this.global = global;
         this.modalCtrl = modalCtrl;
-        this.ConnServices = ConnServices;
-        this.ProgServices = ProgServices;
-        this.authServices = authServices;
-        this.min_exec_table_seq = 30000;
-        this.max_exec_table_seq = this.min_exec_table_seq + 9999;
-        this.sql_help = "\n  \u8B8A\u6578\u8AAA\u660E\uFF1A\n  {data_date}=\u8CC7\u6599\u65E5\u671F\u53C3\u6578,\n  {data_string}=\u6587\u5B57\u53C3\u6578,\n  {data_int}=\u6574\u6578\u53C3\u6578,\n  {exec_group}=\u8F49\u6A94\u7FA4\u7D44,\n  {JOB01},{JOB02},{JOB03}=\u4F5C\u696D\u8FF4\u5708\u53C3\u6578,\n  {LC01},{LC02},{LC03}=\u5167\u90E8\u6A94\u6848\u8FF4\u5708\u53C3\u6578,\n  {exec_log_seq}=\u4E0A\u5C64\u50B3\u905E\u7684exec_log_seq,\n  {src_path_file}=\u4E0A\u5C64\u50B3\u905E\u7684\u5B8C\u6574\u6A94\u540D(\u542B\u8DEF\u5F91)\n  \u52D5\u614B\u57F7\u884C\u53E6\u4E00\u4F5C\u696D\u65B9\u6CD5\n  \u7CFB\u7D71\u6703\u57F7\u884Ccreate table #job( ssis_job_no varchar(30) not null,job01 varchar(50) null,job02 varchar(50) null,job03 varchar(50) null)\uFF0C\n  \u53EF\u4EE5\u5C07\u8CC7\u6599\u5BEB\u5165\u5230#job\u9032\u884C\u547C\u53EB\u4F5C\u696D\u57F7\u884C\u3002\n  \u7BC4\u4F8B1\uFF1A\u547C\u53EBs1_daily_job\n  insert into #job(ssis_job_no)\n  values ('s1_daily_job')\n\n  \u7BC4\u4F8B2\uFF1A\u547C\u53EBs1_daily_job \u5177\u6709 F \u7684JOB01\u53C3\u6578\n  insert into #job(ssis_job_no,job01)\n  values ('s1_daily_job','F')\n  ";
-        this.sql_page = "SqlPage";
-        this.range_exec_table_seq = __WEBPACK_IMPORTED_MODULE_4__Model_String__["a" /* String */].Format("{0}-{1}", this.min_exec_table_seq, this.max_exec_table_seq);
-        this.mode = navParams.data.mode;
-        this.change_mode = navParams.data.change_mode;
-        this.item = new __WEBPACK_IMPORTED_MODULE_5__Model_ViewModel_FordViewModel__["a" /* FordViewModel */]();
-        this.item.exec_table_seq = navParams.data.item.exec_table_seq;
-        this.item.exec_group = navParams.data.item.exec_group;
-        this.item.src_schema = navParams.data.item.src_schema;
-        this.item.src_tablename = navParams.data.item.src_tablename;
-        this.item.schemaname = navParams.data.item.schemaname;
-        this.item.tablename = navParams.data.item.tablename;
+        this.global = global;
+        this.JobLoopServices = JobLoopServices;
+        this.sql_help = "\n  \u4F5C\u696D\u8FF4\u5708\u4E09\u500B\u8B8A\u6578\u8AAA\u660E\uFF1A\n  1.\u4EFB\u610F\u5E38\u6578\u5B57\uFF0C\u672A\u4F86\u6703\u4F9D\u7167\u8A72\u5167\u5BB9\u5E36\u5165\u4F5C\u696D\u6B65\u9A5F\u5167\u7684\u7A0B\u5F0F\n    \u4F8B\u5982:JOB01\u8A2D\u5B9A\u5167\u5BB9\u70BASETLD\n    \u5247{JOB01}=SETLD\n  \n  2.\u53D6\u5F97\u65E5\u671F:\u4EE5\u9017\u865F\u70BA\u5206\u9694\u7684\u5169\u500B\u53C3\u6578: {yyyyMMdd,\u7576\u65E5\u5F80\u524D\u5F8C\u5929\u6578}\n    \u4F8B\u5982\u4ECA\u5929\u65E5\u671F\u70BA2020/7/25\n    \u82E5JOB01\u8A2D\u5B9A\u5167\u5BB9\u70BA:yyyyMMdd,-1\n    \u5247{JOB01}=20200724\n  \n  3.\u53D6\u5F97\u6587\u5B57\u4ECA\u5929\u6D41\u6C34\u865F:\u4EE5\u9017\u865F\u70BA\u5206\u9694\u7684\u4E09\u500B\u53C3\u6578:  {\u6587\u5B57\u7FA4\u7D44,\u6D41\u6C34\u865F\u9577\u5EA6,\u56DE\u50B3\u683C\u5F0F}\n    \u4F8B\u5982\u4ECA\u5929\u65E5\u671F\u70BA2020/7/25\n    \u82E5JOB01\u8A2D\u5B9A\u5167\u5BB9\u70BA:SETLD,5,SETLD{today}{last_seq_no}\n    \u5247{JOB01}=SETLD2020072500001\n  \n  4.\u8A2D\u5B9A\u4F5C\u696D\u5B50\u591A\u8B8A\u6578:\u4F5C\u696D\u8B8A\u6578\u5167\u53EF\u5728\u8A2D\u5B9A\u66F4\u591A\u7684\u5B50\u8B8A\u6578\uFF0C\u8A2D\u5B9A\u683C\u5F0F\u70BA\u5B50\u8B8A\u65781=\u5167\u5BB91&\u5B50\u8B8A\u65782=\u5167\u5BB92\n    \u82E5JOB01\u8A2D\u5B9A\u5167\u5BB9\u70BA:insco=001&plan_type=L\n    \u5247{JOB01.insco}=001,{JOB01.plan_type}=L\n   ";
+        this.item = new __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_JobLoopViewModel__["a" /* JobLoopViewModel */]();
+        this.item.loop_seq = navParams.data.item.loop_seq;
+        this.item.ssis_job_no = navParams.data.item.ssis_job_no;
+        this.item.job01 = navParams.data.item.job01;
+        this.item.job02 = navParams.data.item.job02;
+        this.item.job03 = navParams.data.item.job03;
         this.item.exec_seq = navParams.data.item.exec_seq;
         this.item.is_active = navParams.data.item.is_active;
-        this.item.tran_flag = navParams.data.item.tran_flag;
-        this.item.db_conn_id = navParams.data.item.db_conn_id;
-        this.item.memo = navParams.data.item.memo;
+        this.item.job_loop_desc = navParams.data.item.job_loop_desc;
+        this.item.remote_conn_id = navParams.data.item.remote_conn_id;
+        this.item.last_exec_date = navParams.data.item.last_exec_date;
+        this.item.last_exec_status_key = navParams.data.item.last_exec_status_key;
         this.item.creator = navParams.data.item.creator;
         this.item.create_time = navParams.data.item.create_time;
         this.item.modifier = navParams.data.item.modifier;
         this.item.last_update_time = navParams.data.item.last_update_time;
-        this.item.sql_statement = navParams.data.item.sql_statement;
-        this.item.db_conn_string = navParams.data.item.db_conn_string;
-        this.item.sp_name = navParams.data.item.sp_name;
-        this.item.date_type = navParams.data.item.date_type;
-        this.item.date_type_desc = navParams.data.item.date_type_desc;
-        if (this.change_mode === "n") {
-            this.get_conn_string("localdb");
-        }
-        if (this.change_mode === "c") {
-            this.get_max_exec_table_seq();
+        this.item.remote_conn_string = navParams.data.item.remote_conn_string;
+        this.CanEditLoopJob = navParams.data.CanEditLoopJob;
+        this.mode = navParams.data.mode;
+        this.change_mode = navParams.data.change_mode;
+        this.title = this.item.ssis_job_no;
+        if (this.mode === 'POST') {
+            this.get_max_loop_seq();
             this.get_max_exec_seq();
         }
-        this.CanEditBatch = navParams.data.CanEditBatch;
-        this.title = "週期迴圈";
     }
-    FordAddEditModalPage.prototype.get_conn_string = function (remote_conn_id) {
-        var _this = this;
-        this.global.createLoader("取得連線字串中...");
-        this.global.loading.present().then(function () {
-            _this.ConnServices.GetConnAsync(remote_conn_id).subscribe(function (data) {
-                if (data.DidError === true) {
-                    _this.global.dismissLoading();
-                    _this.global.showError(data.ErrorMessage);
-                }
-                else {
-                    _this.item.db_conn_string =
-                        data.Model.conn_string;
-                    _this.global.dismissLoading();
-                }
-            }, function (err) {
-                _this.global.dismissLoading();
-                _this.global.showError("無法連上WebAPI伺服器-" + err.message);
-            });
-        });
-    };
-    FordAddEditModalPage.prototype.SelectDateType = function () {
-        var _this = this;
-        var modal = this.modalCtrl.create("CodeSelectModalPage", {
-            select_key: this.item.date_type,
-            code_type: "016"
-        });
-        modal.onDidDismiss(function (select_data) {
-            if (select_data == null)
-                return;
-            _this.item.date_type = select_data.code_no;
-            _this.item.date_type_desc = select_data.code_desc;
-        });
-        modal.present();
-    };
-    FordAddEditModalPage.prototype.SelectConn = function () {
-        var _this = this;
-        var modal = this.modalCtrl.create("ConnSelectModalPage", {
-            select_remote_conn_id: this.item.db_conn_id,
-            conn_type_key: "065|001"
-        });
-        modal.onDidDismiss(function (select_data) {
-            if (select_data == null)
-                return;
-            _this.item.db_conn_id = select_data.remote_conn_id;
-            _this.item.db_conn_string = select_data.conn_string;
-        });
-        modal.present();
-    };
-    FordAddEditModalPage.prototype.openNavProgSqlPage = function (sp_name) {
-        var _this = this;
-        this.global.createLoader("連線中...");
-        this.global.loading.present().then(function () {
-            _this.ProgServices.GetSqlByFullNameAsync(sp_name).subscribe(function (data) {
-                if (data.DidError === true) {
-                    _this.global.dismissLoading();
-                    _this.global.showError(data.ErrorMessage);
-                }
-                else {
-                    _this.navCtrl.push(_this.sql_page, {
-                        sql_statement: data.Model,
-                        is_exec: _this.CanEditTable
-                    });
-                    _this.global.dismissLoading();
-                }
-            }, function (err) {
-                _this.global.dismissLoading();
-                _this.global.showError("無法連上WebAPI伺服器-" + err.message);
-            });
-        });
-    };
-    FordAddEditModalPage.prototype.SelectSrcTable = function () {
-        var _this = this;
-        var modal = this.modalCtrl.create("TableExtSelectModalPage", {
-            select_item: this.item.tablefullname
-        });
-        modal.onDidDismiss(function (select_data) {
-            if (select_data == null)
-                return;
-            _this.item.src_schema = select_data.schemaname;
-            _this.item.src_tablename = select_data.tablename;
-            _this.item.src_tablefullname = select_data.tablefullname;
-        });
-        modal.present();
-    };
-    FordAddEditModalPage.prototype.SelectTable = function () {
-        var _this = this;
-        var modal = this.modalCtrl.create("TableExtSelectModalPage", {
-            select_item: this.item.tablefullname
-        });
-        modal.onDidDismiss(function (select_data) {
-            if (select_data == null)
-                return;
-            _this.item.schemaname = select_data.schemaname;
-            _this.item.tablename = select_data.tablename;
-            _this.item.tablefullname = select_data.tablefullname;
-        });
-        modal.present();
-    };
-    FordAddEditModalPage.prototype.get_max_exec_table_seq = function () {
+    JobLoopAddEditModalPage.prototype.get_max_loop_seq = function () {
         var _this = this;
         this.global.createLoader("取得最大值中...");
         this.global.loading.present().then(function () {
-            _this.FordServices.GetMaxExecTableSeqAsync(_this.item.exec_group, _this.min_exec_table_seq, _this.max_exec_table_seq).subscribe(function (data) {
+            _this.JobLoopServices.GetMaxLoopSeqAsync(_this.item.ssis_job_no).subscribe(function (data) {
                 if (data.DidError === true) {
                     _this.global.dismissLoading();
                     _this.global.showError(data.ErrorMessage);
                 }
                 else {
-                    _this.item.exec_table_seq = data.Model;
+                    _this.item.loop_seq = data.Model;
                     _this.global.dismissLoading();
                 }
             }, function (err) {
@@ -503,11 +432,11 @@ var FordAddEditModalPage = /** @class */ (function () {
             });
         });
     };
-    FordAddEditModalPage.prototype.get_max_exec_seq = function () {
+    JobLoopAddEditModalPage.prototype.get_max_exec_seq = function () {
         var _this = this;
         this.global.createLoader("取得最大值中...");
         this.global.loading.present().then(function () {
-            _this.FordServices.GetMaxExecSeqAsync(_this.item.exec_group).subscribe(function (data) {
+            _this.JobLoopServices.GetMaxExecSeqAsync(_this.item.ssis_job_no).subscribe(function (data) {
                 if (data.DidError === true) {
                     _this.global.dismissLoading();
                     _this.global.showError(data.ErrorMessage);
@@ -522,58 +451,65 @@ var FordAddEditModalPage = /** @class */ (function () {
             });
         });
     };
-    FordAddEditModalPage.prototype.Help = function () {
+    JobLoopAddEditModalPage.prototype.SelectConn = function () {
+        var _this = this;
+        var modal = this.modalCtrl.create("ConnSelectModalPage", {
+            select_remote_conn_id: this.item.remote_conn_id,
+            conn_type_key: "",
+        });
+        modal.onDidDismiss(function (select_data) {
+            if (select_data == null)
+                return;
+            _this.item.remote_conn_id = select_data.remote_conn_id;
+            _this.item.remote_conn_string = select_data.conn_string;
+        });
+        modal.present();
+    };
+    JobLoopAddEditModalPage.prototype.Save = function () {
+        this.viewCtrl.dismiss(this.item);
+    };
+    JobLoopAddEditModalPage.prototype.close = function () {
+        this.viewCtrl.dismiss();
+    };
+    JobLoopAddEditModalPage.prototype.Help = function () {
         var _this = this;
         this.global.createLoader();
         this.global.loading.present().then(function () {
-            _this.global.showMessage("SQL語法說明", _this.sql_help);
+            _this.global.showMessage("作業迴圈變數說明", _this.sql_help);
         });
     };
-    FordAddEditModalPage.prototype.Save = function () {
-        if (this.item.sp_name.length === 0 && this.item.sql_statement.length === 0) {
-            this.global.showError("store procedure與sql語法必須二擇一輸入");
-            return;
-        }
-        this.viewCtrl.dismiss(this.item);
+    JobLoopAddEditModalPage.prototype.ionViewDidLoad = function () {
+        console.log("ionViewDidLoad JobLoopModalPage");
     };
-    FordAddEditModalPage.prototype.close = function () {
-        this.viewCtrl.dismiss();
-    };
-    FordAddEditModalPage.prototype.ionViewDidLoad = function () {
-        console.log("ionViewDidLoad SqlModalPage");
-    };
-    FordAddEditModalPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["Component"])({
-            selector: "page-ford-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\ford-add-edit-modal\ford-add-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form #Form="ngForm">\n\n\n    <ion-row>\n      <ion-col col-12 col-sm-6>\n        <ion-item>\n          <ion-label stacked>轉檔群組</ion-label>\n          <ion-input type="text" [disabled]="CanEditBatch==false" name="exec_group" #exec_group="ngModel" [(ngModel)]="item.exec_group"\n            required maxlength="30"></ion-input>\n        </ion-item>\n        <div *ngIf="exec_group.errors && exec_group.touched" class="error-message">\n          轉檔群組不能為空白\n        </div>\n      </ion-col>\n      <ion-col col-12 col-sm-6>\n        <ion-item>\n          <ion-label stacked>轉檔序號:{{range_exec_table_seq}}</ion-label>\n          <ion-input type="number" [disabled]="CanEditBatch==false || mode==\'PUT\'" name="exec_table_seq"\n            #exec_table_seq="ngModel" [(ngModel)]="item.exec_table_seq" required></ion-input>\n          <button ion-button outline item-end *ngIf="CanEditBatch==true && mode==\'POST\'" icon-right (click)="get_max_exec_table_seq()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n        <div *ngIf="exec_table_seq.errors && exec_table_seq.touched" class="error-message">\n          轉檔序號不能為空白\n        </div>\n\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-12 col-sm-4>\n        <ion-item>\n          <ion-label stacked>來源結構描述</ion-label>\n          <ion-input type="text" [disabled]="CanEditBatch==false " name="src_schema" #src_schema="ngModel" [(ngModel)]="item.src_schema"\n            required maxlength="30"></ion-input>\n        </ion-item>\n\n      </ion-col>\n      <ion-col col-12 col-sm-8>\n        <ion-item>\n          <ion-label stacked>來源資料表名稱</ion-label>\n          <ion-input type="text" [disabled]="CanEditBatch==false" name="src_tablename" #src_tablename="ngModel"\n            [(ngModel)]="item.src_tablename" required maxlength="50"></ion-input>\n          <button ion-button outline item-end icon-right *ngIf="CanEditBatch==true " (click)="SelectSrcTable()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n        <div *ngIf="src_tablename.errors && src_tablename.touched" class="error-message">\n          來源資料表名稱不能為空白\n        </div>\n\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col col-12 col-sm-4>\n        <ion-item>\n          <ion-label stacked>目的結構描述</ion-label>\n          <ion-input type="text" readonly=true [disabled]="CanEditBatch==false " name="schemaname" #schemaname="ngModel"\n            [(ngModel)]="item.schemaname" required maxlength="30"></ion-input>\n        </ion-item>\n        <div *ngIf="schemaname.errors && schemaname.touched" class="error-message">\n          目的結構描述不能為空白\n        </div>\n      </ion-col>\n      <ion-col col-12 col-sm-8>\n        <ion-item>\n          <ion-label stacked>目的資料表名稱</ion-label>\n          <ion-input type="text" readonly=true [disabled]="CanEditBatch==false" name="tablename" #tablename="ngModel"\n            [(ngModel)]="item.tablename" required maxlength="50"></ion-input>\n          <button ion-button outline item-end icon-right *ngIf="CanEditBatch==true " (click)="SelectTable()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n        <div *ngIf="tablename.errors && tablename.touched" class="error-message">\n          目的資料表名稱不能為空白\n        </div>\n\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-12 col-sm-4>\n        <ion-item>\n          <ion-label stacked>週期</ion-label>\n          <ion-input type="text" readonly=true maxlength=10 [disabled]="CanEditBatch==false " name="date_type"\n            #date_type="ngModel" [(ngModel)]="item.date_type" required></ion-input>\n\n          <button ion-button outline item-end *ngIf="CanEditBatch==true" icon-right (click)="SelectDateType()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n\n        <div *ngIf="date_type.errors && date_type.touched " class="error-message">\n          週期不能為空白\n        </div>\n      </ion-col>\n      <ion-col col-12 col-sm-8>\n        <ion-item>\n          <ion-label stacked>週期</ion-label>\n          <ion-input type="text" [disabled]=true name="date_type_desc" #date_type_desc="ngModel" [(ngModel)]="item.date_type_desc"\n            required></ion-input>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-6>\n        <ion-item>\n          <ion-label stacked>執行順序</ion-label>\n          <ion-input type="number" [disabled]="CanEditBatch==false" name="exec_seq" #exec_seq="ngModel" [(ngModel)]="item.exec_seq"\n            required></ion-input>\n          <button ion-button outline item-end *ngIf="CanEditBatch==true" icon-right (click)="get_max_exec_seq()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n        <div *ngIf="exec_seq.errors && exec_seq.touched" class="error-message">\n          執行順序不能為空白\n        </div>\n      </ion-col>\n      <ion-col col-6>\n        <ion-item>\n          <ion-label stacked>連線編號</ion-label>\n          <ion-input type="text" readonly=true [disabled]="CanEditBatch==false" name="db_conn_id" #db_conn_id="ngModel"\n            [(ngModel)]="item.db_conn_id" required maxlength="20"></ion-input>\n\n          <button ion-button outline item-end *ngIf="CanEditBatch==true" icon-right (click)="SelectConn()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n\n        <div *ngIf="db_conn_id.errors && db_conn_id.touched " class="error-message">\n          連線編號不能為空白\n        </div>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-12>\n        <ion-item>\n          <ion-label stacked>連線字串</ion-label>\n          <ion-textarea rows=4 [disabled]=true name="db_conn_string" #db_conn_string="ngModel" [(ngModel)]="item.db_conn_string"\n            required></ion-textarea>\n\n        </ion-item>\n\n      </ion-col>\n\n    </ion-row>\n\n\n    <ion-row>\n\n\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>啟用</ion-label>\n          <ion-checkbox [disabled]="CanEditBatch==false" name="is_active" #is_active="ngModel" [(ngModel)]="item.is_active"></ion-checkbox>\n        </ion-item>\n\n      </ion-col>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>啟用交易</ion-label>\n          <ion-checkbox [disabled]="CanEditBatch==false" name="tran_flag" #tran_flag="ngModel" [(ngModel)]="item.tran_flag"></ion-checkbox>\n        </ion-item>\n\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-12>\n        <ion-item>\n          <ion-label stacked>Store Procedure</ion-label>\n          <ion-input type="text" [disabled]="CanEditBatch==false" name="sp_name" #sp_name="ngModel" [(ngModel)]="item.sp_name"\n            maxlength="255"></ion-input>\n            <button ion-button outline item-end *ngIf="item.sp_name>\'\'" icon-right (click)="openNavProgSqlPage(item.sp_name)">\n              <ion-icon name="arrow-dropdown"></ion-icon>\n            </button>\n        </ion-item>\n\n      </ion-col>\n\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>備註</ion-label>\n          <ion-textarea [disabled]="CanEditBatch==false" name="memo" #memo="ngModel" [(ngModel)]="item.memo" maxlength="255"\n            required></ion-textarea>\n        </ion-item>\n        <div *ngIf="memo.errors && memo.touched " class="error-message">\n          備註不能為空白\n        </div>\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>SQL</ion-label>\n          <ion-textarea rows=20 [disabled]="CanEditBatch==false" name="sql_statement" #note="ngModel" [(ngModel)]="item.sql_statement"></ion-textarea>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditBatch==false" ion-button color="dark" [disabled]="!Form.form.valid"\n            icon-left (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n          <button small title="複製SQL語法" ion-button color="dark" icon-left (click)="global.copyTextToClipboard(item.sql_statement)">\n            <ion-icon name="copy"></ion-icon>\n          </button>\n          <button small title="SQL變數說明" [disabled]="CanEditBatch==false" ion-button color="dark" icon-left (click)="Help()">\n            <ion-icon name="help"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\ford-add-edit-modal\ford-add-edit-modal.html"*/
+    JobLoopAddEditModalPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
+            selector: "page-job-loop-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\job-loop-add-edit-modal\job-loop-add-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form #Form="ngForm">\n\n    <ion-row>\n      <ion-col col-12 col-sm-8>\n        <ion-item>\n          <ion-label stacked>作業回圈序號</ion-label>\n          <ion-input type="number" name="loop_seq" [disabled]="CanEditLoopJob==false || mode==\'PUT\'" #loop_seq="ngModel" [(ngModel)]="item.loop_seq"\n            required></ion-input>\n          <button ion-button outline item-end *ngIf="CanEditLoopJob==true && mode==\'POST\'" icon-right (click)="get_max_loop_seq()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n        <div *ngIf="loop_seq.errors && loop_seq.touched" class="error-message">\n          作業回圈序號不能為空白\n        </div>\n      </ion-col>\n      <ion-col col-12 col-sm-4>\n        <ion-item>\n          <ion-label stacked>執行順序</ion-label>\n          <ion-input type="number" [disabled]="CanEditLoopJob==false" name="exec_seq" #exec_seq="ngModel" [(ngModel)]="item.exec_seq" required></ion-input>\n          <button ion-button outline item-end *ngIf="CanEditLoopJob==true " icon-right (click)="get_max_exec_seq()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n        <div *ngIf="exec_seq.errors && exec_seq.touched" class="error-message">\n          執行順序不能為空白\n        </div>\n      </ion-col>\n\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>Job01</ion-label>\n          <ion-input [disabled]="CanEditLoopJob==false" type="text" name="job01" #job01="ngModel" [(ngModel)]="item.job01"></ion-input>\n        </ion-item>\n      </ion-col>\n\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>Job02</ion-label>\n          <ion-input [disabled]="CanEditLoopJob==false" type="text" name="job02" #job02="ngModel" [(ngModel)]="item.job02"></ion-input>\n        </ion-item>\n      </ion-col>\n\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>Job03</ion-label>\n          <ion-input [disabled]="CanEditLoopJob==false" type="text" name="job03" #job03="ngModel" [(ngModel)]="item.job03"></ion-input>\n        </ion-item>\n      </ion-col>\n\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>說明</ion-label>\n          <ion-input type="text" [disabled]="CanEditLoopJob==false" name="job_loop_desc" #job_loop_desc="ngModel" [(ngModel)]="item.job_loop_desc" required></ion-input>\n        </ion-item>\n        <div *ngIf="job_loop_desc.errors && job_loop_desc.touched " class="error-message">\n          說明不能為空白\n        </div>\n      </ion-col>\n\n    </ion-row>\n    <ion-row>\n      <ion-col col-12 col-sm-4>\n        <ion-item>\n          <ion-label stacked>連線</ion-label>\n          <ion-input type="text" readonly=true [disabled]="CanEditLoopJob==false" name="remote_conn_id" #remote_conn_id="ngModel" [(ngModel)]="item.remote_conn_id"></ion-input>\n\n          <button ion-button outline item-end *ngIf="CanEditLoopJob==true" icon-right (click)="SelectConn()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n\n      </ion-col>\n      <ion-col col-12 col-sm-8>\n        <ion-item>\n          <ion-label stacked>連線</ion-label>\n\n          <ion-textarea [disabled]=true name="remote_conn_string" #remote_conn_string="ngModel" [(ngModel)]="item.remote_conn_string"\n            required>\n          </ion-textarea>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-12 col-sm-4>\n        <ion-item>\n          <ion-label stacked>啟用</ion-label>\n          <ion-checkbox name="is_active" [disabled]="CanEditLoopJob==false" [(ngModel)]="item.is_active"></ion-checkbox>\n        </ion-item>\n\n      </ion-col>\n    </ion-row>\n\n\n\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button [disabled]="CanEditLoopJob==false" small title="確認" ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n          <button small title="作業迴圈變數說明" [disabled]="CanEditJob==false" ion-button color="dark"  icon-left\n          (click)="Help()">\n          <ion-icon name="help"></ion-icon>\n        </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\job-loop-add-edit-modal\job-loop-add-edit-modal.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["p" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_0__providers_ford_services_ford_services__["a" /* FordServicesProvider */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* LoadingController */],
-            __WEBPACK_IMPORTED_MODULE_1__components_global_global__["a" /* GlobalComponent */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["j" /* ModalController */],
-            __WEBPACK_IMPORTED_MODULE_6__providers_conn_services_conn_services__["a" /* ConnServicesProvider */],
-            __WEBPACK_IMPORTED_MODULE_7__providers_prog_services_prog_services__["a" /* ProgServicesProvider */],
-            __WEBPACK_IMPORTED_MODULE_8__providers_auth_services_auth_services__["a" /* AuthServicesProvider */]])
-    ], FordAddEditModalPage);
-    return FordAddEditModalPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["p" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["j" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_3__components_global_global__["a" /* GlobalComponent */],
+            __WEBPACK_IMPORTED_MODULE_4__providers_job_loop_services_job_loop_services__["a" /* JobLoopServicesProvider */]])
+    ], JobLoopAddEditModalPage);
+    return JobLoopAddEditModalPage;
 }());
 
-//# sourceMappingURL=ford-add-edit-modal.js.map
+//# sourceMappingURL=job-loop-add-edit-modal.js.map
 
 /***/ }),
 
-/***/ 632:
+/***/ 665:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FordAddEditModalPageModule", function() { return FordAddEditModalPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JobLoopAddEditModalPageModule", function() { return JobLoopAddEditModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ford_add_edit_modal__ = __webpack_require__(1525);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_ford_services_ford_services__ = __webpack_require__(1074);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__job_loop_add_edit_modal__ = __webpack_require__(1561);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_job_loop_services_job_loop_services__ = __webpack_require__(1088);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -584,25 +520,46 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var FordAddEditModalPageModule = /** @class */ (function () {
-    function FordAddEditModalPageModule() {
+var JobLoopAddEditModalPageModule = /** @class */ (function () {
+    function JobLoopAddEditModalPageModule() {
     }
-    FordAddEditModalPageModule = __decorate([
+    JobLoopAddEditModalPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__ford_add_edit_modal__["a" /* FordAddEditModalPage */],
+                __WEBPACK_IMPORTED_MODULE_2__job_loop_add_edit_modal__["a" /* JobLoopAddEditModalPage */],
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_3__providers_ford_services_ford_services__["a" /* FordServicesProvider */],
+            providers: [__WEBPACK_IMPORTED_MODULE_3__providers_job_loop_services_job_loop_services__["a" /* JobLoopServicesProvider */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__ford_add_edit_modal__["a" /* FordAddEditModalPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__job_loop_add_edit_modal__["a" /* JobLoopAddEditModalPage */]),
             ],
         })
-    ], FordAddEditModalPageModule);
-    return FordAddEditModalPageModule;
+    ], JobLoopAddEditModalPageModule);
+    return JobLoopAddEditModalPageModule;
 }());
 
-//# sourceMappingURL=ford-add-edit-modal.module.js.map
+//# sourceMappingURL=job-loop-add-edit-modal.module.js.map
+
+/***/ }),
+
+/***/ 961:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobLoopViewModel; });
+/**
+ * 作業回圈ViewModel
+ *
+ * @public
+ * @class JobLoopViewModel
+ */
+var JobLoopViewModel = /** @class */ (function () {
+    function JobLoopViewModel() {
+    }
+    return JobLoopViewModel;
+}());
+
+//# sourceMappingURL=JobLoopViewModel.js.map
 
 /***/ })
 

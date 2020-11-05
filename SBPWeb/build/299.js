@@ -1,15 +1,34 @@
 webpackJsonp([299],{
 
-/***/ 1555:
+/***/ 1090:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobLoopAddPwdModalPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_global_global__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_String__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_ViewModel_JobLoopViewModel__ = __webpack_require__(953);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobStepViewModel; });
+/**
+ * 作業步驟ViewModel
+ *
+ * @public
+ * @class JobStepViewModel
+ */
+var JobStepViewModel = /** @class */ (function () {
+    function JobStepViewModel() {
+    }
+    return JobStepViewModel;
+}());
+
+//# sourceMappingURL=JobStepViewModel.js.map
+
+/***/ }),
+
+/***/ 1574:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobStepAddEditModalPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_JobStepViewModel__ = __webpack_require__(1090);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -23,78 +42,89 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
 /**
- * Generated class for the ZipFileLoopPwdModalPage page.
+ * Generated class for the JobStepModalPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var JobLoopAddPwdModalPage = /** @class */ (function () {
-    function JobLoopAddPwdModalPage(navCtrl, navParams, viewCtrl, loadingCtrl, global, modalCtrl) {
+var JobStepAddEditModalPage = /** @class */ (function () {
+    function JobStepAddEditModalPage(navCtrl, navParams, viewCtrl, loadingCtrl, modalCtrl) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.viewCtrl = viewCtrl;
         this.loadingCtrl = loadingCtrl;
-        this.global = global;
         this.modalCtrl = modalCtrl;
+        this.item = new __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_JobStepViewModel__["a" /* JobStepViewModel */]();
+        this.CanEditJob = navParams.data.CanEditJob;
         this.mode = navParams.data.mode;
-        this.change_mode = navParams.data.change_mode;
-        this.file_type_key = navParams.data.file_type_key;
-        this.item = new __WEBPACK_IMPORTED_MODULE_4__Model_ViewModel_JobLoopViewModel__["a" /* JobLoopViewModel */]();
-        this.item.loop_seq = navParams.data.item.loop_seq;
+        this.title = navParams.data.item.ssis_job_no;
+        this.item.program_func_desc = navParams.data.item.program_func_desc;
+        this.item.program_type = navParams.data.item.program_type;
+        this.item.job_step_id = navParams.data.item.job_step_id;
         this.item.ssis_job_no = navParams.data.item.ssis_job_no;
-        this.item.job01 = navParams.data.item.job01;
-        this.item.job02 = navParams.data.item.job02;
-        this.item.job03 = navParams.data.item.job03;
+        this.item.program_func_no = navParams.data.item.program_func_no;
+        this.item.step = navParams.data.item.step;
+        this.item.success_step = navParams.data.item.success_step;
+        this.item.fail_step = navParams.data.item.fail_step;
+        this.item.last_exec_status_key = navParams.data.item.last_exec_status_key;
+        this.item.last_exec_date = navParams.data.item.last_exec_date;
+        this.item.is_active = navParams.data.item.is_active;
         this.item.creator = navParams.data.item.creator;
         this.item.create_time = navParams.data.item.create_time;
         this.item.modifier = navParams.data.item.modifier;
         this.item.last_update_time = navParams.data.item.last_update_time;
-        this.CanEditLoopJob = navParams.data.CanEditLoopJob;
-        this.title = __WEBPACK_IMPORTED_MODULE_3__Model_String__["a" /* String */].Format("{0}", navParams.data.item.loop_seq);
     }
-    JobLoopAddPwdModalPage.prototype.Save = function () {
-        if (this.confirm_password != this.item.pwd) {
-            this.global.showPopup("密碼錯誤", "確認密碼不一致");
-            return;
-        }
+    JobStepAddEditModalPage.prototype.SelectBatchExecProgram = function () {
+        var _this = this;
+        var modal = this.modalCtrl.create("BatchExecProgramSelectModalPage", {
+            select_item: this.item.program_func_no,
+            is_filter: false
+        });
+        modal.onDidDismiss(function (select_data) {
+            if (select_data == null)
+                return;
+            _this.item.program_func_no = select_data.program_func_no;
+            _this.item.program_func_desc = select_data.note;
+            _this.item.program_type = select_data.ssis_program_set_no;
+        });
+        modal.present();
+    };
+    JobStepAddEditModalPage.prototype.Save = function () {
         this.viewCtrl.dismiss(this.item);
     };
-    JobLoopAddPwdModalPage.prototype.close = function () {
+    JobStepAddEditModalPage.prototype.close = function () {
         this.viewCtrl.dismiss();
     };
-    JobLoopAddPwdModalPage.prototype.ionViewDidLoad = function () {
-        console.log("ionViewDidLoad JobLoopAddZipPwdModalPage");
+    JobStepAddEditModalPage.prototype.ionViewDidLoad = function () {
+        console.log("ionViewDidLoad JobStepModalPage");
     };
-    JobLoopAddPwdModalPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["Component"])({
-            selector: "page-job-loop-add-pwd-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\job-loop-add-pwd-modal\job-loop-add-pwd-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form #Form="ngForm">\n\n\n    <ion-row *ngIf="mode==\'PUT\'">\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>迴圈序號</ion-label>\n          <ion-input type="number" [disabled]=true name="loop_seq" #file_loop_seq="ngModel" [(ngModel)]="item.loop_seq" required></ion-input>\n        </ion-item>\n\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-12 col-md-4 >\n        <ion-item>\n          <ion-label stacked>JOB01</ion-label>\n          <ion-input type="text" [disabled]=true name="job01" #job01="ngModel" [(ngModel)]="item.job01" maxlength="50"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col col-12 col-md-4>\n        <ion-item>\n          <ion-label stacked>JOB02</ion-label>\n          <ion-input type="text" [disabled]=true name="job02" #job02="ngModel" [(ngModel)]="item.job02" maxlength="50"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col col-12 col-md-4>\n        <ion-item>\n          <ion-label stacked>JOB03</ion-label>\n          <ion-input type="text" [disabled]=true name="job03" #job03="ngModel" [(ngModel)]="item.job03" maxlength="50"></ion-input>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>密碼</ion-label>\n          <ion-input type="password" [disabled]="CanEditLoopJob==false" name="pwd" #pwd="ngModel" [(ngModel)]="item.pwd"></ion-input>\n\n        </ion-item>\n        <div *ngIf="pwd.errors && pwd.touched" class="error-message">\n          密碼不能為空白\n        </div>\n\n      </ion-col>\n\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>確認密碼</ion-label>\n          <ion-input type="password" [disabled]="CanEditLoopJob==false" name="confirm_password" #confirmpassword="ngModel" [(ngModel)]="confirm_password" required></ion-input>\n        </ion-item>\n\n        <div *ngIf="confirmpassword.errors && confirmpassword.touched" class="error-message">\n          密碼不能為空白\n        </div>\n\n\n      </ion-col>\n\n    </ion-row>\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditLoopJob==false" ion-button color="dark" [disabled]="!Form.form.valid" icon-left\n            (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\job-loop-add-pwd-modal\job-loop-add-pwd-modal.html"*/
+    JobStepAddEditModalPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
+            selector: "page-job-step-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\job-step-add-edit-modal\job-step-add-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form #Form="ngForm">\n\n    <ion-row>\n      <ion-col col-12>\n        <ion-item>\n          <ion-label stacked>作業步驟編號</ion-label>\n          <ion-input type="text"  name="job_step_id" [disabled]="CanEditJob==false || mode==\'PUT\'" #job_step_id="ngModel" [(ngModel)]="item.job_step_id" required></ion-input>\n        </ion-item>\n        <div *ngIf="job_step_id.errors && job_step_id.touched" class="error-message">\n          作業步驟編號不能為空白\n        </div>\n      </ion-col>\n\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>步驟</ion-label>\n          <ion-input type="number" required min=1 max=100 [disabled]="CanEditJob==false"  name="step" #step="ngModel" [(ngModel)]="item.step"\n            ></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col >\n        <ion-item>\n          <ion-label stacked>啟用</ion-label>\n          <ion-checkbox name="is_active" required [disabled]="CanEditJob==false" [(ngModel)]="item.is_active"></ion-checkbox>\n        </ion-item>\n\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>執行程式</ion-label>\n          <ion-input type="text" required readonly=true  name="program_func_desc" #program_func_desc="ngModel" [(ngModel)]="item.program_func_desc"\n            ></ion-input>\n\n          <button ion-button outline item-end *ngIf="CanEditJob==true" icon-right (click)="SelectBatchExecProgram()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>\n\n\n      </ion-col>\n\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>成功後步驟(0:停止、1:下一步、其他)</ion-label>\n          <ion-input type="number" required min=0 max=100 [disabled]="CanEditJob==false"   name="success_step" #success_step="ngModel" [(ngModel)]="item.success_step"\n            ></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>失敗後步驟(0:停止、1:下一步、其他)</ion-label>\n          <ion-input type="number" required min=0 max=100 [disabled]="CanEditJob==false"   name="fail_step" #fail_step="ngModel" [(ngModel)]="item.fail_step"\n            ></ion-input>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n\n\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button [disabled]="CanEditJob==false" small title="確認" ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\job-step-add-edit-modal\job-step-add-edit-modal.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
-            __WEBPACK_IMPORTED_MODULE_0__components_global_global__["a" /* GlobalComponent */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */]])
-    ], JobLoopAddPwdModalPage);
-    return JobLoopAddPwdModalPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["p" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["j" /* ModalController */]])
+    ], JobStepAddEditModalPage);
+    return JobStepAddEditModalPage;
 }());
 
-//# sourceMappingURL=job-loop-add-pwd-modal.js.map
+//# sourceMappingURL=job-step-add-edit-modal.js.map
 
 /***/ }),
 
-/***/ 659:
+/***/ 676:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JobLoopAddPwdModalPageModule", function() { return JobLoopAddPwdModalPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JobStepAddEditModalPageModule", function() { return JobStepAddEditModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__job_loop_add_pwd_modal__ = __webpack_require__(1555);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__job_step_add_edit_modal__ = __webpack_require__(1574);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -104,44 +134,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var JobLoopAddPwdModalPageModule = /** @class */ (function () {
-    function JobLoopAddPwdModalPageModule() {
+var JobStepAddEditModalPageModule = /** @class */ (function () {
+    function JobStepAddEditModalPageModule() {
     }
-    JobLoopAddPwdModalPageModule = __decorate([
+    JobStepAddEditModalPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__job_loop_add_pwd_modal__["a" /* JobLoopAddPwdModalPage */],
+                __WEBPACK_IMPORTED_MODULE_2__job_step_add_edit_modal__["a" /* JobStepAddEditModalPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__job_loop_add_pwd_modal__["a" /* JobLoopAddPwdModalPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__job_step_add_edit_modal__["a" /* JobStepAddEditModalPage */]),
             ],
         })
-    ], JobLoopAddPwdModalPageModule);
-    return JobLoopAddPwdModalPageModule;
+    ], JobStepAddEditModalPageModule);
+    return JobStepAddEditModalPageModule;
 }());
 
-//# sourceMappingURL=job-loop-add-pwd-modal.module.js.map
-
-/***/ }),
-
-/***/ 953:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobLoopViewModel; });
-/**
- * 作業回圈ViewModel
- *
- * @public
- * @class JobLoopViewModel
- */
-var JobLoopViewModel = /** @class */ (function () {
-    function JobLoopViewModel() {
-    }
-    return JobLoopViewModel;
-}());
-
-//# sourceMappingURL=JobLoopViewModel.js.map
+//# sourceMappingURL=job-step-add-edit-modal.module.js.map
 
 /***/ })
 

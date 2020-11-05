@@ -1,14 +1,17 @@
 webpackJsonp([336],{
 
-/***/ 1560:
+/***/ 1597:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobProcessedSqlAddEditModalPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_JobProcessedSqlViewModel__ = __webpack_require__(140);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_global_global__ = __webpack_require__(119);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_app_component__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_api_url_services_api_url_services__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_services_auth_services__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_global_global__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Model_MyAppSharedSettings__ = __webpack_require__(39);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -23,93 +26,135 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
+// import { String } from "../../Model/String";
 /**
- * Generated class for the JobProcessedSqlModalPage page.
+ * Generated class for the LoginPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var JobProcessedSqlAddEditModalPage = /** @class */ (function () {
-    function JobProcessedSqlAddEditModalPage(navCtrl, navParams, viewCtrl, loadingCtrl, modalCtrl, global) {
+var LoginPage = /** @class */ (function () {
+    function LoginPage(menuCtrl, navCtrl, navParams, authServices, global, ApiUrlServices, conf, myApp) {
+        this.menuCtrl = menuCtrl;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.viewCtrl = viewCtrl;
-        this.loadingCtrl = loadingCtrl;
-        this.modalCtrl = modalCtrl;
+        this.authServices = authServices;
         this.global = global;
-        this.sql_help = "\n  \u8B8A\u6578\u8AAA\u660E\uFF1A\n  {ERR_MSG}=\u7570\u5E38\u8A0A\u606F,\n  {ERR_MSG_SEQ}=\u7570\u5E38\u8A0A\u606F\u7DE8\u865F,\n  {SSIS_JOB_NO}=\u4F5C\u696D\u7DE8\u865F,\n  {JOBDESC}=\u4F5C\u696D\u63CF\u8FF0,\n  {JOB01},{JOB02},{JOB03}=\u4F5C\u696D\u8FF4\u5708\u53C3\u6578,\n   ";
-        this.item = new __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_JobProcessedSqlViewModel__["a" /* JobProcessedSqlViewModel */]();
-        this.item.ssis_job_no = navParams.data.item.ssis_job_no; //SSIS作業編號
-        this.item.exec_status_key = navParams.data.item.exec_status_key; //執行狀態主鍵
-        this.item.sql_statement = navParams.data.item.sql_statement; //sql語法
-        this.item.is_active = navParams.data.item.is_active; //啟用註記
-        this.item.creator = navParams.data.item.creator; //建立者
-        this.item.create_time = navParams.data.item.create_time; //建立時間
-        this.item.modifier = navParams.data.item.modifier; //最後更新者
-        this.item.last_update_time = navParams.data.item.last_update_time; //最後更新時間
-        this.item.exec_status = navParams.data.item.exec_status; //執行狀態
-        this.CanEditJob = navParams.data.CanEditJob;
-        this.mode = navParams.data.mode;
-        this.change_mode = navParams.data.change_mode;
-        this.title = this.item.ssis_job_no;
+        this.ApiUrlServices = ApiUrlServices;
+        this.conf = conf;
+        this.myApp = myApp;
+        this.registerCredentials = { userName: "", password: "" };
+        this.data_list = [];
+        this.default_api_url = null;
+        this.LoadData(true);
     }
-    JobProcessedSqlAddEditModalPage.prototype.SelectExecStatus = function () {
-        var _this = this;
-        var modal = this.modalCtrl.create("CodeSelectModalPage", {
-            select_key: this.item.exec_status_key,
-            code_key: "012|C,012|F,012|S",
+    LoginPage.prototype.onChangeObj = function (newObj) {
+        console.log(newObj);
+        this.default_api_url = newObj;
+        this.default_api_url.is_default = true;
+        this.ApiUrlServices.PostPutAsync(this.default_api_url, "PUT");
+        this.conf.API_URL = this.default_api_url.url;
+        this.conf.is_url_forward = this.default_api_url.is_url_forward;
+        this.conf.api_name = this.default_api_url.disp_name;
+    };
+    LoginPage.prototype.ionViewDidLoad = function () {
+        console.log("ionViewDidLoad LoginPage");
+    };
+    LoginPage.prototype.createAccount = function () {
+        this.navCtrl.push("RegisterPage");
+    };
+    LoginPage.prototype.openNavApiUrlPage = function () {
+        this.navCtrl.setRoot("ApiUrlPage", {
+            parent_page: this,
+            parent_page_name: "LoginPage"
         });
-        modal.onDidDismiss(function (select_data) {
-            if (select_data == null)
-                return;
-            _this.item.exec_status_key = select_data.code_key;
-            _this.item.exec_status = select_data.code_desc;
-        });
-        modal.present();
     };
-    JobProcessedSqlAddEditModalPage.prototype.Save = function () {
-        this.viewCtrl.dismiss(this.item);
-    };
-    JobProcessedSqlAddEditModalPage.prototype.close = function () {
-        this.viewCtrl.dismiss();
-    };
-    JobProcessedSqlAddEditModalPage.prototype.Help = function () {
+    LoginPage.prototype.LoadData = function (init) {
         var _this = this;
         this.global.createLoader();
         this.global.loading.present().then(function () {
-            _this.global.showMessage("SQL語法說明", _this.sql_help);
+            _this.ApiUrlServices.GetListsAsync("", true).subscribe(function (data) {
+                if (data.DidError === true) {
+                    _this.global.dismissLoading();
+                    _this.global.showError(data.ErrorMessage);
+                }
+                else {
+                    if (init) {
+                        _this.data_list = [];
+                        _this.data_list = data.Model;
+                        var index = _this.data_list.findIndex(function (d) { return d.is_default === true; });
+                        _this.default_api_url = _this.data_list[index];
+                        _this.conf.API_URL = _this.default_api_url.url;
+                        _this.conf.is_url_forward = _this.default_api_url.is_url_forward;
+                        _this.conf.api_name = _this.default_api_url.disp_name;
+                    }
+                    else
+                        for (var i = 0; i < data.Model.length; i++) {
+                            _this.data_list.push(data.Model[i]);
+                        }
+                    _this.global.dismissLoading();
+                }
+            }, function (err) {
+                _this.global.dismissLoading();
+                _this.global.showError("無法連上WebAPI伺服器-" + err.message);
+            });
         });
     };
-    JobProcessedSqlAddEditModalPage.prototype.ionViewDidLoad = function () {
-        console.log("ionViewDidLoad JobProcessedSqlModalPage");
+    LoginPage.prototype.login = function () {
+        var _this = this;
+        console.log("login");
+        this.conf.login_count += 1;
+        this.global.createLoader();
+        this.global.loading.present().then(function () {
+            _this.authServices.loginAsync(_this.registerCredentials).subscribe(function (data) {
+                _this.global.dismissLoading();
+                if (data.DidError === false) {
+                    //認證成功
+                    _this.myApp.SetMenu(data.Model.MenuViewModel);
+                    _this.navCtrl.setRoot("HomePage");
+                    // this.menu_id=String.Format("{0}_{1}","menu1",this.conf.login_count);
+                    // this.menuCtrl.enable(true, this.menu_id);
+                }
+                else {
+                    _this.global.showError(data.ErrorMessage);
+                }
+            }, function (err) {
+                _this.global.dismissLoading();
+                _this.global.showError("無法連上WebAPI伺服器-" + err.message);
+            });
+        });
     };
-    JobProcessedSqlAddEditModalPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
-            selector: "page-job-processed-sql-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\job-processed-sql-add-edit-modal\job-processed-sql-add-edit-modal.html"*/'<ion-header>\n\n    <ion-navbar>\n\n      <ion-title>{{title}}</ion-title>\n    </ion-navbar>\n  </ion-header>\n\n  <ion-content padding>\n    <form #Form="ngForm">\n        <ion-row>\n            <ion-col col-12 col-sm-4>\n              <ion-item>\n                <ion-label stacked>執行狀態</ion-label>\n                <ion-input type="text" readonly=true [disabled]="CanEditJob==false || mode==\'PUT\'" name="exec_status_key" #exec_status_key="ngModel" [(ngModel)]="item.exec_status_key"\n                  required></ion-input>\n\n                <button ion-button outline item-end *ngIf="CanEditJob==true && mode==\'POST\'" icon-right (click)="SelectExecStatus()">\n                  <ion-icon name="arrow-dropdown"></ion-icon>\n                </button>\n              </ion-item>\n\n              <div *ngIf="exec_status_key.errors && exec_status_key.touched " class="error-message">\n                執行狀態不能為空白\n              </div>\n            </ion-col>\n            <ion-col col-12 col-sm-4>\n              <ion-item>\n                <ion-label stacked>執行狀態</ion-label>\n                <ion-input type="text" [disabled]=true name="exec_status" #exec_status="ngModel" [(ngModel)]="item.exec_status" required></ion-input>\n              </ion-item>\n            </ion-col>\n            <ion-col col-12 col-sm-4>\n                <ion-item>\n                  <ion-label stacked>啟用</ion-label>\n                  <ion-checkbox name="is_active" [disabled]="CanEditJob==false" [(ngModel)]="item.is_active"></ion-checkbox>\n                </ion-item>\n\n              </ion-col>\n          </ion-row>\n      <ion-row>\n          <ion-col>\n            <ion-item>\n              <ion-label stacked>SQL</ion-label>\n              <ion-textarea rows=20 [disabled]="CanEditJob==false" name="sql_statement" #note="ngModel" [(ngModel)]="item.sql_statement"></ion-textarea>\n            </ion-item>\n          </ion-col>\n        </ion-row>\n\n    </form>\n\n  </ion-content>\n  <ion-footer>\n    <ion-toolbar>\n      <ion-row>\n        <ion-col>\n          <div [ngClass]="[\'command\']">\n            <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n              <ion-icon name="backspace"></ion-icon>\n            </button>\n            <button [disabled]="CanEditJob==false" small title="確認" ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n              <ion-icon name="checkmark-circle"></ion-icon>\n            </button>\n            <button small title="複製SQL語法" ion-button color="dark" icon-left (click)="global.copyTextToClipboard(item.sql_statement)">\n            <ion-icon name="copy"></ion-icon>\n          </button>\n          <button small title="變數說明" [disabled]="CanEditJob==false" ion-button color="dark"  icon-left\n          (click)="Help()">\n          <ion-icon name="help"></ion-icon>\n        </button>\n          </div>\n        </ion-col>\n      </ion-row>\n    </ion-toolbar>\n  </ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\job-processed-sql-add-edit-modal\job-processed-sql-add-edit-modal.html"*/
+    LoginPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["Component"])({
+            selector: "page-login",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\login\login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>登入</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content class="login-content" padding>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-12 col-sm-2 col-md-3 col-lg-4>\n      </ion-col>\n      <ion-col col-12 col-sm-8 col-md-6 col-lg-4>\n        <div >\n\n          <form #registerForm="ngForm">\n\n            <ion-row>\n\n              <ion-col>\n\n                <ion-list>\n                  <ion-item>\n                    <ion-select  [ngModel]="default_api_url" (ngModelChange)="onChangeObj($event)" name="api_url">\n                      <ion-option  [value]="i" *ngFor="let i of data_list">{{i.disp_name}}</ion-option>\n                    </ion-select>\n                  </ion-item>\n                  <ion-item>\n\n                    <ion-input type="text" placeholder="帳號" name="userName" [(ngModel)]="registerCredentials.userName"\n                      required></ion-input>\n                    </ion-item>\n\n\n                  <ion-item>\n\n                    <ion-input type="password" placeholder="密碼" name="password" [(ngModel)]="registerCredentials.password"\n                      required></ion-input>\n                    </ion-item>\n\n                  </ion-list>\n                </ion-col>\n              </ion-row>\n\n\n            <ion-row>\n\n              <ion-col >\n                <div [ngClass]="[\'command_center\']">\n                  <!-- <button ion-button class="submit-btn" full (click)="login()" [disabled]="!registerForm.form.valid">登入</button>\n\n                  <button ion-button class="register-btn" block clear (click)="createAccount()">註冊</button> -->\n                  <button small title="確認" ion-button color="light" icon-left (click)="login()" [disabled]="!registerForm.form.valid">\n                    <ion-icon name="checkmark-circle"></ion-icon>\n                  </button>\n                  <button small title="註冊" *ngIf="conf.is_register==true"  ion-button color="dark" icon-left (click)="createAccount()">\n                    <ion-icon name="add"></ion-icon>\n                  </button>\n                  <button small title="遠端伺服器設定" ion-button color="secondary" icon-left (click)="openNavApiUrlPage()">\n                    <ion-icon name="settings"></ion-icon>\n                  </button>\n                </div>\n\n              </ion-col>\n              </ion-row>\n\n            </form>\n          </div>\n      </ion-col>\n      <ion-col col-12 col-sm-2 col-md-3 col-lg-4>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\login\login.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["p" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["h" /* LoadingController */],
-            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["j" /* ModalController */],
-            __WEBPACK_IMPORTED_MODULE_3__components_global_global__["a" /* GlobalComponent */]])
-    ], JobProcessedSqlAddEditModalPage);
-    return JobProcessedSqlAddEditModalPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["i" /* MenuController */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_4__providers_auth_services_auth_services__["a" /* AuthServicesProvider */],
+            __WEBPACK_IMPORTED_MODULE_5__components_global_global__["a" /* GlobalComponent */],
+            __WEBPACK_IMPORTED_MODULE_1__providers_api_url_services_api_url_services__["a" /* ApiUrlServicesProvider */],
+            __WEBPACK_IMPORTED_MODULE_6__Model_MyAppSharedSettings__["a" /* MyAppSharedSettings */],
+            __WEBPACK_IMPORTED_MODULE_0__app_app_component__["a" /* MyApp */]])
+    ], LoginPage);
+    return LoginPage;
 }());
 
-//# sourceMappingURL=job-processed-sql-add-edit-modal.js.map
+//# sourceMappingURL=login.js.map
 
 /***/ }),
 
-/***/ 664:
+/***/ 691:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JobProcessedSqlAddEditModalPageModule", function() { return JobProcessedSqlAddEditModalPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__job_processed_sql_add_edit_modal__ = __webpack_require__(1560);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(1597);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -119,23 +164,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var JobProcessedSqlAddEditModalPageModule = /** @class */ (function () {
-    function JobProcessedSqlAddEditModalPageModule() {
+var LoginPageModule = /** @class */ (function () {
+    function LoginPageModule() {
     }
-    JobProcessedSqlAddEditModalPageModule = __decorate([
+    LoginPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__job_processed_sql_add_edit_modal__["a" /* JobProcessedSqlAddEditModalPage */],
+                __WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__job_processed_sql_add_edit_modal__["a" /* JobProcessedSqlAddEditModalPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */]),
             ],
         })
-    ], JobProcessedSqlAddEditModalPageModule);
-    return JobProcessedSqlAddEditModalPageModule;
+    ], LoginPageModule);
+    return LoginPageModule;
 }());
 
-//# sourceMappingURL=job-processed-sql-add-edit-modal.module.js.map
+//# sourceMappingURL=login.module.js.map
 
 /***/ })
 

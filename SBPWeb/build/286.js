@@ -1,29 +1,68 @@
 webpackJsonp([286],{
 
-/***/ 1099:
+/***/ 1212:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ZipFileLoopPwdViewModel; });
-var ZipFileLoopPwdViewModel = /** @class */ (function () {
-    function ZipFileLoopPwdViewModel() {
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ExistsVaildator; });
+var ExistsVaildator = /** @class */ (function () {
+    function ExistsVaildator() {
     }
-    return ZipFileLoopPwdViewModel;
+    ExistsVaildator.validateConnIDFactory = function (lists) {
+        return function (c) {
+            if (c.value) {
+                if (lists) {
+                    return lists.findIndex(function (p) { return p === c.value; }) >= 0
+                        ? {
+                            validateConnIDFactory: true
+                        }
+                        : null;
+                }
+                else
+                    return null;
+            }
+            else
+                return null;
+        };
+    };
+    ExistsVaildator.EquieFactory = function (compare_name) {
+        return function (c) {
+            if (c.value) {
+                var compare_to = c.parent.get(compare_name).value;
+                if (compare_to > "") {
+                    return compare_to !== c.value
+                        ? {
+                            EquieFactory: true
+                        }
+                        : null;
+                }
+                else
+                    return null;
+            }
+            else
+                return null;
+        };
+    };
+    return ExistsVaildator;
 }());
 
-//# sourceMappingURL=ZipFileLoopPwdViewModel.js.map
+//# sourceMappingURL=ExistsVaildator.js.map
 
 /***/ }),
 
-/***/ 1710:
+/***/ 1637:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ZipFileLoopPwdAddEditModalPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_global_global__ = __webpack_require__(119);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_ViewModel_ZipFileLoopPwdViewModel__ = __webpack_require__(1099);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_services_auth_services__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_global_global__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_api_url_services_api_url_services__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_MyAppSharedSettings__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_forms__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__validators_ExistsVaildator__ = __webpack_require__(1212);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,148 +77,128 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-/**
- * Generated class for the ZipFileLoopPwdModalPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var ZipFileLoopPwdAddEditModalPage = /** @class */ (function () {
-    function ZipFileLoopPwdAddEditModalPage(navCtrl, navParams, viewCtrl, loadingCtrl, global, modalCtrl) {
+
+
+
+var RegisterPage = /** @class */ (function () {
+    function RegisterPage(navCtrl, navParams, authServices, global, ApiUrlServices, conf, formBuilder) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.viewCtrl = viewCtrl;
-        this.loadingCtrl = loadingCtrl;
+        this.authServices = authServices;
         this.global = global;
-        this.modalCtrl = modalCtrl;
-        this.confirm_error = false;
-        this.mode = navParams.data.mode;
-        this.change_mode = navParams.data.change_mode;
-        this.file_type_key = navParams.data.file_type_key;
-        this.item = new __WEBPACK_IMPORTED_MODULE_3__Model_ViewModel_ZipFileLoopPwdViewModel__["a" /* ZipFileLoopPwdViewModel */]();
-        this.item.file_loop_seq = navParams.data.item.file_loop_seq;
-        this.item.zip_seq = navParams.data.item.zip_seq;
-        this.item.job01 = navParams.data.item.job01;
-        this.item.job02 = navParams.data.item.job02;
-        this.item.job03 = navParams.data.item.job03;
-        this.item.lc01 = navParams.data.item.lc01;
-        this.item.lc02 = navParams.data.item.lc02;
-        this.item.lc03 = navParams.data.item.lc03;
-        this.item.enc_type = navParams.data.item.enc_type;
-        this.item.enc_type_desc = navParams.data.item.enc_type_desc;
-        this.item.key = navParams.data.item.key;
-        this.item.iv = navParams.data.item.iv;
-        this.item.pad_left = navParams.data.item.pad_left;
-        this.item.CliperMode = navParams.data.item.CliperMode;
-        this.item.CliperMode_Desc = navParams.data.item.CliperMode_Desc;
-        this.item.input_pwd = navParams.data.item.input_pwd;
-        this.item.pwd = navParams.data.item.pwd;
-        this.item.creator = navParams.data.item.creator;
-        this.item.create_time = navParams.data.item.create_time;
-        this.item.modifier = navParams.data.item.modifier;
-        this.item.last_update_time = navParams.data.item.last_update_time;
-        this.CanEditBatch = navParams.data.CanEditBatch;
-        this.title = navParams.data.title;
+        this.ApiUrlServices = ApiUrlServices;
+        this.conf = conf;
+        this.formBuilder = formBuilder;
+        this.registerCredentials = { userName: '', password: '' };
+        this.myForm = this.formBuilder.group({
+            default_api_url: new __WEBPACK_IMPORTED_MODULE_6__angular_forms__["b" /* FormControl */](this.default_api_url),
+            userName: new __WEBPACK_IMPORTED_MODULE_6__angular_forms__["b" /* FormControl */](''),
+            password: new __WEBPACK_IMPORTED_MODULE_6__angular_forms__["b" /* FormControl */](''),
+            confirm_password: new __WEBPACK_IMPORTED_MODULE_6__angular_forms__["b" /* FormControl */]('', __WEBPACK_IMPORTED_MODULE_7__validators_ExistsVaildator__["a" /* ExistsVaildator */].EquieFactory('password')),
+        });
+        this.LoadData(true);
     }
-    ZipFileLoopPwdAddEditModalPage.prototype.Change_pwd = function () {
-        if (this.item.enc_type === "PWD") {
-            this.item.pwd = this.item.input_pwd;
-        }
-        else {
-            var enc = "ENC=" + this.item.enc_type + "_" + this.item.CliperMode + (this.item.pad_left ? "1" : "0");
-            this.item.pwd = enc + ";KEY=" + this.item.key + ";IV=" + this.item.iv + ";PWD=" + this.item.input_pwd;
-        }
+    RegisterPage.prototype.openNavApiUrlPage = function () {
+        this.navCtrl.setRoot("ApiUrlPage", {
+            parent_page: this,
+            parent_page_name: "RegisterPage",
+        });
     };
-    ZipFileLoopPwdAddEditModalPage.prototype.Check_pwd = function () {
-        if (this.item.input_pwd === undefined)
-            this.item.input_pwd = "";
-        if (this.confirm_password === undefined)
-            this.confirm_password = "";
-        if (this.item.input_pwd != this.confirm_password)
-            this.confirm_error = true;
-        else
-            this.confirm_error = false;
+    RegisterPage.prototype.onChangeObj = function (newObj) {
+        console.log(newObj);
+        this.default_api_url = newObj;
+        this.default_api_url.is_default = true;
+        this.ApiUrlServices.PostPutAsync(this.default_api_url, "PUT");
+        this.conf.API_URL = this.default_api_url.url;
+        this.conf.is_url_forward = this.default_api_url.is_url_forward;
     };
-    ZipFileLoopPwdAddEditModalPage.prototype.SelectEncType = function () {
+    RegisterPage.prototype.LoadData = function (init) {
         var _this = this;
-        var modal = this.modalCtrl.create("CodeSelectModalPage", {
-            select_key: this.item.enc_type,
-            code_type: "079"
+        this.global.createLoader();
+        this.global.loading.present().then(function () {
+            _this.ApiUrlServices.GetListsAsync("", true).subscribe(function (data) {
+                if (data.DidError === true) {
+                    _this.global.dismissLoading();
+                    _this.global.showError(data.ErrorMessage);
+                }
+                else {
+                    if (init) {
+                        _this.data_list = [];
+                        _this.data_list = data.Model;
+                        if (_this.data_list != null) {
+                            var index = _this.data_list.findIndex(function (d) { return d.is_default === true; });
+                            _this.default_api_url = _this.data_list[index];
+                            _this.conf.API_URL = _this.default_api_url.url;
+                            _this.conf.is_url_forward = _this.default_api_url.is_url_forward;
+                        }
+                    }
+                    else
+                        for (var i = 0; i < data.Model.length; i++) {
+                            _this.data_list.push(data.Model[i]);
+                        }
+                    _this.global.dismissLoading();
+                }
+            }, function (err) {
+                _this.global.dismissLoading();
+                _this.global.showError("無法連上WebAPI伺服器-" + err.message);
+            });
         });
-        modal.onDidDismiss(function (select_data) {
-            if (select_data == null)
-                return;
-            _this.item.enc_type = select_data.code_no;
-            _this.item.enc_type_desc = select_data.code_desc;
-            if (_this.item.CliperMode === "") {
-                _this.item.CliperMode = "4";
-                _this.item.CliperMode_Desc = "ECB";
-            }
-            if (_this.item.input_pwd === undefined)
-                _this.item.input_pwd = "";
-            _this.Change_pwd();
-        });
-        modal.present();
     };
-    ZipFileLoopPwdAddEditModalPage.prototype.SelectCliperMode = function () {
+    RegisterPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad RegisterPage');
+    };
+    RegisterPage.prototype.login = function () {
+        this.navCtrl.push('LoginPage');
+    };
+    RegisterPage.prototype.register = function () {
         var _this = this;
-        var modal = this.modalCtrl.create("CodeSelectModalPage", {
-            select_key: this.item.CliperMode,
-            code_type: "080"
+        this.global.createLoader();
+        this.global.loading.present().then(function () {
+            _this.authServices
+                .registerAsync(_this.registerCredentials)
+                .subscribe(function (data) {
+                _this.global.dismissLoading();
+                if (data.DidError === false) {
+                    _this.global.showPopup(data.Message, data.Message);
+                    _this.navCtrl.setRoot("HomePage");
+                }
+                else {
+                    _this.global.showError(data.ErrorMessage);
+                }
+            }, function (err) {
+                _this.global.dismissLoading();
+                _this.global.showError("無法連上WebAPI伺服器-" + err.message);
+            });
         });
-        modal.onDidDismiss(function (select_data) {
-            if (select_data == null)
-                return;
-            _this.item.CliperMode = select_data.code_no;
-            _this.item.CliperMode_Desc = select_data.code_desc;
-            _this.Change_pwd();
-        });
-        modal.present();
     };
-    ZipFileLoopPwdAddEditModalPage.prototype.Save = function () {
-        if (this.item.input_pwd === undefined)
-            this.item.input_pwd = "";
-        if (this.confirm_password === undefined)
-            this.confirm_password = "";
-        if (this.confirm_password != this.item.input_pwd) {
-            this.global.showPopup("密碼錯誤", "確認密碼不一致");
-            return;
-        }
-        this.viewCtrl.dismiss(this.item);
-    };
-    ZipFileLoopPwdAddEditModalPage.prototype.close = function () {
-        this.viewCtrl.dismiss();
-    };
-    ZipFileLoopPwdAddEditModalPage.prototype.ionViewDidLoad = function () {
-        console.log("ionViewDidLoad ZipFileLoopPwdModalPage");
-    };
-    ZipFileLoopPwdAddEditModalPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["Component"])({
-            selector: "page-zip-file-loop-pwd-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\zip-file-loop-pwd-add-edit-modal\zip-file-loop-pwd-add-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form #Form="ngForm">\n\n\n    <ion-row *ngIf="mode==\'PUT\'">\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>迴圈序號</ion-label>\n          <ion-input type="number" [disabled]=true name="file_loop_seq" #file_loop_seq="ngModel" [(ngModel)]="item.file_loop_seq" required></ion-input>\n        </ion-item>\n\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-12 col-md-4 >\n        <ion-item>\n          <ion-label stacked>JOB01</ion-label>\n          <ion-input type="text" [disabled]="CanEditBatch==false || mode==\'PUT\'" name="job01" #job01="ngModel" [(ngModel)]="item.job01" maxlength="50"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col col-12 col-md-4>\n        <ion-item>\n          <ion-label stacked>JOB02</ion-label>\n          <ion-input type="text" [disabled]="CanEditBatch==false || mode==\'PUT\'" name="job02" #job02="ngModel" [(ngModel)]="item.job02" maxlength="50"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col col-12 col-md-4>\n        <ion-item>\n          <ion-label stacked>JOB03</ion-label>\n          <ion-input type="text" [disabled]="CanEditBatch==false || mode==\'PUT\'" name="job03" #job03="ngModel" [(ngModel)]="item.job03" maxlength="50"></ion-input>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-12 col-md-4>\n        <ion-item>\n          <ion-label stacked>LC01</ion-label>\n          <ion-input type="text" [disabled]="CanEditBatch==false || mode==\'PUT\'" name="lc01" #lc01="ngModel" [(ngModel)]="item.lc01" maxlength="50"></ion-input>\n        </ion-item>\n      </ion-col>\n\n      <ion-col col-12 col-md-4>\n        <ion-item>\n          <ion-label stacked>LC02</ion-label>\n          <ion-input type="text" [disabled]="CanEditBatch==false || mode==\'PUT\'" name="lc02" #lc02="ngModel" [(ngModel)]="item.lc02" maxlength="50"></ion-input>\n        </ion-item>\n      </ion-col>\n\n      <ion-col col-12 col-md-4>\n        <ion-item>\n          <ion-label stacked>LC03</ion-label>\n          <ion-input type="text" [disabled]="CanEditBatch==false || mode==\'PUT\'" name="lc03" #lc03="ngModel" [(ngModel)]="item.lc03" maxlength="50"></ion-input>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-12 col-sm-6>\n        <ion-item>\n          <ion-label stacked>內文壓密演算法</ion-label>\n          <ion-input type="text" [disabled]="CanEditBatch==false" name="enc_type" #enc_type="ngModel" [(ngModel)]="item.enc_type"\n            ></ion-input>\n\n          <button ion-button outline item-end *ngIf="CanEditBatch==true" icon-right (click)="SelectEncType()">\n            <ion-icon name="arrow-dropdown"></ion-icon>\n          </button>\n        </ion-item>        \n      </ion-col>\n      <ion-col col-12 col-sm-6>\n        <ion-item>\n          <ion-label stacked>內文壓密演算法</ion-label>\n          <ion-input type="text" [disabled]=true name="enc_type_desc" #enc_type_desc="ngModel" [(ngModel)]="item.enc_type_desc"\n            ></ion-input>\n\n        \n        </ion-item>        \n      </ion-col>\n    </ion-row>\n    <ion-row>\n   \n    <ion-col *ngIf="item.enc_type!=\'PWD\'" col-12 col-sm-4>\n      <ion-item>\n        <ion-label stacked>CliperMode</ion-label>\n        <ion-input type="text" required readonly=true [disabled]="CanEditBatch==false" name="CliperMode" #CliperMode="ngModel" [(ngModel)]="item.CliperMode"\n          ></ion-input>\n\n        <button ion-button outline item-end *ngIf="CanEditBatch==true" icon-right (click)="SelectCliperMode()">\n          <ion-icon name="arrow-dropdown"></ion-icon>\n        </button>\n      </ion-item>        \n      <div *ngIf="CliperMode.errors && CliperMode.touched" class="error-message">\n        CliperMode不能為空白\n      </div>\n    </ion-col>\n    <ion-col *ngIf="item.enc_type!=\'PWD\'" col-12 col-sm-4>\n      <ion-item>\n        <ion-label stacked>CliperMode</ion-label>\n        <ion-input type="text" readonly=true [disabled]=true name="CliperMode_Desc" #CliperMode_Desc="ngModel" [(ngModel)]="item.CliperMode_Desc"\n          ></ion-input>          \n      </ion-item>        \n      \n    </ion-col>\n    <ion-col *ngIf="item.enc_type!=\'PWD\'" col-12 col-sm-4>\n      <ion-item>\n        <ion-label stacked>左補空白</ion-label>\n        <ion-checkbox name="pad_left" [disabled]="CanEditBatch==false" (click)="Change_pwd()" [(ngModel)]="item.pad_left"></ion-checkbox>\n      </ion-item>\n\n    </ion-col>\n    </ion-row>\n    <ion-row *ngIf="item.enc_type!=\'PWD\'" >\n      <ion-col col-12 col-md-6 >\n        <ion-item>\n          <ion-label stacked>Key</ion-label>\n          <ion-input required type="text" (change)="Change_pwd()" [disabled]="CanEditBatch==false" name="key" #key="ngModel" [(ngModel)]="item.key" maxlength="128"></ion-input>\n        </ion-item>\n        <div *ngIf="key.errors && key.touched" class="error-message">\n          Key不能為空白\n        </div>\n      </ion-col>\n      <ion-col col-12 col-md-6>\n        <ion-item>\n          <ion-label stacked>IV</ion-label>\n          <ion-input type="text" (change)="Change_pwd()" [disabled]="CanEditBatch==false" name="iv" #iv="ngModel" [(ngModel)]="item.iv" maxlength="128"></ion-input>\n        </ion-item>\n      </ion-col>\n     \n    </ion-row>\n    <ion-row *ngIf="item.enc_type!=\'PWD\'" >\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>密碼</ion-label>\n          <ion-input [disabled]="CanEditBatch==false" (keyup)="Change_pwd()" type="password"  name="input_enc_pwd" #input_enc_pwd="ngModel" [(ngModel)]="item.input_pwd"\n            ></ion-input>\n\n        </ion-item>\n       \n\n      </ion-col>\n\n    </ion-row>\n    <ion-row *ngIf="item.enc_type!=\'PWD\'">\n      <ion-col>\n        <ion-item>\n            <ion-label stacked>確認密碼</ion-label>\n          <ion-input [disabled]="CanEditBatch==false" (keyup)="Check_pwd()" type="password"  name="confirm_password" #confirmpassword="ngModel" [(ngModel)]="confirm_password"\n           ></ion-input>\n        </ion-item>       \n\n        <div *ngIf="confirm_error && confirmpassword.touched" class="error-message">\n          密碼與確認密碼不符合\n        </div>\n      </ion-col>\n\n    </ion-row>\n    <ion-row *ngIf="item.enc_type===\'PWD\'">\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>密碼</ion-label>\n          <ion-input [disabled]="CanEditBatch==false" (keyup)="Change_pwd()" type="password"  name="input_pwd" #input_pwd="ngModel" [(ngModel)]="item.input_pwd"\n          required></ion-input>\n\n        </ion-item>\n        <div *ngIf="input_pwd.errors && input_pwd.touched" class="error-message">\n          密碼不能為空白\n        </div>\n\n      </ion-col>\n\n    </ion-row>\n    \n    <ion-row *ngIf="item.enc_type===\'PWD\'">\n      <ion-col>\n        <ion-item>\n            <ion-label stacked>確認密碼</ion-label>\n          <ion-input [disabled]="CanEditBatch==false" (keyup)="Check_pwd()" type="password"  name="confirm_password" #confirmpassword="ngModel" [(ngModel)]="confirm_password"\n            required ></ion-input>\n        </ion-item>\n\n        <div *ngIf="confirmpassword.errors && confirmpassword.touched" class="error-message">\n          確認密碼不能為空白\n        </div>\n\n        <div *ngIf="confirm_error && confirmpassword.touched" class="error-message">\n          密碼與確認密碼不符合\n        </div>\n      </ion-col>\n\n    </ion-row>\n    <!-- <ion-row *ngIf="item.enc_type>\'\'">\n      <ion-col>\n        <ion-item>\n          <ion-label stacked>內文壓密字串</ion-label>\n          <ion-input [disabled]=true  name="pwd" #pwd="ngModel" [(ngModel)]="item.pwd"\n            ></ion-input>\n\n        </ion-item>\n       \n\n      </ion-col>\n\n    </ion-row> -->\n  </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditBatch==false" ion-button color="dark" [disabled]="!Form.form.valid" icon-left\n            (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\zip-file-loop-pwd-add-edit-modal\zip-file-loop-pwd-add-edit-modal.html"*/
+    RegisterPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-register',template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\register\register.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>註冊</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="login-content" padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-12 col-sm-2 col-md-3 col-lg-4>\n      </ion-col>\n      <ion-col col-12 col-sm-8 col-md-6 col-lg-4>\n        <div class="login-box">\n          <form [formGroup]="myForm">\n            <ion-row>\n              <ion-col>\n                <ion-list inset>\n                    <ion-item>\n                        <ion-select  (ngModelChange)="onChangeObj($event)" formControlName="default_api_url">\n                          <ion-option [value]="i" *ngFor="let i of data_list" [selected]="i.id==default_api_url.id " >{{i.disp_name}}</ion-option>\n                        </ion-select>\n                      </ion-item>\n                  <ion-item>\n                    <ion-input type="text" placeholder="帳號" formControlName="userName"  [(ngModel)]="registerCredentials.userName" required\n                      minlength="5"></ion-input>\n                  </ion-item>\n                  <div *ngIf="myForm.get(\'userName\').hasError(\'required\') &&  myForm.controls[\'userName\'].touched" class="error-message">\n                      帳號不能為空白\n\n                  </div>\n                  <div *ngIf="myForm.get(\'userName\').hasError(\'minlength\') &&  myForm.controls[\'userName\'].touched" class="error-message">\n                      最少為5碼\n                    </div>\n\n                  <ion-item>\n                    <ion-input type="password" placeholder="密碼" formControlName="password"   [(ngModel)]="registerCredentials.password"\n                      required minlength="6"></ion-input>\n                  </ion-item>\n\n                  <div *ngIf="myForm.get(\'password\').hasError(\'required\') &&  myForm.controls[\'password\'].touched" class="error-message">\n                    密碼不能為空白\n                  </div>\n                  <div *ngIf="myForm.get(\'password\').hasError(\'minlength\') &&  myForm.controls[\'password\'].touched" class="error-message">\n                    最少為6碼\n                  </div>\n\n                  <ion-item>\n                    <ion-input type="password" placeholder="確認密碼" formControlName="confirm_password"  [(ngModel)]="confirm_password"\n                      required minlength="6"></ion-input>\n                  </ion-item>\n\n                  <div *ngIf="myForm.get(\'confirm_password\').hasError(\'required\') &&  myForm.controls[\'confirm_password\'].touched" class="error-message">\n                    密碼不能為空白\n                  </div>\n                  <div *ngIf="myForm.get(\'confirm_password\').hasError(\'minlength\') &&  myForm.controls[\'confirm_password\'].touched" class="error-message">\n                    最少為6碼\n                  </div>\n                  <div *ngIf="myForm.get(\'confirm_password\').hasError(\'EquieFactory\') &&  myForm.controls[\'confirm_password\'].touched" class="error-message">\n                    密碼必須與確認密碼相同\n                  </div>\n\n\n                </ion-list>\n              </ion-col>\n            </ion-row>\n\n            <ion-row>\n\n              <ion-col>\n                  <div [ngClass]="[\'command_center\']">\n                      <!-- <button ion-button class="submit-btn" full (click)="login()" [disabled]="!registerForm.form.valid">登入</button>\n\n                      <button ion-button class="register-btn" block clear (click)="createAccount()">註冊</button> -->\n                      <button small title="確認" ion-button color="light" icon-left (click)="register()" [disabled]="!myForm.valid">\n                        <ion-icon name="checkmark-circle"></ion-icon>\n                      </button>\n                      <button small title="登入" ion-button color="dark" icon-left (click)="login()">\n                        <ion-icon name="person"></ion-icon>\n                      </button>\n                      <button small title="遠端伺服器設定" ion-button color="secondary" icon-left (click)="openNavApiUrlPage()">\n                        <ion-icon name="settings"></ion-icon>\n                      </button>\n                    </div>\n                <!-- <button ion-button class="submit-btn" full (click)="register()" [disabled]="!registerForm.form.valid">確認</button>\n                <button ion-button class="login-btn" block clear (click)="login()">登入</button> -->\n              </ion-col>\n            </ion-row>\n          </form>\n        </div>\n      </ion-col>\n      <ion-col col-12 col-sm-2 col-md-3 col-lg-4>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n</ion-content>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\register\register.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
-            __WEBPACK_IMPORTED_MODULE_0__components_global_global__["a" /* GlobalComponent */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */]])
-    ], ZipFileLoopPwdAddEditModalPage);
-    return ZipFileLoopPwdAddEditModalPage;
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_services_auth_services__["a" /* AuthServicesProvider */],
+            __WEBPACK_IMPORTED_MODULE_3__components_global_global__["a" /* GlobalComponent */],
+            __WEBPACK_IMPORTED_MODULE_4__providers_api_url_services_api_url_services__["a" /* ApiUrlServicesProvider */],
+            __WEBPACK_IMPORTED_MODULE_5__Model_MyAppSharedSettings__["a" /* MyAppSharedSettings */],
+            __WEBPACK_IMPORTED_MODULE_6__angular_forms__["a" /* FormBuilder */]])
+    ], RegisterPage);
+    return RegisterPage;
 }());
 
-//# sourceMappingURL=zip-file-loop-pwd-add-edit-modal.js.map
+//# sourceMappingURL=register.js.map
 
 /***/ }),
 
-/***/ 783:
+/***/ 727:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZipFileLoopPwdAddEditModalPageModule", function() { return ZipFileLoopPwdAddEditModalPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterPageModule", function() { return RegisterPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__zip_file_loop_pwd_add_edit_modal__ = __webpack_require__(1710);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register__ = __webpack_require__(1637);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -189,23 +208,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ZipFileLoopPwdAddEditModalPageModule = /** @class */ (function () {
-    function ZipFileLoopPwdAddEditModalPageModule() {
+var RegisterPageModule = /** @class */ (function () {
+    function RegisterPageModule() {
     }
-    ZipFileLoopPwdAddEditModalPageModule = __decorate([
+    RegisterPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__zip_file_loop_pwd_add_edit_modal__["a" /* ZipFileLoopPwdAddEditModalPage */],
+                __WEBPACK_IMPORTED_MODULE_2__register__["a" /* RegisterPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__zip_file_loop_pwd_add_edit_modal__["a" /* ZipFileLoopPwdAddEditModalPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__register__["a" /* RegisterPage */]),
             ],
         })
-    ], ZipFileLoopPwdAddEditModalPageModule);
-    return ZipFileLoopPwdAddEditModalPageModule;
+    ], RegisterPageModule);
+    return RegisterPageModule;
 }());
 
-//# sourceMappingURL=zip-file-loop-pwd-add-edit-modal.module.js.map
+//# sourceMappingURL=register.module.js.map
 
 /***/ })
 

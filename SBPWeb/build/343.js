@@ -1,13 +1,13 @@
 webpackJsonp([343],{
 
-/***/ 1373:
+/***/ 1543:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileBrowserCopyEditModalPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_FileBrowserViewModel__ = __webpack_require__(134);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GlossaryAddEditModalPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_GlossaryViewModel__ = __webpack_require__(135);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,66 +20,70 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 /**
- * Generated class for the DirectoryBrowserModalPage page.
+ * Generated class for the GlossaryModalPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var FileBrowserCopyEditModalPage = /** @class */ (function () {
-    function FileBrowserCopyEditModalPage(navCtrl, navParams, viewCtrl, loadingCtrl) {
+var GlossaryAddEditModalPage = /** @class */ (function () {
+    function GlossaryAddEditModalPage(navCtrl, navParams, viewCtrl, modalCtrl) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.viewCtrl = viewCtrl;
-        this.loadingCtrl = loadingCtrl;
-        this.item = new __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_FileBrowserViewModel__["a" /* FileBrowserViewModel */]();
-        this.item.filepath = navParams.data.item.filepath;
-        this.item.filefullname = navParams.data.item.filefullname;
-        this.item.filename = navParams.data.item.filename;
-        this.item.rename_filename = navParams.data.item.filename + "_copy";
+        this.modalCtrl = modalCtrl;
+        this.item = new __WEBPACK_IMPORTED_MODULE_2__Model_ViewModel_GlossaryViewModel__["a" /* GlossaryViewModel */]();
+        this.item.cht_name = navParams.data.item.cht_name;
+        this.item.eng_name = navParams.data.item.eng_name;
+        this.item.eng_name_length = navParams.data.item.eng_name_length;
+        this.item.data_type = navParams.data.item.data_type;
+        this.item.glossary_type = navParams.data.item.glossary_type;
+        this.item.glossary_type_desc = navParams.data.item.glossary_type_desc;
+        this.item.creator = navParams.data.item.creator;
         this.item.create_time = navParams.data.item.create_time;
-        this.CanEditFileBrowser = navParams.data.CanEditFileBrowser;
+        this.item.modifier = navParams.data.item.modifier;
+        this.item.last_update_time = navParams.data.item.last_update_time;
         this.mode = navParams.data.mode;
-        if (this.mode === "Rename")
-            this.title = "變更檔案";
+        this.CanEditTable = navParams.data.CanEditTable;
+        if (this.mode === "POST")
+            this.title = "新增";
         else
-            this.title = "複製檔案";
+            this.title = "更新";
     }
-    FileBrowserCopyEditModalPage.prototype.Save = function () {
+    GlossaryAddEditModalPage.prototype.Save = function () {
         this.viewCtrl.dismiss(this.item);
     };
-    FileBrowserCopyEditModalPage.prototype.close = function () {
+    GlossaryAddEditModalPage.prototype.close = function () {
         this.viewCtrl.dismiss();
     };
-    FileBrowserCopyEditModalPage.prototype.ionViewDidLoad = function () {
-        console.log("ionViewDidLoad DirectoryBrowserModalPage");
+    GlossaryAddEditModalPage.prototype.ionViewDidLoad = function () {
+        console.log("ionViewDidLoad GlossaryAddEditModalPage");
     };
-    FileBrowserCopyEditModalPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
-            selector: "page-file-browser-copy-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\file-browser-copy-edit-modal\file-browser-copy-edit-modal.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content  padding>\n    <form #Form="ngForm">\n\n        <ion-row>\n          <ion-col>\n            <ion-item>\n              <ion-label stacked >目前路徑</ion-label>\n              <ion-input type="text" disabled=true name="filepath" #filepath="ngModel" [(ngModel)]="item.filepath"\n                required></ion-input>\n            </ion-item>\n          </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col>\n              <ion-item>\n                <ion-label stacked >目前檔名</ion-label>\n                <ion-input type="text" disabled=true name="filename" #filename="ngModel" [(ngModel)]="item.filename"\n                  required></ion-input>\n              </ion-item>\n            </ion-col>\n          </ion-row>\n        <ion-row>\n          <ion-col>\n            <ion-item>\n              <ion-label stacked >目的檔名</ion-label>\n              <ion-input type="text" [disabled]="CanEditFileBrowser==false" name="rename_filename" #rename_filename="ngModel" [(ngModel)]="item.rename_filename"\n                required ></ion-input>\n            </ion-item>\n            <div *ngIf="rename_filename.errors && rename_filename.touched" class="error-message">\n                目的檔名不能為空白\n            </div>\n\n          </ion-col>\n        </ion-row>\n      </form>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col>\n        <div [ngClass]="[\'command\']">\n          <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n            <ion-icon name="backspace"></ion-icon>\n          </button>\n          <button small title="確認" [disabled]="CanEditFileBrowser==false"  ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n            <ion-icon name="checkmark-circle"></ion-icon>\n          </button>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\file-browser-copy-edit-modal\file-browser-copy-edit-modal.html"*/
+    GlossaryAddEditModalPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: "page-glossary-add-edit-modal",template:/*ion-inline-start:"C:\jones\ionic\prod\src\pages\glossary-add-edit-modal\glossary-add-edit-modal.html"*/'<ion-header>\n\n    <ion-navbar>\n\n      <ion-title>{{title}}</ion-title>\n    </ion-navbar>\n  </ion-header>\n\n  <ion-content padding>\n    <form #Form="ngForm" >\n\n      <ion-row>\n          <ion-col col-12 col-sm-6 >\n              <ion-item>\n                <ion-label stacked>欄位名稱</ion-label>\n                <ion-input type="text" [disabled]="CanEditTable==false || mode==\'PUT\'" name="eng_name" #eng_name="ngModel" [(ngModel)]="item.eng_name" required></ion-input>\n              </ion-item>\n              <div *ngIf="eng_name.errors && eng_name.touched" class="error-message">\n                  欄位名稱不能為空白\n              </div>\n            </ion-col>\n        <ion-col col-12 col-sm-6>\n          <ion-item>\n            <ion-label stacked>欄位說明</ion-label>\n            <ion-input type="text" [disabled]="CanEditTable==false " name="cht_name" #cht_name="ngModel" [(ngModel)]="item.cht_name" required></ion-input>\n          </ion-item>\n          <div *ngIf="cht_name.errors && cht_name.touched" class="error-message">\n              欄位說明不能為空白\n          </div>\n        </ion-col>\n\n      </ion-row>\n      <ion-row>\n        <ion-col col-12  col-sm-6>\n          <ion-item>\n            <ion-label stacked>資料類型</ion-label>\n            <ion-input type="text" [disabled]="CanEditTable==false" name="data_type" #data_type="ngModel" [(ngModel)]="item.data_type" required></ion-input>\n          </ion-item>\n          <div *ngIf="data_type.errors && data_type.touched" class="error-message">\n              資料類型不能為空白\n          </div>\n        </ion-col>\n        <ion-col col-12  col-sm-6 >\n            <ion-item>\n              <ion-label stacked>類型</ion-label>\n              <ion-input type="text" *ngIf="mode==\'PUT\'" [disabled]="true" name="glossary_type_desc" #glossary_type_desc="ngModel" [(ngModel)]="item.glossary_type_desc" required></ion-input>\n\n            </ion-item>\n          </ion-col>\n      </ion-row>\n\n    </form>\n\n  </ion-content>\n  <ion-footer>\n    <ion-toolbar>\n      <ion-row>\n        <ion-col>\n          <div [ngClass]="[\'command\']">\n            <button small title="取消" ion-button color="dark" icon-left (click)="close()">\n              <ion-icon name="backspace"></ion-icon>\n            </button>\n            <button small [disabled]="CanEditTable==false" title="確認" ion-button color="dark" [disabled]="!Form.form.valid" icon-left (click)="Save()">\n              <ion-icon name="checkmark-circle"></ion-icon>\n            </button>\n          </div>\n        </ion-col>\n      </ion-row>\n    </ion-toolbar>\n  </ion-footer>\n'/*ion-inline-end:"C:\jones\ionic\prod\src\pages\glossary-add-edit-modal\glossary-add-edit-modal.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["p" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["h" /* LoadingController */]])
-    ], FileBrowserCopyEditModalPage);
-    return FileBrowserCopyEditModalPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */]])
+    ], GlossaryAddEditModalPage);
+    return GlossaryAddEditModalPage;
 }());
 
-//# sourceMappingURL=file-browser-copy-edit-modal.js.map
+//# sourceMappingURL=glossary-add-edit-modal.js.map
 
 /***/ }),
 
-/***/ 514:
+/***/ 648:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FileBrowserCopyEditModalPageModule", function() { return FileBrowserCopyEditModalPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GlossaryAddEditModalPageModule", function() { return GlossaryAddEditModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__file_browser_copy_edit_modal__ = __webpack_require__(1373);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__glossary_add_edit_modal__ = __webpack_require__(1543);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -89,23 +93,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var FileBrowserCopyEditModalPageModule = /** @class */ (function () {
-    function FileBrowserCopyEditModalPageModule() {
+var GlossaryAddEditModalPageModule = /** @class */ (function () {
+    function GlossaryAddEditModalPageModule() {
     }
-    FileBrowserCopyEditModalPageModule = __decorate([
+    GlossaryAddEditModalPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__file_browser_copy_edit_modal__["a" /* FileBrowserCopyEditModalPage */],
+                __WEBPACK_IMPORTED_MODULE_2__glossary_add_edit_modal__["a" /* GlossaryAddEditModalPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__file_browser_copy_edit_modal__["a" /* FileBrowserCopyEditModalPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__glossary_add_edit_modal__["a" /* GlossaryAddEditModalPage */]),
             ],
         })
-    ], FileBrowserCopyEditModalPageModule);
-    return FileBrowserCopyEditModalPageModule;
+    ], GlossaryAddEditModalPageModule);
+    return GlossaryAddEditModalPageModule;
 }());
 
-//# sourceMappingURL=file-browser-copy-edit-modal.module.js.map
+//# sourceMappingURL=glossary-add-edit-modal.module.js.map
 
 /***/ })
 
