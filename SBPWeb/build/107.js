@@ -333,7 +333,7 @@ var DelTableResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 1345:
+/***/ 1349:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -345,7 +345,7 @@ var DelTableResponse = /** @class */ (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Model_ViewModel_DelTableViewModel__ = __webpack_require__(968);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_run_job_services_run_job_services__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_run_job_services_run_job_services__ = __webpack_require__(269);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Model_MyAppSharedSettings__ = __webpack_require__(39);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -686,7 +686,7 @@ var DelTablePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 496:
+/***/ 500:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -694,7 +694,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DelTablePageModule", function() { return DelTablePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__del_table__ = __webpack_require__(1345);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__del_table__ = __webpack_require__(1349);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(821);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_del_table_services_del_table_services__ = __webpack_require__(1033);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {

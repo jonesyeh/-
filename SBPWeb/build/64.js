@@ -23,8 +23,8 @@ var FileZipSetViewModel = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_FileZipSetListResponse__ = __webpack_require__(1527);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_FileZipSetResponse__ = __webpack_require__(1528);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_FileZipSetListResponse__ = __webpack_require__(1529);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_FileZipSetResponse__ = __webpack_require__(1530);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_StringResponse__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -128,7 +128,7 @@ var FileZipSetServicesProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1526:
+/***/ 1528:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -433,7 +433,7 @@ var FileZipSetPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1527:
+/***/ 1529:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -486,7 +486,7 @@ var FileZipSetListResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 1528:
+/***/ 1530:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -530,7 +530,7 @@ var FileZipSetResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 633:
+/***/ 635:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -538,7 +538,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FileZipSetPageModule", function() { return FileZipSetPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__file_zip_set__ = __webpack_require__(1526);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__file_zip_set__ = __webpack_require__(1528);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(821);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_file_zip_set_services_file_zip_set_services__ = __webpack_require__(1256);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {

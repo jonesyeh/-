@@ -1,14 +1,14 @@
 webpackJsonp([58],{
 
-/***/ 1088:
+/***/ 1089:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobLoopServicesProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_Response_JobLoopListResponse__ = __webpack_require__(1208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_Response_JobLoopListResponse__ = __webpack_require__(1210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_JobLoopResponse__ = __webpack_require__(1209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Model_Response_JobLoopResponse__ = __webpack_require__(1211);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_services__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_StringResponse__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Model_Response_NumberResponse__ = __webpack_require__(128);
@@ -195,7 +195,7 @@ var JobLoopServicesProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1208:
+/***/ 1210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -289,7 +289,7 @@ var JobLoopListResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 1209:
+/***/ 1211:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -346,7 +346,7 @@ var JobLoopResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 1567:
+/***/ 1570:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -355,8 +355,8 @@ var JobLoopResponse = /** @class */ (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_global_global__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_services_auth_services__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_job_loop_services_job_loop_services__ = __webpack_require__(1088);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_run_job_services_run_job_services__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_job_loop_services_job_loop_services__ = __webpack_require__(1089);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_run_job_services_run_job_services__ = __webpack_require__(269);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Model_ViewModel_JobLoopViewModel__ = __webpack_require__(961);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Model_MyAppSharedSettings__ = __webpack_require__(39);
@@ -837,7 +837,7 @@ var JobLoopPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 671:
+/***/ 672:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -845,9 +845,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JobLoopPageModule", function() { return JobLoopPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__job_loop__ = __webpack_require__(1567);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__job_loop__ = __webpack_require__(1570);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(821);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_job_loop_services_job_loop_services__ = __webpack_require__(1088);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_job_loop_services_job_loop_services__ = __webpack_require__(1089);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

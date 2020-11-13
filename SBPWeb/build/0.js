@@ -470,8 +470,8 @@ var ParameterGroupComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_services__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_ParameterColumnListResponse__ = __webpack_require__(1615);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_ParameterColumnResponse__ = __webpack_require__(1616);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_ParameterColumnListResponse__ = __webpack_require__(1616);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_ParameterColumnResponse__ = __webpack_require__(1617);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -576,7 +576,7 @@ var ParameterColumnServicesProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1614:
+/***/ 1615:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -817,7 +817,7 @@ var ParameterColumnPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1615:
+/***/ 1616:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -873,7 +873,7 @@ var ParameterColumnListResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 1616:
+/***/ 1617:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -920,7 +920,7 @@ var ParameterColumnResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 706:
+/***/ 707:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -928,7 +928,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ParameterColumnPageModule", function() { return ParameterColumnPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__parameter_column__ = __webpack_require__(1614);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__parameter_column__ = __webpack_require__(1615);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_parameter_group_components_module__ = __webpack_require__(1094);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_parameter_column_services_parameter_column_services__ = __webpack_require__(1263);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {

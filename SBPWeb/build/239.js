@@ -325,7 +325,7 @@ var FileFtpDownResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 1435:
+/***/ 1437:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -336,7 +336,7 @@ var FileFtpDownResponse = /** @class */ (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_ViewModel_FileFtpDownViewModel__ = __webpack_require__(984);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_file_path_services_file_path_services__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_file_path_services_file_path_services__ = __webpack_require__(268);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_conn_services_conn_services__ = __webpack_require__(267);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Model_ViewModel_FtpRemoteViewModel__ = __webpack_require__(935);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Model_ViewModel_FtpDirectoryBrowserViewModel__ = __webpack_require__(940);
@@ -543,7 +543,7 @@ var FileFtpDownAddEditModalPage = /** @class */ (function () {
         var _this = this;
         var modal = this.modalCtrl.create("CodeSelectModalPage", {
             select_key: this.item.rerun_file_proc_key,
-            code_key: "018|1,018|NOLOG"
+            code_key: "018|1,018|RERUN,018|RERUNR,018|NOLOG"
         });
         modal.onDidDismiss(function (select_data) {
             if (select_data == null)
@@ -731,7 +731,7 @@ var FileFtpDownAddEditModalPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 566:
+/***/ 567:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -739,7 +739,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FileFtpDownAddEditModalPageModule", function() { return FileFtpDownAddEditModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__file_ftp_down_add_edit_modal__ = __webpack_require__(1435);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__file_ftp_down_add_edit_modal__ = __webpack_require__(1437);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_file_ftp_down_services_file_ftp_down_services__ = __webpack_require__(1058);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;

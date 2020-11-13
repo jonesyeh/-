@@ -327,7 +327,7 @@ var FileManagementAllPage = /** @class */ (function () {
         if (item.func_sub_type === 2)
             page = "FileCopyAddEditModalPage";
         if (item.func_sub_type === 3)
-            page = "FileCodePageAddEditModalPage";
+            page = "FileCodeAddEditModalPage";
         if (item.func_sub_type === 4)
             page = "FileImageAddEditModalPage";
         if (item.func_sub_type === 5)

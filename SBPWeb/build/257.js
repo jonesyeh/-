@@ -11,7 +11,7 @@ webpackJsonp([257],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_ViewModel_FileImportViewModel__ = __webpack_require__(931);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_file_path_services_file_path_services__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_file_path_services_file_path_services__ = __webpack_require__(268);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -203,7 +203,7 @@ var FileImportAddEditModalPage = /** @class */ (function () {
         var _this = this;
         var modal = this.modalCtrl.create("CodeSelectModalPage", {
             select_key: this.item.rerun_file_proc_key,
-            code_key: "018|1,018|2,018|2A,018|2AR,018|2R,018|3,018|3A,018|3AR,018|3B,018|3BR,018|3R,018|4,018|4R,018|5,018|6,018|6A,018|6AR,018|6R,018|7,018|7A,018|7AR,018|7B,018|7BR,018|7R,018|8,018|NOLOG"
+            code_key: "018|1,018|2,018|2A,018|2AR,018|2R,018|3,018|3A,018|3AR,018|3B,018|3BR,018|3R,018|4,018|4R,018|5,018|6,018|6A,018|6AR,018|6R,018|7,018|7A,018|7AR,018|7B,018|7BR,018|7R,018|8,018|RERUN,018|RERUNR,018|NOLOG"
         });
         modal.onDidDismiss(function (select_data) {
             if (select_data == null)

@@ -297,7 +297,7 @@ var ForsResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 1535:
+/***/ 1537:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -614,7 +614,7 @@ var ForsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 640:
+/***/ 642:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -622,7 +622,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForsPageModule", function() { return ForsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fors__ = __webpack_require__(1535);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fors__ = __webpack_require__(1537);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(821);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_fors_services_fors_services__ = __webpack_require__(1083);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {

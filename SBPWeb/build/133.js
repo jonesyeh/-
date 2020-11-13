@@ -1,15 +1,15 @@
 webpackJsonp([133],{
 
-/***/ 1087:
+/***/ 1088:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobServicesProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_Response_JobListResponse__ = __webpack_require__(1206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Model_Response_JobListResponse__ = __webpack_require__(1208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_services__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_JobResponse__ = __webpack_require__(1207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Model_Response_JobResponse__ = __webpack_require__(1209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Model_Response_StringResponse__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Model_MyAppSharedSettings__ = __webpack_require__(39);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -138,7 +138,7 @@ var JobServicesProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1206:
+/***/ 1208:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -263,7 +263,7 @@ var JobListResponse = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 1207:
+/***/ 1209:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -343,10 +343,10 @@ var JobResponse = /** @class */ (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_job_services_job_services__ = __webpack_require__(1087);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_job_services_job_services__ = __webpack_require__(1088);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_global_global__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_services_auth_services__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_run_job_services_run_job_services__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_run_job_services_run_job_services__ = __webpack_require__(269);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Model_ViewModel_JobViewModel__ = __webpack_require__(280);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Model_String__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Model_MyAppSharedSettings__ = __webpack_require__(39);
@@ -747,7 +747,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__job__ = __webpack_require__(1588);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(821);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_job_services_job_services__ = __webpack_require__(1087);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_job_services_job_services__ = __webpack_require__(1088);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

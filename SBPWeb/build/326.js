@@ -1,6 +1,6 @@
 webpackJsonp([326],{
 
-/***/ 1684:
+/***/ 1685:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -52,10 +52,15 @@ var TableDetailAddEditModalPage = /** @class */ (function () {
         this.item.is_identity = navParams.data.item.is_identity;
         this.item.memo = navParams.data.item.memo;
         this.item.computecolumn = navParams.data.item.computecolumn;
-        this.item.history_column_flag = navParams.data.item.history_column_flag;
         this.item.column_type_key = navParams.data.item.column_type_key;
         this.item.column_type = navParams.data.item.column_type;
+        this.item.is_sign = navParams.data.item.is_sign;
+        this.item.id_check = navParams.data.item.id_check;
         this.item.date_convert_format = navParams.data.item.date_convert_format;
+        this.item.col_start_loc = navParams.data.item.col_start_loc;
+        this.item.col_length = navParams.data.item.col_length;
+        this.item.del_flag = navParams.data.item.del_flag;
+        this.item.history_column_flag = navParams.data.item.history_column_flag;
         this.mode = navParams.data.mode;
         this.CanEditTable = navParams.data.CanEditTable;
         if (this.mode === "POST")
@@ -104,7 +109,7 @@ var TableDetailAddEditModalPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 760:
+/***/ 761:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -112,7 +117,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TableDetailAddEditModalPageModule", function() { return TableDetailAddEditModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__table_detail_add_edit_modal__ = __webpack_require__(1684);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__table_detail_add_edit_modal__ = __webpack_require__(1685);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
